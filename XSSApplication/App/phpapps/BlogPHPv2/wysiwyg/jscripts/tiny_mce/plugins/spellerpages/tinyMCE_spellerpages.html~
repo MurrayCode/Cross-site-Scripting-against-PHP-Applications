@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html>
+	<head>
+    <title>{$lang_spellerpages_title}</title>
+    <script language="javascript" type="text/javascript" src="popup.js"></script>
+    <script language="javascript" type="text/javascript" src="files/spellChecker.js"></script>
+    <script type="text/javascript">
+
+
+
+window.onload = function()
+{
+      translateNode(document);
+
+      editor_id = tinyMCE.getWindowArg('editor_id');
+      var inst = tinyMCE.getInstanceById(editor_id);
+      inst.formElement.value ='WORK';
+      tinyMCE.triggerSave(false,false);
+
+      var speller = new spellChecker( inst.formElement );
+      speller.popUpUrl = tinyMCE.baseURL+'/plugins/spellerpages/files/spellchecker.html';
+      speller.popUpName = 'tinyMCEspellchecker';
+      speller.tinymce_editor_id = inst.editorId;                              //Saved to use with TinyMCE_spellerpages_reloadit
+     speller.tinymce_content_css = tinyMCE.getParam("content_css");      //So your styles show in the editor (Misspelled words will not show the style correctly because they get highlighted)
+      
+      speller.openChecker();
+}
+
+
+function TinyMCE_spellerpages_reloadit(editor_id)
+{
+  tinyMCE.updateContent(tinyMCE.getInstanceById(editor_id).formElement.id);
+      window.close();
+}
+
+
+		</script>
+	</head>
+	<body style="OVERFLOW: hidden" scroll="no" style="padding:0px;">
+        <div class="title">{$lang_spellerpages_title}<br /><br /></div>
+        <iframe id="tinyMCEspellchecker" src="files/blank.html" name="tinyMCEspellchecker" width="100%" height="100%" frameborder="no"></iframe>
+	</body>
+</html>

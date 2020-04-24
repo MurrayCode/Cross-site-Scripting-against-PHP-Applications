@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE xbel PUBLIC "+//IDN python.org//DTD XML Bookmark Exchange Language 1.0//EN//XML" "http://www.python.org/topics/xml/dtds/xbel-1.0.dtd">
+<xbel version="1.0">
+  <title>Some of David's Bookmarks</title>
+  <folder>
+    <title>Food</title>
+    <folder>
+      <title>Tea</title>
+      <bookmark href="http://www.uptontea.com/">
+        <title>Upton Tea Imports</title>
+        <desc>Purveyor of the world's finest teas.</desc>
+      </bookmark>
+    </folder>
+    <folder>
+      <title>Spices and Herbs</title>
+      <bookmark href="http://www.penzeys.com/">
+        <title>Penzeys Spices</title>
+        <desc>The best way to get your herbs and spices (both in terms of price, quality, and flavor). Their print catalog is wonderfully educational, and full of recipes.</desc>
+      </bookmark>
+    </folder>
+    <folder>
+      <title>Chips</title>
+      <bookmark href="http://www.dirtys.com/">
+        <title>Dirty Potato Chips</title>
+        <desc>My very favorite potato chips. Their motto is, "We don't wash out the natural potato flavor, so our chips are crunchier and tastier."</desc>
+      </bookmark>
+      <bookmark href="http://www.artsandmarys.com/">
+        <title>Art's and Mary's: Homestyle Tater Chips</title>
+        <desc>These are very good too. I usually get the "Dill Tater Chips", since dill chips are not commonly found.</desc>
+      </bookmark>
+      <bookmark href="http://www.agrilinkfoods.com/tims/">
+        <title>Tim's Cascade Style Potato Chips</title>
+        <desc>My chip of choice when I'm in the Pacific Northwest (or whenever else I can find these in New England!). All are good -- especially the "Cracked Peppercorn"!</desc>
+      </bookmark>
+      <bookmark href="http://www.capecodechips.com/">
+        <title>Cape Cod Potato Chips</title>
+        <desc>Cape Code offers excellent chips made from different potato varieties (Dark Russet, Golden Russet and Yukon Gold). The "Firecracker Barbeque" chips don't last long when I'm around.</desc>
+      </bookmark>
+    </folder>
+  </folder>
+</xbel>
+

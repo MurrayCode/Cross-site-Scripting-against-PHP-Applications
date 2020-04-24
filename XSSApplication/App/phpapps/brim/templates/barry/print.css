@@ -1,0 +1,277 @@
+body
+{
+		background-color:#ffffff
+}
+
+/*
+ * The plugin menu. Contains the links to the plugins
+ */
+#pluginMenu
+{
+	display:none;
+}
+
+.pluginMenuLink
+{
+	display:none;
+}
+.pluginMenuLink a:link 
+{ 
+	display:none;
+}
+.pluginMenuLink a:visited 
+{ 
+	display:none;
+}
+.pluginMenuLink a:hover 
+{ 
+	display:none;
+}
+.pluginMenuLink a:active 
+{ 
+	display:none;
+}
+
+#applicationMenu
+{
+	display:none;
+}
+.applicationMenuLink
+{
+	display:none;
+}
+.applicationMenuLink a:link
+{
+	display:none;
+}
+
+.applicationMenuLink a:visited
+{
+	display:none;
+}
+
+.applicationMenuLink a:hover
+{
+	display:none;
+}
+
+.applicationMenuLink a:active
+{
+	display:none;
+}
+
+#pluginTitle
+{
+		float:left
+}
+
+.copyright
+{
+	display:none;
+}
+.copyright a:link
+{
+	display:none;
+}
+.copyright a:visited
+{
+	display:none;
+}
+.copyright a:hover
+{
+	display:none;
+}
+.copyright a:active
+{
+	display:none;
+}
+/*
+ * The pane. This is the part that changes each time and is plugin
+ * and action controlled
+ */
+#actionMenu
+{
+	display:none;
+}
+
+#actions
+{
+	display:none;
+}
+.pluginTitle
+{
+		font:bold 24px arial,helvetica,sans-serif;
+		color:#123456
+}
+.actionGroupTitle
+{
+	display:none;
+}
+.action
+{
+	display:none;
+}
+.action a:link
+{
+	display:none;
+}
+.action a:visited
+{
+	display:none;
+}
+.action a:hover
+{
+	display:none;
+}
+.action a:active
+{
+	display:none;
+}
+
+#content 
+{
+		position:absolute;
+		left:10px;
+		top:10px;
+		margin-bottom:20px;
+		padding:5px;
+		background-color:#ffffff;
+		font:12px arial,helvetica,sans-serif;
+		width:80%
+}
+h2 
+{
+		font:bold 12px arial,helvetica,sans-serif;
+		margin:0px
+}
+#content a:link 
+{ 
+		color:#666666; 
+		text-decoration:none 
+}
+#content a:visited 
+{ 
+		color:#666666; 
+		text-decoration:none 
+}
+
+td.overviewTreeOdd
+{
+	    background-color:#eeeeff;
+	    border: 1px dashed
+}
+td.overviewTreeEven
+{
+	    background-color:#ffffff;
+	    border: 1px dashed
+}
+tr.odd
+{
+		background-color:#dddddd;
+}
+tr.even
+{
+		background-color:#ffffff;
+}
+
+/*
+ * Form handling
+ */
+form 
+{
+		padding:0px;
+		margin:0px
+}
+
+.formParameterName
+{
+		/* width:150px;*/
+}
+
+.inputParamName
+{
+		vertical-align:top
+}
+input 
+{
+		border:1px solid #666666;
+		background-color:#ffffff;
+		font-family:"courier new";
+		font-size:14px;
+		color:#666666
+}
+
+.button
+{
+		color:#123456;
+		padding:0px;
+		margin:5px;
+   		font-weight:bold	  
+}
+
+.fileButton
+{
+		color:#123456;
+		padding:0px;
+		margin:0px;
+   		font-weight:bold	  
+}
+
+.radio
+{
+		border:0px
+}
+.text
+{
+		width:440px
+}
+
+
+textarea 
+{
+		border:1px solid #666666;
+		background-color:#ffffff;
+		font-family:"courier new";
+		font-size:13px;
+		color:#666666;
+		width:440px;
+		height:80px
+}
+
+table
+{
+		border:0px solid #000000
+}
+
+
+tr, td 
+{
+		font-size:11px
+}
+
+input.feedback
+{
+	background-color:#ffffff;
+	width: 400px;
+	border: 0px;
+}
+
+input:focus
+{
+	background-color:#ffffcc;
+}
+
+.button:focus
+{
+	background-color:#ffffff;
+}
+
+textarea:focus
+{
+	background-color:#ffffcc;
+}
+
+td.inputParamName
+{
+	width:80px;
+}

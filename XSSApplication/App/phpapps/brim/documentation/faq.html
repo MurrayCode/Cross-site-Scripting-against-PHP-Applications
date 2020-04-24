@@ -1,0 +1,365 @@
+<h2>Frequently Asked Questions</h2>
+
+<table>
+<tr>
+<td bgcolor="#cccccc">
+	<b>	
+		How do I import my Internet Explorer favorites?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	From within explorer, export your favorites as HTML 
+	(File->Import and Export). This file can be imported into 
+	Brim as Netscape HTML/Bookmarks file</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		How do I import my outlook contacts?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	You can export each contact as a vCard, but this will result 
+	in lots of vCards that need to be seperately imported into Brim.
+	You can also you the following tool: 
+	<a href="http://www.stoer.de/ipod/ipod_en.htm">Outpod</a>. 
+	Outpod is a program to do bulk exports of contact and calendar 
+	information from Microsoft Outlook to files according to the 
+	vCard and vCalendar standard (vCalendar format is not yet 
+	supported by Brim).
+</td>
+</tr>
+
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		How do I edit/delete a folder?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	Simply click on the folder icon in front of the folder name. This 
+	will take you to the modification screen in which you will also 
+	find the option to delete a folder.
+</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		How do I use the QuickMark functionality and what about the 
+		installation path?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	The QuickMark is a special bookmark. You need to add this link to 
+	the bookmarks in your browser.  The next time you visit a page you 
+	want to bookmark in Brim (and not your browser), you click on the 
+	QuickMark bookmark in your browser and the link will be added to Brim. 
+	For this, the QuickMark functionality needs to know the installation 
+	path (something like: <code>http://www.yourhost.com/brim</code>). The 
+	administrator of the application can set this path via the application 
+	configuration.
+</td>
+</tr>
+</table>
+
+
+<h2>Customizing</h2>
+<table>
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		How do I remove unwanted plugins?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	For Brim 1.0.0 and Brim 1.0.1
+	<ul>
+		<li>
+			Edit the file '<code>framework/configuration/plugins.php</code>' 
+			and remove the unwanted entries
+		</li>
+		<li>
+			Remove the Controllers for the specific plugins from the 
+			application root
+		</li>
+		<li>
+			Remove the plugin directories from the '<code>plugins</code>' 
+			subdirectory
+		</li>
+	</ul>
+	For Brim 1.0.2 and higher
+	<ul>
+		<li>
+			Simply remove the directory from the plugin directory
+		</li>
+	</ul>
+</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		How do I remove unnecessary/unwanted templates from the application?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	For Brim 1.0.0 and Brim 1.0.1
+	<ul>
+		<li>
+			Edit the file '<code>framework/configuration/templates.php</code>' 
+			and remove the unwanted templates from the list. 
+			This will make sure that no-one can select that template
+		</li>
+	</ul>
+	For all versions of Brim:
+	<ul>
+		<li>
+			Change your admin template settings to the desired template
+		</li>
+		<li>
+			Make sure that no user has this template in his preferences. 
+			If someone does, change the db entry to one of the templates 
+			you would like to keep (if you skip this step, the user will 
+			see a blank screen after login)i
+		</li>
+		<li>
+			Edit the default template in the signupAction (file: 
+			'<code>signupAction.php</code>'). Make sure that it points to 
+			an existing template
+		</li>
+		<li>
+			Edit the '<code>brim.php</code>' file and make sure that the 
+			icons are loaded from an existing template (there are two 
+			references to existing templates, change them both!)i
+		</li>
+		<li>
+			Remove the directories in the '<code>template</code>' 
+			subdirectory (except for the sidebar!)
+		</li>
+	</ul>
+</td>
+</tr>
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		How do I  install brim in an existing database, used by another application?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	<p>
+		<b>Question:</b>
+	</p>
+	<p>
+		My web server only allows once Mysql database; 
+		I am this database using for wordpress (a blog program)
+	</p>
+	<p>	
+		I am wondering how to intall Brim without upsetting the 
+		part of Mysql which Wordpress uses. In wordpress, a 
+		$table_prefix has been specified as a database prefix - 
+		the prefix is wp_. The purpose of this is to allow
+		multiple wordpress configurations.
+	</p>
+	<p>
+		<b>Answer:</b>
+	</p>
+	<p>
+		You can safely install brim next to any other program 
+		using the same database.  Brim uses a fixed table prefix 
+		(brim_) so it does not clash with other table 
+		names. You can only install one version of brim per database though....
+	</p>
+</td>
+</tr>
+</table>
+
+<h2>Trouble shooting</h2>
+<table>
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		I get the following error:  
+		<code>Fatal error: Call to undefined function mysql_connect()</code>
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	This means that you do not have the mysql extension compiled. 
+	Install the php-mysql extenstion or recompile php with this 
+	option enabled.
+</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		The GMail plugin doesn't show up
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	This means that you do not have the php libcurl extenstion installed. 
+	For more information, look here:
+	<a href="http://curl.haxx.se/">http://curl.haxx.se/</a> and here: 
+	<a href="http://www.php.net/curl">http://www.php.net/curl</a> 
+</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		The Password plugin doesn't show up
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	This means that you do not have the php libmcrypt extenstion installed.
+</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		The DepotTracker and Collections plugin don't show up
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	Install the following php-extensions: GD-library (available at http://www.boutell.com/gd/)
+</td>
+</tr>
+
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		I get an error indicating the some files are not found
+	</b>
+</tr>
+<tr>
+<td>
+	Do you get an error message similar to the following?
+	<pre>
+	Warning: main(framework/Controller.php): 
+		failed to open stream: No such file or directory in 
+		/home/brim/public_html/brim/framework/DashboardController.php 
+		on line 3
+
+	Fatal error: main(): Failed opening required 'framework/Controller.php' 
+		(include_path='/usr/share/php') 
+		in /home/brim/public_html/brim/framework/DashboardController.php 
+		on line 3
+	</pre>
+
+	This means that your include path is incorrect. Your include path MUST 
+	contain the current directory, so you need to edit your php.ini file and 
+	add the current directory ('.') to your include path. For instance:
+	<pre>
+		include_path = "/usr/share/php"
+	</pre>
+	Should become
+	<pre>
+		include_path = ".:/usr/share/php"
+	</pre>
+	Remember to restart the http server after applying the changes!
+</td>
+</tr>
+
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		I want to modify some files on my webserver, but I 
+		have no permissions when using ftp/telnet! WHat is happening?
+	</b>
+</td>
+</tr>
+<tr>
+	<td>
+		If you use the unpack utility provided with the brim installation, 
+		you upload the brim-xxx.tar.gz file and the unpack.php file. 
+		Afterwards, you tell the webserver (by using the unpack utility) i
+		to unpack all files. At this moment, the webserver becomes the owner 
+		of those files and you are no longer allowed to modify any of those 
+		files anymore.  The workaround is that you unpack all files locally 
+		and upload them (via ftp) individually.
+	</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		I cannot unzip the file brimfull-xxx.zip!
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	You are probably using WinRAR as unzip utility? 
+	This application does not unzip correctly. Try WinZip instead.
+</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#cccccc">
+	<b>
+		My Web hosting provider is free.fr (or Online). I get 
+		plenty of error messages "Warning session_start(): 
+		open(/var/www/free.fr/***/sessions/". What should I do?
+	</b>
+</td>
+</tr>
+<tr>
+<td>
+	With FREE and Online, sessions operate in a particular way: you 
+	must create a directory named "sessions" at the root level of your site.
+	Sessions will be directly stored in this directory.
+	<br />
+	(Answer from <a href="http://www.phpmyvisites.net/faq/?lang=en">phpMyVisites</a>)
+</td>
+</tr>
+
+</table>

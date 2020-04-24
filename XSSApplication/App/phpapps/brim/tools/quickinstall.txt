@@ -1,0 +1,25 @@
+
+
+This is the quick installation guide. Full version available in 
+unpack-readme.txt
+
+Upload (ftp) the following files:
+
+- Tar.php
+- unpack.php
+- brim_xxxx.tar.gz 
+
+Upload them ONE DIRECTROY HIGHER than the final location for brim.
+(i.e. /home/yourname/public_html if you want the final destination to be
+/home/yourname/public_html/brim)
+
+Execute the following:
+
+chmod 644 Tar.php unpack.php brim*.gz
+mkdir brim
+chmod 777 brim (if this is a new install or an upgrade from brim 1.0.4) 
+chmod -R 777 brim (if this is an upgrade from brim-1.0.0, brim 1.0.1 or brim 1.0.2)
+(Note that some webservers require 755 instead, try this if you run into problems)
+
+Now execute the unpack.php file from your webbrowser and follow the instructions
+Remove the three files afterwards

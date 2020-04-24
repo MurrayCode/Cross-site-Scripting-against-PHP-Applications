@@ -1,0 +1,145 @@
+Re: [SLE] Evolution and Outlook
+From: Dave Barton (bmcs_at_ozemail.com.au)
+Date: Fri May 24 2002 - 07:03:25 CEST
+
+# Next message: Jon Doe: "[SLE] gkrellm launch compile help on SuSE 8.0"
+
+    * Previous message: Harry G: "[SLE] 2.4.16 RPM upgrade seems to have failed. (Additional info)"
+    * In reply to: Tom Nielsen: "[SLE] Evolution and Outlook"
+    * Next in thread: Tom Nielsen: "Re: [SLE] Evolution and Outlook"
+    * Reply: Tom Nielsen: "Re: [SLE] Evolution and Outlook"
+    * Reply: Tom Nielsen: "Re: [SLE] Evolution and Outlook"
+    * Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] [ attachment ] 
+
+From: Dave Barton <bmcs@ozemail.com.au>
+Date: 24 May 2002 15:03:25 +1000
+Message-Id: <1022216608.4183.66.camel@linux>
+Subject: Re: [SLE] Evolution and Outlook
+
+
+
+On Thu, 2002-05-23 at 08:40, Tom Nielsen wrote:
+> Has anyone imported Outlook folders and mail into Evolution? I'm using
+> Outlook 2k and Evolution 1.0.2.
+>
+> Thanks,
+> Tom
+>
+> Tom Nielsen
+> Neuro Logic Systems
+> 805.389.5435 x18
+> www.neuro-logic.com
+
+Hi Tom,
+
+When I switched to Linux I successfully converted my .pst files to mbox
+format, together with my Outlook contacts and imported them into
+Evolution. It's a fairly convoluted process, but it worked for me.
+
+If you have a strong stomach (or masochistic tendencies), make yourself
+a large pot of coffee (or something stronger) and give this a try:
+
+***********************************************************************
+
+Mozilla under Windows can access the .pst Outlook files because it can
+use the Windows MAPI.DLL library. Using MAPI.DLL is the only way to
+access .pst files, and it can be used under a Windows operating system.
+
+To start importing your Outlook mail to Evolution, run Mozilla Mail on
+Windows and select the Importer to begin:
+
+File > Import
+
+Then select the .pst file that you wish to import Mail from Outlook.
+Once Mozilla has imported all your mail, reboot your computer into
+Linux.
+
+Mount your Windows partition in Linux and run Evolution to begin
+importing your mail. Select the Importer from the File menu to start
+importing:
+
+File > Import File...
+
+Set the file type to "MBox (mbox)" and click on [Browse] to select the
+file containing mail you want to import.
+
+If you are the only user on Windows, the mail files will be stored in
+/mnt/windows/c/Windows/Application
+Data/Mozilla/Profiles/default/XXXX/Mail/imported.mail/ where
+/mnt/windows/c/ is your windows partition mount point and XXXX is some
+collection of numbers and digits ending in .slt.
+
+If there is more than one user, the file will be in
+/mnt/windows/c/windows/Profiles/USERNAME/XXXX/ Mail/imported.mail/ where
+USERNAME is your Windows username.
+
+For each mail folder in Outlook, Mozilla will convert the folder into
+one mbox file. To import all your mail, import all the files into
+Evolution, that do not a .msf extension.
+
+ALTERNATIVELY
+
+You may want to get the conversion program libpst-0.3beta1.tgz which can
+be downloaded from http://sourceforge.net/projects/ol2mbox/
+
+**************************************************************************
+
+To import your contacts from Outlook you will need to export all of your
+contact folders in Outlook to a .csv file. To do this in Outlook:
+
+Click on File > Import and Export....
+Choose "Export to a file" and click [Next].
+For the file type choose "Comma Separated Values (DOS)".
+Click [Next].
+If you have sub-folders under "Contacts" each sub-folder must be
+exported separately.
+Name the exported files "same_as_outlook_folder.csv" (sans quotes and
+keep a note of the path).
+Click [Next].
+Click [Finish].
+
+To import contacts.csv into Evolution you will have to run each .csv
+file through the attached Perl script (csv2vcard.pl). Download
+csv2vcard.pl into your home directory and make the script executable by
+running this command:
+
+$ chmod +x ~/csv2vcard.pl
+
+Run this script to convert contacts.csv to contacts.vcf:
+
+$ ./csv2vcard.pl contacts.csv contacts.vcf
+
+Once you have contacts.vcf, you can import it into Evolution by:
+
+Clicking File > Import.
+Click [Next].
+Click on "Import from a single file"
+Click [Next] again.
+For file type choose "VCard...".
+Click [Browse] and select your file.
+Click [Next] then [Import].
+
+**************************************************************************
+
+Hope this helps and good luck.
+
+Dave
+
+
+    * text/x-perl attachment: csv2vcard.pl__charset_ISO-8859-1 
+
+
+-- 
+To unsubscribe send e-mail to suse-linux-e-unsubscribe@suse.com
+For additional commands send e-mail to suse-linux-e-help@suse.com             
+Also check the archives at http://lists.suse.com     
+
+    * Next message: Jon Doe: "[SLE] gkrellm launch compile help on SuSE 8.0"
+    * Previous message: Harry G: "[SLE] 2.4.16 RPM upgrade seems to have failed. (Additional info)"
+    * In reply to: Tom Nielsen: "[SLE] Evolution and Outlook"
+    * Next in thread: Tom Nielsen: "Re: [SLE] Evolution and Outlook"
+    * Reply: Tom Nielsen: "Re: [SLE] Evolution and Outlook"
+    * Reply: Tom Nielsen: "Re: [SLE] Evolution and Outlook"
+    * Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] [ attachment ] 
+
+This archive was generated by hypermail 2.1.0 : Fri May 24 2002 - 07:04:29 CEST 

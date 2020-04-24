@@ -1,0 +1,3 @@
+ErrorDocument 401 index.php?document_error=401 
+ErrorDocument 403 index.php?document_error=403 
+ErrorDocument 404 index.php?document_error=404 

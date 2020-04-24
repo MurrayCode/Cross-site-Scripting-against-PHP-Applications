@@ -1,0 +1,30 @@
+Requirements:
+Brim 1.0.3 or higher
+
+* Copy the file 'brim-wordpress.php' to your plugins directory in wordpress (typically 'wp-content/plugins').
+
+* Edit the sidebar.php file (can be found in 'wp-content/themes/_your_theme_/')
+of your template and add
+
+	<li><h2>Brim - bookmarks</h2>
+		<ul>
+			<?php echo brim_bookmarks(); ?>
+		</ul>
+	</li>
+
+* As admin user of wordpress, activate the Brim-bookmarks plugin.
+
+* Via the options, select the brim-bookmarks plugin and edit the parameters
+- absolute path is something like '/home/yourname/public_html/brim'
+- URL for the Brim installation is something like 'http://yourhost/brim'
+- Username for brim application is the username for which you would like
+the public bookmarks to showup in wordpress.
+
+* If you use non-standard characters, they will show up as strange characters in your bookmark tree. 
+Set the characterset of the page to UTF8 to avoid this problem. 
+Add the following to the HTML header of the page:
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+Your brim plugin should now show up correctly in your wordpress installation, provided that you have items shared ;-)
+
+If you see any errors, try to move the plugin to the end of the sidebar.php file.

@@ -1,0 +1,35 @@
+body {
+  font: 10px Tahoma;
+}
+
+td {
+  font: 10px Tahoma;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Georgia", "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Trebuchet, Arial, sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+a:link {
+text-decoration:none;
+font-weight: bold;
+color: green;
+}
+a:visited {
+text-decoration:none;
+font-weight: bold;
+color: green;
+}
+a:hover {
+text-decoration:none;
+font-weight: bold;
+color: green;
+}
+a:active {
+text-decoration:none;
+font-weight: bold;
+color: green;
+}

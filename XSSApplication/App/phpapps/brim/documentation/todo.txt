@@ -1,0 +1,2 @@
+* when you change the visibility of a folder, only the visibility of the selected folder is changed. why it is not done recursively (entries and subfolders too)? 
+* Shortcuts (add/modify etc) on dashboard plugin

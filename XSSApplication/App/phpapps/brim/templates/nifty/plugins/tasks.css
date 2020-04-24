@@ -1,0 +1,33 @@
+div#yahooTreeTask table
+{
+	border:1px;
+	margin-left:0;
+	padding: 0 0 0 0;
+	border-collapse: collapse
+
+}
+div#yahooTreeTask 
+.yahooTreeTaskTitle
+{
+	text-align:left	;
+	background-color:#cccccc;
+}
+div#yahooTreeTask 
+.yahooTreeTaskBody
+{
+	text-align:left	;
+	background-color:#eeeeee;
+}
+table.yahooTreeTask tr
+{
+	padding:0
+}
+table.yahooTreeTask td
+{
+	padding: 0px 0px 0px 0px
+}
+
+div#yahooTreeTask td
+{
+	padding: 1px 10px 0px 10px
+}

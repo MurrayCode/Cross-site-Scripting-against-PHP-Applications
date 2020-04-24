@@ -1,0 +1,76 @@
+body
+{
+	color:#000000;
+	margin-top:2px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px
+}
+
+body, p, h1, h2, h3, ul
+{
+	font-family: verdana,helvetica,arial,sans-serif
+}
+
+h1 
+{
+	background-color:transparent;
+	color:#123456
+}
+
+h2 
+{
+	background-color:transparent;
+	color:#999999;
+}
+
+hr
+{
+	background-color:transparent;
+	color:#123456;
+	height:1px
+}
+
+td
+{
+	color:#000000;
+	font-family: Verdana,Arial,Helvetica;
+	font-size: 8pt
+}
+
+td.notes
+{
+	color:#000000;
+	background-color:yellow
+}
+
+td.todos
+{
+	color:#000000;
+	background-color:gray
+}
+
+td.contact
+{
+	background-color:#ffffff
+}
+
+td.menu
+{
+	color:#ffffff;
+	background-color:#bbbbbb
+}
+
+td.menu2
+{
+	color:#ffffff;
+	background-color:#888888
+}
+
+a.menu:link, a.menu:visited, a.menu:active, a.menu:hover
+{
+	color:#ffffff;
+	text-decoration:none;
+	vlink:#000000;
+	link:#123456
+}

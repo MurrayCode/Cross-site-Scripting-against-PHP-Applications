@@ -1,0 +1,25 @@
+<?php
+# Display error or not (enable = 1, disable = 0)
+@ini_set('display_errors', 1);
+
+# Sets which PHP errors are reported (E_ALL, E_NOTICE, E_WARNING, E_ERROR, E_PARSE, E_STRICT or 0 to disabled)
+error_reporting(E_ERROR);
+
+#---------------------------------------#
+#	Database configuration				#
+#---------------------------------------#
+define('BP_DBHOST','');
+define('BP_DBUSER','');
+define('BP_DBPASSWORD','');
+define('BP_DBNAME','');
+define('BP_DBPREFIX','');
+# Database driver (mysql, pgsql, sqlite)
+define('BP_DBDRIVER','mysql');
+define('BP_DBENCRYPTED_PASSWORD', '0');
+# Persistent database connection
+define('BP_DBPERSIST',false);
+
+# Session name for cookie
+define('BP_SESSION_NAME','bpxd');
+define('BP_PLANET_URL','http://www.your-website.com/bilboplanet');
+?>

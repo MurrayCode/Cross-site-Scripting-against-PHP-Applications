@@ -1,0 +1,1307 @@
+<?xml version="1.0"  standalone="no"?>
+<!DOCTYPE xbel PUBLIC "+//IDN python.org//DTD XML Bookmark Exchange Language 1.0//EN//XML"
+               "file:/export/softs2/xml/dtd/xbel-1.0.dtd">
+
+<xbel version="1.0">
+   <title>Bookmarks pour Olivier</title>
+   <info>
+      <metadata owner="xml"/>
+      <metadata owner="java"/>
+   </info>
+   <desc>Description a presenter a l'utilisateur a sa demande.</desc>
+
+  <!-- MAIL -->
+   <folder folded="yes">
+      <title>mail</title>
+      <info>
+         <metadata owner="mail"/>
+      </info>
+
+      <bookmark id="Caramail" href="http://www.caramail.com">
+         <title>Caramail</title>
+         <info>
+            <metadata owner="mail"/>
+         </info>
+      </bookmark>
+
+      <bookmark id="gmx" href="http://www.gmx.net">
+         <title>GMX</title>
+         <info>
+            <metadata owner="mail"/>
+         </info>
+      </bookmark>
+   </folder>
+
+
+
+
+
+  <!-- DOCUMENTATION -->
+  <folder folded="yes">
+    <title>Documentation</title>
+
+    <bookmark href="http://www.ibiblio.org">
+      <title>ibiblio public library</title>
+    </bookmark>
+
+    <bookmark href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi">
+      <title>Medline</title>
+    </bookmark>
+
+    <bookmark href="http://www.acm.org/dl/proc_byseries_list.html">
+      <title>ACM publications and proceedings list</title>
+    </bookmark>
+
+    <bookmark href="http://fatbrain.tradespeak.com/ci_home.asp">
+      <title>FatBrain White Papers repository</title>
+    </bookmark>
+
+    <!-- REVUES -->
+    <folder folded="yes">
+      <title>Revues</title>
+
+      <bookmark href="http://www.ddj.com">
+	<title>Dr Dobb's Journal</title>
+      </bookmark>
+
+      <bookmark href="http://www.pourlascience.com/">
+	<title>Pour la Science</title>
+      </bookmark>
+
+      <bookmark href="http://www.larecherche.fr/">
+	<title>La Recherche</title>
+      </bookmark>
+
+      <bookmark href="http://helix.nature.com/nsu/">
+	<title>Nature</title>
+      </bookmark>
+
+      <bookmark href="http://www.jamia.org">
+	<title>JAMIA</title>
+      </bookmark>
+
+    </folder>
+
+   <!-- MOTEURS DE RECHERCHE -->
+    <folder folded="yes">
+      <title>Search engines</title>
+
+      <bookmark href="http://www.altavista.com">
+	<title>Altavista</title>
+      </bookmark>
+
+      <bookmark href="http://www.google.com">
+	<title>Google</title>
+      </bookmark>
+
+    </folder>
+
+  </folder>
+
+
+
+
+  <!-- XML -->
+   <folder folded="yes">
+      <title>XML</title>
+      <info>
+         <metadata owner="xml"/>
+      </info>
+
+    <!-- XML : TUTORIALS -->
+    <folder folded="yes">
+      <title>Tutorials</title>
+
+    <bookmark href="http://java.sun.com/xml/tutorial_intro.html">
+	<title>JAVA - XML Tutorial</title>
+	<info>
+	  <metadata owner="java"/>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.diffuse.org/xmlguide.html">
+	<title>Diffuse guide to XML related standards</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <folder>
+	<title>XML Bible</title>
+
+	<bookmark href="http://www.ibiblio.org/xml/books/bible2/chapters/ch17.html">
+	  <title>Chapter 17 : XSL Transformations</title>
+	</bookmark>
+
+	<bookmark href="http://www.ibiblio.org/xml/books/bible2/chapters/ch18.html">
+	  <title>Chapter 18 : XSL Formatting Objects</title>
+	</bookmark>
+
+	<bookmark href="http://www.ibiblio.org/xml/books/bible2/chapters/ch19.html">
+	  <title>Chapter 19 : XLinks</title>
+	</bookmark>
+
+	<bookmark href="http://www.ibiblio.org/xml/books/bible2/chapters/ch20.html">
+	  <title>Chapter 20 : XPointers</title>
+	</bookmark>
+
+	<bookmark href="http://www.ibiblio.org/xml/books/bible2/chapters/ch24.html">
+	  <title>Chapter 24 : Schemas</title>
+	</bookmark>
+
+      </folder>
+
+    </folder>
+
+
+    <!-- XML : SCHEMAS -->
+    <folder folded="yes">
+      <title>Schemas</title>
+
+      <bookmark href="http://www.w3.org/TR/xmlschema-0/">
+	<title>W3C Schema Primer</title>
+	<info>
+	  <metadata owner="xml"/>
+	  <metadata owner="schema"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.w3.org/TR/xmlschema-1/">
+	<title>W3C Schema Structure</title>
+	<info>
+	  <metadata owner="xml"/>
+	  <metadata owner="schema"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.w3.org/TR/xmlschema-2/">
+	<title>W3C Schema Datatypes</title>
+	<info>
+	  <metadata owner="xml"/>
+	  <metadata owner="schema"/>
+	</info>
+      </bookmark>
+
+      <bookmark id="schemasXmlPython" href="http://www.schema.net">
+         <title>Schemas XML</title>
+         <info>
+            <metadata owner="xml"/>
+            <metadata owner="schema"/>
+         </info>
+      </bookmark>
+
+    </folder>
+
+
+      <!-- XML : XML - RPC -->
+      <folder folded="yes">
+	<title>XML - RPC</title>
+
+      <bookmark href="http://www.xmlrpc.com/spec">
+	<title>XML - RPC Specification</title>
+      </bookmark>
+
+      <bookmark href="http://www.linux.org/docs/ldp/howto/XML-RPC-HOWTO/index.html">
+	<title>XML - RPC HowTo</title>
+      </bookmark>
+
+      </folder>
+
+
+    <!-- XML : Stylesheets -->
+    <folder folded="yes">
+      <title>Style Sheets</title>
+
+      <bookmark href="http://www.w3.org/Style/XSL/">
+	<title>W3C XSL</title>
+      </bookmark>
+
+      <bookmark href="http://www.sun.com/xml/developers/xsltc/article.html">
+	<title>Sun XSLT Compiler - translet</title>
+      </bookmark>
+
+      <bookmark href="http://www.xsldoc.org">
+	<title>XSLDoc</title>
+      </bookmark>
+
+      <bookmark href="http://www.heise.de/ix/artikel/E/2001/01/167/">
+	<title>iX XSLT Tutorial</title>
+      </bookmark>
+
+      <bookmark href="http://webreview.com/97/05/30/feature/tutorial.html">
+	<title>CSS Tutorial (N. Walsh)</title>
+	<info>
+	  <metadata owner="xml"/>
+	  <metadata owner="css"/>
+	</info>
+      </bookmark>
+
+
+      <!-- XML : GUI -->
+      <folder folded="yes">
+	<title>GUI</title>
+
+	<bookmark href="http://www.mind-to-mind.com/xml/articles/xslbeans/index.html">
+	  <title>Mind to Mind XSL Beans (Beans for UI)</title>
+	  <info>
+	    <metadata owner="xml"/>
+	    <metadata owner="xsl"/>
+	  </info>
+	</bookmark>
+
+	<bookmark href="http://www.uiml.org/">
+	  <title>UIML</title>
+	</bookmark>
+
+	<bookmark href="http://www.mozilla.org/xpfe/xulref/intro.html">
+	  <title>XUL</title>
+	</bookmark>
+
+	<bookmark href="http://www.mozilla.org/xpfe/xptoolkit/xulintro.html">
+	  <title>Introduction to XUL</title>
+	</bookmark>
+
+	<bookmark href="http://glade.pn.org">
+	  <title>Glade, gtk+ toolkit builder 1</title>
+	</bookmark>
+
+	<bookmark href="http://www.daa.com.au/~james/gnome/">
+	  <title>Glade, gtk+ toolkit builder 2</title>
+	</bookmark>
+
+      </folder>
+
+    </folder>
+
+
+    <!-- XML : QUERY -->
+    <folder folded="yes">
+      <title>Queries</title>
+
+      <bookmark href="http://www.xmldb.org/">
+	<title>XML DataBase</title>
+      </bookmark>
+
+      <bookmark href="http://linuxworld.com/linuxworld/lw-2001-02/lw-02-xml3databases.html">
+	<title>XML Database tools for Linux</title>
+      </bookmark>
+
+      <bookmark href="http://www.w3.org/TR/2000/WD-query-algebra-20001204/">
+	<title>XML Query Algebra</title>
+      </bookmark>
+
+      <bookmark href="http://www.fatdog.com/">
+	<title>XQE : XML Query Engine</title>
+      </bookmark>
+
+    </folder>
+
+
+    <!-- XML : RESSOURCES -->
+    <folder folded="yes">
+      <title>Ressources</title>
+
+      <bookmark href="http://java.sun.com/xml/javaxmlpack.html">
+	<title>SUN Java XML Pack</title>
+      </bookmark>
+
+      <bookmark id="xmlRobinCover" href="http://www.oasis-open.org/cover/">
+	<title>Robin Cover XML references</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.garshol.priv.no/download/xmltools/">
+	<title>Free XML Tools and Software</title>
+      </bookmark>
+
+      <bookmark href="http://www.garshol.priv.no/download/xmltools/plat_ix.html#plat7">
+	<title>XML Tools by platform</title>
+      </bookmark>
+
+      <bookmark href="http://xmlhack.com/">
+	<title>XML Hack</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.xmlsoftware.com">
+	<title>XML Software</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.mind-to-mind.com/xml/">
+	<title>Mind to Mind XML</title>
+      </bookmark>
+
+      <bookmark href="http://metalab.unc.edu/xml/">
+	<title>Cafe con leche XML news and resources</title>
+	<info>
+	  <metadata owner="xml"/>
+	  <metadata owner="java"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.zvon.org">
+	<title>ZVON</title>
+      </bookmark>
+
+      <bookmark href="http://xml.about.com/compute/xml">
+	<title>About.com XML Homepage (tutorial, resources)</title>
+      </bookmark>
+
+      <bookmark href="http://www.ddj.com/topics/xml/">
+	<title>Dr Dobb's XML</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.finetuning.com/xml.html">
+	<title>XML FineTuning</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <folder folded="yes">
+	<title>Editors</title>
+
+	<bookmark href="http://scriptingnews.userland.com/directory/1026/xmlEditors">
+	  <title>Daves XML Editors list</title>
+	  <info>
+	    <metadata owner="xml"/>
+	    <metadata owner="resource"/>
+	  </info>
+	</bookmark>
+
+	<bookmark href="http://www.merlotxml.org/">
+	  <title>Merlot XML editor</title>
+	</bookmark>
+
+	<bookmark id="xml-resources" href="http://wdvl.internet.com/Software/XML/editors.html/">
+	  <title>XML editors wdvl</title>
+	  <info>
+	    <metadata owner="xml"/>
+	    <metadata owner="resource"/>
+	  </info>
+	</bookmark>
+
+	<bookmark href="http://freshmeat.net/projects/kxmlviewer/">
+	  <title>KXMLViewer KDE XML Viewer</title>
+	</bookmark>
+
+      </folder>
+
+      <bookmark href="http://inxar.org/rsl/">
+	<title>RSL Reticulum Structure Layer and Language</title>
+      </bookmark>
+
+      <bookmark href="http://www.jdom.org">
+	<title>JDOM : Java DOM</title>
+	<info>
+	  <metadata owner="dom"/>
+	  <metadata owner="java"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.ibiblio.org/xml/slides/nypc/jdom/">
+	<title>JDOM Tutorial</title>
+	<info>
+	  <metadata owner="dom"/>
+	  <metadata owner="java"/>
+	  <metadata owner="tutorial"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://jaxen.org">
+	<title>Jaxen : Java XPath Engine</title>
+      </bookmark>
+
+    </folder>
+
+
+    <!-- XML : APACHE -->
+    <folder folded="yes">
+      <title>Apache</title>
+      <info>
+	<metadata owner="xml"/>
+	<metadata owner="apache"/>
+      </info>
+
+      <bookmark href="http://xml.apache.org/xang/">
+	<title>XML - Apache : Xang</title>
+	<info>
+	  <metadata owner="xml"/>
+	  <metadata owner="apache"/>
+	</info>
+      </bookmark>
+
+    </folder>
+
+    <!-- XML : PARSERS -->
+    <folder folded="yes">
+      <title>Parsers</title>
+
+      <bookmark id="SAX-tutorial" href="http://www.java.sun.com/xml/docs/tutorial_intro.html">
+         <title>XML JAVA API</title>
+         <info>
+            <metadata owner="xml"/>
+            <metadata owner="java"/>
+            <metadata owner="sax"/>
+         </info>
+      </bookmark>
+
+    <bookmark href="http://www.megginson.com/SAX/">
+      <title>JAVA SAX</title>
+      <info>
+	<metadata owner="xml"/>
+	<metadata owner="java"/>
+	<metadata owner="sax"/>
+      </info>
+    </bookmark>
+
+    <bookmark href="http://www.docuverse.com/domsdk/index.html">
+      <title>docuserve DOM sdk</title>
+      <info>
+	<metadata owner="xml"/>
+	<metadata owner="dom"/>
+      </info>
+    </bookmark>
+
+    <bookmark href="http://www.docuverse.com/domsdk/#tutorial">
+      <title>docuverse DOM documentation</title>
+      <info>
+	<metadata owner="xml"/>
+	<metadata owner="dom"/>
+      </info>
+    </bookmark>
+
+    </folder>
+
+      <bookmark id="xmlperl" href="http://www.perlxml.com">
+         <title>Perl - XML</title>
+         <info>
+            <metadata owner="xml"/>
+            <metadata owner="perl"/>
+         </info>
+      </bookmark>
+
+    <bookmark id="xmlpython" href="http://www.python.org/topics/xml">
+      <title>Python - XML</title>
+      <info>
+	<metadata owner="xml"/>
+	<metadata owner="python"/>
+      </info>
+    </bookmark>
+
+      <bookmark id="xbel" href="http://www.python.org/topics/xml/xbel/">
+         <title>XBEL</title>
+         <info>
+            <metadata owner="xml"/>
+         </info>
+      </bookmark>
+
+    <folder folded="yes">
+      <title>DocBook</title>
+
+      <bookmark href="http://www.docbook.org">
+	<title>docbook.org</title>
+      </bookmark>
+
+      <bookmark href="http://www.oasis-open.org/docbook/">
+	<title>DocBook</title>
+	<info>
+	  <metadata owner="xml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://docbook.org/tdg/html/docbook.html">
+	<title>DocBook the definitive guide (O Reilly)</title>
+      </bookmark>
+
+      <bookmark href="http://db2latex.sourceforge.net/">
+	<title>db2latex : DocBook to Latex</title>
+      </bookmark>
+
+    </folder>
+
+    <folder folded="yes">
+      <title>UML</title>
+
+      <bookmark href="http://www.limsi.fr/Individu/charnay/UML/documl.html">
+	<title>Introduction au langage UML</title>
+      </bookmark>
+
+      <bookmark href="http://uml.free.fr/">
+	<title>UML en francais</title>
+      </bookmark>
+ 
+    <bookmark href="http://www.oasis-open.org/cover/xml.html#xml-uxf">
+      <title>UML exchange Format XML</title>
+      <info>
+	<metadata owner="uml"/>
+	<metadata owner="xml"/>
+      </info>
+    </bookmark>
+
+      <bookmark href="http://www.biztalk.org/Resources/canonical.asp">
+	<title>Serialising graphs of data in XML</title>
+	<info>
+	  <metadata owner="uml"/>
+	  <metadata owner="xml"/>
+	  <metadata owner="schema"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://thorn.sourceforge.net">
+	<title>Thorn UML modelling tool Java XML</title>
+	<info>
+	  <metadata owner="uml"/>
+	  <metadata owner="xml"/>
+	  <metadata owner="java"/>
+	</info>
+	<desc>UML modeling tool written in Java. It uses XML to save the models you create</desc>
+      </bookmark>
+
+      <bookmark href="http://argouml.tigris.org">
+	<title>Argo UML</title>
+      </bookmark>
+
+      <bookmark href="http://www.nomagic.com/magicdrawuml">
+	<title>MagicDFraw UML</title>
+	<info>
+	  <metadata owner="uml"/>
+	  <metadata owner="java"/>
+	</info>
+	<desc>Payant, discounts pour universitaires</desc>
+      </bookmark>
+
+      <bookmark href="http://www.objectartist.org/index.html">
+	<title>ObjectArtist UML design tool</title>
+	<info>
+	  <metadata owner="uml"/>
+	  <metadata owner="xml"/>
+	  <metadata owner="java"/>
+	</info>
+	<desc>un peu jeune ? </desc>
+      </bookmark>
+
+
+   </folder>
+
+
+      <bookmark id="Koala-xsl" href="http://www.inria.fr/koala/XML/xslProcessor/">
+         <title>Koala XSL engine for JAVA </title>
+         <info>
+            <metadata owner="xml"/>
+            <metadata owner="xsl"/>
+            <metadata owner="java"/>
+         </info>
+      </bookmark>
+    
+    <bookmark id="psgml-tutorial" href="http://www.lysator.liu.se/~lenst/about_psgml/psgml.html#SEC12">
+      <title>Tutorial psgml : sgml pour emacs</title>
+      <info>
+	<metadata owner="emacs"/>
+	<metadata owner="sgml"/>
+	<metadata owner="xml"/>
+      </info>
+    </bookmark>
+
+    <bookmark href="http://www.umdl.umich.edu/um_diss_study.html">
+      <title>Dissertations in XML</title>
+    </bookmark>
+
+    <bookmark href="http://www.scientificamerican.com/2001/0501issue/0501berners-lee.html">
+      <title>T Berners Lee Semantic web</title>
+    </bookmark>
+      
+   </folder>
+
+  <!-- LATEX -->
+  <folder id="rep-latex" folded="yes">
+    <title>LaTeX</title>
+    <info>
+      <metadata owner="latex"/>
+    </info>
+
+    <bookmark href="http://www.latex-project.org/">
+      <title>LaTeX home page</title>
+      <info>
+	<metadata owner="latex"/>
+      </info>
+    </bookmark>
+
+    <bookmark href="http://www.linux-kheops.com/doc/tex/autotex.htm ">
+      <title>Manuel LaTeX</title>
+    </bookmark>
+
+    <bookmark href="http://www.tex.ac.uk">
+      <title>UK TeX archive</title>
+    </bookmark>
+
+  </folder>
+
+
+  <!-- PROGRAMMATION -->
+  <folder folded="yes">
+    <title>Programmation</title>
+
+    <bookmark href="http://www.stack.nl/~dimitri/doxygen/">
+      <title>Doxygen</title>
+    </bookmark>
+
+    <bookmark href="http://corvin.spb.ru/">
+      <title>Livres O'Reilly en ligne</title>
+    </bookmark>
+
+    <!-- JAVA -->
+    <folder id="rep-java" folded="yes">
+
+      <title>Java</title>
+      <info>
+	<metadata owner="java"/>
+      </info>
+
+      <bookmark href="http://java.sun.com/">
+	<title>Java Sun</title>
+      </bookmark>
+
+      <bookmark id="java-tutorial" href="http://java.sun.com/docs/books/tutorial/index.html">
+	<title>Java Tutorial</title>
+	<info>
+	  <metadata owner="java"/>
+	</info>
+      </bookmark>
+
+      <bookmark id="java-classes" href="http://java.sun.com/products/jdk/1.2/docs/api/">
+	<title>Java classes</title>
+	<info>
+	  <metadata owner="java"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.jars.com">
+	<title>JARS : Java Resources (xml,vrml)</title>
+      </bookmark>
+
+      <bookmark href="http://java.sun.com/products/java-media/3D/index.html">
+	<title>Sun Java3D API</title>
+      </bookmark>
+
+      <bookmark href="http://www.kitware.com">
+	<title>JTK</title>
+      </bookmark>
+
+      <bookmark href="http://freshmeat.net/projects/jsx/">
+	<title>JSX java xml object serialization</title>
+      </bookmark>
+
+      <folder folded="yes">
+	<title>Java Development Environment - XEmacs</title>
+	<desc>jde</desc>
+	
+	<bookmark href="http://sunsite.auc.dk/jde/">
+	  <title>JDE Homepage</title>
+	</bookmark>
+
+	<bookmark href="http://sunsite.auc.dk/jde/jdedoc/ug/jde-ug.html">
+	  <title>JDE User Guide</title>
+	</bookmark>
+
+      </folder>
+
+    </folder>
+
+
+    <!-- PERL -->
+    <folder folded="yes">
+      <title>Perl</title>
+
+      <bookmark id="xmlperl" href="http://www.perlxml.com">
+         <title>Perl - XML</title>
+         <info>
+            <metadata owner="xml"/>
+            <metadata owner="perl"/>
+         </info>
+      </bookmark>
+
+      <bookmark href="http://www.perlmonth.com/">
+	<title>PerlMonth</title>
+	<info>
+	  <metadata owner="perl"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://perl.com/info/documentation.html">
+	<title>Perl Documentation</title>
+      </bookmark>
+
+      <bookmark href="http://corvin.spb.ru/">
+	<title>Doc O Reilly</title>
+      </bookmark>
+
+    </folder>
+
+
+    <!-- UML -->
+    <folder folded="yes">
+      <title>UML</title>
+      
+      <bookmark href="http://www.visualobject.com">
+	<title>Visual Object</title>
+	<info>
+	  <metadata owner="uml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.ilogix.com/modeler">
+	<title>free UML design tool</title>
+	<info>
+	  <metadata owner="uml"/>
+	</info>
+      </bookmark>
+
+    </folder>
+
+
+    <!-- VRML -->
+    <folder folded="yes">
+      <title>VRML - X3D</title>
+
+      <bookmark href="http://www.sim.no/vrmlview.html">
+	<title>VrmlView Viewer Linux - SGI - Windows</title>
+      </bookmark>
+
+      <bookmark href="http://java.sun.com/products/java-media/3D/index.html">
+	<title>Sun Java 3D home page</title>
+      </bookmark>
+
+      <bookmark href="http://java.sun.com/products/java-media/3D/collateral/#tutorial">
+	<title>Java 3D API</title>
+      </bookmark>
+
+      <bookmark href="http://www.oasis-open.org/cover/xml.html#xml-vrml">
+	<title>XML and VRML</title>
+      </bookmark>
+
+      <bookmark href="http://www.web3d.org/x3d.html">
+	<title>W3D X3D TaskGroup</title>
+      </bookmark>
+
+      <bookmark href="http://www.web3d.org/TaskGroups/x3d/">
+	<title>X3D TaskGroup</title>
+      </bookmark>
+
+      <bookmark href="http://www.web3d.org/TaskGroups/source/xj3d.html">
+	<title>Xj3D Browser</title>
+      </bookmark>
+
+      <bookmark href="http://www.crc.ca/en/html/FreeWRL/home/home">
+	<title>FreeWRL Browser</title>
+      </bookmark>
+
+      <bookmark href="http://www.best.com/%7Erikk/Book/">
+	<title>VRML97 Reference Manual</title>
+      </bookmark>
+
+      <bookmark href="http://web3d.about.com/compute/web3d/">
+	<title>pointeurs VRML</title>
+	<info>
+	  <metadata owner="vrml"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.cms.dmu.ac.uk/~cph/VRML/info/course/toc.htm">
+	<title>Introduction to VRML 2.0</title>
+      </bookmark>
+
+      <bookmark href="http://www.tgs.com/Support/Documentation/3DMS/WhitePapers/vrml_for_oiv.html">
+	<title>VRML2 for Open Inventor Programmers</title>
+      </bookmark>
+
+      <bookmark href="http://hiwaay.net/~crispen/vrml/convert.html">
+	<title>vrml converters</title>
+      </bookmark>
+
+      <bookmark href="http://web3d.about.com/compute/web3d/library/js_vrml.html">
+	<title>VRML External Application Interface - JavaScript - HTML</title>
+      </bookmark>
+
+      <bookmark href="http://reality.sgi.com/pss/iv-emacs.html">
+	<title>Emacs mode for Inventor and VRML</title>
+      </bookmark>
+
+    </folder>
+
+
+    <!-- HTML -->
+    <folder folded="yes">
+      <title>HTML</title>
+
+      <bookmark href="http://sun3.oulu.fi/~puoskari/comp/icons.html">
+	<title>Icon collection</title>
+      </bookmark>
+
+      <bookmark href="http://www.multimania.fr/webmaster/cahiers/technique/">
+	<title>Cahiers pratiques</title>
+      </bookmark>
+
+    </folder>
+
+
+    <!-- SCHEME -->
+    <folder>
+      <title>Scheme</title>
+
+      <bookmark href="http://www.cs.rice.edu/CS/PLT/packages/drscheme/">
+	<title>Dr Scheme homepage</title>
+      </bookmark>
+
+    </folder>
+
+  </folder>
+
+  <separator/>
+
+
+  <!-- MATHS -->
+  <folder>
+    <title>Maths</title>
+
+    <bookmark href="http://mathworld.wolfram.com/">
+      <title>World of Mathematics</title>
+    </bookmark>
+
+  </folder>
+
+  <separator/>
+
+
+  <!-- ONTOLOGIES -->
+  <folder folded="yes">
+    <title>Ontologies</title>
+    <info>
+      <metadata owner="ontology"/>
+    </info>
+
+    <folder folded="yes">
+      <title>Logic</title>
+      <info>
+	<metadata owner="logic"/>
+      </info>
+
+      <bookmark href="http://www.bestweb.net/~sowa/misc/mathw.htm">
+	<title>Mathematical background</title>
+	<info>
+	  <metadata owner="logic"/>
+	  <metadata owner="mathematics"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.bestweb.net/~sowa/misc/tarski.htm">
+	<title>Semantic conception of truth</title>
+	<info>
+	  <metadata owner="logic"/>
+	  <metadata owner="philosophy"/>
+	</info>
+      </bookmark>
+
+      <bookmark href="http://www.ontoknowledge.org/oil/">
+	<title>OIL - Ontology Inference Layer</title>
+      </bookmark>
+
+      <bookmark href="http://co4.inrialpes.fr/xml/dlml/dlml-logic.htmlhttp://co4.inrialpes.fr/xml/dlml/dlml-logic.html">
+	<title>Description Logics Markup Language</title>
+      </bookmark>
+
+    </folder>
+
+    <folder folded="yes">
+      <title>Medical</title>
+
+      <bookmark href="http://www.cs.man.ac.uk/mig/index.html">
+	<title>GALEN - Manchester Medical Informatics Group</title>
+	<info>
+	  <metadata owner="ontology"/>
+	</info>
+      </bookmark>
+
+    </folder>
+
+    <bookmark href="http://www.w3.org/RDF/">
+      <title>W3C RDF</title>
+    </bookmark>
+
+    <bookmark href="http://xml.coverpages.org/conceptualModeling.html">
+      <title>Conceptual Modeling and Markup Languages (R Cover)</title>
+    </bookmark>
+
+    <bookmark href="http://www.semanticweb.org/">
+      <title>SemanticWeb.org</title>
+    </bookmark>
+
+    <bookmark href="http://www.cs.utexas.edu/users/mfkb/related.html">
+      <title>list of projects on ontologies</title>
+    </bookmark>
+
+    <bookmark href="http://ksl-web.stanford.edu/kst/ontology-sources.html">
+      <title>sites relevant to ontologies and knowledge representation</title>
+    </bookmark>
+
+    <bookmark href="http://www.cs.man.ac.uk/~franconi/kr.html">
+      <title>Knowledge Representation</title>
+    </bookmark>
+
+    <bookmark href="http://sig.biostr.washington.edu/research/ai/">
+      <title>DA Knowledge Representation</title>
+    </bookmark>
+
+    <bookmark href="http://www-ksl.stanford.edu/knowledge-sharing/ontologies/html/bibliographic-data/index.html">
+      <title>Bibliographic-data ontology</title>
+    </bookmark>
+
+    <bookmark href="http://www.ornl.gov/sgml/sc34/document/0058.htm">
+      <title>ISO Topic Map</title>
+    </bookmark>
+
+  </folder>
+
+
+
+  <!-- UNIVERSITES -->
+  <folder folded="yes">
+    <title>Universities</title>
+
+    <bookmark href="http://www.imbi.uni-freiburg.de/medinf/mie_home.htm">
+      <title>Freiburg Department of Medical Informatics</title>
+    </bookmark>
+
+  </folder>
+
+
+
+  <!-- RESSOURCES NEUROANATOMIE -->
+  <folder folded="yes">
+    <title>Neuroanatomy</title>
+
+    <bookmark href="http://www.bic.mni.mcgill.ca/brainweb/">
+      <title>Simulated brain databases</title>
+    </bookmark>
+
+    <!-- SITES LISTS -->
+    <folder folded="yes">
+      <title>Sites lists</title>
+
+      <bookmark href="http://www-sci.lib.uci.edu/~martindale/MedicalAnatomy.html">
+	<title>Virtual Medical Center</title>
+      </bookmark>
+
+      <bookmark href="http://www.neuropat.dote.hu/anatomy.htm">
+	<title>NeuroAnatomy on the Internet</title>
+      </bookmark>
+
+      <bookmark href="http://nessus.loni.ucla.edu/data/index0.html">
+	<title>Brain atlases and databases</title>
+      </bookmark>
+
+    </folder>
+
+    <!-- ATLAS -->
+    <folder folded="yes">
+      <title>Atlas</title>
+
+      <bookmark href="http://www.med.umich.edu/lrc/Atlas/atlas.html">
+	<title>Atlas plus : Advanced Tools for Learning Anatomical Structures</title>
+      </bookmark>
+
+      <bookmark href="http://www.med.harvard.edu/AANLIB/home.html">
+	<title>Harvard Whole Brain Atlas</title>
+      </bookmark>
+
+    <bookmark href="http://www.uke.uni-hamburg.de/institute/imdm/idv/gallery">
+      <title>VoxelMan (Univ. Hamburg)</title>
+    </bookmark>
+
+    <bookmark href="http://synaptic.mvc.mcc.ac.uk/simulators.html">
+      <title>web based surgical simul and educational tools</title>
+    </bookmark>
+
+    <bookmark href="http://www-dsv.cea.fr/thema/shfj/web/shfj_demo_page_f.htm">
+      <title>Orsay</title>
+      <info>
+	<metadata owner="atlas"/>
+      </info>
+    </bookmark>
+
+    <bookmark href="http://www-hbp.scripps.edu/">
+      <title>Human Brain Project</title>
+      <info>
+	<metadata owner="atlas"/>
+      </info>
+    </bookmark>
+
+    <bookmark href="http://soma.npa.uiuc.edu/isnpa/documents.html">
+      <title>Workbench - Neural Pattern Analysis</title>
+    </bookmark>
+
+    <bookmark href="http://www.bic.mni.mcgill.ca/brainweb/anatomic_normal.html">
+      <title>Brainweb : anatomical model for normal brain</title>
+    </bookmark>
+
+    <bookmark href="http://www.nih.nlm.gov/research/visible/visible_human.html">
+      <title>Visible Human</title>
+    </bookmark>
+
+    <bookmark href="http://www.krdl.org.sg/RND/biomed/brainimaging/">
+      <title>Nowinski Brain atlas</title>
+    </bookmark>
+
+    <bookmark href="http://ditzel.rad.jhu.edu/">
+      <title>John Hopkins - Biomedical Image Computing - TT BrainAtlas</title>
+    </bookmark>
+
+    <bookmark href="http://medstat.med.utah.edu/kw/hyperbrain/main1.html">
+      <title>HyperBrain</title>
+    </bookmark>
+
+    <bookmark href="http://www9.biostr.washington.edu/">
+      <title>Digital Anatomist Homepage</title>
+    </bookmark>
+
+    <bookmark href="http://stp.wustl.edu/">
+      <title>Van Essen</title>
+    </bookmark>
+
+    <bookmark href="http://www.nmr.mgh.harvard.edu/research_final.htm">
+      <title>MGH NMR Center</title>
+    </bookmark>
+
+    <bookmark href="http://webcom.com/~medmult/brainiac.html">
+      <title>Brainiac</title>
+    </bookmark>
+
+    <bookmark href="http://www.nimh.nih.gov/neuroinformatics/rottenberg.cfm">
+      <title>cornercube</title>
+    </bookmark>
+
+    </folder>
+
+
+    <bookmark href="http://rprcsgi.rprc.washington.edu/neuronames/index1.html">
+      <title>NeuroNames</title>
+    </bookmark>
+
+    <bookmark href="http://cortex.med.cornell.edu/dataModel/cdm2000.html">
+      <title>Cortical neuron net database data model</title>
+    </bookmark>
+
+    <bookmark href="http://www.uni-mainz.de/FB/Medizin/Anatomie/workshop/vishuman/Eready.html">
+      <title>Workshop anatomy for internet</title>
+    </bookmark>
+
+    <bookmark href="http://www.vh.org/Providers/Textbooks/BrainAnatomy/TOC.html">
+      <title>Real Brain dissection - Virtual Hospital</title>
+    </bookmark>
+
+    <bookmark href="http://www.vh.org/Providers/Textbooks/AnatomicVariants/NervousSystem/Regions/BrainStemCord.html">
+      <title>Illustrated encyclopedia of human anatomic variation</title>
+    </bookmark>
+
+  </folder>
+
+
+
+
+
+  <!-- INTERNET -->
+  <folder folded="yes">
+    <title>Internet</title>
+
+    <bookmark href="http://www.php.net">
+      <title>PHP</title>
+    </bookmark>
+
+    <bookmark href="http://www.apache.org/">
+      <title>Apache</title>
+    </bookmark>
+
+  </folder>
+
+  <separator/>
+
+
+
+  <!-- LINUX -->
+  <folder folded="yes">
+    <title>LINUX</title>
+    <desc>linux</desc>
+
+    <bookmark href="http://www.mosfet.org/liquid.html">
+      <title>Mosfet Liquid theme</title>
+    </bookmark>
+
+    <bookmark href="http://www.linuxgazette.com">
+      <title>Linux Gazette (Monthly)</title>
+    </bookmark>
+
+    <bookmark href="http://www.gnu.org">
+      <title>GNU</title>
+    </bookmark>
+
+    <bookmark href="http://www.linuxlinks.com">
+      <title>LinuxLinks</title>
+    </bookmark>
+
+    <bookmark href="http://www.linuxlinks.com/Software/Programming/Libraries/">
+      <title>linuxlinks programming</title>
+    </bookmark>
+
+    <bookmark href="http://freshmeat.net">
+      <title>Freshmeat</title>
+    </bookmark>
+
+    <bookmark href="http://www.dtek.chalmers.se/groups/dvd/index.shtml">
+      <title>Ogle DVD player</title>
+    </bookmark>
+
+  </folder>
+
+
+  <separator/>
+
+  <bookmark href="http://sourceforge.net/projects/meditux/">
+    <title>Meditux java servlet and MySQL</title>
+  </bookmark>
+
+  <separator/>
+
+
+
+
+  <!-- GEEK -->
+  <folder id="rep-geek" folded="yes">
+    <title>Geek</title>
+    <info>
+      <metadata owner="geek"/>
+    </info>
+
+   <bookmark id="slashdot" href="http://slashdot.org">
+      <title>Slashdot</title>
+      <info>
+         <metadata owner="java"/>
+         <metadata owner="perl"/>
+         <metadata owner="unix"/>
+         <metadata owner="linux"/>
+      </info>
+   </bookmark>
+
+    <bookmark href="http://www.unidex.com/turing/.">
+      <title>Turing machines Markup Language TMML</title>
+    </bookmark>
+
+    <bookmark href="http://www.systemtoolbox.com/article.php?history_id=3">
+      <title>Alan Turing bio part 1</title>
+    </bookmark>
+
+    <bookmark href="http://web.demigod.org/~zak/geek/hack.shtml">
+      <title>Care and feeding of your hacker</title>
+    </bookmark>
+
+    <folder folded="yes">
+      <title>Optical Illusions</title>
+
+      <bookmark href="http://udel.edu/~jgephart/fun2.htm">
+	<title>Find black dot</title>
+      </bookmark>
+
+      <bookmark href="http://www.pourlascience.com/">
+	<title>No 278 Decembre 2000</title>
+      </bookmark>
+
+    </folder>
+
+    <bookmark href="http://www.okidoki.nl/calvin_and_hobbes/">
+      <title>Calvin and Hobbes</title>
+    </bookmark>
+
+  </folder>
+
+
+  <bookmark href="http://www.francophonie.hachette-livre.fr">
+    <title>Dictionnaire francais</title>
+  </bookmark>
+
+   <bookmark id="libnet" href="http://www.libnet.org">
+      <title>LibNet</title>
+      <info>
+         <metadata owner="libraries"/>
+         <metadata owner="mathematics"/>
+         <metadata owner="resource"/>
+      </info>
+   </bookmark>
+
+  <folder folded="yes">
+    <title>Research</title>
+
+    <bookmark href="http://www-sop.inria.fr/chir/personnel/eve/conseils.html ">
+      <title>How to do research</title>
+    </bookmark>
+
+    <bookmark href="http://garp.univ-bpclermont.fr/guilde/">
+      <title>Guilde des doctorants</title>
+    </bookmark>
+
+    <bookmark href="http://garp.univ-bpclermont.fr/cec/">
+      <title>Confederation des enseignants chercheurs</title>
+    </bookmark>
+
+    <bookmark href="http://www.ccr.jussieu.fr/~risc/">
+      <title>Relais d'Information sur les Sciences de la Cognition</title>
+    </bookmark>
+
+  </folder>
+
+  <folder folded="yes">
+    <title>Sun</title>
+
+    <bookmark href="http://sunsite.belnet.be">
+      <title>Sun site ressources </title>
+    </bookmark>
+
+    <bookmark href="http://www.sunfreeware.com">
+      <title>SunFreeware.com</title>
+    </bookmark>
+
+  </folder>
+
+  <bookmark href="http://www.grosbill.com/">
+    <title>Gros Bill</title>
+  </bookmark>
+
+  <folder folded="yes">
+    <title>Perso</title>
+
+    <bookmark href="http://www.surf-report.com">
+      <title>Surf Report</title>
+    </bookmark>
+
+    <bookmark href="http://bzhecume.free.fr">
+      <title>BZH Ecume</title>
+    </bookmark>
+
+    <bookmark href="http://antwrp.gsfc.nasa.gov/apod/astropix.html">
+      <title>Astronomy picture of the day</title>
+    </bookmark>
+
+  </folder>
+
+
+
+</xbel>

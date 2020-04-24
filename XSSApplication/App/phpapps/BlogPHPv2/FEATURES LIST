@@ -1,0 +1,14 @@
+VERSION 2
+
+DONE
+
+- Blog Subscription
+- Admin: Blogs (save option, saved aren't shown anywhere except admin area)
+- Gallery
+- Message system (accessed through profile page, can send and receive)
+- Smilies (same as onecms, smilies folder)
+- Admin: File Module (when adding file, uploads file...if successfull then adds to database)
+- WYSIWYG editor: More features
+- New stats system
+- Members List
+- For authors/admins, latest blogs are displayed on user page

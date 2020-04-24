@@ -1,0 +1,18 @@
+#gekko_menu_layout{display:none}
+#gekko_menu_sidebar{float:left; min-width:200px; padding:10px}
+#gekko_menu_main{float:left; background:url("../../images/sidebar.png") top left no-repeat; padding:10px; padding-left:30px}
+ul.menublock{padding:0; margin:0}
+ul.menublock li ul{border:none; background:white}
+ul.menublock li{background:#D1E6EC; border:1px solid #7EA6B2; list-style:none; list-style-image:none; min-width:18em; max-width:20em; padding-left:0}
+.dragmenu{background:#CF9; padding:3px; border:1px solid red}
+.menutop{background:#D1E6EC; text-align:center}
+.menubottom{background:#D1E6EC; text-align:center}
+.menunext{background:#D1E6EC; float:right; text-align:center; height:1.2em; width:20%}
+.chkselections{float:left}
+.menu{float:left; width:60%; background:#D1E6EC url(../../images/arrow.png) no-repeat; padding-left:15px; cursor:move}
+
+.clearboth{clear:both}
+
+.dragenter{background:mediumvioletred;color:white; padding:3px;}
+
+.gekko_admin_sidebar_editor {margin-right:10px}

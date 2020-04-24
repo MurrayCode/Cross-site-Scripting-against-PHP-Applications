@@ -1,0 +1,5 @@
+Install the perl Date extensions
+	bash> sudo perl -MCPAN -e shell
+	cpan> install Date::Calc
+
+Edit the file to include the users and set the db and mailparameters

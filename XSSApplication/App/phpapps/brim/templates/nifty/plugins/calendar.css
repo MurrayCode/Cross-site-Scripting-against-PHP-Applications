@@ -1,0 +1,60 @@
+div#calendarShowWeek .td
+{
+	background:#123456;
+	width:10px;
+}
+.calendar_view_day_hour_odd
+{
+        background-color:#eeeeee;
+}
+tr.calendar_view_day_hour_even
+{
+        background-color:#eeeeee;
+}
+tr.calendar_view_day_hour_odd
+{
+        background-color:#ffbe4f;
+        background-color:#ffd336;
+        background-color:#ffffaa;
+	background-color:#fff4d8;
+}
+
+div#content table.calendar_view_day_event
+{
+	padding: 0px 0px 0px 0px
+}
+
+div#content 
+	table.calendar_show_week
+	th.calendar_show_week_header 
+	table.calendar_view_week_day_event 
+	table.calendar_view_month
+	td.calendar_view_month_daynumber
+	table.calendar_month_overview
+{
+	padding: 0px 0px 0px 0px
+}
+
+.calendar_month_overview
+{
+	padding: 0px 0px 0px 0px
+}
+.calendar_month_overview_week
+{
+	padding: 0px 0px 0px 0px
+}
+.calendar_month_overview_daynumber
+{
+	padding: 0px 0px 0px 0px
+}
+.calendar_month_overview_header
+{
+	padding: 0px 0px 0px 0px
+}
+
+
+td.yearlyViewDayHasEvents
+{
+        font-weight:bold;
+        font-size:140%;
+}

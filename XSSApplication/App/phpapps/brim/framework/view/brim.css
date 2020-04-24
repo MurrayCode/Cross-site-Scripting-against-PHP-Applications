@@ -1,0 +1,48 @@
+/*
+ * Based on: http://www.456bereastreet.com/archive/200505/transparent_custom_corners_and_borders/
+ */
+html {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:#eee /* (pics/login/bg.gif);*/
+}
+body {
+	margin:0;
+	padding:0;
+	color:#000;
+	padding:10px;
+	font:76%/135% "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background:#eee
+}
+#content {
+	background:url(pics/login/bird.gif) #fff no-repeat 100% 0;
+}
+.content1
+{
+	padding:0 20px;
+}
+.content2
+{
+	padding:0 50px;
+}
+.content h1
+{
+	font:200%/5% "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+.copyright
+{
+	color:#aaa;
+}
+.copyright a
+{
+	color:#888;
+}
+.login
+{
+	padding:10px 10px;
+}
+input:focus
+{
+	background-color:#ffffee;
+}

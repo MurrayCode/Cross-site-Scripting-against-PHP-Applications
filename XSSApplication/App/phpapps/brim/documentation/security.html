@@ -1,0 +1,48 @@
+<html>
+<meta name="author"
+	content="Barry Nauta (barry@nauta.be)" />
+<meta name="description"
+	content="Brim - BarRy Information Manager" />
+<meta name="keywords"
+	content="Brim, Booby, PHP" />
+
+<head>
+	<title>Brim - Security</title>
+
+	<link rel="stylesheet" href="css/brim.css"
+		type="text/css" />
+</head>
+
+<body>
+        <center>
+                <h1>Brim - Security</h1>
+                <img src="pics/sleeping_booby.jpg" />
+		</center>
+		<p>
+			Once in a while, someone comes along and claims that Brim is not secure.
+			It is easy to embed iframes or javascript calls that make the browser
+			go to a different page, the application becomes unuseable untill the problematic
+			item is removed from the database.
+		</p>
+		<p>
+			This claim is valid, you can easily install those kind of 'malicious' descriptions etc.
+			The question however is; would you do this in your own account?
+		</p>
+		<p>
+			Note that the demo account is a normal account, except for the fact that the language
+			and theme are reset after each login. This means that a demo user can do anything else
+			a normal user can do as well, including adding scripts in description fields etc. 
+			This has nothing to do with security, 
+			the test user is in a trusted environment, like any other user, right after login.
+		</p>
+		<p>
+			Brim is a secure application, passwords are stored in hash (MD5 algorithm) in the database,
+			the password itself is not stored. XSS on the login screen is not possible 
+			(until someone proves me otherwise). Once you login, you
+			can add javascript and iframes in the different fields of the presented items, 
+			but this has become the users responsibility.
+			Besides that, this does not cripple the application itself, all that can be done is reroute the
+			browser elsewhere.
+		<p>
+</body>
+</html>

@@ -1,0 +1,235 @@
+- Bugfix in adding to folders in bookmarks and notes plugin (items ended up in the root)
+- Updated French language (tx Thibaut Cousin)
+- Bugfix in spanish calendar translation
+- Bugfix in multipleselect
+- Update for the pt_BR language pack (tx to Ataliba Teixeira)
+
+*****************************
+From Brim 1.2.2 to Brim 1.2.3
+- Template rework (working towards version 2.0)
+- Work on making templates fully HTML compliant (tx Ryan)
+- Replaced dojo by jQuery
+- Danish language update (tx to Rene Pedersen)
+- Changed template texts from 'import, export, delete' and 'default' to 
+'importTxt, exportTxt, deleteTxt' and 'defaultTxt'
+- MagpieRSS moved from ext to plugins/news/util directory
+
+*****************************
+From Brim 1.2.1 to Brim 1.2.2
+SECURITY RELEASE
+This release fixes remote file inclusion vulnerabilities for sites that
+have the register_globals set to 'on'.
+Additional information:
+
+http://milw0rm.com/exploits/2589
+http://www.frsirt.com/english/advisories/2006/4086
+http://archives.neohapsis.com/archives/secunia/2006-q4/0261.html
+http://secunia.com/advisories/22465
+http://xforce.iss.net/xforce/xfdb/29647
+
+Additional improvements:
+- Added a findDoubles for contacts based on their names (tx to Ryan McCullough)
+- Added improved search functionality (tx to Ryan McCullough)
+- Added partial Hungarian translation (tx to Peter Ferenczy)
+- German translation is updated (tx to Nico)
+- Bugfix in adding currencies in the depotracker (stocks)
+- Bugfix for spaces as input in the contacts plugin
+- Bugfix in javascript menu-handling in nifty template
+- Bugfix in confirmDelete function in nifty template
+- Bugfix in PasswordPlugin
+- Bugfix in mail sent on lostPassword
+- Misc fixes in the calendar plugin (tx Chris Beall)
+- Installation bugfix for certain MySQL versions. Changed from 'TEXT NOT NULL' to varchar(70) NOT NULL
+
+*****************************
+From Brim 1.2.0 to Brim 1.2.1
+- This release fixes a security problem where users could view
+other users items by URL substitution
+
+*****************************
+From Brim 1.1.4 to Brim 1.2.0
+- Italian language update (tx to Luigi Garella)
+- LDAP authentication (tx to Jörg Zissel)
+- Added per-user based sharing in the calendar (needs to be activated by admin)
+- Calendar tabs are 'ajaxified' (not working for IE, fallback to forms)
+- Base 64 en/de-coder in the webtools plugin
+- MD5 encoder in the webtools plugin
+- Public tree rendering improved
+- New experimental template: nifty (based on nifty corners: www.html.it/articoli/nifty/)
+- French language update (tx Thibaut Cousin)
+- LineBased view for tasks is ajaxified
+- Disabled preview in translation plugin
+- Upgraded to the latest version of libgmailer (0.9.3) to work with latest google signin changes
+- Added a small tutorial on how to write templates
+- Updated installation guide
+- Added update guide
+- Added a dedicated css for printing so menu etc are not printed. 
+(barrel, barry, nifty and oerdec theme only)
+- nobr tags in the sidebar
+- Bugfix [ 1493561 ] In Calendar S&aacute error
+- Bugfix [ 1498096 ] Dashboard ignores open-in-new-window setting
+- Bugfix [ 1521478 ] Image (event_background.jpg) requested does not exist
+- Bugfix in pluginactivation for new usesCurrentr
+- Bugfix wrt PHP5 and the Realm instantiation
+- Bugfix in favicon retrieval
+- Improved error-handling
+- Improvement in handling of public items (icons are no-longer clickable)
+- Added 'Add and add another' functionality
+- Misc calendar changes
+- barrel theme now has default menu expansion option
+- Option to en/disable default view for shared items
+- Disabled spellchecker when safe-mode is enabled 
+- Added messages and tips to the translation tool
+- Improvements in the overview tree of the tasks plugin
+- Tasks can now be shared
+- Bugfix in overview tree for tasks
+- Bugfix in tasks adding item to folder (parentId wasn't taken into account)
+
+*****************************
+From Brim 1.1.3 to Brim 1.1.4
+- New plugin: weather (full version only)
+- Bugfix in checkbook sorting (full version only)
+- Bugfix in calendar weeknumber (tx B3rt)
+- Bugfix in hours display of event addition (tx B3rt)
+- Improvements in the installer script
+
+*****************************
+From Brim 1.1.2b to Brim 1.1.3
+- Improved vCard import and export (tx Colin!)
+- Experimental: CalendarEvents now feature reminders per email 
+(read documentation/how_to_enable_calendar_reminders_per_email.txt). This does 
+only work for non-recurring events!
+- Total rework of database handling 
+- Recipe plugin now features private/public items
+- Favicon improvements (bookmarks plugin)
+- New option foor bookmarks: autoprepend protocol
+- Postgres is working (again) as well is MySQL v 5 and up
+- Bugfix [ 1438304 ] Password modify doesn't work
+- Bugfix in transfer amount of checkbook
+- Bugfix in folder display count for new mail in gmail plugin
+- Bugfix for actions (like star, delete etc) on mulitple messages in the gmail plugin
+- Fixed unicode support for the gmail plugin
+- Latest release of libgmailer to fix changes in Gmail API
+
+*****************************
+From Brim 1.1.2 to Brim 1.1.2b
+- Major bugfix for adding contacts and calendar events
+
+*****************************
+From Brim 1.1.1 to Brim 1.1.2
+- Recipe plugin (full version only) (tx to Thomas Sterren!!!!)
+- User signup now includes email verification and activation
+- Input fields now have a highlight color
+- Useability improvements; parameters are no longer shown if a folder is added
+- Password has an additional field (password. Before this information needed to be entered in the description)
+- Fixed UTF support for Brazilian Portuguese translation
+- Creation of indexes no longer halts the script on errors, but displays a message and continues
+- Documentation update
+- Wordpress bugfix
+- Bugfix [ 1414785 ] Slashdot theme vs Javascript tree
+- Bugfix [ 1418653 ] Multiple select in contacts doesn't take folders into account
+- Bugfix [ 1425955 ] Calendar items are visible to all users
+- Multiple bugfixes for call-by-reference -> PHP5
+- Wordpress 2 compatible
+- Bugfix in the wordpress plugin w.r.t. database errors 
+
+*****************************
+From Brim 1.1.0 to Brim 1.1.1
+- Bugfix (1382204) ancestor path missed reference to plugin so displayed dashboard when invoked
+- Updated the German translation (tx hg magix)
+- Updated the Spanish translation (tx Diego Carrasco)
+- ASCII is added to the hexdec.tpl.php (tx Ryan McCullough)
+- Generic calendar event mailer with support for multiple users (tx Reflous!)
+- Added Brazilian Portuguese message file (tx Fabiano Badawi)
+- Modifcation of plugin (en/dis-able) is now 'web2' enabled
+- Fixed UTF support for French translation (tx Francis GUDIN)
+- Fixed UTF support for German translation
+- Fixed UTF support for Czech translation
+- Fixed UTF support for Esperanto language
+- Disabled the following languages: zh_TW, sv, ru, pl, da
+- Fixed translation file download extension
+- Added percentCompletedBar in linebased view of tasks
+- Added a FAQ in the documentation folder
+- New login and lastPassword screen (Don't worry if you have created an own version, the login screen doesn't have any new functionality ;-)
+- Upgraded vCard parsing utility
+- Implemented request [ 1392199 ] contact location while viewing/editing
+- Implemented request [ 1392201 ] contact location information should include current folder
+
+*****************************
+From Brim 1.0.4 to Brim 1.1.0
+- Favicon support (using dojo for AJAX callback)
+- Added colours to calendar events
+- Javascript tree (tx. to alvinwoon)
+- Faster tree rendering
+- Added a tip section to the dashboard controller
+- Dutch translation update
+- German translation update
+- Improved installation (it now fetches all brim***.tar.gz files)
+- Increased buffersize for firefox import so bookmarks with icons are now also imported (although the icons themselves are not!)
+- Bugfix for references in depot, collections and banking plugin (tx Thomas!)
+- Improved useability in webtools->Rot13 
+- Improved search functionality for the ebanking plugin
+- Bugfix (1373815) in usage of enddate
+- Bugfix (1359463) in deletion of tasks
+- Bugfix (1362236) in calendar display of events until mignight
+- Bugfix (1362242) in checkbook sorting (which ignored parentId)
+- Bugfix (1381393) in deleting and readding of a user (could no longer change preferences)
+- Bugfix in task sortation on percentCompleted
+
+*****************************
+From Brim 1.0.3 to Brim 1.0.4
+- After adding an event in the calendar, you are now taken to the right day (RFE #1195857)
+- Changed action menu in penguin template (tx to Ryan)
+- Loginscreen is now interenationalized
+- Units section in the webtools plugin
+- Default admin template (after installation) is barrel
+- Disabled the color wheel due to browser/template problems
+- Bugfixes in the calendar
+- Bugfixes in export of items
+- Bugfix in dashboard links
+
+*****************************
+From Brim 1.0.2 to Brim 1.0.3
+- Experimental GMail plugin
+- Untar utility to help installation (no need to ftp all files 
+seperately, ftp the tar-ball and two support files. 
+Reed untar.txt for more info)
+- Wordpress plugin available (see tools subdirectory)
+- index.php now obsoletes base-controllers 
+(those in the application root)
+- Rework of icon handling (sizes) in templates/themes
+- Added a chmod calculator action to the webtools plugin 
+- Added a byteConversion action to the webtools plugin 
+- Added a HexDec action to the webtools plugin 
+- Two bugfixes in the searchfunction
+- bugfix for parameter names with ending quotes (hack)
+
+*****************************
+From Brim 1.0.1 to Brim 1.0.2
+- New overall search functionality
+- Improved installation script
+- Improved password plugin navigation
+- Plugins are now handled dynamically
+- Implementation of a global date-format
+- Better hover functionality in contacts
+And of course, some bugfixes
+
+*****************************
+From Brim 1.0.0 to Brim 1.0.1
+New plugin: checkbook (full version only)
+New plugin: depottracker (tx Moritz! :-) (full version only)
+[framework]
+	- Rework of moving items
+	- Quicksort implementation (used by GMail plugin (under development))
+	- Added a dateformat preference
+[tasks]
+	- Added a date picker
+	- Tasks that are a 100% complete can now be filtered
+[passwords]
+	- Substitute empty strings show they won't show up as garbage
+[webtools]
+	- Added URL en/de-code action
+And of course, some bugfixes
+
+*****************************
+Changes previous to brim 1.0.0 can be found in the file booby2brim_changes.txt

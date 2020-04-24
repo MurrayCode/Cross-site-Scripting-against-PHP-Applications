@@ -1,0 +1,14 @@
+dn: cn=Lastname Firstname,ou=addressbook,dc=jasons,dc=org
+cn: Lastname Firstname
+givenName: Firstname
+sn: Lastname
+l: Anytown
+postalCode: 12345
+street: 101 Main Street
+st: NJ
+telephoneNumber: +1 (234) 555-1212
+mobile: +1 (234) 555-2323
+mail: firstname@lastname.org
+objectClass: top
+objectClass: inetOrgPerson
+

@@ -1,0 +1,360 @@
+* Introduction
+
+Any layout in Brim has four sections:
+
+* plugins - a list of plugins (i.e. bookmarks, contacts etc)
+* application menu - the global (non-plugin specific) menu (i.e. logout, preferences etc)
+* plugin menu - the plugin specific menu (divided into sections like section 'Actions' with items 'add, import' etc)
+* the content - the actual information you would like to see.
+
+The names are a bit clumpsy, an will likely change in the future. For the moment, the template engine 
+receives the plugins under the name 'menuItems', the application menu under the name 'menu', 
+the plugin menu under the name 'renderActions' and the actual content is a reference to a php page
+that renders the content and is available under the name 'renderer'.
+
+Additionally, each template receives some additionaly parameters like the full dictionary.
+
+* Let's get started
+So lets make a new layout based on nifty corners ( http://www.html.it/articoli/nifty/index.html )
+
+I would like to have one list of plugins on the left, one menubar on top and one content pane.
+This one menubar on top will contain both the application menu and the plugin menu.
+
+Note that I am not a css guru. The goal of this article is to explain how to create a template from brim, not how to work with css ;-)
+
+*** Step 1:
+Create a directory in the template directory of brim. Let's call it nifty.
+Once this directory is there, it will automatically be picked up by brim and the 
+template will be selectable from within the preference menu.
+
+*** Step 2:
+Create the following files:
+- template.tpl.php 
+- icons.inc
+
+The template.tpl.php file will render the actual template. The icons.inc file contains the icon definitions used
+by the renderer (the content)
+
+Optionally: create a template.css file that will contain the CSS so it won't clutter up our template file
+
+*** Step 3: 
+Download the nifty.js file and put it in the template/nifty subdirectory of the brim application.
+
+* Edit the files:
+
+Now the basic files are in place, lets edit them.
+
+*** icons
+I'm gonna make it easy for myself. I will use the icon definitions from the 'barrel' theme.
+I just copied the contents of the icons.inc file in the barrel theme, so the icons.inc file
+now has the following contents:
+
+	<?php
+		$icons = array ();
+		$icons['root']='<h2>Root</h2>';
+
+		$icons['up']=
+			"[...up...]";
+
+		$icons['bar']=
+			'<img src="framework/view/pics/tree/empty_bar.gif" border="0">';
+		$icons['minus']=
+			'<img src="framework/view/pics/tree/shaded_minus.gif" border="0">';
+		$icons['folder_open']=
+			'<img src="framework/view/pics/tree/gnome_folder_open.gif" border="0">';
+		$icons['corner']=
+			'<img src="framework/view/pics/tree/empty_corner.gif" border="0">';
+		$icons['plus']=
+			'<img src="framework/view/pics/tree/shaded_plus.gif" border="0">';
+		$icons['tee']=
+			'<img src="framework/view/pics/tree/empty_tee.gif" border="0">';
+		$icons['folder_closed']=
+			'<img src="framework/view/pics/tree/gnome_folder_closed.gif" border="0">';
+		$icons['node']=
+			'<img src="framework/view/pics/tree/shaded_item.gif" border="0">';
+		$icons['open_new_window']=
+			'&nbsp<img src="framework/view/pics/tree/arrow.gif" border="0">';
+		$icons['delete']=
+			'<img src="framework/view/pics/delete.gif" valign="top" border="0">';
+		$icons['edit']=
+			'<img src="framework/view/pics/edit.gif" valign="top" border="0">';
+
+		$icons['message']=
+			'<img src="framework/view/pics/gnome_message.gif" border="0">';
+		$icons['warning']=
+			'<img src="framework/view/pics/gnome_warn.gif" border="0">';
+
+		$icons['up_arrow']=
+			'<img src="framework/view/pics/arrows/b_up_pointer.gif" border="0">';
+		$icons['down_arrow']=
+			'<img src="framework/view/pics/arrows/b_down_pointer.gif" border="0">';
+		$icons['up_arrow_shaded']=
+			'<img src="framework/view/pics/arrows/b_up_pointer_gray.gif" border="0">';
+		$icons['down_arrow_shaded']=
+			'<img src="framework/view/pics/arrows/b_down_pointer_gray.gif" border="0">';
+		$icons['locked']=
+			'<img src="framework/view/pics/locked.gif" alt="locked" border="0">';
+		$icons['unlocked']=
+			'<img src="framework/view/pics/unlocked.gif" alt="unlocked" border="0">';
+		$icons['overviewexpand']=
+			'<img src="framework/view/pics/tree/book-closed.gif" border="0" alt="expand">';
+		$icons['overviewcollapse']=
+			'<img src="framework/view/pics/tree/book-open.gif" border="0" alt="expand">';
+		$icons['busy']=
+			'<img src="framework/view/pics/spinner.gif" border="0" alt="busy">';
+			
+		$icons['refresh']='<img src="framework/view/pics/refresh.png" border="0" alt="refresh">';
+	?>
+
+
+*** template
+
+First I'll start with the global definition:
+
+I will create three DIVs (nav: the plugins list, menu: the menu and content: the content), embedded in a fourth DIV (called container)
+I will directly add the link to the template file. Our basic structure now looks like this:
+We will directly use the dictionary to make the template internationalized.
+
+
+	<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+		<!--
+			Internationalize the title of this page
+		-->
+		<title><?php echo $dictionary['item_title'] ?></title>
+		<link rel="stylesheet" type="text/css"
+			href="templates/nifty/template.css" />
+
+		<!--
+			Load the nifty javascript library
+		-->
+		<script type="text/javascript" src="template/nifty/nifty.js"></script>
+
+		<!--
+			The three sections mentioned before: we would like
+			to have them with rounded corners
+		-->
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				if(!NiftyCheck())
+				{
+					return;
+				}
+				Rounded("div#menu","#fff","#E8F0FF");
+				Rounded("div#content","#fff","#9DD4FF");
+				Rounded("div#nav","#fff","#E5FFC4");
+			}
+		</script>
+	</head>
+
+
+	<body>
+	<div id="container">
+		<!--
+			This is the list of the available (and user enabled)
+			plugins.  Each menuItem is an actual array
+			containing a href element which contains the 
+			link to be invoked when this menuitem is clicked
+			and a name element which contains the logical 
+			name. This name is available in the dictionary 
+			(for existing plugins at least ;-)
+		-->
+		<div id="nav">
+			<h2><a href="index.php">[brim-project]</a></h2>
+			<ul>
+			<?php
+				foreach ($menuItems as $menuItem)
+				{
+					echo '<li><a href="'.$menuItem['href'].'" ';
+					echo '>';
+					echo $dictionary[$menuItem['name']];
+					echo '</a></li>';
+				}
+			?>
+			</ul>
+		</div>
+
+
+
+		<!--
+			The menu. Both plugin specific and application specific
+			For the sake of this explanantion, I will only render the
+			name of the menu item. You could easily add a dropdown
+			box using the overlib library for instance.
+		-->
+		<div id="menu">
+			<?php 
+				//
+				// The plugin specific actions
+				//
+				if (isset ($renderActions))
+				{
+					//
+					// Loop over each group. The items listed
+					// are those like 'Actions', 'View' etc
+					//
+					foreach ($renderActions as $actionGroup)
+					{
+						echo '&nbsp;&nbsp;';
+						echo $dictionary[$actionGroup['name']];
+						echo '&nbsp;&nbsp;';
+					}
+				}
+				//
+				// And here would probably want to have a dropdown
+				// list of the application specific menu items
+				//
+				echo '&nbsp;&nbsp;';
+				echo '[Brim]';
+				echo '&nbsp;&nbsp;';
+			?>
+		</div>
+
+		<!--
+			The actual content
+		-->
+		<div id="content">
+			<h1><?php echo $dictionary['item_title'] ?></h1>
+			<?php include $renderer; ?>
+		</div>
+	</div>
+	</body>
+	</html>
+
+
+The template.css file now looks like this:
+
+
+	body {
+		padding: 20px;
+		background-color: #FFF; 
+		text-align: center;
+		font: 76% Verdana,Arial,sans-serif
+	}
+	h1,h2,p {
+		margin: 0 10px
+	}
+	a, a.visited {
+		text-decoration:none;
+	}
+	h1 {
+		font-size: 250%;
+		color: #4396D8;
+		letter-spacing: 1px
+	}
+	h2 {
+		font-size: 140%;
+		color: #FFF;
+		padding-top: 0.3em
+	}
+	div#container {
+		text-align:left
+	}
+	div#nav {
+		position:absolute;
+		top:20px;
+		left:20px;
+		width:140px;
+		background: #E5FFC4
+	}
+	div#nav p {	
+		padding: 5px 0
+	}
+	div#nav h2 {
+		font-size: 110%;
+		color: #333
+	}
+	div#nav li, div#nav ul {
+		list-style-type:none;
+		margin:0;
+		padding: 5px 0px 5px 5px
+	}
+	#nav a, #nav a:visited {
+		color:#60609f;
+		text-decoration:none;
+	}
+	div#content {
+		position:absolute;
+		top:55px;
+		left:170px;
+		background: #9DD4FF;
+		width:800px
+	}
+	div#menu {
+		position:absolute;
+		top:20px;
+		left:170px;
+		width:800px;
+		background: #E8F0FF;
+	}
+
+	.rtop,.rbottom{display:block}
+	.rtop *,.rbottom *{display:block;height: 1px;overflow: hidden}
+	.r1{margin: 0 5px}
+	.r2{margin: 0 3px}
+	.r3{margin: 0 2px}
+	.r4{margin: 0 1px;height: 2px}
+
+	.rs1{margin: 0 2px}
+	.rs2{margin: 0 1px}
+
+This is the very basic layout. Quite a lot still needs to be done.
+You see that the menu items still need to be developed. A quick setup using the 
+overlib roundcorners already gives a working application.
+
+Add the following lines just after the body declaration in the template.tpl.php
+file:
+
+	<div id="overDiv"
+        	style="position:absolute; visibility:hidden; z-index:1000;"></div>
+
+	<script type="text/javascript" src="ext/overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+	<script type="text/javascript" src="ext/overlib/overlib_fade.js"></script>
+	<script type="text/javascript" src="ext/overlib/overlib_bubble.js"></script>
+
+
+And change the menu DIV by the following:
+
+	<div id="menu">
+		<?php 
+			if (isset ($renderActions))
+			{
+				//
+				// Loop over each group
+				//
+				foreach ($renderActions as $actionGroup)
+				{
+					$menuAction='';
+					foreach ($actionGroup['contents'] as $action)
+					{
+						$menuAction .= '<a href='.$action['href'].'>';
+						$menuAction .= $dictionary[$action['name']].'</a><br />';
+					}
+					echo '&nbsp;&nbsp;';
+					echo '
+						<a onmouseover="return overlib(\''.$menuAction.'\', STICKY,
+                                        	BUBBLE, BUBBLETYPE, \'roundcorners\');
+                                		nd ();">'.$dictionary[$actionGroup['name']].'</a>';
+					echo '&nbsp;&nbsp;';
+				}
+			}
+			$brimMenu = '';
+			foreach ($menu as $crumbs)
+			{
+				$brimMenu .= '<a href='.$crumbs['href'];
+				$brimMenu .= '>'.$dictionary[$crumbs['name']].'</a><br />';
+			}
+			echo '&nbsp;&nbsp;';
+			echo '
+				<a onmouseover="return overlib(\''.$brimMenu.'\', STICKY,
+                                	BUBBLE, BUBBLETYPE, \'roundcorners\');
+                        		nd ();">[Brim]</a>';
+			echo '&nbsp;&nbsp;';
+		?>
+	</div>
+
+
+

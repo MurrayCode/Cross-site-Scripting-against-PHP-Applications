@@ -1,0 +1,97 @@
+/* Standard */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, form, label, legend, caption, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary{ margin:0; padding:0; border:0; outline:0; font:inherit; vertical-align:baseline}
+ul{list-style-image:url(images/smallleaf1.png)}
+aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+html, body{font:13px Georgia,"Times New Roman",Times,serif; color:#333333; margin:0 0 1px;line-height:1.5em;background:white url(images/demobackground.png) top left repeat-x}
+h2.blog_item_title, h2.html_child_category, h3.html_category_item {font-size:20px;border:none;line-height:1em;margin:0.8em 0;padding:0}
+#latestblog h3, #blogcategories h3 {font-size:26px;margin-top:0;color:#333333;line-height:1.6}
+.html_category_datemodified, .html_category_datecreated, .html_item_datecreated, .html_item_datemodified, .html_category_item_date, .blog_dates {font:italic 9px "Trebuchet MS", Arial, Helvetica, sans-serif}
+
+/* Header */
+header{position:relative; float:left; width:100%; height:100px}
+
+/* Columns  */
+#container {position:relative; width:100%}
+#container{position:relative; width:980px; margin:0 auto; text-align:left;  background:transparent url(images/containerbg.png) repeat-y; padding:15px; overflow:hidden;}
+.page_column{float:left; width:613px; position:relative; background:white; padding:15px; margin-bottom:10px}
+.sidebar_column{float:right; width:277px; position:relative; background:white; padding:15px; margin-bottom:10px; margin-left:30px}
+.contentholder{position:relative; float:left; width:100%; margin-bottom:8px; background:white}
+.contentholder_separator{margin-bottom:20px}
+
+/* Blurb - only displayed on the front page */
+#blurb{width:960px; position:relative; float:left; height:318px; padding:10px; background:white; margin-top:17px;}
+#blurb_image {border:none;float:right}
+
+/* Footer */
+footer{position:relative; height:90px; clear:both; width:100%; margin-bottom:18px; background-color:black}
+.footer_container{ width:980px;  margin:0 auto; background-color:#33CC99}
+#footer_left, #footer_right{position:absolute}
+#footer_left{position:absolute; right:225px; top:26px; color:white}
+#footer_right{position:absolute; left:225px; top:26px; color:white}
+
+ /* Menu  */
+nav{position:absolute; top:25px; height:50px; right:20px; text-shadow:0 1px 1px rgba(0,0,0,.3); -webkit-border-radius:.5em; -moz-border-radius:.5em; border-radius:.5em; -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2); -moz-box-shadow:0 1px 2px rgba(0,0,0,.2); box-shadow:0 1px 2px rgba(0,0,0,.2); background:black;z-index:5}
+
+#menublock_1, #menublock_1 ul{white-space:nowrap}
+#menublock_1{font:16px Georgia,"Times New Roman",Times,serif;  width:100%; height:45px}
+#menublock_1 a{display:block;  color:white;  text-decoration:none;  padding:0px 10px}
+#menublock_1 li{float:left;  padding:0; border-right:1px dotted grey}
+#menublock_1 li li {border-right:none;border-bottom:1px solid darkorange}
+#menublock_1 li:last-child{border:none; }
+#menublock_1 li ul li:hover a, #menublock_1 li ul li li:hover a, #menublock_1 li ul li li li:hover a, #menublock_1 li ul li li li:hover a{ color:white}
+#menublock_1 li:hover a { color:black; background:orange}
+#menublock_1 li:first-child:hover a {border-bottom-left-radius:0.3em;border-top-left-radius: 0.3em;-moz-border-radius-topleft:0.3em;-moz-border-radius-bottomleft:0.3em} 
+#menublock_1 li:last-child:hover a { border-bottom-right-radius:0.3em;border-top-right-radius: 0.3em;-moz-border-radius-topright:0.3em;-moz-border-radius-bottomright:0.3em}
+#menublock_1 li li:first-child:hover a {border-radius:0;-moz-border-radius-topleft:0;-moz-border-radius-bottomleft:0} 
+#menublock_1 li li:last-child:hover a { border-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0}
+ 
+
+#menublock_1 li:hover li a, #menublock_1 li li:hover li a, #menublock_1 li li li:hover li a, #menublock_1 li li li li:hover li a{ color:black}
+#menublock_1 li:hover ul ul, #menublock_1 li:hover ul ul ul, #menublock_1 li:hover ul ul ul ul, #menublock_1 li.sfhover ul ul, #menublock_1 li.sfhover ul ul ul, #menublock_1 li.sfhover ul ul ul ul{ left:-999em}
+
+#menublock_1,#menublock_1 *{margin:0;padding:0;list-style:none;}
+#menublock_1{line-height:1.0;}
+#menublock_1 ul{position:absolute;top:-999em;width:150px;background:orange/* left offset of submenus need to match (see below) */}
+
+#menublock_1 ul li{width:100%;}
+#menublock_1 li:hover{visibility:inherit;}
+#menublock_1 li{float:left;position:relative;}
+#menublock_1 a{display:block;position:relative;}
+#menublock_1 li:hover ul {left:0;top:50px;z-index:99}
+ul#menublock_1 li:hover li ul {top:-999em;}
+ul#menublock_1 li li:hover ul {left:150px;top:0;}
+ul#menublock_1 li li:hover li ul {top:-999em;}
+ul#menublock_1 li li li:hover ul {left:150px;top:0;}
+
+#menublock_1{float:left;margin-bottom:1em;}
+#menublock_1 a{padding:17px 9px;text-decoration:none}
+#menublock_1 a,#menublock_1 a:visited{color:white;text-decoration:none;text-align:left;}
+#menublock_1 li li a{padding:10px 9px;text-decoration:none;font:bold 13px "Trebuchet MS",Arial,Helvetica,sans-serif}
+#menublock_1 li:hover, #menublock_1 a:focus,#menublock_1 a:hover,#menublock_1 a:active{outline:0;color:white}
+
+/* footer menu */
+#menublock_2{margin:0; padding:0 10px;}
+#menublock_2 li{float:left;  list-style:none;padding:0; border-right:1px dotted grey}
+#menublock_2 li a {padding:4px;color:white}
+
+/* Miscellaneous */
+#your_logo{position:relative;  float:left;  top:10px; left:0px; border:none;}
+.clear_both{clear:both; display:inline; width:100%; height:0; overflow:hidden}
+.post_separator {margin-bottom:1em}
+a.readmore {font:italic bold 12px Tahoma, Geneva, sans-serif; color:#333333;display:block;background:peachpuff;width:80px;height:16px;text-align:center;border-radius:.5em;text-decoration:none}
+a.readmore:hover{background:orchid;color:white}
+.loginform_infotext ul{list-style:none}
+.blog_dates{border-radius:3px; font:italic 10px Tahoma,Geneva,sans-serif}
+li.html_category_item{list-style-image:url(images/file_html.png)}
+li.html_child_category{list-style-image:url(images/folder.png)}
+.pagination {border:1px dotted cornflowerblue;color:mediumvioletred;margin-top:20px}
+.pagination a {color:mediumvioletred;padding:0 3px;text-decoration:none}
+.pagination a:hover {background:dodgerblue;color:white}
+.pagination_current {background:mistyrose;color:mediumvioletred;padding:0 3px}
+.validation-failed{border:1px dashed red; background-image:url(images/inputbg_red.jpg)}
+.validation-failed-cr{border:1px dashed red}
+span#blurb_title{line-height:1.6em; color:black; border-bottom:1px dotted #333333;display:block;font:33px Georgia,"Times New Roman",Times,serif;position:relative;max-width:536px;margin-bottom:0.6em}
+
+#gekko_calendar_container { display:none }
+.contactform img.contact-icons, .contactform img.contact-buttons {vertical-align:middle;margin:auto 5px auto 0;height:32px}
+.contactform button {line-height:24px;vertical-align:middle}

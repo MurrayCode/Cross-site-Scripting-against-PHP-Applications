@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>Web-Shine Forum Registration Form</title>
+<script language="javascript">
+function fx()
+{
+vid = document.f1.id.value;
+if (vid.length>6 && vid.length<=10)
+{
+	window.location="check_user.php?id="+vid;
+}
+}
+
+function count()
+{
+ var txt;
+ txt = document.f1.msg.value;
+ if (txt.length>=161)
+	document.f1.msg.value = txt.substring(0,160);
+}
+
+function fun()
+{
+vid = document.f1.id.value;
+vp = document.f1.pass.value;
+vp2 = document.f1.pass2.value;
+vn = document.f1.name.value;
+vmsg = document.f1.msg.value;
+vans = document.f1.ans.value;
+vcod = document.f1.key.value;
+erlog="";
+
+var occurences = 0;
+occurences = vid.match(/\./g);
+if (occurences == null)
+	occurences=0;
+if (occurences.length >1)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; ID can contain only a single dot.</span></td></tr>";
+
+var vldChars="0123456789abcdefghijklmnopqrstuvwxyz.";
+for (var j = 0; j <vid.length; j++)
+{
+	if (vldChars.indexOf(vid.charAt(j)) == -1)
+	{
+		erlog="<tr><td><span class='style2'>&#8226; ID can contain 0-9 and a-z and dot only.</span></td></tr>";
+	}
+}
+
+if (vid.length <6 || vid.length>10)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; ID Length must be within 6 to 10.</span></td></tr>";
+
+if (vp != vp2)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; Password did not matched.</span></td></tr>";
+else if(vp==vp2 && (vp.length <6 || vp.length>8))
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; Password Length must be within 6 to 8.</span></td></tr>";
+if (vn.length<4 || vn.length>20)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; Name Length must be within 4 to 20.</span></td></tr>";
+if (vans.length!=4)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; Password Retrieve Code Length must be 4.</span></td></tr>";
+if (vmsg.length<4 || vmsg.length>160)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; Message Length must be within 4 to 160.</span></td></tr>";
+if (vcod.length!=6)
+	erlog=erlog + "<tr><td><span class='style2'>&#8226; Security Text Length must be 4.</span></td></tr>";
+
+if (erlog == "")
+	{
+	 document.f1.action="new_user.php";
+	 document.f1.method="post";
+	 document.f1.submit();
+	}
+else
+	document.getElementById("error").innerHTML = '<p align="center"><table width="514" bordercolor="#FF00CC">' + erlog + "</p></table>";
+}
+</script>
+</head>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #91D2FF;
+}
+.style1 {color: #333333}
+.style2
+{
+	color: #FF0000;
+	font-weight: bold;
+	font-family: Tahoma, "comic Sans MS", chiller;
+	font-size: 12px;
+}
+-->
+</style>
+
+<body>
+<h1 align="center"> New User Registration Form </h1>
+<form name="f1">
+  <div align="center">
+    <table width="514" border="1" align="center" bordercolor="#00CCFF">
+      <tr>
+        <th width="199" scope="row"> Login ID </th>
+        <td width="181">          <center>
+          <input name="id" type="text" size="18" maxlength="10" title="Enter Login ID" />        
+		<input type="button" title="Check if ID is available (Make Sure Popup window is allowed)." name="check" value="Check" onclick="javascript:var check=window.open('check.php?ID='+f1.id.value,'check','maximize=null,scrollbars=yes, width=180, height=125,left=400,top=400');">
+		</center>
+		</td>
+        <td width="112" bordercolor="#91D2FF"><div align="center" class="style1">
+          <center>
+            Length 6-10 
+          </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row"> Password </th>
+        <td>          <label>
+          <center>
+            <input name="pass" type="password" id="pass" size="18" maxlength="8" title="Password"/>          
+            </center>
+        </label>        </td>
+        <td bordercolor="#91D2FF"><div align="center" class="style1">
+          <center>
+            Length 6-8
+          </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row">Retype Password </th>
+        <td>          <label>
+          <center>
+            <input name="pass2" type="password" id="pass2" size="18" maxlength="8" title="Verify Password"/>
+            </center>
+        </label>        </td>
+        <td bordercolor="#91D2FF"><div align="center" class="style1">
+          <center>
+            Length 6-8
+          </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row">Security Code </th>
+        <td><label>
+          <center>
+            <input name="ans" type="password" id="ans" size="18" maxlength="4" title="Security Code"/>
+          </center>
+        </label>        </td>
+        <td bordercolor="#91D2FF"><div align="center" class="style1">
+            <center>
+              Length 4
+            </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row"> Name </th>
+        <td><label>
+          <center>
+            <input name="name" type="text" id="name" size="18" maxlength="20" title="Your Name"/>
+          </center>
+        </label>        </td>
+        <td bordercolor="#91D2FF"><div align="center" class="style1">
+            <center>
+              Length 4-20
+            </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row"> Message </th>
+        <td><label>
+          <center>
+            <textarea name="msg" cols="25" rows="4" id="msg" title="About your-self" onKeyDown="count()" onKeyUp="count()"></textarea>
+          </center>
+        </label>        </td>
+        <td bordercolor="#91D2FF"><div align="center" class="style1">
+            <center>
+              Length 4-160
+            </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row">Enter letters from image </th>
+        <td><label>          
+          <center>
+            <img src="../captcha/captcha.php" alt="Security Image" width="200" height="70" border="1">
+            <input name="key" type="text" id="key" size="6" maxlength="6" title="Are you a HUMAN ?">
+            </center>
+        </label>        </td>
+        <td bordercolor="#91D2FF"><div align="center" class="style1">
+            <center>
+              Length 6 
+            </center>
+        </div></td>
+      </tr>
+      <tr>
+        <th colspan="3" scope="row">
+          <label>
+          
+          <input type="button" name="sub" value="Submit" onClick="fun()" title="Signup"/>
+          </label>          <label>
+          
+          <input type="reset" name="Submit2" value="Reset" title="Clear"/>
+          </label>        </th>
+      </tr>
+    </table> 
+  </div>  
+  <div align="center"></div>
+</form>
+<div id="error" align="justify">
+
+</div>
+</body>
+</html>

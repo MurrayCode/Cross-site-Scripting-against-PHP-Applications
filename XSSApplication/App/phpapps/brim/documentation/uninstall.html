@@ -1,0 +1,53 @@
+<html>
+<meta name="author"
+	content="Barry Nauta (barry@nauta.be)" />
+<meta name="description"
+	content="Brim - BarRy Information Manager" />
+<meta name="keywords"
+	content="Brim, Booby, PHP" />
+
+<head>
+	<title>Brim - Uninstall</title>
+
+	<link rel="stylesheet" href="css/brim.css"
+		type="text/css" />
+</head>
+
+<body>
+        <center>
+                <h1>Brim - Uninstall</h1>
+                <img src="pics/sleeping_booby.jpg" />
+	</center>
+	<h2>Get rid of the files</h2>
+	<p>
+		If you have uploaded the files individually by
+		ftp or something similar, you can simply delete	
+		files.
+	</p>
+	<p>
+		If you have used the installation script, there is a bit more
+		to do.
+	</p>
+	<ul>
+		<li>Create a file (locally) called 'delete.php' (any name is fine)</li>
+		<li>Edit the file and put the following code in it (pressumed that the application is installed under the subdirectory called 'brim')</li>
+	</ul>
+	<pre>
+		&lt;?php  
+			unlink ('brim');  
+		?&gt; 
+	</pre>
+	<ul>
+		<li>Upload this file to your public webserver, one level higher than the application directory</li>
+		<li>Execute the 'delete.php' script using your webbrowser</li>
+		<li>Remove the file 'delete.php'</li>
+	</ul>
+	<h2>Database cleanup</h2>
+	<p>
+		Now delete the brim database (execute something like 'drop database brim' using the commandline, phpMySQL, a similar tool)
+		or delete all tables with the following prefix 'brim_', if the application is installed in a database shared with other applications
+	</p>
+	
+
+</body>
+</html>

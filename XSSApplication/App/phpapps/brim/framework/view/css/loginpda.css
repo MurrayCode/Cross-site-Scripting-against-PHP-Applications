@@ -1,0 +1,22 @@
+#content
+{
+	padding:15px 25px 15px 25px;
+	font: 14px arial,helvetica,sans-serif;
+	width:900px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+body 
+{
+	background:#eee;
+}
+#copyright
+{
+	font: 10px arial,helvetica,sans-serif;
+}
+
+input:focus
+{
+	background-color:#ffd;
+}

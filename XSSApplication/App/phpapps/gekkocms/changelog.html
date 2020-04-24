@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Changelog</title>
+</head>
+
+<body>
+<h1>Changelog</h1>
+<ul>
+  
+  <li>Feb 19, 2012
+    <ul>
+      <li>Implemented permission for the blocks</li>
+      <li>Implemented permission for the frontend menu</li>
+      <li>Option to force SSL in menu editor</li>
+      <li>Language loading is now correct</li>
+      <li>Admin side - now you can display more than 1 table/tree per page</li>
+      <li>Frontend item correctly returns lastmodified in http header</li>
+      <li>Begin - CSRF protection (incomplete still)</li>
+      <li>Changed captcha colors so it's more visible</li>
+      <li>Changed tinyMCE skin</li>
+    </ul>
+  </li>
+  <li>Feb 5, 2012
+    <ul>
+      
+      <li> Implement sorting options - displayItemsInCategories (Editor - Category)</li>
+      <li>Enable SSL for login if SSL_ENABLED is true</li>
+      <li>FORCE_SSL_ADMIN_LOGIN (so password won't be transmitted in cleartext)</li>
+      <li>Check funtion saving aliases so there's no duplicate. (Server side)    </li>
+      <li>Contacts and User signup  - give admin control to display captcha or not during signup/sending email message  </li>
+      <li>Changed Contacts icon, display tollfree, contact person, etc
+      </li>
+      <li>SortBy options in Editor
+      </li>
+      <li>Display default meta desc &amp; key if empty
+      </li>
+      <li>Field formatting can now check its own object (subscribe event added this,true)
+      </li>
+      <li>Integrate Page Counter if there's 'pageview' field if the application sets 'chk_enable_pageview_stats' to 1
+      </li>
+      <li>When timed out in Admin session and Admin relogin, it will go to the intended page (also filtered for XSS just in case)
+      </li>
+      <li>When saving menu main page - add trailing slash (minor URL correction)
+      </li>
+      <li>Status = 1 instead of &gt; 0 when searching for items (-99 will be reserved for deleted items)
+      </li>
+      <li>Main - index.php or index.html or invalid file name
+      </li>
+      <li>Ability to change created/modified by username in the backend for items and categories
+      </li>
+      <li>Beta 1 - 'password' and 'username' field in the backend
+      </li>
+      <li>Site Template in TinyMCE - TinyMCE will look for <strong>editor.css</strong> in the <strong>default</strong> (not mobile) template
+      </li>
+      <li>Blog Number of Pages overflow now correctly yields 404 Error instead of displaying the whole thing
+      </li>
+      <li>Site Port, Site Meta Desc, Site Meta Key
+      </li>
+      <li>Auto Site Meta Keywords
+      </li>
+      <li>Site HTTPS Auto Switch - SITE_URL is the autoswitch (also for backward compatibility)
+      </li>
+      <li>HTTP redirection for subfolders without trailing slash (todo: for apps)
+      </li>
+      <li>Backend Administration - Textarea had an incorrect image background (gekko_editor_input)
+      </li>
+      <li>TinyMCE reduce HTTP requests from 58 to 33 for item editor functionality
+      </li>
+      <li>Blocks output is now buffered
+      </li>
+      <li>Fixed admin session timeout
+      </li>
+      <li>Filters extension still needs to call DynamicConfiguration
+      </li>
+      <li>getListofApplicationsOrBlocks - filters.admin.class.php there's no closedir applied
+      </li>
+      <li>RSS - absolute path fix
+      </li>
+      <li>TinyMCE Image Path dropdown - better output
+      </li>
+      <li>Clear Cache button in the Settings menu
+      </li>
+      <li>Number of characters to be displayed in the main blog
+      </li>
+      <li>Session timeout --&gt; admin --&gt; access not allowed
+      </li>
+      <li>Contacts admin item editor not suggesting auto seo
+      </li>
+      <li>After editing an item in the backend, now you can go back to the page #x wherer you previously where
+      </li>
+    <li>Port number for installation - now accepts any port (used to be able to accept port 80 only)</li></ul>
+  </li>
+  <li>Jan 21, 2012
+    <ul>
+      <li>Added hint/tooltips to menu items</li>
+      <li>Microsoft tester said it's not running properly on Win2008R2/IIS7.5 ... apparently the issue was MySQL was set to STRICT mode by default. OK then, changing the  install.sql now.</li>
+      <li>Fix Filter config</li>
+    </ul>
+  </li>
+  <li>Jan 20, 2012
+    <ul>
+      <li>Added meta_key and meta_description to install.sql</li>
+    </ul>
+  </li>
+  <li>Jan 19, 2012
+    <ul>
+      <li>Fixed URL interpretation (app_basic - interpretFriendlyURL)</li>
+      <li>Fixed leaked - added closedir --- filters.admin.class.php</li>
+      <li>Added web.config for IIS configuration</li>
+    </ul>
+  </li>
+  <li>Jan 6, 2012
+    <ul>
+      <li>Fix a minor bug in the frontend search result where it didn't include the 'summary' field</li>
+      <li>Modified YUI Datatable color</li>
+      <li>Added capability for frontend and backend sub-application loading
+        <ul>
+          <li>Admin.js -&gt; YourClass.setParentApplicationName</li>
+          <li>Backend -&gt; paramter appmodule</li>
+          <li>connector.inc - include_app_subclass</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Dec 22, 2011
+    <ul>
+      <li>Initiating a change of structure - the user class will now on be inherited from basicMultipleCategories rather than basicSimpleCategories. This change will make it easier in the future for external authentications such as LDAP &amp; Active Directory. The use of category_id in gk_user_items is now deprecated, however, the field will still be there for compatibility with older versions.</li>
+    </ul>
+  </li>
+  <li>Dec 21, 2011
+    <ul>
+      <li>Implemented backend permission so non-Administrator users can login and have access to certain extensions.</li>
+      <li>TODO: Request permission to Admin user</li>
+    </ul>
+  </li>
+  <li>Dec 20, 2011
+    <ul>
+      <li>Minor bug fix - captcha display</li>
+      <li>Updated securimage library to v3</li>
+    </ul>
+  </li>
+  <li>Dec 13, 2011
+    <ul>
+      <li>Minor bug fix: a block that has been specified to load on certain pages still show up on unregistered menu items</li>
+    </ul>
+  </li>
+  <li>Dec 12, 2011
+    <ul>
+      <li>API change - getAllItems and getAllCategories and getItemsByCategoryID now have defined limits to prevent memory exhaustion. This limit can be set in includes/definitions.inc.php.</li>
+      <li>API change - MD5 to SHA1 with salt for default user authentication. This breaks compatibility with all previous version.</li>
+      <li>Tested with over a million rows and the backend can hold up, including the search (blog, html)</li>
+      <li>Added pingback and page count options</li>
+      <li>Added more index for gk_html_items and gk_blog_items tables</li>
+      <li>Added getTotalItemCount, getTotalCategoryCount, etc.</li>
+      <li>Enhanced frontend search</li>
+      <li>Refreshed backend icons</li>
+      <li>Fixed menu copy error</li>
+      <li>added createDataArrayFromTable so you don't have to specify table definitinons (optional) in the constructor. The old createDataArray is still preferred.</li>
+      <li>Fixed frontend pagination - now limit displayed number of pages to 10 at a time and you can customize the first, next, previous, and last symbol</li>
+    </ul>
+  </li>
+  <li>Dec 6, 2011
+    <ul>
+      <li>Added - Blocks-&gt;getBlockCountByPosition for compatibility with another CMS</li>
+      <li>Added getTotalChildCategoryCountByCategoryID, getTotalItemCount, etc</li>
+      <li>.htaccess tweak to speed up admin display</li>
+    </ul>
+  </li>
+  <li>Request:
+    <ul>
+      <li>Large data Listing Pagination, etc</li>
+      <li>Empty Meta Description</li>
+      <li>Implement Permission -Write / Read</li>
+    </ul>
+  </li>
+  <li>Nov 23, 2011
+    <ul>
+      <li>Fixed admin/app/blocks - Active/Inactive for Block Position shouldn't be displayed</li>
+    </ul>
+  </li>
+  <li>Nov 22, 2011
+    <ul>
+      <li>Fixed all SITE_PATH.SITE_HTTPBASE</li>
+    </ul>
+  </li>
+  <li>Nov 20, 2011 </li>
+  <ul>
+    <li>DONE - Windows Live Blog Editor</li>
+    <li>DONE - File Manager - Delete</li>
+    <li>PENDING - File Manager - Search </li>
+    <li>PENDING - Large data Listing - ajax?</li>
+    <li>DONE -SQL Cache fix</li>
+    <li>CREATE FUNCTION FOR FUTURE- Session encrypt key</li>
+    <li>DONE - SQL_CACHE_ENABLED</li>
+    <li>DONE - XMLRPC = temp, separate component</li>
+    <li>DONE - Ajax Save</li>
+  </ul>
+  <li>Oct 20, 2011
+    <ul>
+      <li>Added gk_session_items to install_empty.sql</li>
+    </ul>
+  </li>
+  <li>June 20, 2011
+    <ul>
+      <li>Wrote the file manager for TinyMCE</li>
+      <li>Fixed \ backslash thing</li>
+      <li>Next one: XMLRPC, Comments, Blogping, then it's v1</li>
+    </ul>
+  </li>
+  <li>June 14, 2011
+    <ul>
+      <li>Want to add 
+        <ul>
+          <li>HTML5 date pickers and whatnot to the backend</li>
+          <li>save versions</li>
+          <li>what's with the backslash</li>
+          <li>Blog ping</li>
+          <li>my own file manager</li>
+          <li>XML-RPC</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>June 11, 2011
+    <ul>
+      <li>Enable multi-session - created gk_sesssion_items to hold sessions </li>
+    </ul>
+  </li>
+  <li>August 23,2010
+    <ul>
+      <li>Install/Uninstall (no FTP) with ZIP file is working</li>
+      <li>Added gk_ prefix, changed install script as well</li>
+      <li>Fixed search engine friendly URL generation in blog and html</li>
+    </ul>
+  </li>
+  <li>August 8, 2010
+    <ul>
+      <li>Filter visibility/filter now include filter for apps + blocks that will process it</li>
+      <li>Fixed drag and drop</li>
+      <li>TODO before v1
+        <ul>
+          <li>Install/Uninstall with FTP</li>
+          <li>Image/media manager</li>
+          <li>Blog ping</li>
+          <li>XML-RPC</li>
+          <li>Verify if app/block/filter have been deleted manually</li>
+          <li>Add gk_ prefix to all database table names</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>July 31, 2010
+    <ul>
+      <li>v0.98 release</li>
+      <li>TITLE needs to be explicitly specified in the template now</li>
+      <li>Removed initial install table content autonumber</li>
+      <li>TODO
+        <ul style="color:red">
+          <li>Filter visibility</li>
+          <li>Fix drag and drop</li>
+          
+          <li>Install/Uninstall with FTP</li>
+          <li>Blog ping</li>
+          <li>XML-RPC</li>
+          <li>Clean up RefreshMenuLinks</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>May 26, 2010
+    <ul>
+      <li>Application alias (e.g: html -&gt; webpages)</li>
+      <li>Blocks - visibility can be set by menu item</li>
+      <li>Menu - changes as the item is saved</li>
+      <li>Filters - ok</li>
+      <li>Templates - ok </li>
+      <li>TODO
+        <ul>
+          <li>Install/Uninstall with FTP</li>
+          <li>Blog ping</li>
+          <li>XML-RPC</li>
+          <li>Clean up RefreshMenuLinks</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Feb 7, 2010
+    <ul>
+      <li>Known bugs: the date editor</li>
+      <li>Fixed permission - write &amp; read</li>
+      <li>JSON Error reply cleaned up</li>
+      <li>Demo templates ok.</li>
+    </ul>
+  </li>
+  <li>Jan 31, 2010
+    <ul>
+      <li>Contact Form</li>
+      <li>SQL Logger</li>
+      <li>SEF okay</li>
+      <li>RSS, Blog</li>
+    </ul>
+  </li>
+  <li>Jan 5, 2009
+    <ul>
+      <li>Rebuild</li>
+      <li>TODO/* for checkboxes and radios */
+        <ul>
+          <li>JSON Error Reply</li>
+          <li>Clean up hardcoded directories</li>
+          <li>Clean up id, cid references</li>
+          <li>Enable pagination for datatable</li>
+          <li>Correct password encryption</li>
+          <li>Update editor to the latest version</li>
+          <li>Blog ping, RSS, XML-RPC</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Jan 7, 2008
+    <ul>
+      <li>checkbox - selections</li>
+    </ul>
+  </li>
+  <li>Jan 4, 2008
+    <ul>
+      <li>Save Category</li>
+    </ul>
+  </li>
+  <li>Oct 29, 2007
+        <ul>
+          <li>Drag &amp; drop works correctly, but gwp_article_1 (first item) still doesn't load</li>
+        </ul>
+  </li>
+  <li>Oct 28, 2007
+    <ul>
+      <li>Implemented Drag &amp; drop</li>
+    </ul>
+  </li>
+</ul>
+<p>EOF</p>
+</body>
+</html>

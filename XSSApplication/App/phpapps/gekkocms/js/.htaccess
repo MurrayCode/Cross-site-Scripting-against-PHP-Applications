@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule yui_combo.js js_gzip.php?js=yui_combo [L]
+	RewriteRule yui_mini_utilities.js js_gzip.php?js=yui_mini_utilities [L]
+</IfModule>
+<IfModule mod_expires.c>
+	<Filesmatch "\.(js|css|png|gif|jpg|js.gz)$">
+		ExpiresActive on
+		ExpiresDefault "access plus 96 hours"
+	</Filesmatch>
+	<FilesMatch "^(js_gzip)\.php$">
+		ExpiresActive on
+		ExpiresDefault "access plus 96 hours"
+	</Filesmatch>
+</IfModule>
+

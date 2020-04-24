@@ -1,0 +1,11 @@
+booby-0.3.4-13-july - changes by oerdec
+
+base/view/index.tpl.php
+line 57
+
+- <h1> had no stop tag
+
+addContact.tpl.php
+line 177 and line 182
+
+- added class="addcontact-textarea", because I had to make this two textareas smaller. 

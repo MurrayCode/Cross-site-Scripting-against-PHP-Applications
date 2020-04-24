@@ -1,0 +1,212 @@
+a.month_header.active
+{
+		color:#ff0000;
+		text-decoration:none
+}
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ */
+table.calendar_month_overview
+{
+		width:100%;
+		padding:0px;
+		margin:0px;	
+		border:1px dotted #000000
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * Display the abbreviated dayname
+ */
+th.calendar_month_overview_dayname
+{
+		padding:4px;
+		margin:4px;	
+		text-align:center
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * The row containing the table headers (the abbreviated daynames)
+ */
+tr.calendar_month_overview_header
+{
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * A table row containing one week
+ */
+tr.calendar_month_overview_week
+{
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * The daynumbers
+ */
+td.calendar_month_overview_daynumber
+{
+		width:40px;
+		padding:4px;
+		margin:4px;	
+		text-align:center
+}
+
+td.calendar_month_overview_daynumber_today
+{
+		width:40px;
+		padding:4px;
+		margin:4px;	
+		background-color:#cccccc;
+		text-align:center
+}
+
+td.calendar_month_overview_daynumber_today_requested
+{
+		width:40px;
+		padding:4px;
+		margin:4px;	
+		background-color:#cccccc;
+		border: 2px dotted red;
+		text-align:center
+}
+
+td.calendar_month_overview_daynumber_requested
+{
+		width:40px;
+		padding:4px;
+		margin:4px;	
+		border: 2px dotted red;
+		text-align:center
+}
+
+table.calendar_view_month
+{
+		width:100%;
+		border:1px dotted #000000
+}
+
+td.calendar_view_month_weeknumber
+{
+		width:15px;
+		background-color:#c9c9c9;
+		text-align:center
+}
+
+td.calendar_view_month_daynumber
+{
+		background-color:#eeeeee;
+		vertical-align:top;
+		height:80px;
+		width:120px
+}
+
+td.calendar_view_month_daynumber_today
+{
+		background-color:#cccccc;
+		vertical-align:top;
+		height:80px;
+		width:120px
+}
+
+th.calendar_view_month_weekdayname
+{
+		width:100px;
+		text-align:center;
+		background-color:#c9c9c9
+}
+
+
+tr.calendar_view_day_hour_odd 
+{
+		background-color:#dddddd
+}
+
+td.calendar_view_day_hour
+{
+		padding:4px;
+		margin:0px;
+		width:40px;
+		text-align:right
+}
+
+td.calendar_view_week_day_event
+{
+		vertical-align:top;
+		width:15%;
+		background-color:#cccccc
+}
+
+td.calendar_view_week_global_event
+{
+		vertical-align:top;
+		width:15%;
+}
+
+td.calendar_view_day_event
+{
+		vertical-align:top;
+		width:100%;
+		background-color:#cccccc
+}
+div.calendar_view_week_day_event_start
+{
+		font-size:12px;
+		color:#123456
+}
+div.calendar_view_day_event_start
+{
+		font-size:12px;
+		color:#123456
+}
+div.calendar_view_week_day_event_name
+{
+		font-size:14px;
+		color:#000000
+}
+div.calendar_view_day_event_name
+{
+		font-size:14px;
+		color:#000000
+}
+table.calendar_show_week
+{
+		border:1px dotted;
+}
+
+tr.calendar_show_week_header
+{
+}
+
+th.calendar_show_week_header
+{
+	text-align:center;
+	background-color:#cccccc
+}
+
+th.calendar_show_week_header_today
+{
+	text-align:center;
+	background-color:#e2e2e2
+}
+
+td.calendar_show_week_hour
+{
+	text-align:right;
+	width:35px
+}
+
+table.calendar_view_day_event
+{
+		margin:5px;
+		padding:0px;
+		vertical-align:top;
+		width:100%;
+		background-color:#cccccc
+}

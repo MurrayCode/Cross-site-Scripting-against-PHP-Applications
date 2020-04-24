@@ -1,0 +1,17 @@
+inc/config.php
+inc/cron_running.txt
+inc/update.txt
+admin/cache/*
+!admin/cache/.keep
+admin/mysql/snapshot/*
+logs/*
+sitemap.xml
+planet-libre_logo.png
+data/images/*.jpg
+data/images/*.png
+data/images/*.gif
+data/tmp/*
+data/shaarli/*
+*.swp
+*~
+.project

@@ -1,0 +1,2387 @@
+Changes go downward, months go upward.  Please scroll to the bottom for a legend.
+Changelog started January 1, 2004; Currently at $Revision: 1.1040.2.256 $.
+
+SMF 1.0                                                        December 29, 2004
+================================================================================
+December 2004:
+--------------------------------------------------------------------------------
+ ! If something happens to Settings.php, still try to show an error screen. (index.php)
+ ! Don't prefill the "To" box with "". (InstantMessage.php)
+ ! Cleaned up some comments and minor coding conventions. (various files)
+ ! Attempt to stop time and memory limits from causing problems with attachments. (Display.php)
+ ! Attempt to prevent a timeout when recounting forum totals and statistics. (Admin.php)
+ ! Don't allow editing of own custom title by default. (smf_1-0.sql)
+ ! Cleanup permissions and make upgrades not set permissions each round or affect post groups. (smf_1-0.sql, upgrade.php, ManagePermissions.php, phpbb2_to_smf.php, yabbse_to_smf.php)
+ ! Add language installation notes to all and remove requirements from update (since they are the same.) (install_readme.html, upgrade_readme.html, update_readme.html)
+ ! Fixed a very minor bug which was defaulting a board permission to a global permission. (ManagePermissions.php)
+ * Update script.js to handle an evil change to Safari 1.3's handling of readonly inputs/textareas. (script.js)
+ ! XMB converter wasn't handling the post text correctly. (xmb_to_smf.php)
+ ! Themes could be set by URL even if this was turned off. (Load.php)
+ ! Made a check for form_stack_pointer just in case. (Security.php)
+ ! Polls now use the same psuedo-international character set fixing. (Post.php, Poll.php)
+ ! Passwords with single quotes in them weren't being set properly from the profile. (Profile.php)
+ ! Updated the help in various places, layout and language information. (various files in help)
+ ! The to/bcc fields might be filled with "" on an error. (InstantMessage.php)
+ ! Fixed a typo that prevented the moderation log from working. (Modlog.php)
+ & Removed the word "beta" from the default theme description. (Settings language files)
+ * Clean up page indexes for WAP/WML. (Wireless template)
+ ! Fix the error message for not being able to announce_topic. (Post.php)
+ & Added some helpful information to $helptxt['fixLongWords']. (Help language files)
+ ! XMB converter was adding slashes in bad/annoying places. (xmb_to_smf.php)
+ ! vBulletin 2 and 3 converters were not properly converting the last post information. (vbulletin_to_smf.php, vbulletin3_to_smf.php)
+ ! Image URL protection was affecting links in some cases too when images were next to each other. (Subs-Post.php)
+ ! Removing nested quotes removed text between when using just [quote]. (Post.php, InstantMessage.php)
+ ! Administration panel sometimes gave errors if you had very few permissions to it. (Admin.php)
+ & Updated $txt['send_validation_onChange']. (ModSettings language files)
+ ! If a birthday from next year is shown on the board index, calculate the age correctly. (Calendar.php)
+ ! Fixed a few typos. (Install language files, Admin language files, Errors language files)
+ ! Check cookie before unserializing to patch PHP security hole. (Load.php, smf_api.php)
+ ! Don't use unserialize() in Search, instead fake it. (Search.php)
+ & Add half a sentence to $txt['smiley_editsets_explain']. (ManageSmileys language files)
+ ! Prevent changing a board's parent to one of its children. (ManageBoards.php)
+ ! Make sure people can't remove posts if they have no permission at all to. (Subs-Boards.php)
+ ! Don't delete attachments that have internationalized filenames on maintenance. (ManageAttachments.php)
+ ! Registering a new member would cause an error to be flagged if the ban session variable didn't exist. (Register.php)
+ ! Look and Layout in Profile would give a broken smiley image if an error occured on saving. (Profile.php)
+ ! Fill the email your member variables even for custom email addresses. (ManageMembers.php)
+ * It was possible to have a member name that you couldn't pm. (Subs-Auth.php, InstantMessage.php, InstantMessage template)
+ ! Completely clear the settings for any guest. (Load.php)
+ ! Renamed the title of "New Year's". (upgrade.php, smf_1-0.sql)
+ ! Don't list all holidays/birthdays ever - 0000-12-30 to 0000-01-01. (Calendar.php)
+ ! The registration date changed when editing profiles and getting errors. (Profile.php)
+ ! Because the registration date can be changed, order by it specifically when viewing the member list. (Memberlist.php)
+ ! Allow arrays as theme options and settings. (Themes.php, Profile.php)
+ ! Set theme as default when converting. (upgrade.php)
+ ! Fixed some minor notices when getting pm errors and loading missing language files. (Load.php, InstantMessage.php)
+ & Tweaked description of time format. (profile help files, Profile language files)
+ ! Package manager was sometimes uninstalling xml-style packages incorrectly. (Subs-Package.php)
+ & Almost all of Spanish is now properly translated. (all language files)
+
+
+November 2004:
+--------------------------------------------------------------------------------
+ ! Handle the case where the bbcode_uid is blank. (phpbb2_to_smf.php)
+ ! You weren't able to upload a theme directly without clearing the "copy of" box. (Themes.php)
+ ! If you used two dots in an attachment filename, for any reason, it could fail. (Subs.php)
+ ! There was a potential problem in the installer if something got double-spaced. (install.php)
+ ! Converters now try a cross-database check before doing anything. (all converters)
+ & Updated $txt['mboards_moderators_desc'] to reduce confusion. (ManageBoards language files)
+ ! Prevent an error in the profile when the avatar path is not properly accessable. (Profile.php)
+ ! Prevent [0] from messing up posts when not in lists. (Subs.php)
+ & Added $txt['mail_send_unable'] for mail that couldn't send. (index language files)
+ ! Fixed a minor error in package uploading. (PackageGet.php)
+ ! The recentTopics and recentPosts SSI functions were not well scalable. (SSI.php)
+ * Gosh, how long has that typo been there? (BoardIndex template)
+ ! Fixed a notice in ssi_recentPoll. (SSI.php)
+ ! Changed the error message for registering twice in a row. (Register.php)
+ ! Don't compress attachments on PHP 4.1.x. (Display.php)
+ ! Don't show a blank screen if template files are missing. (Load.php)
+ ! Don't start a session if one has already been started. (Load.php)
+ ! Try to force curposlinks on if it doesn't exist. (upgrade.php)
+ ! Cleaned up a lot of whitespace issues. (various files)
+ * Updated a few images with better quality, etc. (various files)
+ ! Updated credits. (Admin.php)
+ % Released SMF 1.0 (preview) to Charter Members.
+ ! Updated credits a little more, sorry. (Admin.php)
+ * Hidden emails are now properly italicized in profiles. (Profile template, Load.php)
+ ! Don't show uninstall for older versions of installed mods. (PackageGet.php, Packages.php, Packages template)
+ ! Don't warn about the deletion of a package if it's not the current version. (Packages template)
+ ! Added debugging information in the package manager when data is appened to a file. (Subs-Package.php)
+ ! Small notice when an author wasn't specified for modifications. (PackageGet.php)
+ ! The extension of an uploaded avatar wasn't being determined properly for well-sized bitmaps. (Profile.php)
+ ! Modifications weren't always uninstallable. (Subs-Package.php)
+ ! The installer wasn't setting up the session properly with database driven sessions. (install.php)
+ ! Attempted to fix that darn entity thing in profiles. (Profile.php)
+ ! Announcing a topic on a board no one could access was giving errors. (Post.php)
+ ! Started poll and topic counts were including junk posts. (Profile.php)
+ ! The session auto rewriter could adversely affect the latest-news... (Admin template)
+ ! Check the output_handler directive to see if output compression is already being done. (SSI.php, index.php)
+ ! Converters were not auto-continuing properly. (all converters)
+ * For readability, list BBC is now multilined, instead of a single line. (Post template)
+ ! Automatically try to handle deadlocks and such from InnoDB tables. (Errors.php)
+ * Fixed a javascript error to do with attachments. (Post template)
+ ! Fixed a possible error in topic annoucenment if permissions were already screwed up. (Post.php)
+ ! Fixed a small typo in the help. (profile help files)
+ * The wrong language strings were being used for 'Total Topics'. (BoardIndex template)
+ ! Show proper error messages for fatal errors. (Errors.php)
+ ! Always log notices and all other errors, no matter what. (Errors.php)
+ ! Changed all the version numbers to that magical number... but just wait a bit... (all files)
+ ! Recent topics speed up now no longer ignores topics marked unread. (Recent.php)
+ * To help find people using old versions of SMF, the current-version.js script now takes the forum's version. (Admin template)
+ ! I may have just fixed the last posts per board problem. (invision_to_smf.php, invision2_to_smf.php)
+ ! Don't overwrite the error message in install.php when trying a different database name. (install.php)
+
+
+October 2004:
+--------------------------------------------------------------------------------
+ ! Package manager should give a hint to the package server for the language to use. (PackageGet.php)
+ ! Clear the remembered language and theme upon login. (LogInOut.php)
+ ! Fix typo causing theme options not to be loaded properly. (Register.php)
+ * Now, in Gecko-based (Mozilla, etc.) browsers, clicking bbc buttons will select text better. (script.js)
+ * Additionally, Gecko browsers were akwardly scrolling the text back to the top. (script.js)
+ ! Fixed the login bug for some darn versions of Apache too. (Load.php)
+ ! You should be able to set theme options for theme x. (Themes.php)
+ * The "delete selected" button in the Classic theme shouldn't have had a background. (Display template, classic only)
+ ! Just in case people misread the installer's stuff, try using the table prefix if the given user/database fail. (install.php)
+ & Slightly updated the removeNestedQuotes description in the help. (Help language files)
+ ! The remove nested quotes feature no longer leaves newlines everywhere in the post. (Post.php, InstantMessage.php)
+ ! Disabling [shadow] tags had disastrous results, in cases. (Subs.php)
+ ! If you clicked an IP address directly, pagination didn't work. (ManageMembers.php)
+ ! Message preview was taking off the first 128 characters. (Recent.php, MessageIndex.php)
+ ! Packages weren't always downloading properly, in most cases in fact. (PackageGet.php)
+ ! Added smf_loadThemeData to the smf_api.php file. (smf_api.php)
+ ! If you can't download a package, give a better error message. (Subs-Package.php, PackageGet.php)
+ ! Attempt to log a person out of the subdomain if globalCookies is on. (Subs-Auth.php)
+ ! Updated version numbers to RC2+ to avoid confusion. (all files)
+ & Fixed $helptxt['attachmentEnable'] to actually correspond to the current options. (Help language files)
+ ! When connecting to FTP, try another possible path just to make it easier. (Packages.php, PackageGet.php, install.php)
+ * Added a "go to last post" icon to the topic listing. (Recent template, MessageIndex template, last_post.gif)
+ ! Corrected last_post hrefs and added a 'new_href' (yet unused) to simplify things. (Recent.php, MessageIndex.php)
+ ! Increase the search pointer as soon as possible. (Search.php)
+ ! Don't show upgrade error message when using SSI. (Errors.php)
+ ! Spell check was not handling slashes (\) properly. (Subs-Post.php)
+ ! If flash was enabled, a notice was being given. (Subs.php)
+ ! Don't leave broken files in the database when avatar upload fails... (Subs-Graphics.php, Profile.php)
+ ! Properly tell the server that the connection should be closed. (Subs.php)
+ & Corrected $helptxt['m_queryless_urls']. (Help language files)
+ & The forum copyright now opens in a new window. (index language files)
+ ! Fixed a minor html issue in many of the converters. (various converters)
+ ! No longer should Settings.php ever be corrupted; this happened because of \r's in the file. (various converters, install.php, upgrade.php, repair_settings.php, Admin.php)
+ ! Small notice upon initial installation. (Subs.php)
+ ! Flash wasn't being parsed properly if someone added tags inside it. (Subs.php)
+ * Added forum version to latest package information. (Packages.php, Packages template)
+ ! Changed version numbers to show "SMF 1.0 (preview)" in preparation... (all files)
+ ! The dump database feature was not totally compatible with MySQL 4.1.x. (DumpDatabase.php)
+ ! Package manager should show images in file listing. (Packages.php)
+ ! Highlight PHP code when viewing files from that listing too. (Packages.php, Subs.php)
+ ! Default username wouldn't save for FTP info. (Packages.php)
+ ! Subjects in notifications were being sent with html in them. (Subs-Post.php, Post.php)
+ ! SSI.php was returning null for an error in ssi_boardNews(). (SSI.php)
+ ! Upgrades weren't being checked for properly. (Subs-Package.php)
+ ! The phpBB converter didn't check for the attachments table properly. (phpbb2_to_smf.php)
+ ! Fixed a humbling number of my own typos. (various files)
+ & Renamed $txt['package_ftp_neccessary'] to $txt['package_ftp_necessary']. (Packages language files)
+ ! Avoid a notice in install.php for old versions of PHP. (install.php)
+ ! In permissions management, the "Ungrouped Members" box would show as checked in error if no groups had access. (ManagePermissions.php)
+ ! The repair_settings.php tool no longer saves database settings without a connection, checks for dirname(), and detects a value for db_prefix. (repair_settings.php)
+ ! Prevent the package manager from timing out with long modification files. (Subs-Package.php)
+ * The search value being prefilled in "simple search" was incorrect. (Search template)
+ ! The FTP path was not being autodetected well except in /home/xyz/ style hosts. (Packages.php)
+ ! Renamed 'option' to 'options' for polls - compatibility with Mambo. (SSI.php, Display.php, Poll.php)
+ ! Sometimes, packages weren't properly reversable. (Subs-Package.php)
+ * Quick moderation didn't work in topics with "buttons as text". (Display template)
+ & There, the SMF link in the copyright may now optionally include the title "Simple Machines Forum". (index language files)
+ ! If someone entered no "To" and no "Bcc" a notice *might* have been caused. (InstantMessage.php)
+ ! The default FTP server options were not being used properly. (Packages.php, PackageGet.php)
+ ! Unread topics/replies weren't checking properly for which board you were looking for. (Recent.php)
+ & Added package_no_zlib error, shown when the server has no zlib support. (Packages.php, Packages language files)
+
+
+SMF 1.0 RC2                                                     October 11, 2004
+================================================================================
+October 2004:
+--------------------------------------------------------------------------------
+ ! If the first word in the string was misspelled, spell checking failed. (Subs-Post.php)
+ * The signature length checker wasn't functioning exactly correctly. (Profile template)
+ ! Now, the referrer check works even if the server is configured incorrectly. (Security.php)
+ ! The referrer check should now work even across subdomains, when "global cookies" are enabled. (Security.php)
+ ! It was possible to search the member list based on aim/msn/etc. even when guest_hideContacts was enabled. (Memberlist.php)
+ * Updated a comment in index.template.php to make it sound a little less weird. (index template)
+ ! Upgrader wouldn't actually reset the language to english. (upgrade.php)
+ ! If you enter an invalid value for ICQ (such as 0) the field should be blanked. (Profile.php)
+ ! If you can't administrate the forum, you can't add members to the Administrator group. (ManageMembers.php)
+ ! The boards in your notification list were erroneously showing as unread when they weren't. (Profile.php)
+ * The notification list in your profile was not paginated; it needs to be for longer lists of topics. (Profile.php, Profile template)
+ ! In Opera, only the first " in a javascript-inserted quote was fixed for entities.
+ & Updated $txt['theme_options_reset'] to make more sense. (Themes language file)
+ ! Invision converter was giving a notice for some uploaded avatars. (invision2_to_smf.php)
+ * Very slightly tweaked the padding in the main administration area. (Admin template)
+ ! Started some work on the YaBB converter. (yabb_to_smf.php)
+ ! The access this template file directly was not working for some windows servers. (Load.php)
+ ! If you picked 'http://' as your own avatar, it saved it and made errors everywhere. (Profile.php)
+ & Changed "everytime" to "every time". (ModSettings langauge files, Profile language files)
+ & Fixed various typos throughout comments and English language files. (various files)
+ ! Don't require database backup to come from ?action=maintain. (DumpDatabase.php)
+ ! BBC Tags weren't being disabled properly when sending personal messages. (Post.php, Subs-Post.php)
+ & $txt['statPanel_noPosts'] now sounds better even when it's not your profile. (Profile language files)
+ ! Error when uploading a file that wasn't a zip or tar.gz file to the package manager. (PackageGet.php)
+ ! The smf_api.php file should not do nothing if it's included into SMF or with SSI.php. (smf_api.php)
+ ! The value of theme options and theme settings can now be much longer. (smf_1-0.sql, upgrade.php)
+ ! Don't send the subject mime encoded if it doesn't need to be.
+ & Now, the package manager will say "uninstallation actions for archive..." (Packages language file)
+ * Fixed it so it would say that in the template too. (Packages template)
+ ! The getPackageInfo() function no longer allows selection of a specific package-info.xml file. (Subs-Package.php, Packages.php)
+ ! Significantly optimized the "show all unread topics" function so it is of bearable speed. (Recent.php)
+ ! Basic HTML now works again, and you're allowed to use alt with it, after the src for img tags. (Subs.php)
+ ! Quoting posts works better now from Internet Explorer if they have < or >. (Post.php)
+ ! Fixed subject internationalization cheating in split, merge, and move. (SplitTopic.php, MoveTopic.php)
+ ! Subject internationalization was also not working well in the "last post" column. (MessageIndex.php, BoardIndex.php)
+ ! Insert quote feature was not behaving well with Opera 7.60's implementation of DOMParser. (Post.php)
+ * The calendar now shows a "board to post in" even on preview. (Post template)
+ * The message being sent when a person was deleted was.... weird. (Register template, Login language file, Register.php)
+ ! Who's online wasn't showing people on a board if they viewed a topic in it. (Load.php)
+ ! Recent posts through xml/rss were not being limited by board properly. (News.php)
+ ! The parsing of links with autolinked links in them still wasn't working 100%. (Subs.php)
+ ! The above problem was still occurring for basic html links. (Subs.php)
+ ! By default, send personal messages to members from "email" by bcc. (ManageMembers.php)
+ ! Use "install_*.sql" and "upgrade_*.sql" convention. (install_1-1.sql, upgrade_1-0.sql, upgrade_1-1.sql, install.php)
+ ! Updated topics weren't sorting properly. (Recent.php)
+ ! Search no longer requires administrator action to fix "CREATE TEMPORARY" problems. (Search.php)
+ ! Tags should be disabled more cleanly. (Subs.php)
+ ! Sticky and notify didn't properly default when previewing a new topic. (Post.php)
+ ! You can now register with parts of your birthdate. (Register.php)
+ ! Significantly optimized "show new replies to your posts" by cheating :P. (Recent.php)
+ ! The package manager didn't handle missing files well. (Packages.php)
+ & $txt['pswd4'] was talking about things that didn't really happen. (loginout help files, Profile language files)
+ ! To avoid confusion, allow default_options for registration too, same as options. (Register.php)
+ ! Fixed email and FTP autolinking too, ugh... (Subs.php)
+ ! If you got an error on the theme profile page, it didn't remember post data well. (Profile.php)
+ ! The 'send_welcomeEmail' didn't matter; it always did this. (Register.php)
+ ! Messed with a lot of // !!! comments. (various files)
+ ! You can now use variables in the subjects of mass emails. (ManageMembers.php)
+ ! Fixed more autolinking issues with [email=...]... (Subs.php)
+ & $txt['permissionname_move'] was slightly confusing. (ManagePermissions langauge files)
+ ! Fixed attachments with quotes and spaces in them. (Post.php, Display.php, ManageSmileys.php)
+ ! Optimized a few membergroup queries. (Memberlist.php, SSI.php, BoardIndex.php, Subs-Post.php, Who.php, Modlog.php)
+ ! SSI.php was not using the correct ID_GROUP for online status. (SSI.php)
+ & Added help text for the smiley center. (ManageSmileys langauge files)
+ * Used the above text in many places. (ManageSmileys template)
+ ! Updated server list. (server.list)
+
+
+September 2004:
+--------------------------------------------------------------------------------
+ ! Slightly better error handling to do with temporary tables and searching. (Search.php)
+ ! Activation check was preventing email change from going through properly. (Register.php)
+ ! Insert quote feature now supports tabs, MSIE and Mozilla. (Post.php)
+ ! Removed an "extra" Successful in upgrade... (upgrade.php)
+ ! Minor typo in upgrade was making attachment size column not get fixed. (upgrade.php)
+ * Added delete_selected.gif image to classic. (delete_selected.gif, Display template)
+ * Cleaned up im_new.gif so it looks better cleaner. (im_new.gif)
+ * Updated javascript information urls - old ones still work. (Admin template, Packages template, ManageSmileys template, Themes template)
+ ! I can only assume that this is regressing the profile_remote_avatar upgrade bug. (upgrade.php)
+ & Added $txt['mark_unread_confirm'] to confirm mark unread. (index language file)
+ * Added delete_selected.gif to the classic theme and made it use it. (Display template)
+ ! If a member has a smiley set that doesn't exist, use the default. (Load.php)
+ ! Removed $modSettings['search_max_cached_results'] as it was too confusing, and not useful enough (Search.php, ModSettings.php, Help language files, ModSettings language files, smf_1-0.sql, upgrade.php)
+ + Added an option to disable the use of temporary tables (Search.php, ModSettings, Help language files, ModSettings language files, smf_1-0.sql, upgrade.php)
+ & Added an error message just in case temporary tables cannot be created. (Error language files, Search.php)
+ & Added an error message when you access SSI.php by URL directly. (SSI.php, index language files)
+ ! Attachments can now have foreign (localizable) characters in their names when "encrypt filenames" is on. (Post.php, ManageAttachments.php, Subs.php, Subs-Graphics.php, Profile.php, Display.php)
+ & Bad attachments now give a 404 and a slightly better error message. (Errors language file, Display.php)
+ ! The upgrader now includes all settings from YaBB SE, just to facilitate best conversion. (upgrade.php)
+ + Changed option guest_hideEmail to guest_hideContacts, which now hides messenger information from guests too when enabled. (upgrade.php, smf_1-0.sql, ModSettings.php, Load.php, Memberlist.php)
+ & Changed two language entries to accommodate the above change. (Help language files, ModSettings language files)
+ ! Optimized a query or two and cleaned up some comments. (various files)
+ ! Topics started, boards, views, and replies are no longer counted for posts in the recycle bin. (Stats.php)
+ * Added a minor comment to the index template's key stats box. (index template)
+ * Added mark unread functionality. (Display template, MessageIndex template)
+ ! Don't waste time censoring things when the censor list is empty. (Load.php)
+ ! Don't censor message previews twice for the same message. (Recent.php, MessageIndex.php)
+ ! Clip message previews before censoring - thanks Elissen. (Recent.php, MessageIndex.php)
+ ! Template errors are now shown with more correct error messages whether templates are eval()'d or not. (Load.php, Errors.php)
+ ! Notifications on topic removal should work again. (Subs-Boards.php, RemoveTopic.php)
+ ! The "a new member has registered" emails had extra line breaks in them. (Register.php)
+ & Made it clearer that who_view was only for Who's Online. (ManagePermissions langauge files)
+ ! An extra break was being sent with moderator reports. (SendTopic.php)
+ ! The showPosts section was linking to the end of the topic, not the right post. (Profile.php)
+ * Removed board-level mark unread. (MessageIndex template)
+ & Removed mark_unread_confirm because it's no longer needed/used. (index language file)
+ ! Fixed calendar updating again. (SSI.php, BoardIndex.php)
+ ! Fixed an issue in the vBulletin 3 converter with birthdays. (vbulletin3_to_smf.php)
+ ! Removed some unnecessary table joins. (Search.php)
+ ! Fixed a bug in color parsing for topic printing, and a couple minor code issues. (Printpage.php, Subs.php)
+ ! Fixed a small issue with updating the latest registered member when there were none. (Subs.php)
+ ! Ignore bad smiley set directories while searching. (ManageSmileys.php)
+ ! Fixed a small issue with avatar saving. (Profile.php, Subs-Graphics.php)
+ ! The return to post feature wasn't persisting on preview. (Post.php)
+ ! Removed some unused settings - no visual difference. (Admin.php)
+ ! Don't permanently dump big avatars unless the "refuse it" option is used. (Load.php)
+ ! Attachment manager wasn't passing permissions properly for attachment download. (ManageAttachments.php)
+ ! Minor tweaks to the "new username/password" email. (Subs-Auth.php)
+ ! Updated smf_api.php with more functions, such as smf_formatTime and smf_allowedTo. (smf_api.php)
+ ! Database dumps should provide column information for the INSERTs. (DumpDatabase.php)
+ ! The smf_api.php file now provides access to the SMF session too, when used in the database. (smf_api.php)
+ & Made $txt['notifyXOnce1'] read about 8 times better - imho. (Profile langauge file)
+ ! Links might be autolinked inside [url=...]...[/url] which would cause weird code display. (Subs.php)
+ ! Fixed a few minor issues/potential issues in profile viewing and editing. (Profile.php)
+ * The smileys popup is now user-resizable. (Post template)
+ * Announcement countdown wasn't working exactly right. (ManageMembers template)
+ ! Announcement needs to go back to the user's langauge after partial sending. (Post.php)
+ ! Bumped announcement chunk size up just a wee bit... 50 -> 75. (Post.php)
+ & Translated a few strings in the package manager and finished some documentation. (Subs-Package.php, Packages langauge files)
+ ! Contextual data should be provided for the avatar's href when it's uploaded. (Load.php)
+ ! URL autolinking could cause a stack overflow on very very long URLs. (Subs.php)
+ ! Get rid of the poll_choices error when upgrading twice. (upgrade.php)
+ ! Use [:alpha:] instead of A-Za-z etc. where possible, to solve localization problems even if it's ugly. (Subs-Post.php, upgrade.php, Subs.php)
+ ! Updated version numbers from RC1+ to RC2 in preparation for release soon. (all files)
+ ! Don't allow automatic package download of any package without session check. (PackageGet.php)
+ ! If a package no longer exists (404, etc.) don't show any errors from PHP. (PackageGet.php)
+ * Made several things work with the "latest" stuff. (ManageSmileys template, Subs-Package.php, PackageGet.php)
+ & Fixed punctuation on $txt['number_recent_posts']. (Themes langauge file)
+ ! Creating a file on error should be optional when parsing modifications. (modification.dtd, Subs-Package.php)
+ ! Splitting a topic should mark the topic read for the user, because they split it. (SplitTopic.php)
+ & Error message should be shown when PHP is not compiled with MySQL support. (install.php, Install langauge files)
+ ! If you use a form in the news, show <form> in the preview. (Admin.php)
+ ! Added readmes for installation, upgrade, and update. (readme_install.html, readme_upgrade.html, readme_update.html)
+ ! Activation from the profile plumb wasn't working. (Profile.php)
+ ! The invision converter wasn't doing birthdates and wasn't parsing signatures properly. (invision_to_smf.php, invision2_to_smf.php)
+ & Changed "Minutes to login" to "Minutes to stay logged in" because it sounds better. (index language files)
+ * Tweaked the Reminder template slightly to look markedly better. (Reminder template)
+ ! Various tweaks to help files. (all files in help/)
+ ! Removed or resolved a good number of // !!! comments. (various files)
+ ! Avoid calling exit; if at all possible for integration, e.g. Mambo. (Subs.php, index.php)
+ ! Printpage wasn't parsing quotes correctly at all. (Printpage.php)
+ ! By default, the karma_edit permission should be allowed. (smf_1-0.sql)
+ ! Updated some problems in the Burning Board converter. (burningboard_to_smf.php)
+ ! Invision converter now works properly, thanks Hal9000. (invision_to_smf.php, invision2_to_smf.php)
+ & Updated $helptxt['karmaMode'], $helptxt['enableStickyTopics'], $helptxt['cal_enabled'], $helptxt['avatar_allow_external_url'], and $helptxt['pollMode'] to talk about permissions. (Help language file)
+ ! Consecutive [url=] tags were getting linked together. (Subs.php)
+ ! Sigh, now email links work okay when in [email] tags too. (Subs.php)
+ * Replying with quick reply, with "auto notify" off, turned off notifications. (Display template)
+ ! RSS was saying it was version 0.91, it was actually 0.92. (News.php)
+ * Smiley popup would open multiple times without closing itself. (Post template)
+ ! RSS feeds were being sent with the wrong doctype, and an improper character set. (News.php)
+ * Added something to stop Firefox (hopefully) from following previous/next links automatically. (index template)
+ ! You weren't able to add smileys with different case than other smileys. (ManageSmileys.php)
+ ! Tweaked the column size of ID_PM to 10 instead of 11. (upgrade.php, smf_1-0.sql)
+ ! When marking unread, mark the page you were on unread, not the whole topic. (Subs-Boards.php)
+ ! The ssi_boardNews() function should give the topic ids too. (SSI.php)
+ ! Upgrade wasn't working on MySQL 3. (upgrade.php)
+ ! Send emails with mime-encoded subjects. (Subs-Post.php)
+ * Changed the stylesheet link to style.css to include ?rc2. (index template)
+ ! Printing links in lists didn't always seem to work. (Printpage.php)
+ ! In some cases, dumping the database would generate errors for empty tables. (DumpDatabase.php)
+ ! Typo in upgrade.php was causing a minor notice. (upgrade.php)
+ * Editing a group's name that had html in it caused an error. (ManageMembers.php, ManageMembers template)
+ ! Missing error message for a blank password - Login wasn't loaded. (Reminder.php)
+ * You can now edit category names with html in them properly. (ManageBoards.php, ManageBoards template)
+ * The "category name" and "(modify)" are now separate links. (ManageBoards template)
+ * Administration "quick tasks" section had an extra row. (Admin.php, Admin template)
+
+
+August 2004:
+--------------------------------------------------------------------------------
+ ! Allowed elements, e.g. <br />, before email addresses that are automatically linked.  Let's hope this doesn't backfire. (Subs.php)
+ ! Now, a "special" redirect is used on just the post page to make the return to topic option work properly. (Post.php, Subs.php)
+ ! After calls to "setLoginCookie" the same special redirect is now used. (Register.php, Profile.php, LogInOut.php)
+ ! Backed up language files (index.language.php~) are no longer treated like actual language files. (Admin.php, Profile.php)
+ & Removed $txt['membergroupss_min_posts'] because it wasn't being used and was misspelled anyway. (ManageMembers langauge files)
+ & Added $txt['membergroups_postgroups'] to fix an untranslated (hardcoded) string. (ManageMembers language files)
+ * Removed some hardcoded text ("Post groups") and put in a language string instead. (ManageMembers template)
+ ! As an administrator, registering a new member should use the guest theme options not your own. (Register.php)
+ ! To ease misunderstandings, the upgrader now specifies that it converts the existing *YaBB SE* template. (upgrade.php)
+ ! Moved the place database errors are marked in the database so that two people accessing it at once won't cause a race condition. (Errors.php)
+ ! Fixed a case where profile theme options might not be saved properly. (Profile.php)
+ ! Now, if you're using Opera, quoting a post with "insert quote" won't show &quot;s, although it still has i18n problems. (Post.php)
+ ! Added $context['server'] array for very basic information about the server. (Load.php)
+ ! Now, for using refresh instead of location, $context['server']['needs_login_fix'] is used along with $context['browser']. (Post.php, Profile.php, LogInOut.php, Register.php)
+ ! The Queryless URLs function now uses $context['server']. (QueryString.php)
+ ! Added a session check to registration to make it more difficult to register large numbers of accounts in sequence. (Register.php)
+ ! SSI.php now always returns a value, true or false, which represents whether it could load or not. (SSI.php)
+ ! Changed the way duplicate events were handled in SSI.php minorly, although it shouldn't make a difference. (SSI.php, BoardIndex.php)
+ ! Now, ssi_recentEvents no longer shows duplicate events.  Man I'm think headed. (SSI.php)
+ ! Fixed a few coding conventions problems like spaces missing after, or present before, commas. (numerous files and templates - unimportant changes)
+ * You can now use smileys with quotes in their description in the smiley popup... (Subs-Post.php, Post template)
+ ! If you used spaces in the disabled bbc list, it would not work properly. (Post.php)
+ * Due to a typographical error, bbc tags were not being properly disabled all of the time. (Subs.php, Post template)
+ ! Updated version numbers to 1.0 RC1+ to avoid release confusion. (all files)
+ + Split permission moderate_forum into moderate_forum (search/delete/track members, track IP, register center, reserved names), manage_membergroups (manage/assign membergroups) and manage_bans. (several files)
+ + Split permission admin_forum into admin_forum (package management, mod/server/theme settings, maintenance, error/mod logs) and manage_permissions. (several files)
+ + Split permission edit_forum into edit_forum (attachments, smileys, censored words, registration agreement) and manage_boards (manage boards and categories.) (several files)
+ ! Split permission group 'Forum administration' into 'Forum administration' and 'Member administration'. (several files)
+ ! Fixed bug clearing the admin membergroup when changing someone's membergroup settings having only moderate_forum permission. (Profile.php)
+ ! Fixed language and 'hide email' setting not changeable without profile_extra permission. (Profile.php)
+ ! 'View/Delete members' doesn't allow deleting members anymore without the profile_remove_any permission. (ManageMembers template)
+ ! 'Edit censored words' and 'edit registration agreement' now requires moderate_forum instead of edit_forum permission. (Admin.php, ManageMembers.php, Subs.php)
+ ! Dissolved edit_forum permission into manage_smileys and manage_attachments. (several files)
+ ! Fixed hide user online showing in MessageIndex and Display. (MessageIndex.php, Display.php)
+ ! isAllowedTo() now accepts arrays of permissions. (Security.php)
+ + Added board permission announce_topic replacing announcement boards. (several files)
+ + Added announcement of topics allowing to select membergroups and sending in batches. (Post.php)
+ ! For polls, moderator locks now override member locks, but administrator's locks do not override those of moderators. (Poll.php)
+ ! Double posting shouldn't cause problems if the session hasn't even been initialized properly yet. (Security.php)
+ ! Even if Ungrouped Members have permission to moderate_forum, do not send new member notifications to them. (Register.php)
+ * Previously, if you didn't allow people to hide their emails, but you hid emails from guests, the emails would not be hidden - fixed. (Load.php, Profile template, InstantMessage template, Display template)
+ ! If you set the default theme to Default, and then disallowed people from selecting default but allowed them to select other themes, an error was shown. (Themes.php)
+ ! Don't email members who have been DENIED the moderate_forum permission when members register. (Register.php)
+ ! Emails meant to be sent in html were not being sent with the correct Content-Type. (Subs-Post.php)
+ & Removed $txt['whoadmin_ban2'] because the action is no longer being used. (Who language file)
+ * Removed the "notify_announcements" section. (ManageBoards template)
+ ! Streamlined the server_parse() function and made it take a parameter for the message to send.  Notably, this allows for better error handling. (Subs-Post.php)
+ ! Attachment size should round up, not say "0" if there are more than 0 bytes in the file. (Display.php)
+ ! Fixed a mistake in the package manager which made xml style modifications not work. (Subs-Package.php)
+ ! Depending on your server configuration, sometimes $_GET was keeping its slashes. (QueryString.php)
+ * Fixed a small bit of invalid html in the spellcheck sub template. (Post template)
+ ! Gave some more contextual information to the Post template - $context['is_new_topic'], $context['is_new_post'], $context['is_first_post']. (Post.php)
+ ! Changed a small unimportant piece of javascript to look nicer. (upgrade.php, all converters.)
+ ! Using move or announce in conjunction with go back to topic did not mark the board properly read. (Post.php)
+ ! The installer could not be used again on an already installed forum to refresh things. (install.php)
+ ! Fixed a potential issue in the way the messages table was initially created. (smf_1-0.sql)
+ & Added $txt['user_refresh_install'] and $txt['user_refresh_install_desc']. (Install language files)
+ ! Posted guest names and emails are now always trimmed and verified. (Post.php)
+ ! In some cases, deleting a member might not remove them from being the latest member. (ManageMembers.php)
+ * Detailed version checker did not work with the default theme. (Admin template)
+ * Code blocks now show in Safari properly... though, the code isn't pretty. (index template)
+ * Added $context['browser']['is_mac_ie'] and made it the code block fix code work on it too. (Load.php, index template)
+ ! The query to reset options has now been broken up into many smaller queries.... it's more queries, but it's not a humungous query anymore. (Themes.php)
+ ! Fixed a small possible error if someone was looking for trouble. (InstantMessage.php)
+ ! Fixed a typo which was causing "topics and posts" deletion when deleting a member not to work. (Profile.php)
+ % Branched development on the CVS respository here. (all files, no changes)
+ ! Fixed a typo in member specific theme options. (Theme.php)
+ ! You were not allowed to change a member's username to either its current value or their realName. (Subs-Auth.php)
+ ! If you send a topic, and don't provide a comment, it shouldn't send "and the comment:" in the email. (SendTopic.php)
+ ! Listing members from a membergroup based on posts did not include pages properly. (ManageMembers.php)
+ ! Archive extracting routines didn't make destination directories. (Subs-Package.php)
+ ! Improved spellchecker highlighting of "abcd abc" and similar. (Subs-Post.php)
+ ! You couldn't always use apostrophes in your email address. (Post.php, Register.php, Profile.php, Security.php)
+ ! If you can delete any posts on a board, it shouldn't matter if it's your own or a reply. (RemoveTopic.php)
+ ! The phpBB converter should convert \n -> <br /> and " -> &quot;. (phpbb2_to_smf.php)
+ ! Fixed expand/collapse modSettings not working on IE with META refresh enabled. (Subs.php)
+ ! The Invision converters didn't do [list] properly. (invision_to_smf.php, invision2_to_smf.php)
+ ! Apparently, Opera can actually do innerText - fixed "quotefast" internationalization. (Post.php)
+ ! Internationalized characters not in the current character set were not being highlighted properly by search. (Search.php)
+ ! The upgrader couldn't handle moderators with ' in their name - or queries :P. (upgrade.php)
+ ! Editing the theme template and style sheet no longer switches to that theme. (Themes.php, Themes template)
+ ! Fixed bug in ID_TOPIC repair tool. (repair_ID_TOPIC.php)
+ + When viewing members in a group you can now sort by column, and added extra information to the template. (ManageMembers.php, ManageMembers template)
+ ! Typographical error was causing, in some cases, permissions not to be calculated correctly. (RemoveTopic.php)
+ ! The am/pm indicators were displayed inconsistently with the Today "mod" enabled. (Subs.php)
+ ! Creating a new post group didn't resync the post groups of members. (ManageMembers.php)
+ ! Ignore list conversion now cleans out apostrophes. (upgrade.php)
+ ! Don't make any change to the registration date if they didn't change it. (Profile.php)
+ ! Rolled back a major spot of idiocy in calendar checking. (BoardIndex.php, SSI.php)
+ ! Editing a post made by a guest, previous to when they became a member, should not throw a reserved name error. (Post.php)
+ ! Admin registration wasn't always working properly. (Register.php)
+ ! Fixed a minor issue with IP detection. (QueryString.php)
+ ! Shadow tags weren't allowing other tags to apply within them. (Subs.php)
+ ! Shadow and glow didn't take fonts outside of them, now they do in *certain good browsers*. (Subs.php)
+ ! If you changed your email before activating, you might be able to get past a ban. (Register.php)
+ * Now, when a file is not writable (index template or style.css) it warns you of this fact. (Themes.php, Themes template)
+ & Added the language entries necessary for this change. (Themes language file)
+ ! You can now use &, (, ), and several other characters in avatar filenames and category names. (Profile.php, Load.php, Subs.php)
+ ! Added option to copy board permissions from one board to another on a group by group basis. (ManagePermissions.php, ManagePermissions template)
+ & Added $txt['permissions_copy_from_board'] and $txt['permissions_select_board']. (ManagePermissions language file)
+ ! Fixed typo in upgrade preventing boardOrder column to be changed. (upgrade.php)
+ ! Adjusted the SSI whosOnline to be consistent with the way the online list is shown on the board index. (SSI.php)
+ * Fixed some bad paths to package_installed.gif and package_old.gif. (Packages template)
+ ! You can't make backups of files that don't exist, I guess :P. (Subs-Package.php)
+ * Fixed the document.postmodify.attachmentPreview.value javascript error. (Post template)
+ ! Fixed a dumb and annoying typo that mainly affects debugging. (index.php, SSI.php)
+ ! Moderation log was reversing sort in cases when you deleted any. (Modlog.php)
+ ! Updated phpBB converter to do more avatars and group conversion - thanks packman. (phpbb2_to_smf.php)
+ & Cleaned up mark unread and made it usable; added a string too. (Subs-Boards.php, index language files)
+ * Added images for mark unread. (markunread.gif)
+ ! Fixed a minor typo with the package manager; minor but it was causing big problems. (Subs-Package.php)
+ ! Various coding convention updates. (various files)
+ ! Fixed a hardcoded string - N/A. (ManageAttachments.php)
+ ! The package manager should assume a link absolute if it starts with http://. (PackageGet.php)
+
+
+SMF 1.0 RC1                                                      August 10, 2004
+================================================================================
+August 2004:
+--------------------------------------------------------------------------------
+ + repair_settings.php now checks that Settings.php is writable. (tools/repair_settings.php)
+ * Packages now only show links to install if they are install-able. (Packages.php, Packages template)
+ & You can no longer access ?action=activate when activation is not available, nor is the "Did you miss your activation email? link shown. (Subs.php, Register.php, index language files)
+ * Added class="signature" to where ever signatures are displayed to ease stylesheeting. (Display template, Profile template, InstantMessage template)
+ * Migrated a few remaining colors from index.template.php to style.css in the default theme. (index.template.php, style.css)
+ * Tried to add better documentation in the style.css file under the default theme. (style.css)
+ ! Updated version numbers to SMF 1.0 RC1 in preparation for release. (all files)
+ ! Upgrade no longer clears the moderation log, just for David. (upgrade.php)
+ ! Fixed typo that made quotefast functionality not work with "s. (Post.php)
+ ! Mozilla now does entities properly with quotefast ;). (Post.php)
+ ! Now, if someone replies while you were reading you still get the subject line. (Post.php)
+ * Changed the stylesheet link to style.css to include ?rc1. (index template)
+ ! Profile now erases default options from any/all themes. (Profile.php)
+ ! The IP icon was not being shown properly to guests. (Display template)
+ ! The IP detection routine no longer allows "forwarded for 127.0.0.1", etc. (QueryString.php)
+ ! Fixed a problem with new reply notification. (Post.php)
+ ! When removing ones vote from a poll, and one has not voted, nothing should be done at all. (Poll.php)
+ & Changed the English error messages "Username does not exist" and "Password field is empty" to read better. (index and Login language files)
+ * Registering a member from the Admin interface should hide the password with ***s. (Register template)
+ ! The "Require user to activate the account" checkbox in the admin registration interface did not work. (Register.php)
+ ! Released RC1 to Charter Members. (xml/latest-news.js)
+ * Made a small update to the Internet Explorer overflow fixing code. (index template)
+ * Version checker no longer shows current version in red if it is old, and checks by greater than not compare. (Admin template)
+ ! Upgrade was turning off persistent connections. (upgrade.php)
+ & Changed the "Do you really want to delete your own profile?" string to use the word account. (Profile language file)
+ ! Fixed an issue that was causing, in most cases, default theme options not to work. (Register.php)
+ * Fixed some invalid xhtml in set theme options and settings. (Themes template)
+ * You couldn't uncheck a default option for new members. (Themes template)
+ ! Saved a little bit of memory by not passing something that shouldn't be passed to the template. (PackageGet.php)
+ * Packages you cannot install from a server are no longer shown in bold. (Packages template)
+ ! Fixed pagination error when browsing avatars in the attachments manager. (ManageAttachments.php)
+ ! Avatar listing and management should go by ID_MEMBER not being zero, not ID_MSG being zero for mods' sake. (ManageAttachments.php)
+ * Fixed some invalid html to do with event editing. (Post template)
+ & Finished the dutch translation and removed unused language tag membergroups_members_all_current. (ManageMembers language file)
+ * Fixed a minor bug in the Post template (only evaluting $context['event'] if it is set). (Post template)
+ ! A typo was making the memberGroups upgrading code in upgrade.php run for versions it shouldn't. (upgrade.php)
+ ! You can now list more groups per board under access rights. (upgrade.php, smf_1-0.sql)
+ ! Permission keys can now be 30 characters long, which should fix a possible issue with truncated permissions. (upgrade.php, smf_1-0.sql)
+ ! Fixed a small notice to do with seqnum that would hardly ever occur. (Security.php)
+ ! Some hosts ban readfile for no reasons, so handle that case. (Display.php)
+ ! Removed some commented code which was not being used, and should not be used. (Subs.php)
+ ! Tested Burning Board converter against wBB 2 - it at least runs. (converters/burningboard_to_smf.php)
+ ! Followed up on more "look at me later" comments. (converters/yabbse_to_smf.php, converters/xmb_to_smf.php)
+ ! Updated just a little bit of documentation. (Admin.php)
+ ! Fixed a small possible and minor problem in upgrade for some versions of SMF. (upgrade.php)
+ ! Some quotes from YaBB SE weren't parsing correctly. (Subs.php)
+
+
+July 2004:
+--------------------------------------------------------------------------------
+ + Now, if you put ;board=Z on the URL for unread or unreadreplies, you will see said things only for that board.
+ * Search now shows the board the result was in under the topic link.
+ ! Tweaked the entity magic so that it supports more characters, hopefully this won't cause problems.
+ ! Now, subjects are also magick'd.  This should make it work better on bad character sets.
+ ! Upped the subject length limit to 100 characters from 80. (internationalization.)
+ ! Fixed a reserved MySQL word being used as label.
+ & Removed some unused language tags.
+ & Made some consistency adjustments in the dutch language files and translated all untranslated lines.
+ * Fixed some accesskey properties for the wireless template that were missing.
+ + Added a preview column in the news center and checkboxes for fast removal of news items.
+ * Disallowing hide online status was not working at all because of a typo in Profile.template.php.
+ ! Font size was wrong in the ssi_examples.shtml page.
+ & Tweaked $txt['modlog_moderation_log_desc'] so people can see why it won't delete things.
+ ! The require/require_once functions are faster than include/include_once - use them instead when possible.
+ ! Subject shortening wasn't very i18n... still isn't, totally.
+ ! MoveTopic didn't do board names with single quotes in them properly :(.
+ + Now, when there is a parse error in a template or language file, an error message is displayed with debugging information.
+ & Added some language entries to the index language files to show when handling this problem.
+ ! Several fixes made the the vBulletin 3 converter.
+ + Added "Male to Female ratio" and "Users Online Today" to the statistics page.
+ & Two new language strings added to Stats.language.php for above change.
+ + Added a utility function, reattributePosts, to ManageMembers.php for attributing guest posts to members.
+ ! Fixed a bug in upgrade causing it to run indefinitely.
+ ! When using flash, add AllowScriptAccess="never" for Flash Player 6+.
+ ! Fixed some quote and code tag preparsing issues.
+ ! Changed some ordering in upgrade.php so that, even if you tried to duplicate your attachments it wouldn't happen now ^_^.
+ ! Fine, fixed the list tag a different way.
+ ! Fixed upgrade not converting single quotes for news lines properly.
+ ! Trying to change the PHP setting to add xHTML compatible URL separators for URLs that automatically get an added session ID (needed for SSI and template links).
+ + Added link in attachment manager to recount file sizes.
+ + Added avatar management to the attachment manager.
+ & Several new language entries added to Admin.language.php for above change.
+ + Added backend for "Reply to All" in personal messages.
+ ! Fixed problem with previewing instant messages losing the "to" field.
+ + New setting, number_format added, this is a string that allows the admin to choose how values are displayed in the forum.
+ & Two new strings added to Help and ModSettings.language.php for describing the above change.
+ + Added function, numberformat, for formatting numbers from the above setting.
+ ! Fixed possible bug in Profile which would result in posts per day being wrong for an extreme geek.
+ + Converters for Invision 2 and vB 3.0 now convert passwords and salt data.
+ ! Users who have come from Invision 2 and vB 3.0 can now log in without resetting their password.
+ + It is now possible to specify whether or not a board theme should override a users preference.
+ & Two new languages entries added to ManageBoards.language.php to reflect above change.
+ ! SSI function, topPoster, can now take amount of posters to return as a parameter.
+ + If new replies are made between reading a thread and replying, a warning message is displayed.
+ & New lanaguage strings added to Post.language.php for above change.
+ + New function, ResetPassword, added to Subs-Auth.php for resetting password and/or username.
+ + Admins can now change their members usernames from their profile - although this resets their password too.
+ & New language strings added to Profile and Login language files to reflect above changes.
+ ! Fixed some incompatibility problems with old templates, I think, and a small notice in ModSettings.php.
+ ! Email auto-linking wasn't always working properly.
+ * A bug in IE caused gifs to stop animating if they were clicked.... (as a link) in the Post template.
+ * Access checkboxes shouldn't be shown for moderator/admin.
+ * Small oddity in the Profile template under notifications.
+ ! Cleaned up and commented some of the ftp stuff more - hopefully this still works everywhere.
+ ! Package manager was not removing files properly.
+ + Added setting to allow disabling of BBC tags by listing them.
+ & Two new language strings added to Help and ModSettings language files for above change.
+ * Post template adapted significantly to handle above change.
+ + Viewing members from a group now has a new template, with options to easily add and remove members from said group.
+ & Several language entries added to ManageMembers.language.php to accommodate above change.
+ + Added ability to notify the admin team whenever a new member registers.
+ & New language strings added to ModSettings and Login language files to reflect this addition.
+ ! Fixed avatar download and resize option not working properly.
+ & New langauge entry added to Packages.language.php to enable better browsing of packages.
+ + Restyled the ban center to match the layout of other admin center screens.
+ + Added a ban log viewer.
+ + Added an ID_MEMBER column to the ban log.
+ * Updated the templates in ManageMembers to reflect above changes.
+ & Added several language tags to the ManageMembers and Errors language files.
+ ! Added some extra checks to the is_not_banned function.
+ ! Cannot register ban is now logged in the log_banned table.
+ * Some javascript cleanup for the detailedversion checker, and cleanup for the latest news when offline. (Admin template)
+ * The "im_delete.gif" image now reads "Delete All" to avoid confusion with deleting checked messages. (im_delete.gif)
+ * Changed the placement of the delete button and made it read "Delete Selected". (InstantMessage template)
+ ! Updated the documentation sections in many source files to sync with current functions. (Sources/*.php)
+ ! Attempted to fix pm notifications being sent in the wrong language - needs more investigation. (Load.php)
+ ! The "quote fast" feature now properly supports entities - but only in Internet Explorer.  Support on other browsers is pending. (Post.php)
+ ! Not showing your online status was not working because of a typo. (Profile.php)
+ * Fixed the typo "hilight" in the spell checking javascript and Post template. (spellcheck.js, Post template)
+ ! Made a small change to the default wording of the agreement. (agreement.txt)
+ ! Saving a theme option for the default theme did not erase said option in the current theme, making changing your options not work.
+ ! Who's online was showing members who choose to not be shown online, but as guests.
+ & The IP address logged for unsuccessful admin login attempts was incorrect at times; should now be fixed. (Admin langauge files)
+ * Spell check now scrolls to the word that changed in IE and Mozilla. (Post template, spellcheck.js)
+ ! Typo was making full-ban reasons not display properly on registration failure. (Register.php)
+ ! Two members online at exactly the same time might be mistakenly shown as not online. (BoardIndex.php)
+ ! SSI.php now truncates on line breaks (<br />) as well as spaces. (SSI.php)
+ ! Reduced the spam-ness of html emails sent by the forum. (Subs-Post.php, ManageMembers.php)
+
+
+June 2004:
+--------------------------------------------------------------------------------
+ * Fixed a small issue with SendTopic.template.php's version not updating properly.
+ ! A setting in ModSettings.php was named wrong; search_max_cache_size -> search_cache_size.
+ * Fixed some layout problems in the Search template. (caused by old style HTML :P.)
+ * Changed any "checkAll()" functions to calls to invertAll() from script.js.
+ ! PHP 5 can be configured to make sessions shorter than 32 bytes... maybe longer?
+ ! If there are no smileys in location x, you might get a small error.
+ * Recommitted those darn icons.... stupid cvsnt is adding kb twice or not at all :(.
+ ! [color=#......] should allow A-F too, not just numbers.
+ ! Made it so clear text color codes can be a *little* longer. (mediumpurple, etc.)
+ ! Fixed a typo (one missing letter!) that was causing very substantial problems on some servers.
+ ! .htaccess wasn't working properly for Apache 1. (it wasn't even applying :/.)
+ ! Made it so you only have to change one line to make index.php something else.
+ ! Added emphasis to "nothing's wrong" in the conversion timeout.
+ ! Small typo affecting downloading updated packages.
+ ! The attachments feature no longer allows uploads with the filename ".htaccess" or "index.php".
+ ! If encrypted filenames are on, these are allowed.
+ + It is now possible to upload images to the Smiley center.
+ & Many new language entries added to ManageSmileys.language.php for above change.
+ * Smiley template cleaned up some more to make it more efficient.
+ ! Don't show the database upgrade error message for CVS or Demo versions.
+ * Whitespace shouldn't wrap in error log URLs.
+ * Only show a link to the IP if they can actually click it.
+ ! Cleaned up the permission loading in Display.php so it's a little clearer...
+ * Emails in manage members should be clickable -> mailto:.
+ * Added more commenting in index.template.php around the forum name stuff.
+ ! Commas should be allowed after email addresses.
+ ! Smileys could not be put in the first place on a row.
+ ! Resetting everyone's theme options was redirecting to the wrong place.
+ + You can now upload different smileys to different sets if you wish.
+ * Javascript added to the import smileys template to improve usability.
+ ! Resetting default theme options should override theme-specific ones.
+ * Now, when you change another member's language it doesn't affect your own.
+ ! Holiday titles are no longer censored, because they shouldn't be.
+ ! Code Review: Calendar.php. (updated documentation, fixed some overly restrictive permissions checks.)
+ ! More characters are now allowed in email addresses.
+ ! Cleaned up the way heading and rules were handled in ModSettings.php.
+ & Added some entries to the index langauge file - unread_topics_visit, unread_topics_visit_none, and unread_topics_all.
+ * It's now clearer that you are seeing posts since your last visit, and there is a link to see ALL unread topics.
+ ! Fixed a typo in SSI.php related to birthdays.
+ ! Moved the check for double post submission down in Post for error messages.
+ ! Added a loadAttachmentContext() function to Display.php.
+ ! You shouldn't be able to register with the email address of someone registered.
+ * You shouldn't get a javascript error message if you don't have the code fix on.
+ * Added warning text under Answer: in the profile for the Secret Question.
+ & Edited $txt['secret_desc'] and added $txt['secret_desc2'] in Profile language files.
+ + YaBB SE converter should now convert banned members, calendar events and have an attempt at settings!
+ ! MSIE wasn't styling ul's properly.
+ ! Made the title for posted calendar events slightly longer. (48)
+ ! Updated version numbers to 1.0 Beta 6+ to avoid confusion with the actual release.
+ * Slightly improved the look of displayed poll results in Display.
+ ! Don't show the "upgrade template.php" checkbox if it's already been upgraded.
+ & Edited $txt[677] - explains how to create child boards
+ ! Fixed a bug that was resulting in database sessions not being deleted.
+ + phpBB2 converter should now convert attachments if the attachment mod was installed.
+ + YaBBSE converter should now convert over membergroups successfully.
+ + It is now possible to upload new packages in the package manager.
+ & Several new language entries added to Packages.language.php and Errors.language.php for above change.
+ & Some language entries moved from ManageSmileys.language.php to Errors.language.php.
+ ! Inlined some element calls in the helpfiles.
+ ! Added message body preview *information* so the templates *can* display it if they so wish to.
+ * Took a typo back out of smf_codeFix, having reintroduced it last beta - oops.
+ * Added inital changes for "someone posted while you were *reading*".
+ ! Double post prevention/sequencing should no longer break old templates.  Now, scripts could use this to their advantage if they bothered to keep the session *anyway*, but they don't so it doesn't matter.
+ ! Don't allow the deletion of just any file with the package manager remove thing.
+ & Added default_time_format to the Install language files and the installer.
+ * Minor template change in the package manager to make links consistent.
+ + Made a custom imagecreatefrombmp().  Needs more testing, but works in most cases. (yes, this means bitmap support for GD ;).)
+ + Added pagination to the trackIP function, to stop hefty page loads.
+ * Altered trackIP template to be more similar to trackUser to improve consistancy across functions.
+ & Two new language entries added to Profile.language.php to accommodate above change.
+ + New option added, allow_editDisplayName, to dictate whether a user may or may not edit their display name.
+ & New language string added to ModSettings.language.php to accommodate above change.
+ + Added a backend for repairing attachments (filesize and those deleted).
+ * Fixed guest posting so that: guest editing guest works, admin editing guest allows name/email editing, and post errors are handled well.
+ & Renamed poll_few to error_poll_few so poll error handling can work properly.
+ & Removed two language strings made obselete by the above changes.
+ ! If they preview/post with no options, give an error but make sure there are at least two boxes.
+ ! ssi_examples.php should show the proper path, not one with mixed slashes.
+ * Don't bother fading in fader.js if there is only one item.
+ ! Small typo in the recent rss/xml feed stuff was making stuff inaccurate.
+ ! Personal messages should be sent by memberName with "s.
+ ! Installer was screwing up the indentation of Settings.php, if any.
+ ! Fixed attachments, personal messages, and children in vBulletin 3 converter.
+ ! All the converters were "leaving" attachments if they weren't converted - fixed.
+ ! Added an Invision 2 converter, works for the most part, needs tweaking.
+ & Edited one text string and added another to clearly state that admins need to enter an email address when registering new users
+ & Edited the registration template to reflect the above language file change.
+ ! SSI.php should just not load if it can't connect.
+ ! The current_forum_time was without server offset as well as user offset.
+ ! Printpage shouldn't put PHP code in a box, since Display doesn't.
+ * Changed some spans to divs in BoardIndex and several other templates because it looks slightly nicer.
+ * Added label elements to the additional options in Post.
+ * Show IP address help text in the Display template ;).
+ & Added see_admin_ip and see_member_ip to the Help language files.
+ ! Upgrade wasn't handling news properly - should just remove one set of slashes.
+ + Pagination added to "Who's Online" page.
+
+
+SMF 1.0 Beta 6                                                     June 12, 2004
+================================================================================
+June 2004:
+--------------------------------------------------------------------------------
+ * When previewing a post with attachments, you are now warned you will have to reattach them.
+ & Added attach_lose language string entry.
+ & Changed $txt[247] to $txt['hello_member'], and $txt[248] to $txt['hello_guest'].
+ * These two strings changed a few templates as well...
+ + You can now use your email address to login instead of just your username.
+ ! PNGs and JPEGs were getting two dots for avatar filenames. (avatar_1..png)
+ * The "deliminator" index was changed to "delimiter" - a real word :P.
+ ! Some names wouldn't work in the ignore list - namely ones with underscores.
+ ! You *SHOULD* now be able to use any characters you want in your username - have fun!
+ ! The "Find Members" function now quotes usernames in several places so the above can work well.
+ ! Image resizing was sometimes messing up the aspect ratio.
+ + Added javascript for adding poll options to New/Edit Poll screens.
+ & New language entry added to Post.language.php for above change.
+ ! The error generated when incorrectly attempting to answer a secret question, will now show the membername in question.
+ & New language entry added to Profile.language.php for above change.
+ + If you are banned from posting you will get a notice on each page telling you so, with the reason why.
+ & New language entry, $txt['you_are_post_banned'], added to index.language.php to reflect above change.
+ + Search now can cache results.
+ ! Several search optimizations.
+ + The viewNewestFirst setting has been replaced in preference to user option view_newest_first, for choosing ordering of topics.
+ & New language string, $txt['recent_posts_at_top'], added to Profile.language.php for above change.
+ & Old language strings for removed setting removed from modSettings.language.php and Help.language.php.
+ ! Users who are moderating are now less affected by spamProtection().
+ ! Fixed minor problem with spamProtection() which would reset flood control whenever anyone logged in.
+ ! Replaced default laugh smiley with one that is different from cheesy.
+ ! Deleting an attachment didn't *always* work well with translated language files.
+ * You can now preview poll editing again.
+ ! When you preview - if there's no subject, it should use "(No subject)".
+ ! Sometimes lists were getting blank spaces after their start.
+ * Back to topic and move now work together in conjunction.
+ ! Added a notice to smf_1-0.sql so people don't think they need to run it or anything.
+ ! The percentages for a poll now add up a little better.
+ * Show "no messages" in the error log when there are none.
+ * Fixed some layout issues in the error_log sub template, Errors template.
+ ! Fixed additional slashes issue with "applying filter".
+ * Made a lot of updates to the MessageIndex template, none of which change really anything. (just cleanup.)
+ ! Cleaned up the ugly and generated whitespace in the help files.
+ * Changed the order of the icons in the Who template.
+ * Banning page now offers more explanation as to the difference between a reason, and notes!
+ & Two new language strings added to Admin.language.php for above change.
+ ! Added sanity check to sendpm(), to protect against manually deleted entries.
+ + New setting added which, when enabled, will stop non-administrators from hiding their online status.
+ & New language string added to ModSettings.language.php and Help.language.php for above setting.
+ * Settings template now has labels for all the checkboxes, so that it looks better.
+ ! It's no longer easily possible to copy permissions from the Administrator group.
+ + Whenever a database error is thrown, if the user is an admin, a version check is carried out, and reported if it fails.
+ & New language string added to index.language.php for above change.
+ ! It's now possible to tell printpage to show images - but only in the backend.
+ & Added upshrink_description so you can tell what the button does.
+ * Made the index template actually use the above string.
+ * Don't show search quote section when there's no quote to be had.
+ ! Upgrade now uses a default for time format string in case it got blanked out.
+ ! Observe PHP's session.auto_start setting, and don't start a session if it's on.
+ * Search templates shouldn't do highlighting themselves.
+ * Added some basic column sorting to "Who's Online".
+ ! Several fixes to the password reminder/activation features - particularly for forums with approval enabled.
+ & New language strings added to the Profile and Register templates, for above changes.
+ + Theme setting 'display_recent_bar' replaced with theme setting 'number_recent_posts', allowing the admin to specify amount of recent posts.
+ & New language strings added to Themes.language.php to describe new setting.  Old string $txt[509] removed.
+ + YaBB SE converter should now convert over all important logs and moderators.
+ ! deleteMembers now does some sanity checks on permissions - particularly to protect against rogue calls.
+ ! deleteMembers now logs the deleting of a members account into the moderation log.
+ & New string added to Admin.language.php to reflect above change.
+ ! Updated a message in the upgrader so it makes more sense. (agreement.txt message.)
+ ! Cleaned up a few more "Hacker?" error messages - there are not many left.
+ ! Upgrade was not removing slashes from YaBB SE news entries.
+ + Added bbc parsing for [acronym]s and [abbr]s just like the corresponding html elements.
+ ! Current forum time in profile now shows with your format.
+ ! If you're printing you want the full date; not today/yesterday.
+ ! Printing images, by default, now shows (http://www.url.to/image.gif).
+ ! Added D-Day, 06/06, to the calendar holidays.
+ & Changed enableVBStyleLogin's help... changed its description, changed autoLinkUrls' description. (English only.)
+ ! The installer now supports using ftp://hostname.tld/ as the server.
+ ! SSI.php now always starts the session again - let's see if this still causes problems.
+ ! Quick simplification to the [me=] bbc expression.
+ ! The vBulletin 3 converter now does the table prefix right, but not that much else.
+ + It's now possible to use database driven session functions.  Not totally ready yet.
+ ! Updated repair_settings.php and the installer to deal with database sessions.
+ & Added databaseSession_enable, databaseSession_lifetime, and databaseSession_loose as settings - and their associated text.
+ & Removed the disableCaching option since it didn't do anything at this point anyway.
+ + Added two new user options, view_newest_pm_first and calendar_start_day, representing order of personal messages and day a week begins.
+ & Two new language strings added to Profile.language.php for above change.
+ ! vBulletin 3.0 converter updated to convert boards, threads, messages and polls.
+ ! Email autolinking had become broken.
+ ! Help files are now being cleaned by HTML Tidy after generation, so they look nicer.  Related cleanup.
+ ! Code Review: News.php. (optimized the main recent query BIG TIME, and cleaned up things into CDATAs.)
+ * Cleaned up minor layout issues and things in many templates, and added proper versioning information.
+ * If you type in a URL to a star image, make it at least have one image.
+ * Happy Image Optimization Day to all, and to all a good night.
+ * Modified the topic status icons so "sticky" is clearer.
+ ! Several fixes and optimizations in search.
+ ! Moved sorting from the second search screen to the first in order to accommodate search caching.
+ * Removed sorting links in search result screen, added an option list to the main search screen.
+ + Added a lot of search options in to a new section of the modsettings.
+ & Added a language block to Settings, a block to Help, a block to Search and a single tag to Error.
+ ! Fixed an issue with form sequence checking when previewing PMs.
+ ! Censoring wasn't working perfectly with &amp;.
+ + You can now use \* to censor the character * instead of a wildcard.
+ * Fixed some xhtml problems in the Display, Profile, Settings, SplitTopics, and ManageMembers templates.
+ ! Help files no longer have the xml namespace on them.
+ ! Some converters weren't automatically continuing properly... most, actually.
+ * Fixed more xhtml errors in more templates, ugh.  Mostly typos. (algin!?)
+ * The script.js file, and all the templates no longer use fetchById... a better solution has been introduced. (better now than after RC...)
+ ! Wrote up the parseModification() function... should be... actually... DONE!
+ ! vBulletin 3.0 converter should now convert instant messages and notifications.
+ + You can now specify default values for theme options in the theme settings.
+ ! Guests now use the default theme options.
+ * The Settings templates are now used only as a listing.  The settings are all in Profile now.
+ & Added some language entries to Themes for the administration interface.
+ + You can now reset everyone's theme options to whatever you want. (example: turn on quick reply!)
+ ! Made ID_BOARD conversion on messages a little faster.
+ & Changed $txt['smf124'] to be a lot wordier. (attachment upload error.)
+ ! Renamed tar_gz_file() and tar_gz_data() to read_tgz_file() and read_tgz_data().
+ + Added read_zip_data() which means zip file support - not just tar.gz.  Yea. (still requires zlib, mind you!!)
+ ! The package manager can now check and etc. zip files too ;). (note: they are still bigger.)
+ ! Queryless URLs now use .html to prefix all pages.
+ ! Clearing unimportant logs now affects log_search as well.
+ ! If you download two versions of the same mod (same filename, at least...) it will rename the second.
+ ! There is now backend support for showing whether packages are installable or not. (for this version of SMF...)
+ + You can now specify what format the modification is in using package-info.xml in packages.  Default is now xml.
+ & Replaced a "Hacker?" error message in the package manager with a translatable and informative string.
+ ! Renamed the get*Message() type functions to prepare*Context().
+ ! The package manager's parseModification() should now handle multiple search rules properly.
+ * Removed all the special doctype stuff.... it was only for debugging reasons only, and did indeed help.
+ ! Wee, updated everything to Beta 6 ;).
+ ! I'm almost certain that sendmail doesn't like \r\n, and wants just \n.
+ ! Optimized a whole bunch of avatars by quite a decent bit, and some of them even look better now imho.
+ * ManageSmileys template split into more manageable chunks.
+ + Upgrade should now be capable of converting old settings into member theme settings to options.
+ ! The discontinued viewNewestFirst and cal_startmonday settings are now converted over in the upgrade process.
+ + Added pagination to the ban screen and user tracking.
+ & Ban will expire within was misleading in Admin language file - changed to "expire after".
+ ! Upgrade now drops a few keys that some had which were unnecessary.
+ ! Adjusted some minor aesthetics in install.php.
+ ! Now repair_settings.php uses JavaScript to set the boxes on a click ;).
+ ! The package manager now warns you if you can't write to the Packages directory.
+ * Modified the Package template with a few minor additions.
+ & Added some strings to the Package language files for these purposes.
+ ! Package installation *MAY* now fully use FTP.  Not sure, needs more testing.
+ * Moved the following into the icons folder: online.gif, assist.gif, members.gif, calindex.gif, package_installed.gif, package_old.gif, info.gif, login_bindex.gif
+ * Renamed icons/login_bindex.gif to icons/login.gif, icons/calindex.gif to icons/calendar.gif.
+ ! Made a few changes to formatting and stuff; nothing that should affect anything. (sql file, a few source files, etc.)
+ & Now the default message, topic subject, board, category, etc... is all translatable.
+
+
+May 2004:
+--------------------------------------------------------------------------------
+ ! The .htaccess file now works properly on Apache 2 and Apache 1.
+ ! Settings.php/index.php was redirecting to //install.php in some rare cases.
+ ! Added MySQL connection error message to the installer if there was a problem.
+ ! Installer wasn't automatically logging you in, like ever.
+ * Package manager now respects the option to make backups or not!
+ ! Package manager now detects when it would need to chmod files over FTP. (but it doesn't do that yet...)
+ * Renamed the view_other and extract_other sub templates to view_package and extract_package.
+ ! Package manager more consistently uses file_put_contents() now.
+ * Tied checkboxes together with javascript in InstantMessage template.
+ ! Auto submit added to all converters.
+ ! Fixed problems with Invision converter making random members moderators and not converting sub forums correctly.
+ ! YaBB SE converter can now convert boards/topics and messages.
+ * Removed the ReportToModerator template and merged it with the SendTopic template.
+ ! Removed ReportToModerator.php and merged its contents with SendTopic.php.
+ ! Help can't work in Mozilla and produce valid xhtml at the same time, it seems.
+ ! Under permissions for guests, only permissions a guest can use are listed.
+ * Corrected a minor issue with lone own/any permissions in ManagePermissions.
+ ! The package manager can now chmod files via FTP, given a password.
+ * You can now set default values for the FTP stuff under installation options.
+ * Added a warning when you try to delete a package that is currently installed.
+ & Added some language entries to make sure this works internationally ;).
+ ! The package manager now handles missing server.list files much better.
+ * Package manager no longer lists package groups that... don't exist.
+ & Made translatable some previously untranslatable sections of the package manager.
+ & Added some cleaner error handling for incorrect directories - and added an error message to Errors.
+ * Changed JavaScript usage of void(0) to returning false on events which is cleaner.
+ ! Sending announcements on posting was not working properly with permissions.
+ ! MoveTopic was doing the log tables in the wrong place, so they weren't working.
+ ! InstantMessage's preview wasn't doing entities properly.... dunno why, it looked purposeful.
+ ! Unread replies should be much faster now.
+ ! Marking unread replies read didn't really work if queryless urls was on.
+ ! Package manager now takes the path off files you require, etc. in package-infos.
+ ! For ModSettings.php, you no longer have to add checkboxes to the list at the bottom.
+ ! Calendar was not always checking permissions properly.
+ ! MAJOR CHANGE: All Members group changed to mean Ungrouped Members only.
+ & Changed some language entries to reflect the above change in .
+ * Removed javascript that forces "All Members" to mean all other groups in ManageBoards.
+ & Updated $helptxt['cal_enabled'] because it was referencing old settings.
+ * Added check all to ManageBoards.
+ * fetchSessionTemp image was missing from the Display templates.
+ ! The BoardIndex now provides $context['online_groups'] for legends, etc.
+ ! Now writelog() doesn't bother to write online log data when who is not enabled.
+ ! Minor changes to filesystem error handling in the package manager.
+ ! ManageBoards wasn't looking hard enough for some entities.
+ ! Made a minor optimization to the statistics page.
+ + After registration a new user will automatically be logged in.
+ * Minor change to Register.template.php so the registration message looks a little nicer.
+ ! If you are already logged in you can't go to the registration page!
+ ! Added some extra checks into the Invision and phpBB converters.
+ ! YaBB SE converter should now be able to convert polls and instant messages.
+ * Changed file= to package= in links in PackageManager screens (made sense to allow the next change...)
+ + Can now view files from the PackageManager "list files" screen.
+ & Added some strings to the Packages language file for this purpose.
+ ! Glow and shadow were adding extra slashes than they needed to...
+ ! Added urldecode__recursive() for get parsing.
+ * Put check all/remove selected/remove all at the top and bottom in Errors.
+ ! SMTP is not a reasonable length for timeouts on the SMTP server.
+ ! FTP links with passwords didn't work out too well.
+ * Showing members' IPs now works on posts by the permission.
+ ! In BBC, width now *must* come before height... you can't do [img height=y width=x] anymore.
+ + Font size in posts is limited to a reasonable size.
+ ! Took the margin off the list bbc because it was just confusing.
+ ! Redid the BBC parser so it makes more sense and is easier to change... also has better restrictions.
+ * You can now limit searches to only the topic subject.
+ & Added an entry to the index language files for this purpose.
+ & Moving topics now has a better message that you can customize better... includes board, etc.
+ * Minor change to the MoveTopic template to make this possible.
+ ! You can now use SSI.php to redirect somewhere after login/logout.
+ ! Now repair_settings.php handles queryless URLs too.
+ ! Replaced all the ereg's with preg_match's for speed reasons, mainly.
+ ! It turns out vBulletin could use admin/config.php or includes/config.php. (drat, I think I tested it with the wrong version...)
+ ! For compatibility, re-allowed board=x; in quote links.
+ ! Changed some very typographic text in upgrade.php....
+ ! Typo in the XMB converter's attachment upgrading - it wouldn't do binary files right.
+ + You can now specify your language in the URL with ?language like with themes.
+ ! SSI.php shouldn't try to send headers if they've already been sent.
+ * Added an option to import smileys from a directory...
+ & Added some strings to ManageSmileys and cleaned up the confirmation string.
+ ! Removed send_announce permission since it wasn't used anywhere anyway.
+ ! Made the notification function a little more robust, renamed it to sendNotifications and moved it to Subs-Post.php.
+ ! Changed error_reporting to without notices if debugging is off. ($db_show_debug.)
+ & Removed some unused strings from the Help language files.
+ ! Cleaned up after some "look at me later" comments.
+ ! Attachments can now be deleted more than one at a time.
+ * Cleaned up some of the attachment manager template.
+ ! Started a vBulletin 3 converter - as it happens the other one was not at all compatible.
+ ! Added / for compatibility reasons to [quote ... link=xxxxxxx].
+ ! Attachment Manager now allows you to sort by column.
+ ! Added a basic Burning Board converter - may need to be updated for current version of BB.
+ * Changed email notification option in personal messaes section of profile to a checkbox.
+ & Changed $txt[327] in Profile.language.php to be more descriptive and removed $txt[328].
+ + Added option to limit total amount of attachments per post.
+ & Added new language entries to ModSettings, Post and Errors.language.php for above changes.
+ ! Maximum attachment size per post will now work correctly when a user edits their post.
+ ! Default sort in attachment manager changed to date, descending, because it's more useful.
+ ! Drastically changed the ModSettings stuff again.  Now you don't have to add the setting in two places.
+ ! The repair_settings.php script was forgetting the /images on the images url for the default.
+ * surroundText() didn't work at the beginning of a post in Mozilla.
+ ! Removed ssi_no_doctype in favor of ssi_layers.
+ & Added a "no entities" note to $txt['show_personal_messages'] in index.
+ ! Automatically linked URLs were getting the <'s linked too.
+ ! The installer could potentially mis-write Settings.php.
+ * The Search template did not handle having no boards well.
+ * Tidied up post template and added a lot of comments.
+ ! Fixed a bug that was causing the find user function not to work - at all.
+ * Now you can see if boards or topics you have requested notification on are new in your profile.
+ ! Messed with some of the debug stuff so it is cleaner...
+ ! Some server configurations didn't think of ['-1'] as [-1].
+ & Merged in a large portion of Webby's Dutch translations...
+ ! Added a new key to attachments to make things better and faster.
+ * Don't show language selection unless there are other languages to select.
+ ! Disallowing theme selection did plum didley.
+ + Added new option to polls to allow users to change their vote on a poll.
+ * Post, Poll and Display templates to reflect the above change.
+ & New language entries added to index.language.php and Post.language.php files for above change.
+ + Added the ability to set your SMTP port to any value.
+ & New language string added to ModSettings.language.php to reflect this change.
+ ! Added .xml to guest action whitelist so rss can work...
+ ! XML now cleans output to get rid of the doctype.
+ ! An index drop for back in Beta 2.5 was causing upgrade to be much slower than it needed to be - and it's not *necessary*.  Removed.
+ ! Optimized a query in the upgrade script.
+ + 'show permission' in the profile screen now shows all permissions and membergroups at once.
+ & Changed showPermissions_* tags in the Profile language file.
+ * Fixed the jump box in the 'show permission' profile screen (xhtml issue and session ID not properly passed).
+ * Split up the 'show permission' screen into a general permission part and a board specific permission part.
+ + Statistics can now be expanded.
+ * Changed the Stats template to show contract/expand for months.
+ ! Added rmdir() and mkdir() to the ftp in Subs-Package.php.
+ * Fixed a small layout problem with the Display template in the default theme under Safari.
+ ! Fixed bug in all converters resulting in statistics not being correct.
+ + Added converting of smiley data to the phpBB, invision and XMB converters.
+ ! All converters now correctly setup board access for membergroups.
+ + Deleting a category will now give you the option of moving any boards within to another category before deletion.
+ & Several language entries added to ManageBoards.language.php to accommodate above change.
+ * New template added to ManageBoards.template.php for above change.
+ + Added a theme option so that administrators can hide post groups of members who are already assigned a "real" group.
+ & Two language strings added to Themes.language.php to reflect above change.
+ ! vBulletin converters now also convert smileys.
+ ! All converters now properly support "weird" database names.
+ + Session timeout are now considered a post error, so nothing should be lost.
+ & checkSession() can now return an error, instead of calling fatal_lang_error().
+ * Added texts to explain the post error.
+ & Added a block of error_* tags to the post language file.
+ + Javascript is now used to show extra attachments boxes in the default theme; but only as many as you can post.
+ * The Post template has been updated with these changes and made it handle the permissions better.
+ & Added two language entries to the language files for this purpose.
+ ! Fixed minor bug with invision converter failing on boards with sub boards.
+ ! Fixed bug with quick moderation which resulting in topic counts being deducted twice.
+ ! Fixed bug which resulted in moderation logging not occuring consistently when removing posts/topics.
+ ! Help sub-directory of images removed and help image (helplogo.gif) added to images directory.
+ * All help files updated to reflect above change.
+ ! Page links in the attachments manager were incorrect.
+ + You can now add ;all to unread to not show "since last visit"... no inteface yet.
+ * The option to delete current attachments was lost after previewing a post.
+ & Strings 562 and 561 updated to sound crisper and cleaner, removed DATE which was often incorrect and not needed anyway.
+ ! The value of viewNewestFirst was conflicting badly with personal message defaults.
+ & Added a description for membergroups and postgroups in the "Edit Membergroups" screen.
+ ! Fixed some minor bugs in the view permission profile screen.
+ + Sending a PM that has a timed out session no longer redirects to a fatal_error.
+ * Error message is now shown when something goes wrong sending a PM.
+ ! Make a distinction between 'to' and 'bcc' for error 'pm recipients not found'.
+ & Moved error tags from Post lanugage file to Error language file.
+ ! PM send report now shows all users that successfully received the PM.
+ & $txt['pm_successfully_sent'] changed to show individual recipients.
+ ! Fixed wrong formatted post data that is passed by the admin login session validation.
+ + Added session timeout protection in the template editor.
+ ! Fixed bug which meant search was not correctly sorting by date.
+ ! Fixed bug which would result in moderation logging errors when deleting topics.
+ ! Fixed bug in markBoardsRead which would cause an issue if not passing it an array.
+ + Restyled Smiley admin center.
+ & Changed and added several tags to ManageSmileys language files.
+ & Added some smiley_* tags to the error language files.
+ ! added modSettings for absolute path to the smileys dir ('smileys_dir').
+ + Smileys can now be put in a popup.
+ * Changed the structure of $context['smileys'] for the Post interface.
+ & Added more_smileys* tags to the Post language file.
+ ! The calendar wasn't showing events, birthdays, etc. on the last day of the month.
+ * Made some asthetic changes to the smileys interface on the post page.
+ & New language entry added to Post.language.php to accommodate above change.
+ + A new child board will now automatically take its parents permissions.
+ ! Subdomain independent cookies were not working with domains with no subdomain or with .co.jp, etc.
+ ! Now, ssi_login() does nothing if you are not a guest.
+ ! Upgrade now does some cleanup for the memberGroups column.
+ ! Fixed errors you would get if you went to post2 directly - although you shouldn't do that.
+ * Attachment preview warning now works properly again.
+ * If you attach something and then hit preview/get an error, additional options will be expanded.
+ & Updated $txt['attach_preview'] so it makes more sense with the new functionality.
+ * Fixed it so auto-focus for login works in new builds of Firefox.
+ ! Fixed some bad links in the help files. (weren't internationalized...)
+ * Importing smileys into an existing set is no longer an option, but instead a link.
+ ! You can only import smileys if there are actually any in the directory that are not already installed.
+ & Several new language strings added to ManageSmileys.language.php for above changes.
+ + Added warning message to indicate if new replies have been made when posting to a thread.
+ & New entry, enableNewReplyWarning, added to Help and ModSettings language files for option text for above change.
+ & Two new entries added to the Post.language.php files for the errors messages for above change.
+ ! Changed karmaWaitTime so that it is treated as a float - so 0.5 means half an hour.
+ ! Calendar events should not be duplicated, but should show the first next spanned event.
+ ! The "Visit Simple Machines!" string in the help files was not translatable.
+ + Added file repair_ID_TOPIC.php, for resorting topic IDs.
+ ! Fixed some minor bugs in repair_ID_MSG.php.
+ ! Double submission prevention of forms is now handled by the session AND JavaScript (especially wireless devices need this.)
+ * Added an extra hidden field seqnum to several post forms.
+ & Added an error message in the error language file for duplicate form submission.
+ * Added a wireless post icon for posts sent from a wireless device.
+ ! Corrected a little design error with showPermissions. (border)
+ ! Hopefully install.php not being writable will be okay... more people will have to delete it manually.
+ & Added language entries to index for notifications of non-reply events.
+ + You are now notified when topics you have set for notifications are stickied, locked, removed, split, merged, etc.
+ ! Theme conversion was not always working on windows servers.
+
+
+April 2004:
+--------------------------------------------------------------------------------
+ & The word "offline" was spelled wrong in onlineEnable in the ModSettings language file.
+ ! The url_image_size() function now handles 500 errors as well...
+ ! 'disableHostnameLookup' wasn't saving in ModSettings.php.
+ * The boardseen's in Recent.template.php were supposed to be topicseen.
+ & Minor grammatical errors in the Profile language files.
+ ! Invision converter wasn't doing avatars properly.
+ & Calendar was misspelled in ModSettings and Help sometimes as "Calender".
+ ! Help for profiles updated for the new look, at least mostly.
+ ! If you are not the poster, you no longer get the courtesy editing time.
+ * Now daily statistics are considered a "detailed" thing you can view by clicking a link; this makes the stats page significantly shorter, and makes it look better generally.
+ & Added a "more detailed" link to the Stats language files.
+ ! Minor notice if you didn't enter a code to set your password.
+ ! Installer's FTP now works properly on PHP 4.1.x.
+ & Added a listing to the installer for files that need to be made writable.
+ ! Installer no longer deletes the Install language files.
+ ! The default path for the FTP part of the installer was wrong usually.
+ ! The installer can now more reliably delete itself, even with nobody servers.
+ * Added a "credits" section to the admin, and to the Admin template.
+ & Added language entries for the new page. (not done yet!!)
+ * Corrected Classic's link to catbg.gif in style.css.
+ ! Don't log unable to load errors in the error log for the spell checker... there's nothing that can be done!
+ ! Put the "Forum Configuration" menu above the "Member Controls" menu.
+ ! Updated ICQ link to http://web.icq.com/whitepages/about_me/1,,,00.html?Uin=(id).
+ * Temporary "quicker" admin interface for some things, not final.
+ ! Don't bother with .fromXXXXXXX if there are no replies to the topic anyway on the message index.
+ * Solved td and tr bbc image discrepencies... again.
+ & Added a setting to use META refresh redirects instead of HTTP ones.
+ ! Updated version numbers to "1.0 Beta 5+" to avoid confusion.
+ ! Upgrade now checks the version of the index language file too.
+ ! Now, if arg_separator.input includes ; there will be a small speed boost ;).
+ ! Backed out is_writable check on session.save_path.
+ ! Some MySQL servers didn't like the backup method exactly... it should be working now.
+ ! Posting wasn't checking the lock_own permission exactly right.
+ ! Some PHP versions don't seem to like references...
+ ! Some calendar functions weren't affecting $context properly in SSI.php.
+ ! If upgrade does 2000 messages at a time it doesn't need to sort by ID_BOARD... (filesort anyway!)
+ ! It seems some hosts disallow the set_magic_quotes_runtime() and version_compare() functions.
+ ! Added an .htaccess file to be used with Apache; includes many optimizations and security settings.
+ & Cleaned up quick task list in admin and made it respect permissions.
+
+
+SMF 1.0 Beta 5 Public                                             April 26, 2004
+================================================================================
+April 2004:
+--------------------------------------------------------------------------------
+ * Added some breaks to the edit news screen so Opera can understand it properly.
+ ! Was missing some debugging information in Security.php..
+ ! In PHP, 0 == '+' evaluates to true... which was causing problems in updateMemberData().
+ & There's only one i in Uninistall :P.
+ ! Attachments and uploaded avatars should work in more buggy versions of browsers..
+ & Added (in a new window) to show_personal_messages in the index language files.
+ ! You would get an error sometimes if you created a new group and didn't specify access...
+ * Fixed a small problem with the admin announcements... didn't look good is all...
+ ! Package Manager linked to "pre" instead of "install" after downloading a package.
+ ! Code review: Help.php. (cleaned some comments up, etc.)
+ ! Printpage now handles general tag parsing much better, faster, and cleaner.
+ ! Clarified the \n and <br /> discrepencies in doUBBC() and parsecode().
+ ! Fixed a potential issue in statistics keeping...
+ * Removed remaining db_debug_junk_temp() calls from the index templates.
+ & Changed aditional_membergroups to additional_membergroups in the Profile language files, and added additional_groups_show.
+ * If you had a lot of groups, the profile was way long - now the additional groups are not listed until you need them.
+ * Moved avatar preview in profile and made it look better imho, and certainly so in 800x600.
+ * Moved posts to account settings, made karma use javascript to always have a correct total ;).
+ * Took out the "Personal Settings" section completely and merged things accordingly.
+ & Removed the now unnecessary $txt['theme2u'] and $txt['personal'] from Profile.
+ & Renamed all the profile sections to be "friendlier".
+ & Added specific information for each section, and removed $txt[698] - in the Profile language files.
+ ! Fixed bug where creating a new board was dying horribly if you didn't need to add access to specific boards.
+ ! The installer wasn't always output buffering everything.
+ & The ftp_path_info from the Install language files wasn't being used properly.
+ * Profile and post signature text size were different.
+ * Deny permissions were "dissapearing".
+ * You can now see the height, width, and file size of attached files.
+ ! Package Manager should work around issues with broken package lists.
+ ! SSI was sending a doctype as well.
+ ! ModSettings.php now handles missing settings MUCH better, so you don't need queries or anything for mods.
+ & Added a disableHostnameLookup option and various related language strings.
+ & Removed $txt['smf313'] from ModSettings language files and took out the "extended" type which was just fluff anyway.
+ ! Should no longer be using superfluous (e.g. marked by wastefulness :P.) obExit()'s.
+ ! Converters were using ; instead of &amp; for "incomplete" steps.
+ & Added permissions_deny_dangerous to the ManagePermissions language files.
+ * Now a warning is given when you are denying permissions, and the interface is a little easier to navigate - I think.
+ & Now if max_messageLength is set to 0, it means no max.  Changed the label to make this clear.
+ & Removed $txt[57], $txt['smf116'], $txt['calendar32'], $txt['calendar49'], and $txt['smf104'] from ModSettings.
+ & Totally reorganized the ModSettings language files so they actually make some amount of sense... split smf69 into three parts.
+ ! Sometimes the features and options page wouldn't collapse certain areas, caused by an IE bug.  Workaround made.
+ & Renamed some strings in Help, Admin, and ModSettings as well to simplify adding settings to ModSettings.php.
+ ! Updated version to SMF 1.0 Beta 5 Public in preparation of release.
+ * Now using the "delete_selected" button, but only for the Default theme since the others are missing.
+ ! matchPackageVersion() now trims whitespace.
+ ! You can now use reverse="true" on modifications to parse them backwards for uninstallation.
+ & Added new "easy" time format for using the forum default, changed "Ban User" to "Ban this user".
+ ! Removed my testing address from the package server list...
+ ! Package Manager options won't save the FTP stuff right now, I haven't decided on it.
+ ! Added contextual information for the darn group color.
+ & Moved previous/next into the language files from the settings table for i18n.
+ * Added fetchSession magic to the Display/Quick Reply stuff.
+ * Fixed wordwrapping in the most time online section of Stats.
+ ! Now, in most cases, if the user gets an error they won't be logged as doing x.
+ * The preview in Post now overflows properly in Internet Explorer ;).
+ ! Took out description of wildcards in searching help at least for now.
+
+
+SMF 1.0 Beta 5                                                    April 21, 2004
+================================================================================
+April 2004:
+--------------------------------------------------------------------------------
+ ! Session URL rewriting was broken for the wrong versions of PHP :P.
+ ! Added file_put_contents() to Subs-Package.php
+ ! Added some as-yet unused options to the package manager for FTP and backups.
+ + The installer can now chmod files using FTP so they can be written to.
+ & Added Install language files for the new installer.
+ ! The installer is now almost totally i18n friendly - just have to clean up some of the settings table and holidays.
+ ! The installer looks a bunch nicer now, but doesn't support ya anymore.
+ ! There's now an option in the installer for output compression.
+ ! The sql file can now have {$boarddir} and {$boardurl} in it.
+ & Manually migrated changes to old language files to Spanish ones, not all though. (too many...)
+ ! Regorganized default Settings.php so that it makes more logical sense, with better comments.
+ ! The MAJOR SECURITY RISK now looks much more annoying ;).
+ ! Turn off the moderation log on new installs.
+ ! The installer allowed a blank database name, which was bad for sure.
+ + It's now possible, in theory, to mark boards as unread.
+ + Added unread topics a simple and easy way that works ;).
+ ! Logs for topics and boards are assumed to be exclusive and should be kept clean. (topics takes precendence now!)
+ * The MySQL, PHP, and W3C links now all open in new windows.
+ ! Pruning topics no longer sends them to the recycle bin.
+ ! Typo in image resizing code would not resize some images properly.
+ ! Notifications can now be sent by post group access too...
+ * Put a dumb limit on post groups so they won't show for admins until 100 posts.
+ ! When you post a reply, uncache the last viewed topic so it can be "viewed" again.
+ ! Reviewed the phpBB2 converter and redid its layout, etc.
+ ! Registration disabled, activation and approval settings all merged into one setting.
+ & New language entries added to ModSettings.language.php and Help.language.php to reflect this.
+ ! Password is now emailed to new members regardless of whether the admin must approve the account.
+ & New language entry, $txt['approval_email'],  added to Login.language.php to reflect this change.
+ ! Registration center will now allow admin to look at remaining unactivated/approved accounts after the settings have been disabled.
+ + Find Members option added to pm preferences section of users profile.
+ ! Fixed a bug in Subs-Package, related to file_put_contents.
+ * Cleaned up some admin templates so they all do the help the same way.
+ & Installer now tells you to, and how to, get to the admin center.
+ ! Upgrade wasn't working well with groups that had apostrophes.
+ ! HTTP_HOST should already include the port number...
+ ! Reviewed the Invision converter, improved its UI, redid the attachments converting, and made it do bbc properly.
+ * The Admin template, in general, now looks a lot better in 800x600, etc.  It also works better... edit news, censored, etc.
+ & Now the "Edit News" and "Censored" sections *optionally* uses javascript to add items.
+ & Added more help next to the maintenance options.
+ ! The installer no longer allows invalid prefix characters - it just ignores them.
+ * Removed the unused cat.gif...
+ * Cleaned up some xhtml - inputs that weren't closed, etc.
+ ! Code review: Errors.php. (just some commenting, mainly.)
+ ! After-login redirection now works properly... again.
+ ! If you were a guest, and you tried to post with no name, you'd get an error.
+ & Put all of the "welcome" strings into one, namely $txt['welcome_guest'] - better for i18n.
+ * Changed the index template to use this new string; old index templates should still work.
+ + It's now possible to resend validation emails easily, and to change your email address after registering - with the correct password.
+ * Renamed the "activate" sub template in Login to "retry_activate", and added "resend".
+ & Some new entries addded to the Login language file for this purpose.
+ & Added $txt['whoall_pm_send2'] for pm sending...
+ & Attachments can now be limited by total size per post.
+ ! Now, attachmentSizeLimit or attachmentPostLimit, etc. = 0 means no max.
+ ! Attachments -> Disable New Attachments didn't work.
+ ! Remove old topics was removing stickies again.
+ ! When moving a topic, if you don't specify any text for the redirect, don't add two breaks.
+ ! QuickModeration2 wasn't logging actions properly... or at all.
+ ! Banning by email with wildcard should be possible even if ti might affect admins.
+ * Trying to edit the permissions from manage boards wouldn't work unless it was already local.
+ ! The installer should now properly update $webmaster_email when you set up your inital account.
+ ! When you banned registration, you got errors caused by seemingly minor typos.
+ * Signatures should now have scrollbars too.
+ ! The installer now does much better permissions checking on windows.
+ ! Reserved name search within/don't search within was broken - reversed.
+ ! Made upgrade.php look purdier, removed the javascript requrements.
+ ! Now updateMemberData() supports the '+' and '-' functionality.
+ ! Code review: index.php. (some minor reorganization, more comments, etc.)
+ ! Sessions in the log_online table should be session ids not hashes.
+ ! You shouldn't be able to add smileys with no code at all.
+ ! Spell check was checking words in code blocks too...
+ + Major security addition!  checkSession() now has a new parameter to check the referring action via session.
+ ! Added action session check to remove old topics, dump database, and manage attachments.
+ + You can/should now use "quotes" around members you are sending messages to - ie. "I, Brian".
+ ! The installer now automatically logs you in after installing.
+ & Added no_dump_database to the Errors language files.
+ ! Code review: DumpDatabase.php. (cleaned up a lot of commenting.)
+ ! Reviewed the vBulletin (it actually works now!) and XMB (untested!!) converters, upgrading the UI, etc.
+ ! Don't cache fatal database error messages in the browser!
+ ! vBulletin converter can now convert attachments.
+ ! If you are missing YaBB SE settings in Settings.php, upgrade handles it better now.
+ ! Added ID_BOARD column to messages table.  Should speed some things up.
+ * Fixed some very strange problems with the new index template by using a table instead.
+ ! The number of views now updates before the page view, not after.
+ + Show permissions now can be used to show either general permissions or permissions by board.
+ & New language entries added to Profile.language.php to reflect above change.
+ ! You could register members with no email address in the admin center.
+ ! You might get errors if you used deny permissions in some cases.
+ * Smileys should now sort, more or less, properly - and save on move.
+ + If you specify a theme in the URL, it is now "sticky" - works for guests too.
+ - Removed, at least temporarily, wildcard support in searching... it's much much faster now.
+ * Added a scrollbar to avatars on Display, and made the post summary overflow with scrollbars.
+ ! XMB Converter can now convert attachments.
+ * Added posts_per_day to contextual information and displayed it for Profile.
+ & Added a posts_per_day language string in the Profile files.
+ ! Added a few new logging events to the moderation log.
+ & Added 5 new language strings in Admin.language.php to reflect the above change.
+ + When creating a membergroup you can select which boards the new membergroup will have access to.
+ & Two new language strings added to ManageMembers.language.php to reflect the above change.
+ ! Upgrade wasn't always converting all messages to have ID_BOARD.
+ ! Avatar upload was mistakenly marking bitmaps as wireless bitmaps.
+ ! Code review: Who.php. (basically fine, just added a little commenting.)
+ * The invertAll javascript function no longer affects disabled checkboxes.
+ ! Banning wasn't always using the right name for the sorry message...
+ ! An error was thrown if two people hit the forum at the same time for the first time that day.
+ ! In SSI.php's pollVote, sometimes you'd get a weird error about copyright missing, if you accessed it directly.
+ ! SSI.php's topPoll/recentPoll were blank for anyone with the permission everywhere. (most people!)
+ ! You couldn't vote in polls with SSI.php in most cases.
+ ! Sometimes, poll results would word wrap in tight places - no longer.
+ ! If the userLanguage setting was off, sometimes strings wouldn't be loaded properly. (!)
+ * Messed with theme administration some, not done yet..
+ & Added some help strings for themes in Help, Themes, etc.
+ ! parseBoardMod() handles missing files correctly now
+ ! Now, if $fatal is false in loadLanguage, it will always load the language file.
+ ! Don't add <?php and ?> to PHP sections twice.
+ * Fixed some minor browser compatibility issues with Post and Display...
+ * Permissions manager now uses radios instead of select boxes.
+ & Added an explanation at the top of ManagePermissions.
+ ! If you tried to preview a theme it got "stuck" on that one.
+ + Added the option to show a popup on new personal messages.
+ * Added some code to the Settings templates to show the popup option.
+ & Added entries to Profile and index language files for the pm popup.
+ ! The ssi_examples pages were mislabeling showPoll.
+ ! boardOrder just wasn't big enough.
+ ! Now all the version numbers say Beta 5 - doesn't mean release today, just soon.
+ ! Cleaned up online logging slightly, not much changed though.
+ ! Posts per day showed rediculous values if the member hadn't been registered for over one day.
+ & Removed some "Hacker?" error messages and put them in Errors.
+ + Now you can pick between jpeg and png for saved avatars.
+ & Added some help text for some of the avatar settings.
+ ! Added some values to the default entries for allowed attachment extensions.
+ & Internationalized the default "Hi.+Are+you+there?" message.
+ ! Added xml:lang to rss and xml output for internationalization.
+ ! The removeMessage() function didn't properly handle working without a board.
+ ! Reminder was giving an error from the wrong language file.
+ ! Now, if you received a message from a guest it says "Guest" instead of not showing anything.
+ * Tweaked the InstantMessage template so it looks a little better.
+ + You can now delete messages with "quick moderation" by checking them from your inbox/outbox.
+ * Solved an issue in Firefox with signature overflowing.
+ ! TRUNCATE should come before DELETE FROM.
+ ! Older versions of PHP used null instead of false for filesystem errors.
+ & Changed a few strings in ManagePermissions to sound better.
+ * Modified the ManagePermissions layout a bit more.
+ + You can now set access rights via permissions instead of boards.
+ & Added the permissions_quickgroups help string to Help.
+ ! Adding a new board/category now requires the user to fill in the details before it's actually added to the database.
+ & One new language string, $txt['mboards_add_cat_button'], added to ManageBoards.language.php.
+ * ManageBoards template updated slightly to accommodate above change.
+ * The "Edit Membergroups" page now limits total stars to 99, and does better updating of the preview.
+ ! Upgrade now "auto continues" after some time... 3 seconds actually.
+ ! Changed some aliases not to use reserved keywords, although this is usually allowed...
+ + New help system using xml based help files with a lot more information.
+ * Moved help.css, redid it, and cleaned it up a lot.
+ * Removed the old-style help from the Help template.
+ & Tore out the now useless stuff from the Help language files.
+ & ReportToModerator now sends your email address and warns you that it does.
+ ! Optimized some for loops to not count an array's length every loop.
+ * The BBC buttons were missing the title attribute... again.  I swear I've fixed this three times at least.
+ & Minor aesthetic change to Profile's $txt['messages_from_ip'].
+ ! QuickModeration2 wasn't updating a topic's replies properly.
+ ! Moving topics no longer requires the move permission on both boards, for now.  Will rethink.
+ * Moved the catbg definitions to style.css.  It just is too hard for people to look everywhere, not worth making images portable.
+
+
+March 2004:
+--------------------------------------------------------------------------------
+ ! Made MySQL error messages look nicer in the installer.
+ ! Search wasn't handling multiple/0/mixed searching very well.
+ ! Added "police" smiley. (sorry, it's an inside joke...)
+ ! Upgrade wouldn't work properly without English installed.
+ ! Guests would sometimes get errors if they tried to access a profile and had no permissions.
+ & Email, Login, and Logout should be consistently spelled. (English only...)
+ * Cleaned up some <label> elements so they work properly in IE 6.
+ ! Added a Cache-Control header after the session_start() call although I don't really like it.
+ * Added session keep-alive code so that your session shouldn't time out while posting.
+ ! Added another smiley, and set the update package to contain the stupid smileys..
+ ! You couldn't edit a post with attachments if you couldn't post attachments.
+ * Adding polls and linking to the calendar used the first message on the page, not in the topic.
+ ! Changed the order of the recount so that the slowest thing was last.
+ * Sometimes the upshrink actions were being cached; fixed.
+ ! Tried to clean up after some code duplication in SSI.php.
+ ! Added setLoginCookie() to Subs-Auth to standardize the login cookie a bit more.
+ ! Small typo in template converter was causing very annoying problems in some cases...
+ ! Pspell wasn't loading external languages all the time, properly.
+ ! If you couldn't view ANY polls, recentPoll, topPoll, and showPoll died horribly.
+ ! The database dumper wasn't gzipping properly, or cleaning input properly.
+ * submitThisOnce() now makes <textarea>s read only on submit.
+ & Changed some remaining Who language file entries meant for im instead of pm.
+ ! Who now shortens the time to only what's necessary - not the "Today at" part.
+ * Who template should now look a bit better.
+ ! The installer and upgrader now have options to delete themselves when everything is done.
+ ! Removed the copyright referrer javascript code since it was causing problems apparently.
+ ! Calendar events weren't rolling over months/years.
+ & Added the $txt['rtm_not_own'] string to the Errors language files.
+ + Members can no longer report their own posts to moderators, it's almost always abuse.
+ ! There, now the md5_hmac function looks more confusing :P.
+ + Added [rtl] and [ltr] bbcode support, no button.
+ + Added hidden disableCheckUA setting and made it so the user agent is verified on session checks.
+ + Installer package should now redirect to install.php by default, but the check is removed upon install.
+ ! When you delete a membergroup, its access is removed from any boards it had access to.
+ ! Preventing a lot more bad IP addresses - 192.168.*.*, 0.*.*.*, and 255.*.*.*, 172.16.*.*.
+ * Fixed internationalization in the "find members" function's sub template.
+ * The DOCTYPE is now a theme setting in the init sub template - this makes debugging easier in IE.
+ * The BoardIndex template's categories should be much easier to theme now - backwards compatible.
+
+
+SMF 1.0 Beta 4.1 Public                                           March 27, 2004
+================================================================================
+March 2004:
+--------------------------------------------------------------------------------
+ ! Some theme conversion errors have now been fixed.
+ ! Non-administrators should not be able to register new administrators.
+ ! boardsAllowedTo now applies deny permissions properly, as well as handles allow permissions better.
+ ! Guests don't have passwords; they cannot validate, so don't even try - just make them login.
+ & The English version of $txt['notifyXAnn4'] now makes more sense as to what it does.
+ * Fixed a typographical error on one of the spanish buttons.
+ ! Installer was adding slashes to things twice... very bad actually.
+ ! Installer now checks for certain paths to exist.
+ ! The *expected* commas were screwing up a query where they were not handled properly in pick themes.
+ ! The installer now verifies that the username/email you are trying to use has not already been taken.
+ ! The installer makes sure Sources/Subs.php exists before trying to include it!
+ ! Minor typo was making boolean values from registrations not work.
+ * Hostname shouldn't distort Profile layout.
+ ! Recent failed when there were no posts at all.
+ * Removed any references to "form1" as a form - ManageMembers, ModSettings, and ManagePermissions.
+ * Today's birthday on the BoardIndex was displaying some invalid XHTML.
+ ! If none of the messages were new, it would not mark any as the "newest" message.
+ ! Changing the default sort of messages made the counter screw up. (Reply #.)
+ ! Jumping to a specific message or the newest message didn't work with viewNewestFirst.
+ ! Help still wasn't working after fixing the undefined sections.
+ ! Default value for stars changed to star.gif.
+ ! SSI's boardNews failed when there were no topics at all to display.
+ * Profile wouldn't preview the first avatar.
+ ! Minor notice if improper groups are set.
+ + Recent and unread should not include posts from the recycle bin board.
+ * Added information to explain why moderator isn't shown in account settings.
+ & Added strings to Profile and Help for this purpose.
+ * Replaced topic class icons for the classic theme.
+ * Calendar was linking to index.php not $scripturl.
+ * Removed cal_todaycolor and cal_captioncolor in favor of the template system.
+ ! What used to be $topic['extended_class'] is now known as $topic['class'].
+ ! Hits aren't logged when we're just downloading/viewing attachments/avatars.
+ ! Removed redirect option for attachments as it could be insecure and in some cases prevents attachments to work.
+ * Avatar directories with underscores (_) in their names weren't working.
+ ! Template converter didn't always convert the Content-Type correctly.
+ * Added help to the admin_login sub template in Login about what password it is, tweaked layout, added page_title.
+ & Added securityDisable_why to the Help language files.
+ + Now, if you set the number of days for the calendar on the board index to 1, it will say "Today's" instead of "Upcoming".
+ & Language files changed to reflect this new functionality.
+ * BoardIndex template changed to make this possible.
+ * Added a little helptext to the events listing to help administrators along - (how do you edit these events?).
+ & Added the necessary language strings to make this possible.
+ & Added a note to enableSpellChecking in ModSettings telling people that it doesn't always work!
+ ! Upgrade should now both update less and do gender properly.
+ ! The randomized session checks should now work on all server configurations.
+ ! Deleting boards now removes any permissions associated with that board.
+ ! deltree() was using chmod(..., 077) which in most cases did not work for obvious reasons.
+ ! Editing a post but not returning to it would show it as new.
+ ! Added something to stop people from trying fake PHPSESSIDs in their URLs.
+ & Added a note to smf244 - don't entity that string.
+ ! Package manager was naming the wrong file when it found one that was missing.
+ ! ssi_theme should be a "final decision" so to speak.
+ ! Creating a group based off another group caused big problems if that group had no permissions.
+ * Fixed some javascript mistakes (typos) in ManageMembers.template.php.
+ ! You shouldn't be allowed to delete the first message in a topic with quick moderation.
+ * Moved trackIP and trackUser to ManageMembers.
+ * There ain't gonna be no "<p>&nbsp;</p>" in MY code!!!
+ + Added showPermissions to profile so people can see permissions "at work". (not complete!)
+ * Added a showPermissions sub template to ManageMembers.
+ & Added strings to Profile for this...
+ ! Title for trackUser was very very wrong...
+ ! url_parts() and hence localCookies didn't work well with IPs as domain names.
+ * Added local time display to the profile summary.
+ & Added $txt['local_time'] to the Profile language files.
+ ! Removed some remaining <font>s.
+ * Printpage should look a lot better now, and use much better html.
+ * Distribution should no longer use deprecated elements like <u> and <s>.
+ & Profile strings updated to reflect members with no or all permissions.
+ * Show Permissions now makes a note of if you have all permissions or something.
+ * Printpage should now be totally black and white in most current browsers.
+ ! You should be able to see the results after expiration even if they chose "don't show until vote."
+ ! SSI's boardNews shouldn't clip strings that aren't too long.
+ ! Profile's dateRegistered wasn't very i18n.
+ ! Dumb typos in SSI.php's events function.
+ ! Nesting different *types* of [quote]s broke things sometimes.
+ ! Editing a board that had entities in its name didn't work well...
+ & $txt['theme_guests'] changed to 'Overall forum default' so it make more sense.
+ & Admin center now also includes 'Theme Settings'... added $txt['theme_current_settings'] to Admin.
+ ! Editing permissions now requires the admin_forum permission - at least for now.
+ & $helptxt['m_queryless_urls'] now shows whether it works or not; now doesn't work in CGI mode.
+ ! Now, if autoFixDatabase is on, "lost connection" errors will be tried a second time.
+ & $txt['who_hidden'] changed to be much more elusive and descriptive - 'Nothing, or nothing you can see...'
+ ! Search wasn't showing the correct last-post time.
+ ! There shouldn't be any more 'unknown' IPs, at least in theory.
+ ! Profile sidebar thing shouldn't be shown unless it is actually needed.
+ ! Profile was changing dlattach out, although I suppose avatars can be attachments. (?)
+ ! User's IP address is now contained in the $user_info array.
+ ! All the tables SSI.php outputs should now use the class "ssi_table".
+ * The default theme's css was using the theme URL not default URL.
+ ! Code review: QueryString.php. (cleaned up comments and redid some code to work better.)
+ + Queryless URLs should now work on more installs, because it doesn't change output size.
+ ! Code review: LockTopic.php. (minor clean up, not much to change at all.)
+ ! If the first character of a post is a space, it will now be displayed properly.
+ ! Code review: Notify.php. (minor clean up, should deal better with mods.)
+ ! Code review: SendTopic.php. (very minor clean up, just flows a little better.)
+ + Personal Messages can now be sorted by column.
+ * Changed the InstantMessage template so the links are clickable.
+ ! The poll functions in SSI should now follow permissions correctly.
+ + Added $context['browser']['is_ie5.5'], which makes it easier to fix things for older browsers.
+ * Fixed some Internet Explorer issues in older browsers...
+ * Moved the stupid darn avatar to the left side, happy?
+ * Fixed a small layout problem in the Profile template.
+ ! The Profile wasn't just listing images, but also other files it shouldn't have.
+ * Moved a lot of colors into the style.css from index.template.php for the default theme.
+ ! Now using Alienine's smiley set as the default, added classic.
+ ! Setting theme options with javascript shouldn't be logged. (jsoption)
+ & Minor aesthetic change to $txt['smf62'] so it reads a bit better.
+ ! Code review: Karma.php. (changed the flow of things to make it simpler...)
+ * Added an overflow for the attachments...
+ * You can now delete posts from the "show posts" page in a users profile.
+ & A language entry issues for manage_permissions was resolved - one duplicate entry removed (Admin.language.php).
+ ! You can no longer enter a negative amount of stars for member groups.
+ * Delete posts added to the recent posts interface as well.
+ ! Maximum message length shouldn't ever be less than, say, 100. (upgrade only.)
+ & Added (0 for no max) to all the $txt[689] strings in Admin.
+ * Fixed signature limit javascript and made it handle no limit.
+ * Added a "Spell Check" button to the signature in the Profile template.
+ ! Aspell now works on windows platforms. (using a workaround, though!)
+ ! Re-enabled language-specific spell checking.  Should work out, needs more testing.
+ * The spellcheck sub template in Post now uses your forum's colors and proper i18n. (yea, I can test it now locally!)
+ & Added Change, Change All, Ignore, and Ignore All to the Post language files.
+ ! Reminder email should not work if the activation_code in the database is blank.
+ ! Changed everything from mt_rand to use just rand, since mt_rand was not always being seeded.
+ * Code review: ReportToModerator.php. (now using msg instead of mid, but still compatible.)
+ ! $_REQUEST['start'] now defaults to 0 if not passed or negative.  If this is bad, $_GET['start'] should be used.
+ ! Avoid getting blank screens if there's an error shown before gzipping starts.
+ ! ob_sessrewrite shouldn't even be started until the header is outputted...
+ ! Added a check so $cookiename shouldn't ever get spaces in it, etc.
+ ! isAllowedTo() shouldn't ask for a password, and then give an error - if they can't.
+ * Fixed a small mistake in the Modlog template, and made it look a lot nicer.
+ & Removed modlog_object, modlog_expand, and modlog_retract from the Admin language files.
+ - You can no longer expand and contract the "objects" in the moderation log.
+ & Changed whoadmin_modifyModSettings and whoadmin_modifyModSettings2 because they were plum incorrect.
+ ! Renamed getMessage() to preparePostContext() in Display.php.
+ * Cleaned up a great deal in Display, and add a lot more comments that were missing.
+ ! Added a VERY BASIC and NOT DONE option to theme_info.xml to base it off another theme.
+ ! Moved registration agreement checkbox to the edit agreement page.
+ * Cleaned up the MoveTopic template so it looks nicer when things are collapsed, etc.
+ ! MoveTopic now properly handles permissions on both boards involved.
+ * Tweaked the Profile template's layout just a bit so as not to squish stuff so much.
+ ! Theme editor might edit wrong index template or style.css if use_default_images is on.
+ ! Personal messages in the outbox were being duplicated with multiple recipients.
+ ! Added sanity kludge so Settings.php wouldn't be saved improperly.
+ * No preview should be made of the star image if it is blank, in ManageMembers.
+ * Updated fix for overflow: auto; under Internet Explorer; now 5.0 and above only, but happens faster and works on all div blocks.
+ ! The srand() function should not be called too much, it degrades actual randomness.
+ & Changed a typo in ManagePermission's $txt['permissionhelp_moderate_board'].
+ ! Reminder should send the IP address...
+ * Using REPLACE for some log_topics inserts... althougb I suppose it's okay if it's already there.
+ ! Image size is now checked on posting, instead of viewing.... of course, it's so simple!
+ + Now image size limiting does even images *with* a specified width and/or height.
+ ! Updated all version numbers to SMF 1.0 Beta 4.1 Public in preparation for release.
+ ! The forum default theme's stuff wasn't being set properly when the default theme is disabled.
+ & Added a note to the admin_browse_w* language strings, saying not to entity them.
+ & Added error messages for profile_remove_own and profile_remove_any.
+ ! Changed cookie login time to a lot of years because it fixed some issues ;). (verified in many browers.)
+ + Deleting an account from a users profile now gives an admin the option of deleting posts made by that user.
+ * deleteAccount template changed to give option of deleting posts.
+ & New language strings added to Profile.language.php, all related to deleting posts of a user.
+ ! Fixed profile summary displaying incorrect local time.
+
+
+SMF 1.0 Beta 4 Public                                             March 14, 2004
+================================================================================
+March 2004:
+--------------------------------------------------------------------------------
+ * Reorganized topic classes, and updated the default ones with Alienine's.
+ ! Fixed problem with calendar being able to list boards off limit to a user.
+ ! Admins can no longer be banned by username, IP, or email.
+ ! Upgrade and install now set mostOnlineToday to 1.
+ ! Changed all version numbers to Beta 4 Public.
+ ! Fixed instant message bug in all converters.
+ ! Hits can now go up to a lot lot more than it could before ;).
+ ! Delete all messages can now force setting instantMessages to zero.
+ ! Register was adding slashes twice to the theme option names.
+ ! If you included SSI.php but didn't start a session, you'd get "SID"s in your URLs.
+ ! The calendar should no longer show spanned events in a row on the board index.
+ ! Deleting members now also hides their email addresses...
+ ! Quoting messages from a sender with special characters in there name was buggy.
+ ! Template conversion functions added to template.php.
+ ! Permissions of post groups are now added to the permissions of primary and secondary goups.
+ ! Split up membergroup management screen and permission management screen.
+ & Added language tag $txt['edit_permissions'] to Admin.lang.php and changed $txt[8].
+ & Created new language file ManageMembers.
+ & Moved around some language tags between ManagePermissions, ManageMembers, and Admin.
+ * Moved modify membergroup, and add membergroup screens from ManagePermissions to ManageMembers
+ * Added Membergroup index to ManageMembers template.
+ ! Split up regular and post count based groups in 'Edit Membergroups'.
+ * Added member count to the 'Email Your Members' screen.
+ ! Fixed a few bugs in 'Email Your Members' and cleaned up some code.
+ ! Fixed number of members shown in permission screen.
+ ! Themepicker now only shows themes that are set in the 'knownThemes' setting.
+ ! Membergroups are sorted everywere like: fixed groups (ID<4), regular groups (name), postgroups (postcount).
+ ! Dissolved determinePostGroup in loadMemberData() and loadMemberContext().
+ ! Removed loadMemberGroups() from several places were it wasn't needed anymore.
+ ! Modify permissions now also retrieves and stores 'deny' permissions.
+ * Changed checkboxes into drop downs in the Modify permissions screen.
+ ! Fixed wrong counting of permissions per membergroup.
+ ! Fixed SetQuickGroups and added the addDeny feature to it.
+ * Moved invertAll to script.js and added the function to the permission index and view members.
+ & Inverted subscribe function notifications (checked is unsubscribe).
+ * Changed the appearance of the notification settings into a messageindex style.
+ * invertAll now supports a mask among other things, and is faster and better.
+ ! Added an option added to hide users email from guests.
+ & $txt['guest_hideEmail'] added to modSettings.language.php and $txt['m_guest_hideEmail'] to Help.language.php.
+ * Moved copy_to_outbox to a different section of profile.
+ * Added Quick Moderation to Display templates.
+ & Added quickmod_delete_selected string to the index language files.
+ ! Moderator permissions should no longer inherit from parents. (logical; other permissions don't.)
+ ! The phpBB converter should now handle personal messages much better.
+ ! Upgrade should now convert the template.php file ;) :D!
+ ! Member list would not go away... although it respected permissions.
+ & Added $txt['mboards_permission'] so that permissions can be accessed via the board management.
+ * Permissions can now be set with a separate "board" screen.
+ * Permissions screen can now *show* who has access to the board.
+ & Added $txt['permissions_access'] for this purpose.
+ * The header can now be shrunken even if you are a guest.
+ ! Denied permissions are *better* supported in allowedTo() and boardsAllowedTo().
+ ! Added move_own to permission interface.
+ ! Stickyness can only be changed now if the EnableStickyTopics modSetting is enabled.
+ * Quickmod will only show on Display.php if you have the proper rights.
+ ! Fixed access settings in $context for board permission index screen.
+ ! Replaced modSetting 'enableReportToMod' by permission 'report_any'.
+ ! Htmlspecialchar'ed the retrieved member IP in loadMemberContext.
+ * Moved the whois links to track IP.
+ & Added language tags whois_* to Profile.php.
+ ! Checked permissions (75% percent done).
+ & Added help tags for the permissions (75% done).
+ & Updated german language files thanks to Daniel D., including recent additions.
+ ! Fixed some permission bugs for polls.
+ ! Polls now always show options and (allowed) links.
+ ! Checked permissions (done).
+ & Added help tags for the permissions (done).
+ * Optimized english buttons and put in optimized german temporary buttons.
+ * Added some possible error handling in the Profile template for the avatar javascript.
+ & Added three new language entries in index.language.php. (All poll related)
+ * There is now visual information on when a poll will expire.
+ ! Fixed a massive security issue in regcenter allowing people to bypass validation.
+ * Added javascript code size fix to the default theme, annoying as IE can be.
+ * Reduced confusion in the permissions manager.
+ & Added some help texts for the permissions manager.
+ & Removed "(IE and NS6 only)" because it is dumb and stupid :P.
+ * All of the german/spanish/dutch images should be more or less updated.
+ ! Fixed ability to edit polls and leave them with no options/question.
+ & New language entry, $txt['poll_no_question'], added to Errors.language.php.
+ ! Upgrade should do auto_increment correctly now.
+ ! Latest member was doubly htmlspecialchar'd.
+ & Added some repair boards stuff, minor cleanup to some mistakes.
+ ! Notifications in the profile are now ordered by time posted...
+ ! The rss feed for latest members was using the wrong guid.
+ ! Error reporting should respect the error_reporting setting.
+ * The powered by and valid logos now light up on hover in the default theme.
+ * The default display template is now in sync with the classic one.
+ ! Fixed calculation of birthdays (birthdays in month < 10 were not found).
+ ! Reduced amount of cached birthday information (less memory used, more birthdays allowed).
+ ! Birth year can be left empty in profile settings (assumed to be 0000).
+ ! Fixed birthday not shown in profile summary if the birthyear is left empty.
+ * Today's birthday highlighted on boardIndex.
+ ! Tried to disallow Settings.php being saved shorter than 10 lines.
+ * Fixed a minor html mistake in the ManageSmileys template.
+ ! Fixed events on boardindex not showing for group 'registered users'.
+ ! Fixed query_see_board so that 0 means all not just ungrouped.
+ ! Fixed adding membergroup with pre-defined permissionsettings.
+ ! Remove nested quotes replaces nested quotes by a line break.
+ ! Resetting a birthday should be possible now by just removing fields.
+ ! Events were zero based in YaBB SE, not correctly upgraded.
+ ! Default board for calendar events had no effect.
+ ! Added a check for a bad session.save_path in the installer... and a plug for my bug report ;).
+ ! Tweaked the credits slightly so they display a lot better.
+ * Administration sidebar is now more font-size friendly.
+ ! URLs with single quotes are now autolink'd, although I still don't think it's valid :P.
+ & Modified $txt[430] so it could include the username.
+ ! Saving settings now updates the calendar too.
+ ! Calendar wasn't showing holidays properly. (t. Patrick's Day, ernal Equinox.)
+ ! The member who starts/adds a poll is now recorded in the polls table.
+ * Added confirmation Javascript for attachment remove action.
+ & Added $txt['confirm_delete_attachments*'] to the Admin language files.
+ ! Added session check to remove attachment(s).
+ ! Fixed age selection in admin Member Search.
+ ! Randomized session check code.
+ ! Fixed permissions not properly counted for 'Guest' membergroup (some PHP/MySQL versions).
+ ! Removed loadMemberGroups (there's not enough added value there anymore).
+ ! Profile Account settings remember additional membergroups when an error occurs.
+ * Profile Account settings use different context variables to select membergroups.
+ ! Upgrade should now solve any missing-language problems.
+ ! Typo was making the above not actually solve anything, but at least it warned you.
+ & Fixed a typo in the non-english language files in ManageSmileys.
+ * De-admin prevention works again, minor change to Profile template.
+ ! Backup in upgrade wasn't working for *some* versions of MySQL.
+ & Very minor typo in the description of a certain permission.
+ ! A ] is now allowed before automatically linked URLs.
+ * People without the "admin_forum" permission can no longer set other people as administrators.
+ ! See that line two above?  It was bad.  Very bad.  ] are no longer allowed before links.
+ * Added some preview functionality to EditPoll - for later use.
+ & Fixed small version problem with ManageMembers language files.
+ & Translated some of the German language files.
+ ! Autolink wasn't verifying scheme properly.
+ ! Help defaulting was not working properly in some cases.
+ ! Time offset should be floating point in Features and Options.
+
+
+February 2004:
+--------------------------------------------------------------------------------
+ ! The installer now asks directly for the forum name during installation.
+ ! VERY annoying typo in MessageIndex.php was causing children of children to be shown erroneously read/unread.
+ * Attempted to maximize desktop space economy-style in the ManagePermissions template.
+ ! Most every link is paired with a href now and vice versa, not done but very tired.
+ ! Trying to set a board as primary when there are no other boards no longer dies miserably. (now it dies silently ;).)
+ ! Maximum for constructPageIndex was the end, not the page before the end.
+ & Added the $txt['change_color'] string to all the Post language files.
+ * Now when you select a color it pops back to "Change Color" so you can pick it again.
+ ! Added an optional boards parameter to allowedto() and isAllowedTo().
+ ! boardsAllowedTo() now also has a boards parameter.
+ * The search and profile's recent posts should now apply permissions more or less correctly.
+ * Ten most recent posts now also does this, as well as linking to the poster's profile ;).
+ ! Added 'is_guest' => false to loadMemberContext().
+ * Removed an array initialization when commenting, oops.
+ ! Removed some references made on local variables. (doesn't save memory.)
+ ! Actually cleaned up the glow/shadow tags without removing them!
+ ! Calendar birthdays should now be in the proper month and day even on leap years.
+ ! Added 'Date Posted' to search screen, removed Reples/Matches. Left old code in if people want to change theme.
+ ! Theme installer works on more configurations now. (stupid $_FILES array.)
+ * Fixed some void(0) problems with a couple templates...
+ * Find Members shouldn't add the same member more than once, focuses box automatically.
+ + Each board can now be explicitely switched between Local and Global permissions.
+ + Post group permissions now add up to the other permissions.
+ + The number of permissions that are set for each membergroup is shown on the permissionindex page.
+ * Changed the local permission part of the permission index to reflect the changes in permission structure.
+ ! Who is online shows members as guest if the profile cannot be found.
+ + Added currently invisible function, IMPrune, for deleting personal messages over x days old.
+ & Two new language entries added to InstantMessage.language.php.
+ * New template, prune, added to InstantMessage.template.php.
+ ! Updated Instant Message functions to represent PM, not IM.
+ ! The calendar was calculating age based off the current year.
+ * $context['user']['avatar'] now is an array with more useful information.
+ * Added some spacing above the moderation buttons in Display.
+ ! Changed "TRUNCATE TABLE" to "TRUNCATE".
+ ! More im related variables renamed.
+ ! imsend() renamed to sendpm().
+ ! Permissions im_read and im_send renamed to pm_read and pm_send.
+ ! I have *no idea* why it has to be done NOW, but if it's going to be done now, it should at least be done fully - im->pm.
+ * Changed lots of templates, as did the changes above, since if Display has to be changed screw it anyway.  No patience.
+ * Added context links to the track IP stuff.
+ ! Having no gender when upgrading no longer causes problems.
+ * Post wasn't showing the "Delete Event" button.
+ ! Typo on SetJavaScript made it fill the error log rather quickly.
+ * Changed a bunch of "."s to ","s in the InstantMessage template.
+ ! The link to edit an event was using the poster's ID instead of the topic's.
+ * Help popup now always has a margin, even if it is 0 in style.css.
+ * Calendar now has more padding in the days...
+ * Cleaned up the context stuff a lot in MessageIndex for children.
+ ! Reversed the order of the participation key, should make more things faster.
+ ! Some minor fix's on the converters.
+ ! Added classic theme to installer and upgrader.
+ & Moved everything out of the Settings language files because they should be for language specific settings only.
+ ! Permissions can now be add/deny instead of just add.
+ * Changed the default theme, please don't be mad at me if you don't like it :P.
+ ! Deleting a theme now resets everyone who was using that theme to ID_THEME = 0.
+
+
+SMF 1.0 Beta 4                                                 February 21, 2004
+================================================================================
+February 2004:
+--------------------------------------------------------------------------------
+ ! Now there should be less difficulties with quotes and such tags.
+ ! Moderators should not double up parent/child now.
+ * The smiley set interface is much better now... ManageSmileys, etc.
+ & Added some new strings to ManageSmileys for the new interface.
+ ! Added more documenation to DumpDatabase.php and Notify.php.
+ * Moved images/im_sm_newmsg.gif to images/icons/im_newmsg.gif.
+ * Removed the unused images/im_sm_prefs.gif image.
+ ! Nearly finished the documentation in Errors.php.
+ ! MySQL 3 didn't like a certain query in notification settings, it seems.
+ ! Added a "package-list" parameter to the package server query...
+ ! Removed the last PackageCreate() functions from Packages.php.
+ ! Removed the Packer class finally ;). (still far from done.)
+ ! Completely removed the old $guestaccess, $MaxSigLen, and $MaxMessLen variables.
+ ! Put in some better memory saving devices... not completely used yet.
+ ! Removed the $showbbcbutt, $enable_ubbc, $timeformatstring variables.
+ ! Changed all the version numbers to 1.0 Beta 4. (not releasing yet!)
+ ! Version checker now looks for .template.php on the end.
+ + Added showPoll to SSI.php - this displays poll by topic ID - allows voting AND viewing of results.
+ ! Put showPoll into ssi_examples.php and ssi_examples.shtml.
+ ! Added is_last to boardNews function to make it look better.
+ ! Jack.R.Abbit's package server URL corrected to not have an extra /.
+ ! Cleaned up some of the PackageGet stuff to use xmlArray's auto_trim feature.
+ * Separated the sub templates in Packages because it was a mess.
+ & Added packages_latest/packages_latest_fetch to the Packages language file.
+ * Added a "Latest Packages" panel - to be moved to look better - in Packages.
+ * Added $context['support_info'] and $context['current_versions'] in preparation for some changes to ?action=admin.
+ ! Began the start of parsePackageInfo() and added matchPackageVersion() to Subs-Package.php.
+ ! Added an xml directory to the other stuff for DTDs and such stuff.
+ ! The upgrade script was creating a legacy $HeroPostNum variable in Settings.php.
+ ! Changed calendar_holiday DRASTICALLY into calendar_holidays.  Don't worry, I have reasons.
+ ! calendarHolidayArray() now takes two dates and gets the events between them.
+ ! calendarBirthdayArray() now also takes two dates, almost done correcting the bug... (next is the calendar table..)
+ ! The calendar table now uses the same case as all the other tables ;).
+ ! calendarEventArray() now goes between two dates too.
+ ! SSI.php's recentPoll function has been greatly optimized now.
+ ! The calendar table has now lost day/year/month in favor of eventDate. (this is better for queries.)
+ ! Themes not edits the index.template.php file instead of index.php. (oops...)
+ ! The attachment downloading routine now restarts the output buffering, so as to fix any output already sent.
+ ! Moderators didn't seem to be working properly, only the first worked.
+ ! The moderatrion log no longer chokes if you click "remove" with nothing checked..
+ ! Updated a lot of the documentation in Subs-Package.php.
+ ! Upgraded the xmlArray class to the most recent version, which adds a lot of functionality.
+ & Removed errlog_total and 657 from the Admin language files.
+ * Removed all the statistics from the administration panel.
+ & Removed the 425 language string from the Admin files.
+ * The administration interface now has an area for common support concerns.
+ & Added support related entries to the Admin language files.
+ ! Added the latest-support.js file to deliver the latest support concerns.
+ & Changed the average_members string to 'Average registrations per day' in the Stats files.
+ ! Added and cleaned up more documentation in Printpage.php, News.php, MoveTopic.php, and Memberlist.php.
+ ! Fixed a minor undefined index notice in Subs-Boards.php.
+ ! Clarified the xmlArray error messages by adding "XML" to them ;).
+ ! All entities (like &#039;) are now correctly parsed in xml files.
+ ! Added a fix that converts international entities to text in preparsecode().
+ ! The calendar now shows birthdays for *any year*.... duh.
+ * Optimized a few more images. (namely blank.gif in default.)
+ ! saveInstalledPackages() now checks if the installed.list file is writable.
+ ! the getPackageInfo() function now conforms to the dtd as far as what's required and what's not.
+ ! Reorganized some of the package manager code and put comments as to what needs to be done. (not 100% complete or anything...)
+ - Removed basic/advanced permissions interface.
+ + Added a per permission interface.
+ - Removed permission wizard (was already replaced by the drop down boxes in the permission index page).
+ + Merged board and membergroup selector into one interface on the permission index page.
+ + Added option to switch between 'inherit permissions' and 'set local permissions'.
+ & Several language strings have been changed, removed and added in ManagePermissions.php.
+ & Language strings for permissions have been regrouped.
+ * Removed templates modify_board and wizard in ManagePermissions.php.
+ ! Fixed membergroup Global Moderator (=2) in upgrade.php.
+ * Decreased padding-space between admin center content and nav bar.
+ * Increased width of the index template to 95%.
+ + Version checker now checks language files in default directory.
+ & All language files altered to give version tags at top.
+ & Fixed some typos in the Help, index, Settings, Profile, Post, and Errors language files.
+ * Smite/Applaud links were wrong in the InstantMessage template.
+ ! Today mod no longer shows errors on negative dates.
+ * Quotes and code blocks should look nicer in wireless now...
+ + You can now activate your account manually by typing in the code.
+ & Moved some strings around to make this possible, and added a few - all to index.
+ * Added an "activate" sub template to the Login template to make all this possible.
+ * The Post template no longer shows "delete event" when creating a new event ;).
+ & Changed the wording of a few setting descriptions, added help for 3 existing options.
+ + Permission checking and documenting (25% done).
+ * Links removed when permission is not set (25% done).
+ + Info about online status added to theme user context.
+ & Serveral changes in the $txt['online?'] tags.
+ * Online icon and link are now constructed in the template.
+ ! Fixed moderators not getting proper permissions.
+ ! Fixed error 'missing topic ID' for 'post new event'.
+ + Post event now only shows those boards a user is allowed to post in.
+ - Removed option to set specific event posting members (already done by the permission system).
+ ! Made some big optimizations to the topics table and a few to SSI.php ;).
+ * Removed the big table that everything in view/delete members seemed to be contained in.
+ ! News feeds were double spaced because they used nl2br.
+ ! Feeds now use the email address instead of name for author.
+ ! Personal Messages weren't always deleting when you deleted a member. (ie. their sender.)
+ * Added some commenting to the index template.
+ * Changed a lot of the colors to just use lowercase, since a standard is needed.
+ - Package manager no longer uses "<TBLPREFIX>" in sql files; use "$db_prefix" instead.
+ ! The parsePackageInfo() function now does stuff, sorta...
+ & Removed some unslightly markup from the copyright statement.
+ ! The ssi_recentEvents() function wasn't going through the array properly.
+ ! Tabs have been kludged to produce good html except under MSIE 4 and 5, so they still work.
+ * Printpage now shows the topic subject in the title.
+ ! Added some more comments to important functions in Security.php.
+ * When clicking "mark all read" from the unread replies, it only marks those topics read.
+ - Global moderator no longer is a special membergroup.
+ ! Changed how events were cached to save space and actually do it properly.
+ * Changed a lot of the admin templates to make them more "Universal" in appearance.
+ & Added some extra help items to Help.language.php, and some minor additions in other language files.
+ * Simplified jump_to, although old stuff should still work fine.
+ * Quick moderation now remembers where you last moved the topic(s) to.
+ ! The upgrade script now saves Settings.php properly more of the time.
+ ! The upgrade script now redoes paths like './', etc.
+ ! Upgrade now skips updating the messages table if it doesn't need to be updated.
+ - Upgrade no longer converts attachments with a size but no name.
+ ! Most of the times ALTER IGNORE was being used in upgrade.php, it was unnecessary. (it only ignores duplicate uniques.)
+ ! You can now have no reserved names, without getting errors... or so I think.
+ ! Moved around some package management code to make it go smoother.
+ ! Optimized the calendar birthday query some more, because it was doing extra math before.
+ ! Reordered a few of the different actions in the administration sidebar.
+ * Spaced out the links on the administration sidebar more so they are easier to read.
+ * Added some more help links to administration templates and tweaked a few more things.
+ & Added latest_support, latest_packages, and latest_themes to $helptxt in the Help language files.
+ & Moved around a few strings in the index and Settings language files.
+ ! Clicking Install! on themes without doing anything no longer gives a "Hacker?" error message.
+ * The "Back" link after installing a theme now correctly reads "Back" ;), and it shows a sidebar.
+ ! If for some reason a topic has no messages, it should now cause less errors.
+ & Added one language entry ($txt[11]) to Admin.language.php.
+ & Several language entries added to Profile.language.php.
+ * Profile template changed quite a bit to make it more consistent. Notification and "Show Posts" sub templates changed considerably.
+ * Reformated the notification sub template of Profile so it looks nicer, and added a board notification listing.
+ & Redid all the language strings associated with the notification section and added a few. (Profile)
+ ! Deleting topic notifications no longer deletes all board notifications.
+ * The topic notification list now shows what board the topic is in, sub template changes are NOT compatible!
+ * Cleaned up the HTML in some templates that were using <b> inside catbg. (only decreases the usefulness of style.css!)
+ * Moved titlebg from td to tr in a few remaining places, cleaned up its <b>s too.
+ * Tweaked the Display templates so that the <on: date> line wouldn't have extra padding.
+ - Removed $user_info['is_moderator'] and $context['user']['is_moderator'].
+ + Added new permission moderate_board for all those extra things that make a moderator.
+ + Added permission edit_news.
+ + Added permission administrate_forum (merging repair_forum permission and admin-specific permissions).
+ + Added permissions profile_remove_own and profile_remove_any.
+ - Removed permissions profile_edit_own and profile_edit_any.
+ & Renamed profile_own_identity to profile_identity_own and profile_any_identity to profile_identity_any.
+ & Renamed profile_own_extra to profile_extra_own and profile_any_extra to profile_extra_any.
+ & Renamed profile_own_title to profile_title_own and profile_any_title to profile_title_any.
+ * Modified admin index to reflect the users' permissions.
+ ! Regrouped admin permissions.
+ ! Updated profile page to work with several combinations of permissions.
+ * Added an arrow in the registration center to indicate which screen is selected.
+ ! Removed some old group stuff from ModSettings.php, made it htmlspecialchars things. (I remember doing this before!)
+ ! After saving "Edit Forum Settings", you are no longer sent back to ?action=admin.
+ * "1 member awaiting approval" -> "There is one member awaiting approval."
+ & Added approve_thereis and approve_thereare to the index language files.
+ ! Renamed the is_banned() function is_not_banned().
+ * Changed the formatting of comments because my editor is playing tricks on me.
+ ! Added some documentation to Register.php and ModSettings.php.
+ ! A typo in the installer was making installing on PHP 5 cause errors.
+ ! Fixed online image in memberlist not showing properly.
+ ! Upgrade now skips personal message recipients that don't exist.
+ ! Upgrade now skips recipients that don't exist.
+ + IMKillAll/IMKillAllQuery functions can now delete ALL messages (not just in certain folder).
+ & Added an extra language entry to InstantMessage.language.php, $txt[411].
+ ! Upgrade now updates the basic statistics in the settings table.
+ * Really really long error URLs no longer distort the template.
+ ! Package browser now skips files that have no package-info.xml.
+ ! Packages were being looked for in /Packages/temp/, when they wouldn't be there ;).
+ ! The create-file action in package-info.xml should create an empty file.
+ ! The forum's version shouldn't include SMF in the package manager.
+ ! Repositioned some of the major functions so that they are sorted more logically.
+ ! Renamed the loadThemeUser() function to loadMemberContext() because the old name made no sense.
+ ! The loadMemberContext() function now returns true or false, depending on whether the data could be loaded.
+ ! Renamed the LoadUserID() function to loadMemberData() for the same reason as loadThemeUser().
+ ! Moved the loadJumpTo() and getBoardParents() functions to Load.php from Subs.php.
+ & Added the $txt['theme_thumbnail_href'] and $txt['theme_description'] strings to the Settings language files.
+ + Themes are now shown by those instead of predefined things.
+ * Added $txt['theme_global_description'] to the Themes language files.
+ - Removed the description from the theme settings and database.
+ * Removed the interface for editing the theme description.
+ & Removed the $txt['actual_theme_description'] variable from the Settings language files.
+ & $txt['reminder_subject'] is now used for reminder email subjects.
+ ! The validation_code is only 10 characters in default installations.
+ ! Corrected counter for people using the forum default theme.
+ & Completely reformatted the "report to moderator" email so it looks nicer. (removing and adding things from index.)
+ ! Reporting posts no longer sends names with entities in them.
+ * You can install templates without 777 now, but only from a directory. (Themes)
+ ! Themes with slashes in their names weren't installing very well.
+ ! If you can moderate_forum, you can send messages to anyone.
+ & $txt['theme_user'] added for when only one person is using a theme (people are -> person is).
+ * Added check for amount of users using a theme to the themes template, so correct text is displayed.
+ & Added $helptext[17], containing help on theme settings.
+ * The language version checker now works properly.
+ & Fixed a minor typo in theme_edit_index in the Themes language files.
+ ! Guests can now access the help page even if they are restricted to only login, etc.
+ ! Cleaned up the news_readme.html file to reflect some of the changes made...
+ ! The addslashes and stripslashes recursive functions now affect keys as well for security.
+ ! Revised or added some documentation to Who.php, Profile.php, and QueryString.php.
+ ! Some PHP configurations weren't installing new themes from existing directories well.
+ * Fixed a checkbox in the Search template not using the check class.
+ ! A typo in Admin.php caused a strange error when clearing logs.
+ ! A missing global was causing "Try again" not to work in upgrade.php.
+ * Fixed a bug in Recent.template.php that caused an error when there weren't any recent replies.
+ * Changed the "Delete Account" sub template in Profile.template.php to be more appropriate.
+ & Added some missing language entries to the ManagePermissions language files. (non-english only.)
+ ! Fixed a typo in upgrade.php that was causing upgrade issues.
+ & Fixed a lot of typographical errors in various language files. (english or untranslated only.)
+ & Made some captitalization fixes to all language files... (even non-english ones, hope it's i18n.)
+ ! Added a "first_post" sort method to MessageIndex, although it's not used currently.
+ + Ban actions are now stored in the moderation log.
+ + Moderation log made slightly more useful as topics, members and board IDs are expanded to give their descriptions.
+ & Four new language additions added to Admin.language.php ('modlog_expand', 'modlog_retract', 'modlog_search' and 'modlog_by').
+ * Moderation log template (Modlog.php) changed slightly.
+ ! Resolved some odd issues in the converters.
+ ! Upgrade now just says "SMF Upgrade Utility" to reduce confusion.
+ * Added Javascript function selectRadioByName().
+ * The banning stuff now auto-selects the box you click on ;).
+ ! Upgrade now sets the calendar as not updated today, so it will be fixed ;).
+ * The index.php files in Themes/* were pointing to themselves instead of the one in Themes.
+ ! Missed an "empty delimiter" error in Post.php for the response_prefix.
+ & This may or may not be your profile :P?
+ ! Moved around a setting in "Edit Features and Options" to be more logical.
+ & Added a link to theme settings from the "Edit Features and Options" page.
+ ! The updateMemberData() function now attempts to keep certain values above -1 ;).
+ ! Recount totals now handles people with *no messages at all.*
+ ! SSI function showPoll now shows amount of votes per option when output_method is echo.
+ ! Avatar groups (directories) with underscores now get them converted to spaces.
+ ! The package manager now supports websites without titles ;).
+ ! parsePackageInfo() should now delete files from the correct place.
+ ! PackageOther() now uses parsePackageInfo(), and it works too!
+ & Used the &copy; entity although it isn't needed.
+ ! parsePackageInfo() now tries to clean up after restrictive permissions.
+ ! parsePackageInfo() checks if anything went wrong with $failure, but doesn't use it yet.
+ ! Fixed some very annoying errors about using ob_gzhandler twice...
+ ! Effectively renamed PackageOther() to PackageInstallTest(), but it's going to be used for more soon ;).
+ & Made a small change to package44... 'Installing *this* package will...'.
+ ! QuoteFast now quotes non-European, etc. text correctly.
+ * Packages now handle readmes better, parsePackageInfo makes a list of what wasn't done.
+ & Added some strings to the Packages language files for i18n reasons.
+ ! Fixed some annoying problems in upgrade.php's personal message upgrading.
+ ! Removed package avatar/language file sub action destinction... changed to install and install2.
+ ! Made some changes to upgrade.php to better support upgrading from heavily modded forum installs.
+ ! Added a parseBoardMod() function for board mod files, although I'd prefer xml style... not used yet.
+ * Linked username in registration center to profile.
+ ! Fixed 'set permission like this group' for group 0.
+ ! Fixed 'set permission like this group' where the source group has no permissions set.
+ ! 'set permission like this group' now also copies global board permission.
+ & Fixed some misplaced permission error strings in Errors.
+ ! Mangled around a few things so the package manager might parse mods, but I doubt it works well.
+ ! Updated xmlArray to current version; creates a new xmlArray of the correct class.
+ ! Added to_array() method for xmlArray, this easily fetches the contents of an element.
+ ! The xmlArray no longer stores empty strings when trim is on.
+ ! Exported XML no longer shows [] when it's a set of elements.
+ ! getPackageInfo now uses the to_array() method, which should be faster.
+ ! The server list now uses to_array() for the same above-mentioned reasons.
+ ! Links with : in them now auto-link, as long as it's not the last character.
+ * The Packages javascript now has the installed mods in it to avoid listing things twice.
+ * Made some changes to the package manager so it can actually install mods ;). (theory, and boardmod only!)
+ ! Some minor aesthetic changes to the installer and made it do some lycos stuff just because it can.
+ - Removed the "Skip This" option from the installer because it could cause problems.
+ ! Attachments, if "encrypt filenames" is off, now use a redirect if possible.
+ ! Installer, package installer, attachments, latest news, and dump database work in safe mode/lycos. (although dump database has an ad at the end!)
+ + Added theme option to save PMs to the outbox by default.
+ * Settings template now includes the theme option 'copy_to_outbox'.
+ & $txt['copy_to_outbox'] added to Profile.{lang}.php.
+ ! Messages from deleted members were not showing who sent them properly.
+ * Fixed some invalid xhtml in the package file listing.
+ & Aesthetic changes to some of the strings in Packages so they sound nicer.
+ * Migrated installation warning and no-upgrade warning to PackageInstallTest.  Soon it shall replace Premod/Mod/Mod2/Mod3, etc.
+ & Added some new language strings in Packages.. $txt['package_installed_warning1'], $txt['package_installed_warning2'], and $txt['package_installed_warning3'].
+ ! Added the database connection link to all functions that need it; makes it a lot easier to use things like phpAdsNew with SMF.
+ ! If maintenance mode is on, SSI.php can now take $ssi_maintenance_off and dies with an error message.
+ ! It is now possible to reset members to use the board default theme.
+ & One language entry, $txt['theme_forum_default'], added to Themes.language.php.
+ + Report to moderator now sends emails out in correct language for the moderator.
+ & Several language entries moved from index.language.php to Post.language.php.
+ * Removed the mod_warning sub template from the Packages template file.
+ & Removed the PackageMod() function from Packages.php, along with its strings in Packages.
+ - Removed ability to use just a .sql file; now you should use a .php file with sql in it.
+ ! Started to remove some of the PackageMod3() function.
+ & Removed some old strings from the Packages language files.
+ & Corrected $txt['smf3'] so that it points to the correct theme settings.
+ * Moved enable_news to theme settings, although show_news is still filled.
+ & Phased out $enable_notification... mostly.  Removed $txt[381] from Admin.
+ & Renamed "Edit Forum Settings" to "Edit Server Settings" in the Admin language file.
+ ! Minor aesthetic change: the "(confirm)" is now in italics.
+ ! Fixed a unique index problem with split topics, should work in all cases...
+ ! The package manager now lists all the actions of a boardmod file and lists failures.
+ & Removed some strings from Packages and got rid of PackageMod3().
+ & Moved $txt[51] from index to Packages.
+ * Now Packages must be installed/uninstalled after testing that they work.
+ & Removed some language entries that are no longer needed.
+ + Theory dictates that the package installer/uninstaller should work, as well as upgrading; xml format mods and more not done yet.
+ ! Fixed the duplicate key error on splitting a topic; renamed some variables for consistency.
+ * Fixed some minor things in Packages.php related to installing/uninstalling packages.  Confirmed working :D.
+ & Added some language stuff to make installing and uninstalling packages say stuff properly.
+ ! constructPageIndex() now protects against people not properly passing stuff to it :P.
+ * Renamed 'cur_page' to 'current_page' in the Wireless template.
+ ! Clicking on a new sort column in view members should start you back at the beginning, not where you are; same in mod log.
+ ! Sort order of error log will now be remembered after removing entries.
+ ! Added a selection triangle to the memberlist item that is selected.
+ * Fixed a search memberlist template glitch.
+ ! Error messages should be shown with entities, but not elements.
+ & Moved rtm8 back from the Post files to Profile; it isn't used anywhere else.
+ * Now there's a link to click about why the secret answer field is blank.
+ & Added $txt['secret_why_blank'] to Profile, and $helptxt['secret_why_blank'] to Help.
+ & Modified the English version of $txt[596] to sound better.
+ & Added $txt['secret_desc'] to Profile to describe what exactly the secret question is.
+ * Added this to the Profile template.
+ & Tweaked $txt['smf243'] and $txt['smf244'] because they used Password not password :P.
+ ! Moved around a couple of settings in feature settings and options to make more logical.
+ ! Where ever there was a time in the context, added a timestamp.  Makes it easier ;).
+ * The default catbg.gif file is now taller and even smaller ;) - and it looks better too.
+ ! Added some missing href's to contexts that had link's but no href's.
+ + Added "find user" option to Personal Messages.
+ * New template, find_users, added to InstantMessage.template.php.
+ & Four new language entries added to index.language.php. ($txt['find_*'])
+ ! Fixed Display.php's start=new not always going to the right page.
+ & Added $txt['find_close'], and redid some of the language work.
+ * The find members thing has been moved to Help for now, and does a lot more.
+ ! Now posting should insert a time one second in the future so as to fix start=new issues for sure.
+ ! Added the semicolon to the list of characters allowed before a smiley.
+ ! Fixed an xhtml typo in the Display template.
+ & Added $txt['find_wildcards'] to the index.language.php files.
+ * Added wildcard information to the find members sub template.
+ * Added find members to the ManageBoards template for moderators.
+ * findMembers() now respects the hideEmail settings.
+ ! Probably/possibly fixed the table bbc parsing bug.
+ ! BBC wasn't highlighting properly from the first character. (index = 0)
+ ! Fixed a very special-case for the attachments not working.
+ ! Changed $linkid to $db_connection in install.php to fix installation problems.
+ & Added the vote and modlog actions to the Who language files.
+ ! Moved (in the defaults) the >:D smiley before the :D smiley.
+ & Added Modifications language file for modifications to put strings in ;). (always loaded.)
+ * Added the [!] box to the bcc field as well. (InstantMessage)
+ * The javascript function reqWin() now takes three parameters, but the last two are optional.
+ * Find Members and Quote Fast links all changed to use the new reqWin() format.
+ * reqWin() now always returns false, changed "reqWin(this.href); return false;" to "return reqWin(this.href);".
+ * Changed on[event]="javascript: to just on[event]="
+ ! Last character of an event can't/shouldn't be ','.
+
+
+January 2004:
+--------------------------------------------------------------------------------
+ * Reoranized language strings for SendTopic to be cleaner.
+ & Indexes changed for SendTopic's language strings in index.
+ * Renamed all templates ".template.php".
+ & Languages renamed to languages.
+ * Moved images/tree/*.gif to images/icons/*.gif.
+ ! Added repair_paths.php tool for changing servers, might need changing.
+ ! Removed the posts parameter of determinePostGroup().
+ & Removed unreasonable poll length limit, changed Post.
+ ! The "hide until expire" poll option worked backwards; fixed.
+ ! fixed typo; DROP KEY -> DROP INDEX in upgrade.php.
+ & Moved 'poll_range_error' to the Errors language files.
+ ! Changed version check to use .template.php.
+ * Made the version line not include .php.
+ * Renamed the main sub template in Admin/Help to popup.
+ * Renamed the main sub template in Admin/Errors to error_log.
+ - Removed Admin dir in Themes/{theme}/ and Themes/{theme}/languages.
+ * Moved /Admin templates to the main template dir.
+ * Renamed Admin/index.php template to Admin.php
+ * Merged templates Help.template.php and Admin/Help.template.php
+ & Moved /Admin language files to the main language dir.
+ & Renamed language files Admin/index.{language}.php to Admin.{language}.php
+ & Merged language files Help.{langugage}.php and Admin/Help.{langugage}.php
+ * Renamed the error sub template in Errors to fatal_error.
+ ! Removed version tagging from templates not updated to use better xhtml.
+ ! Cleaned up ManageBoards and upgrade.php's board ordering.
+ + Added version information to the settings table.
+ ! Fixed bug in reordering of children.
+ * Cleaned up SplitTopics template a little.
+ * No longer shows "0 Hidden" if there are no users currently hidden.
+ ! Now counts hidden users as a user in the online list.
+ * Tweaked news fader display to play nicer with border colors.
+ ! Fixed using breaks after/before bbc tags like url, iurl, flash, and img.
+ ! If a board has no posts in it, it isn't new.
+ ! ssi_checkPassword now checks whether the member is activated.
+ ! Made line breaks show in MySQL error messages.
+ ! Fixed bug that happened when two people accessed the page for a new day.
+ ! Usernames with <'s in them appeared wrong in the error log.
+ ! Fixed a typo in profile's error handling for additional options.
+ ! Upgrade shouldn't add any permissions.
+ + Upgrade now checks the version number of certain file(s).
+ ! Upgrader now works better with non-standard theme paths. (still buggy.)
+ ! Simplified check for moderator status. (fixes moderators not showing in children.)
+ + Upgrade now makes sure Settings.php has no trailing whitespace.
+ ! Removed some unnecessary (and imho annoying) whitespace.
+ ! Fixed a typo in ManageBoards that made modifying a board impossible.
+ ! Upgrade was screwing up people's genders.
+ & Changed the show_children string slightly in Settings.
+ + The profile now warns you before taking away admin priv's.
+ * Added check in Profile for self de-admin.
+ & Added confirmation string for self de-admin to Profile.
+ ! More documentation; Admin.php and Calendar.php.
+ ! Merging two topics a person had notification on failed, fixed.
+ ! Made some changes to reduce over-comma'ing knownThemes.
+ + Added barebones smiley installer.
+ ! Fixed bug in installer that made it use the wrong path for Settings.php.
+ + Changed ssi_recentPosts and ssi_recentTopics so you can exclude certain boards.
+ ! Child boards in MessageIndex were not being marked as having new posts.
+ + Added ssi_ban option to SSI.php so it doesn't always ban.
+ * Made some minor html tweaks.
+ ! Fixed some vestages from when personal messages were called instant.
+ ! Made upgrade remove even MORE evil deletedBy keys...
+ * Changed the URL to spellcheck.js and fader.js to the default theme.
+ * Everywhere that points to script.js now uses the default URL.
+ ! Post groups were not working correctly.
+ ! Unable to load language file error message tweaked to show filename.
+ ! Fixed bug in SSI.php when showing hidden users.
+ ! Fixed a bug in banPermissions() that screwed up stuff if banning wasn't run.
+ ! Fixed bug that prevented proper member search within additional membergroups.
+ + Split table instant_messages into instant_messages and im_recipients
+ & Added language tags to the InstantMessage language file.
+ + Added a send report to PM posting if one or more of the recipients failed.
+ * Added an option to the PM post screen to store a copy of the message in the outbox.
+ ! Fixed a couple bugs in upgrade.php... (ims, Settings.php.)
+ ! Added some more documentation.
+ ! Changed IMPostError() to use less parameters.
+ ! Minor tweaks to package manager.  (not done yet!)
+ ! Replaced all calls to getimagesize() with url_image_size() which times out.
+ ! Added an index.php to the theme directories to protect their contents.
+ ! Updated theme file copying as index.php is now index.template.php.
+ + Added user statistics panel to profile.  May need some more stuff to be add/removed.
+ & Added language tags for user statistics to Profile language files.
+ * Added template function for user statistics to Profile.
+ ! Updated converters to work with new instant message tables.
+ ! Put $emailpassword, $emailnewpass, $emailwelcome and $allow_hide_email into $modSettings.
+ * Simplified statPanel sub template in Profile.
+ & Added $txt['statPanel_show'] to Profile.
+ ! Send messages to members wasn't loading Subs-Post.php.
+ ! Moved required version for buffer manipulation up to 4.3.0... ugh.
+ & Removed the Notify language files and migrated stuff from it to the index language files.
+ * Moved stuff around in the Profile and Settings templates.
+ ! Added label elements to the ModSettings ('Edit Features and Options') page.
+ & Took some ?s off of setting descriptions.
+ ! Moved buttons as images settings from admin to theme settings.
+ * Removed use_image_buttons part of index.template.php.  (although keeping it there doesn't hurt.)
+ ! Updated some queries to fit slightly different guidelines.
+ ! Fixed a few mistakes in the statPanel stuff.
+ + Created a "default forum theme" for members who want to follow the forum default.
+ * Added checkbox to "parse" html in send member email. (ManageMembers)
+ & Added a language string $txt['email_parsed_html'] to Admin.
+ * Made the submit/preview buttons in InstantMessage the same order as in Post.
+ ! The link was wrong when quoting a message.
+ & Made a copy of $txt[130] in Post.*.php to fix notification errors.
+ + Added registration center; includes admin approval, reviewing outstanding activations and admin register member.
+ & Added language entries to Admin, Help, Login and index language files for registration.
+ * Registration template added to considerably, index template changed. (added # of unactivated.)
+ ! Added help text to email type modSettings.
+ ! Moved $guestaccess, $timeformatstring, $showbbcbutt, $enable_ubbc, $MaxMessLen and $MaxSigLen to $modSettings and theme settings.
+ & Language change on "allow guest access" to make it work non-inverted.
+ ! Bug fixed in theme settings where "show images" wasn't remembering what it was before switching.
+ * Fixed agreement so it warns you if it's not writable.
+ * Fixed a bug in Profile that didn't check mistakes correctly.
+ * Personal messages weren't saving when the box was checked.
+ ! Personal messsages now handle bad starts better.
+ ! Changed the case of DeleteMembers() to deleteMembers().
+ ! The updateLastMessage() query no longer uses filesort and temporary. (shudder!!)
+ ! Renamed "updateLastMessage()" to "updateLastMessages()" and made it take an array.
+ ! Made the debugging stuff not allow you to click on anything not explainable.
+ ! Optimized updateStats('member'), updateStats('postgroups') (a lot), and updateSettings().
+ ! Fixed a notice if you were at ?action=post. (calendar?)
+ ! Added a kludge for people who have removed all post groups. (which should not be done.)
+ + Notifications now tell you WHO posted the reply. (replies only!)
+ & Changed $txt[128] so it can have the poster's name in it.
+ ! Deleting all attachments caused problems.
+ ! Editing the "Newbie" group made it no longer a post group.
+ & No reason to log $txt['smf270']...
+ ! You couldn't post events to the calendar unless you were an administrator.
+ ! Moved some of the main forum settings around.
+ ! Cleaned up OptimizeTables() a little bit.
+ ! Added more logs to the "empty out unimportant logs" function.
+ ! Made some notes on queries that are slow.
+ ! Changed spamProtection() to only take a type.
+ ! Added a new key to messages that cleans a few things up some.
+ ! Optimized a minor query in the statistics.
+ ! Optimized some queries in Profile.
+ ! Fixed some minor issues with coding guidelines in queries.
+ ! Deleting a single post to the recycle bin didn't add to the counts.
+ ! A space at the beginning of a line didn't show.
+ ! Optimized some of the personal message queries.
+ * Who's Online IP links now open in a new window.
+ ! The updateSettings() function caused errors on *new* settings.
+ ! The "member doesn't exist" error can probably be ignored.
+ * Cleaned up the InstantMessage template a bit, you can now forward deleted members' PMs.
+ + Added option to choose membergroup in "register new member" function.
+ * Added said option to the Register template.
+ & Added three new entries to Login language files for this option.
+ ! Made loadTheme() do more of the theme selection.
+ ! Reordered the data loading order so boards are above the theme.
+ + Added a board by board selectable theme setting. (overridable)
+ ! Added ID_THEME column to the boards table, made the INSERT only specify certain columns in the sql file.
+ * ManageBoards can now set the theme for a board.
+ & Added $txt['mboards_theme'], $txt['mboards_theme_desc'], and $txt['mboards_theme_default'].
+ ! The loadUserSettings() function was setting the user's theme wrong...
+ ! The spellcheck popup had a trailing single quote.
+ ! Fixed a typo in the default previous/next links.
+ * Cleaned up Display template a lot. (not done; no mandatory changes.)
+ ! The deleteMembers() function now affects the log_online table.
+ ! Some dates for Winter Solstices were wrong.
+ ! Profile statistics should now respect time offsets.
+ & Spelling, 'stastics' should have read 'statistics' in Profile.
+ ! Making a mistake in editing someone's profile would show your username.
+ & The markasread action was missing from Who's Online.
+ ! Tweaked some of the search queries a bit, tweaked relevance.
+ * Fixed some minor issues with the Search template.
+ ! Typo in dump database made compression not work well.
+ + News.php is now dead.  News moved to SSI.  News accessed through boardNews() in SSI.php.
+ ! You can now pass length to boardNews() which limits characters per news item.
+ ! news_template.php removed in favor of SSI.php's templating.
+ ! news_readme.html updated to reflect new things...
+ ! Added session rewriting to SSI.php...
+ * The "Save to outbox" checkbox in InstantMessage now uses a label.
+ * "hideemail" in the Register template changed to "hideEmail".
+ + Register can now hold as much of profile as the theme wants, needs more work.
+ * Post's Additional Options drop down now switches between +/- alt.
+ ! ID_MSG resort tool now does things better.
+ ! Changed the activation center's default sort to dateRegistered.
+ * The activation center now has a "check all" box, fixed a javascript error.
+ & Fixed some grammar in Login.
+ ! After approval, the registration center goes back to the page you were on.
+ ! Put warning about missing copyright back in and made it work properly.
+ * Help now uses a different way of showing the copyright.
+ & Added $txt['help_copyright'] to Help language files.
+ & Removed $txt['smf_news_error1'] for SSI from Stats language files.
+ * Cleaned up ManageMembers template a very little bit.
+ ! Errors should now show breaks properly, or so it seems.
+ ! Now you can ban members with the IP address 'unknown'.
+ ! RSS feeds now max out at 255 limit for performance reasons; you really never need more.
+ ! The recent posts and news feeds now allow you to specify boards.
+ ! The author element in RSS feeds now use the name instead of link.
+ ! Oops, the guid in RSS feeds should be a URL.
+ ! The RSS feeds now use entities more often.
+ * Fixed some unimportant typos and spacing.
+ * Statistics should now should in YYYY/MM/DD format instead of DD/MM/YYYY.
+ & Changed $txt['smf_stats_6'] to reflect this new format.
+ * Fixed some spacing issues in spellcheck.js.
+ & Added package_installed_key, package_installed_current, and package_installed_old to Packages.
+ ! ModSettings no longer does groups, it was badly done and unused anyway.
+ ! Fixed an upgrade BBC bug.
+ ! Removed package creation function from the package manager.
+ & Removed the now unused language entries from Packages.
+ ! Fixed a bug in the template converter.
+ ! More documentation in some sources....
+ ! Turning off polls should work better now.
+ & Added Wireless language files.... should be more internationalized now.
+ ! If you weren't directly an admin, changing your profile would cause a warning about removing your admin status.
+ ! Minor typo in search caused a regular expression error.
+ ! SendTopic message looks a bit different.
+ ! Added repair.php, hope it one day is worth something.
+ ! The template converter is now more or less working properly.
+ ! The updateLastMessages() function wasn't setting empty boards correctly.
+ ! Deleting a member now sets all their messages to be from a guest/deleted member.
+ ! Fixed a typo in the dutch $txt['spellcheck_done'].
+ ! Printing a topic with images did not go well.
+ ! Topic reply notifications didn't handle entities well.
+ ! Attachments with a size of -1 weren't handled well in Post.
+ ! New would sometimes go to the last post of the previous page...
+ ! Empty boards still made the category they were in mark as new.
+ ! Fixed a dumb typo that was causing double posting.
+ ! Tried to better some queries.
+ ! If pspell can't be loaded, the spellchecker gives up.
+ ! Added the "b" element to the allowed ones in error logging.
+ ! 10 most recent posts is now considerably faster on even smaller forums.
+ ! Added some new, but yet unused, information to topic viewing.
+ ! Added a "try again" link to errors in upgrade.php.
+ + Topic moving now remembers the last board you moved to.
+ * The MoveTopic template now selects it, not mandatory but recommended.
+ ! Upgrade was giving some post groups moderator permissions.
+ ! Permissions wizard thought it could affect administrators.
+ ! Password reset now works properly again; email looks better.
+ & Fixed some typos in ModSettings and Themes.
+ ! Logging in as an "additional" administrator now sets the admin_time.
+ ! Added ability to reverse sort list in error log.
+ & One text entry added to admin.language.php.
+ ! Added boardNews function to ssi_examples.
+ + Can now sort memberlist by date registered (ID_MEMBER).
+ & Removed a "click here" message from the Login language file. (English only.)
+ ! Moving a topic now moves over its mark_read data, in theory.
+ ! Personal Message notifications weren't being sent in the right language.
+ ! It now checks that the themes directory is writable before allowing you to install/make new theme.
+ + You can now add themes by directory, from anywhere ;).
+ ! There, register plugs people into groups right away.
+ ! SSI.php now uses topicseen instead of boardseen.
+ ! Added tabindexes to the manage categories page.
+ ! The spamProtection() function now only limits posting to the specified time.
+ ! The installer now specifically disallows "." as the install directory.
+ ! Made quoteheader/codeheader more themable.
+ ! Added a bunch of stuff to the recent/unread context variables.
+ * Added board information to unread/unreadreplies.
+ & Added an error message for if the attachments directory was read-only.
+ ! The url_image_size() function now handles empty URLs better.
+ ! Fixed some remaining issues with theme installation.
+ ! Made it so theme gzips do NOT contain the directory, rather their name is used.
+ ! Return to page after attachment deletion..
+ + The theme copy routine is now capable of making a theme with a specific name.
+ + Themes from a URL are now checked to be on simplemachines.org.
+ & An error message is now shown if you try to install a theme and Themes is not writable.
+ ! Smileys should now be extracted like Themes, not just to the root of /Smileys.
+ ! Mark as read - no board specified or invalid board, send to board index.
+ ! Wireless mode doesn't require a copyright link.
+ ! The "Copyright removed" error is not also logged to get attention ;).
+ ! No need to log the "topic locked" error.
+ * Cleaned up default "addpoll.gif" images..
+ * Optimized a whole junkload of images a lot. (decrease of about 13kb total...)
+ ! More documentation and stuff, mostly in Security and QueryString.
+ ! Fixed some more upgrade issues with instant messages.
+ ! Defined the actual_ URLs and paths in a different place so they'd get loaded earlier.
+ + repair_ID_IM.php added. Use it to repair the instant message tables.
+
+
+Legend:
+--------------------------------------------------------------------------------
+ ! Minor change or bugfix. (don't bother to log typos except between releases.)
+ * Change like above, but affects templates.
+ & Change that affects a language file. (make two if it affects templates too.)
+ + Feature addition or improvement.
+ - Feature or option removal.
+ % Development flag or note, such as branching.

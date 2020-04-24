@@ -1,0 +1,283 @@
+
+/*
+
+	#############################################################################################
+	#                                                                                           #
+	#  DBHCMS - Web Content Management System                                                   #
+	#                                                                                           #
+	#############################################################################################
+	#                                                                                           #
+	#  COPYRIGHT NOTICE                                                                         #
+	#  =============================                                                            #
+	#                                                                                           #
+	#  Copyright (C) 2005-2007 Kai-Sven Bunk (kaisven@drbenhur.com)                             #
+	#  All rights reserved                                                                      #
+	#                                                                                           #
+	#  This file is part of DBHcms.                                                             #
+	#                                                                                           #
+	#  DBHcms is free software; you can redistribute it and/or modify it under the terms of     #
+	#  the GNU General Public License as published by the Free Software Foundation; either      #
+	#  version 2 of the License, or (at your option) any later version.                         #
+	#                                                                                           #
+	#  The GNU General Public License can be found at http://www.gnu.org/copyleft/gpl.html      #
+	#  A copy is found in the textfile GPL.TXT                                                  #
+	#                                                                                           #
+	#  DBHcms is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;      #
+	#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR         #
+	#  PURPOSE. See the GNU General Public License for more details.                            #
+	#                                                                                           #
+	#  This copyright notice MUST APPEAR in ALL copies of the script!                           #
+	#                                                                                           #
+	#############################################################################################
+	# $Id: dbhcms.admin.css 61 2007-02-01 14:17:59Z kaisven $                                   #
+	#############################################################################################
+
+*/
+
+/* BODY */
+
+body { 
+	margin: 3px;
+	background: #E2E6F9;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+}
+
+select, textarea, input, td, p, div {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 11px;
+	margin: 0 0 0 0;
+	color: black;
+}
+
+input, textarea, select { border: #000000 solid 1px; background-color: #FFFFFF; }
+
+
+#login_wrapper {
+	position: relative;
+	top: 30px;
+	width: 400px;
+	height: auto;
+	margin: 0px auto;
+}
+
+#login_banner {
+	position: relative;
+	width: 400px;
+	height: 112px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #444DFE;
+	background: url("../img/frame/login_banner.jpg") no-repeat;
+}
+
+#login_title {
+	position: absolute;
+	left: 100px;
+	top: 40px;
+	width: 400px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#login_form {
+	position: relative;
+	width: 400px;
+
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #444DFE;
+	border-top: 0px;
+	background: #FFFFFF;
+}
+
+/* MENÜ */
+
+.menu_box {
+	width: 167px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 4px;
+	background: #FFFFFF;
+	border: 1px solid #444DFE;
+}
+
+.menu_box_caption {
+	width: 164px;
+	height: 18px;
+	background: url("../img/frame/capbg.gif") repeat-x;
+	border-bottom: 1px solid #444DFE;
+	font-size: 9pt;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	margin-bottom: 4px;
+	color: #000000;
+	text-align: left;
+}
+
+.menu_box_item {
+	width: 150px;
+	height: 14px;
+	padding-top: 1px;
+	margin-bottom: 4px;
+	border: 1px solid #000000;
+	background: #F5F5F5;
+}
+
+/* BOX */
+
+.box {
+	width: 98%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 8px;
+	background: #FFFFFF;
+	border: 1px solid #444DFE;
+}
+
+.box_caption {
+	width: 100%;
+	height: 18px;
+	background: url("../img/frame/capbg.gif") repeat-x;
+	border-bottom: 1px solid #444DFE;
+	font-size: 9pt;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 0px;
+	padding-top: 2px;
+	margin: 0px;
+	color: #000000;
+	text-align: left;
+}
+
+/* H-TITLES */
+
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 15px;
+}
+
+/* FIELDSET */
+
+fieldset { 
+	border: solid 1pt #872626;
+}
+
+legend {
+	color: #872626; 
+	font-size: 8pt;  
+	letter-spacing: 1pt 
+}
+
+
+/* LINKS */
+
+a {
+	color:#000000;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#2238A8;
+	text-decoration:none;
+}
+
+/* CLASSES */
+
+.btn {
+	font-size:11px;
+	font-weight:bold;
+	font-variant:small-caps;
+	color: #EEEEEE;
+}
+
+.cap {
+	font-size:11px;
+	font-weight:bold;
+	font-variant:small-caps;
+	color: #000000;
+	height: 15px;
+}
+
+.tab_no {
+	font-size:11px;
+	font-weight:bold;
+	font-variant:small-caps;
+	color: #000000;
+	height: 18px;
+	width: auto;
+	padding-top: 2px;
+	border: 1px solid #444DFE;
+	border-bottom: 0px;
+	background: url("../img/frame/capbg.gif") repeat-x;
+	text-align: center;
+}
+
+.tab_act {
+	font-size:11px;
+	font-weight:bold;
+	font-variant:small-caps;
+	color: #000000;
+	height: 18px;
+	width: auto;
+	padding-top: 2px;
+	border: 1px solid #444DFE;
+	border-bottom: 0px;
+	background: #ACC5EF;
+	text-align: center;
+}
+
+a.blacklink:link,active {
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a.blacklink:visited {
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a.blacklink:hover {
+	color:#872626;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.simplebox {
+	width: 95%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 8px;
+	background: #FFFFFF;
+	border: 1px solid #444DFE;
+}
+
+.simplebox_caption {
+	width: 100%;
+	height: 16px;
+	border-bottom: 1px solid #444DFE;
+	background: #ABBEE9;
+	font-size: 8pt;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 0px;
+	padding-top: 2px;
+	margin: 0px;
+	color: #000000;
+	text-align: left;
+}

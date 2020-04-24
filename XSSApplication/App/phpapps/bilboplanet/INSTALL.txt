@@ -1,0 +1,11 @@
+INSTALL
+=======
+
+Pour toute information ou documentation, référez-vous à notre site web
+http://www.bilboplanet.com sur lequel vous trouverez les informations les plus
+à jour.
+
+Une grande quantité d'informations est aussi disponible sur notre wiki à
+l'adresse http://wiki.bilboplanet.com
+
+

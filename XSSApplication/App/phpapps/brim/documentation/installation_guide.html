@@ -1,0 +1,225 @@
+<html>
+<meta name="author"
+	content="Barry Nauta (barry@nauta.be)" />
+<meta name="description"
+	content="Brim - BarRy Information Manager" />
+<meta name="keywords"
+	content="Brim, Booby, PHP" />
+
+<head>
+	<title>Brim - Installation Guide</title>
+
+	<link rel="stylesheet" href="css/brim.css"
+		type="text/css" />
+</head>
+
+<body>
+        <center>
+                <h1>Brim - Installation guide</h1>
+                <img src="pics/sleeping_booby.jpg" />
+	</center>
+		<p>
+			I am very interested in your experiences with Brim.
+		</p>
+		<ul>
+			<li>Is the installation easy and straightforward or 
+			are there things missing?</li>
+			<li>Does the application meet your expectations?</li>
+			<li>Are there things missing?</li>
+			<li>...etc...</li>
+		</ul>
+		<p>
+			You can send comments directly to me but preferable 
+			you can add 
+			them to the PHorum where other can respond to your
+			questions/remarks as well.
+		</p>
+
+	<h1>Table of contents</h1>
+	<ul>
+		<li><a href="#prerequisits">Prerequisits</a></li>
+		<li><a href="#database">Database install</a></li>
+		<li><a href="#troubleshooting">Trouble shooting</a></li>
+	</ul>
+
+	<h1>
+		Install script.
+	</h1>
+	<p>
+		<font size="+1">
+			This installation guide is provided for those who
+			have problems with the provided installation script or
+			simply would like to perform the installation by
+			hand. 
+		</font>
+		<br />
+		<font color="red">
+			If you reached this page in search for information
+			on the installation: there is an installation script
+			(install.php)
+			in the root directory of Brim. Execute this script 
+			and brim will install/upgrade.		
+		</font>
+	</p>
+	<a name="prerequisits" />
+	<h1>Prerequisits</h1>
+	<ul>
+			<li>PHP (version 4.x or higher)</li>
+			<li>an ADOdb compliant database, i.e. mysql/postgres</li>
+	</ul>
+
+
+	<a name="database" />
+	<h1>Database installation</h1>
+	<p>
+		Read the database specific documentation. A MySQL setup
+		(post-installation) example
+		is provided
+	</p>
+	<h2>Example: Setup a MySQL environment</h2>
+	<p>
+		a. Startup mysql server/daemon<br />
+		b. Set an admin password<br />
+	</p>
+		<pre>
+			mysqladmin -u root password 'your-password'
+		</pre>
+
+	<h2>Create a database called 'brim'</h2>
+	<p>
+		The database name can be something else.
+	</p>
+	<pre>
+		$ mysql [-u user] [-p]
+		mysql &gt; create database brim;
+		mysql &gt; quit
+	</pre>
+	or
+	<pre>
+		$ mysqladmin [-u user] [-p] create brim
+	</pre>
+	<h2>Create the table structure for the application</h2>
+	<p>
+		This step must be repeated for the framework and each 
+		of its plugins!!!!
+		If you do not want certain plugins to be installed, 
+		delete their directories from the plugins directory or you will
+		encounter errors (brim tries to dynamically load all
+		plugins that are found in the plugin directory and will show errors
+		if those plugins found are not installed)
+	</p>
+	<pre>
+		$ mysql brim [-u user] [-p] &lt; 'path.to'/create.xxx.sql
+	</pre>
+	<h3>Example</h3>
+	<p>
+		If you are in the root directory of the brim application, 
+		you will have to specify the following:
+	</p>
+	<pre>
+		$ mysql brim [-u user] [-p] &lt; framework/sql/create.xxx.sql
+		$ mysql brim [-u user] [-p] &lt; plugins/bookmarks/sql/create.xxx.sql
+		$ mysql brim [-u user] [-p] &lt; plugins/calendar/sql/create.xxx.sql
+		etc... (there are more plugins!)
+	</pre>
+
+	<h2>Setup permissions</h2>
+	<pre>
+		grant all rights to user
+		$ mysql -u root -p
+
+		mysql> GRANT ALL PRIVILEGES ON brim.* TO 'brim_admin' IDENTIFIED BY 'brim_admin'  WITH GRANT OPTION;
+	</pre>
+	<p>
+		The user 'brim_admin' is the user that connects to the database. This is an arbitrary
+		name, it can be anything. This user must have full rights on the database in which
+		brim is installed however.
+	</p>
+		
+	<h2> Edit the
+		framework/configuration/databaseConfiguration.php file for the correct settings.
+	</h2>
+	<p>
+		Your application will not work otherwise :-)
+	</p>
+
+	<h2>Setup the admin user</h2>
+	<p>
+		The application has one dedicated user called 'admin'. This is the only 
+		user that is able to change application parameters.
+		Install the admin user with an sql statement similar to:
+	</p>
+	<pre>
+		INSERT INTO brim_users (loginname, password, name, email, description, when_created, last_login)
+			VALUES ('admin', MD5('YOUR_PASSWORD'), 'Admin user', 'your.admin@email.address', 'A small description', NOW(), null);
+	</pre>
+	
+	<h1>Check the installation</h1>
+	<p>
+		You should now be able to login using username/password 'admin'.
+		Change the password via the preferences.
+		If you encounter problems you can always contacts me at:
+		contact me at:
+		barry [at] nauta [dot] be
+		or visit the projects website at <a href="http://www.brim-project.org/">http://www.brim-project.org/</a>
+	</p>
+	<p>
+		Please mention
+	</p>
+	<ul>
+			<li>Which database (including version) you are using</li>
+			<li>Which webserver (including version) you are using</li>
+			<li>Which version of PHP you are using</li>
+			<li>If possible, a dump of the <code>phpinfo()</code>
+			command</li>
+	</ul>
+
+
+	<h2>Finishing up</h2>
+	<p>
+		The admin section allows the addition
+		of more users. 
+	</p>
+	<p>
+		Delete the install.php script once installation is succesful!!!
+		You might also want to delete the phpinfo.php file...
+	</p>
+
+	<p>
+
+	<b><font color="red" size="+1">Do not forget to change the admin
+					password!!!</font></b>
+	</p>
+	<p>
+		Have fun :-)
+	</p>
+
+	<a name="troubleshooting" />
+	<h1>Trouble shooting</h1>
+	<p>
+		If you have followed the steps and there are still problems,
+		here are some more tips that might help or produce additional
+		output which you can send me for evalutaion :-)
+	</p>
+	<ul>
+<!--
+			<li>Replace the reference to Smarty in the file
+			<code>configs/MySmarty.php</code> by an absolution path</li>
+-->
+			<li>Replace the reference to ADOdb in the file
+			<code>framework/util/databaseConnection</code> by an absolute
+			path</li>
+			<li>Append the debug option to the page you are requesting.
+			This will produce (hopefully) additional output which might
+			be helpfull. Adding the debug option is done by adding 
+			<code>?debug=true</code> to the requested page. FOr
+			instance: 
+			<code>http://www.host.com/brim/index.php</code>
+			becomes
+
+			<code>http://www.host.com/brim/index.php?debug=true</code>
+			</li>
+		</ul>
+			
+</body>
+</html>

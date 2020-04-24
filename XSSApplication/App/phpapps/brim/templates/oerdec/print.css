@@ -1,0 +1,188 @@
+body {
+background-color:#D4D0C8;
+padding:0px;
+margin:0px;
+font-family:arial,helvetica,sans-serif;
+color:#000;
+}
+
+hr {
+height:1px;
+color:#000;
+}
+
+/* +++++++++++++++++ first-menue +++++++++++++++++ */
+
+#first-menue {
+	display:none;
+}
+
+.first-menue-item {
+	display:none;
+}
+
+/* +++++++++++++++++ second-menue +++++++++++++++++ */
+
+#second-menue {
+	display:none;
+}
+#headline {
+float:left;
+}
+#headline-brim, #headline-title {
+/*font:bold 24px georgia;*/
+line-height:37px;
+}
+#headline-brim {
+padding-left:5px;
+color:#666;
+}
+#headline-title {
+color:#999;
+}
+#second-menue-items {
+	display:none;
+}
+.second-menue-item {
+	display:none;
+}
+
+/* +++++++++++++++++ bread crump navigation +++++++++++++++++ */
+
+.ancestor {
+line-height:24px;
+}
+.ancestor a:link { color:#666; text-decoration:none }
+.ancestor a:visited { color:#000; text-decoration:none }
+.ancestor a:hover { color:#000; text-decoration:none }
+.ancestor a:active { color:#000; text-decoration:none }
+
+/* +++++++++++++++++ main: contains options, content & footer +++++++++++++++++ */
+
+#main {
+position:absolute;
+top:80px;
+left:0px;
+width:100%;
+background-color:#F9F9F9;
+background-image:url(images/bg_options.gif); 
+}
+
+/* +++++++++++++++++ options (= actions) +++++++++++++++++ */
+
+#options {
+	display:none;
+}
+.options-hl {
+font:bold 12px arial,helvetica,sans-serif;
+margin:14px 0px 0px 0px;
+}
+.options-item {
+font:12px arial,helvetica,sans-serif;
+color:#666;
+margin:0px 10px;
+}
+.options-item a:link { color:#666; text-decoration:none }
+.options-item a:visited { color:#000; text-decoration:none }
+.options-item a:hover { color:#000; text-decoration:none }
+.options-item a:active { color:#000; text-decoration:none }
+
+/* +++++++++++++++++ content +++++++++++++++++ */
+
+#content {
+width:100%;
+position:relative;
+left:0px;
+background-color:#EFEFEF;
+margin-bottom:20px;
+padding:5px;
+font:12px arial,helvetica,sans-serif;
+}
+
+h1 {
+font:bold 14px arial,helvetica,sans-serif;
+margin:0px 0px 10px 0px;
+}
+h2 {
+font:bold 12px arial,helvetica,sans-serif;
+margin:5px 0px;
+}
+
+#content a:link { color:#666; text-decoration:none }
+#content a:visited { color:#000; text-decoration:none }
+#content a:hover { color:#000; text-decoration:none }
+#content a:active { color:#000; text-decoration:none }
+
+
+/* +++++++++++++++++ footer +++++++++++++++++ */
+
+#footer {
+display:none;
+}
+
+/* +++++++++++++++++ forms +++++++++++++++++ */
+
+form {
+padding:0px;
+margin:0px;
+}
+input {
+border:1px solid #666;
+background-color:#fff;
+font-family:"courier new";
+font-size:13px;
+color:#666;
+}
+textarea {
+border:1px solid #666;
+background-color:#fff;
+font-family:"courier new";
+font-size:13px;
+color:#666;
+width:350px;
+}
+.addcontact-textarea {
+	width:165px;
+}
+select {
+border:1px solid #666;
+background-color:#fff;
+font-family:"courier new";
+font-size:13px;
+color:#666;
+}
+
+table, tr, td {
+	font-size:11px;
+}
+
+.odd {
+	background-color:#F9F9F9;
+}
+	
+
+input.feedback
+{
+	background-color:transparent;
+	width: 400px;
+	border: 0px;
+}
+
+input:focus
+{
+	background-color:#ffffcc;
+}
+
+.button:focus 
+{
+	background-color:#ffffff;
+}
+textarea:focus
+{
+	background-color:#ffffcc;
+}
+
+td.inputParamName
+{
+	width:80px;
+}

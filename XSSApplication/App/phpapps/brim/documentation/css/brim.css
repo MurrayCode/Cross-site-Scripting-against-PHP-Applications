@@ -1,0 +1,89 @@
+body
+{
+	color:#000000;
+	background-color:#c0cece;
+	margin-top:2px;
+	margin-left:9px;
+	margin-right:2px;
+	margin-bottom:0px
+}
+
+body2
+{
+	color:#000000;
+	background-color:#cbbeae;
+	margin-top:2px;
+	margin-left:9px;
+	margin-right:2px;
+	margin-bottom:0px
+}
+
+body, p, h1, h2, h3, ul
+{
+	font-family: verdana,helvetica,arial,sans-serif
+}
+
+p.intro
+{
+}
+p.intro1
+{
+	border: 1px solid
+}
+
+p.intro2
+{
+	border: 1px dashed
+}
+h1 
+{
+	background-color:transparent;
+	color:#123456
+}
+
+h2 
+{
+	background-color:transparent;
+	color:#999999;
+}
+
+hr
+{
+	background-color:transparent;
+	color:#123456;
+	height:1px
+}
+
+tr.odd
+{
+	background-color:#cccccc
+}
+
+tr.even
+{
+	background-color:#bbbbbb
+}
+
+td.notes
+{
+	color:#000000;
+	background-color:yellow
+}
+
+td.todos
+{
+	color:#000000;
+	background-color:gray
+}
+
+td.menu
+{
+	color:#ffffff;
+	background-color:#123456
+}
+
+a.menu:link, a.menu:visited, a.menu:active, a.menu:hover
+{
+	color:#ffffff;
+	text-decoration:none
+}

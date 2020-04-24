@@ -1,0 +1,20 @@
+create table brim_tasks (
+	item_id serial not null,
+	owner   char (70) not null,
+	parent_id integer not null,
+	is_parent integer default 0,
+	name text not null,
+	description text,
+	visibility char (15),
+	category char (50),
+	is_deleted integer default 0,
+	when_created timestamp,
+	when_modified timestamp,
+	priority int,
+	start_date timestamp,
+	end_date timestamp,
+	status char (70),
+	percent_complete int,
+	is_finished smallint,
+	primary key (item_id)
+)

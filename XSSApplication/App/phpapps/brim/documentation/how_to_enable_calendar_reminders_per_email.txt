@@ -1,0 +1,23 @@
+It is now possible to send out email reminders for events via brim.
+(This currently only works for non-recurring events)
+
+There are a few things to consider:
+- Each user must have a valid email address associated to its account
+- You must have crontab (or equivalent) access
+- You must be able to access a mailserver from your installation
+
+How to enable reminders for calendar events sent out per email?
+
+*** STEP 1 ***
+You need to add a line to a crontab (or anything similar), that periodically executes and fetches a predefined page in Brim.
+
+For unix, the following line executes the reminder mechanism each 5 minutes:
+*/5 * * * * /usr/bin/lynx --source http://_YOUR_SERVER_HERE_/brim/brim.php?plugin=calendar\&username=calendar\&amp;action=sendReminders 
+
+(Important to add the backslashes just before the ampersand!)
+
+*** STEP 2 ***
+Furthermore, you need to enable this feature as admin user.
+Go to the configuration section and turn this option on, it will be disabled by default.
+
+

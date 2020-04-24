@@ -1,0 +1,63 @@
+body{font:12px "Trebuchet MS",Arial,Helvetica,sans-serif; background:#666666 url(images/demo_bg.jpg) center repeat-y; margin:0; padding:0; text-align:center; color:#666666}
+#site_tag, #site_title{margin:0; padding:0; font:12px "Lucida Sans Unicode",Arial,Helvetica,sans-serif}
+#site_title{font-size:24px}
+#demo_logo{margin-right:1em}
+a img, img {border:none}
+.greentext{color:#8dc63f}
+.bluetext{color:#02a1cc}
+.greytext{color:#666666}
+a{color:orange; text-decoration:none}
+a:hover{text-decoration:underline}
+#container{width:800px; background:white; margin:0 auto; text-align:left}
+#header{background:url(images/top_border.jpg) no-repeat bottom left; padding:0px 10px 35px 20px}
+#header_right {float:right;width:150px}
+.clearboth{clear:both}
+h1{color:#8dc63f}
+h1,h2,h3,h4,h5,h6 {font: "Lucida Sans",Arial,Helvetica,sans-serif;}
+h1, #left_title{font-size:18px; margin-top:0; padding-bottom:5px}
+h2 {font-size:16px;color:#9C0}
+h3 {font-size:14px;color:#F63}
+h4 {font-size:13px}
+
+#main{padding:0 10px; background:#FFFFFF}
+#footer{padding:0 10px; background:url(images/bottom_border.jpg) no-repeat top right}
+#footer_left{float:left;width:300px}
+#footer_right{float:right;width:400px}
+#footer p { padding:20px}
+#template_left{float:left; margin:1em 0 0 0; width:180px;background:white}
+#template_content{float:left; margin:1em 0 0 0; width:560px; background:white url(images/sidebar.jpg) no-repeat top left; padding-left:30px; min-height:480px}
+
+.html_category_datemodified, .html_category_datecreated, .html_item_datecreated, .html_item_datemodified, .html_category_item_date, .blog_dates {font:italic 9px "Trebuchet MS", Arial, Helvetica, sans-serif}
+li.html_category_item{list-style-image:url(images/file_html.png)}
+li.html_child_category{list-style-image:url(images/folder.png)}
+/* Menu */
+#navbar{z-index:21; font:bold 100% Arial,Helvetica,sans-serif; color:black; padding-bottom:50px}
+#menublock_1, #menublock_1 ul{white-space:nowrap}
+#menublock_1{font:bold 12px "Trebuchet MS",Arial,Helvetica,sans-serif;  width:100%; height:25px}
+#menublock_1, #menublock_1 ul{float:left;  list-style:none;  line-height:30px;  padding:0;  margin:0;  width:100%}
+#menublock_1 a{display:block;  color:#C3C;  text-decoration:none;  padding:0px 10px}
+#menublock_1 li{float:left;  padding:0; border-right:1px dotted grey}
+#menublock_1 ul{position:absolute;  left:-999em;  height:auto;  width:151px;  font-weight:normal;  margin:0;  line-height:1;  border:none}
+#menublock_1 li li{width:149px;  font:bold 12px "Trebuchet MS",Arial,Helvetica,sans-serif}
+#menublock_1 li li a{  padding:3px 10px 4px 10px;     width:130px;     font-size:12px;     color:#dddddd}
+#menublock_1 li ul ul{  margin:-25px 0 0 150px}
+#menublock_1 li li:hover{  background:#666666}
+#menublock_1 li ul li:hover a, #menublock_1 li ul li li:hover a, #menublock_1 li ul li li li:hover a, #menublock_1 li ul li li li:hover a{  color:#dddddd}
+#menublock_1 li:hover a, #menublock_1 li.sfhover a{  color:black; color:black}
+#menublock_1 li:hover li a, #menublock_1 li li:hover li a, #menublock_1 li li li:hover li a, #menublock_1 li li li li:hover li a{  color:black}
+#menublock_1 li:hover ul ul, #menublock_1 li:hover ul ul ul, #menublock_1 li:hover ul ul ul ul, #menublock_1 li.sfhover ul ul, #menublock_1 li.sfhover ul ul ul, #menublock_1 li.sfhover ul ul ul ul{  left:-999em}
+#menublock_1 li:hover ul, #menublock_1 li li:hover ul, #menublock_1 li li li:hover ul, #menublock_1 li li li li:hover ul, #menublock_1 li.sfhover ul, #menublock_1 li li.sfhover ul, #menublock_1 li li li.sfhover ul, #menublock_1 li li li li.sfhover ul{  left:auto; background:#fddee9}
+#menublock_1 li:hover, #menublock_1 li.sfhover{background:url(images/demobghover.jpg) bottom left repeat-x}
+/* footer menu */
+#menublock_2{margin:0; padding:30px 10px;}
+#menublock_2 li{float:left;  list-style:none;padding:0; border-right:1px dotted grey}
+#menublock_2 li a {padding:4px}
+.contacts_table td img {margin-right:5px}
+.standard_form_button { width:100px}
+.loginform_infotext ul li{;list-style:none}
+.pagination {border:1px dotted cornflowerblue;color:mediumvioletred;margin-top:20px}
+.pagination a {color:mediumvioletred;padding:0 3px;text-decoration:none}
+.pagination a:hover {background:dodgerblue;color:white}
+.pagination_current {background:mistyrose;color:mediumvioletred;padding:0 3px}
+.validation-failed{border:1px dashed red; background-image:url(images/inputbg_red.jpg)}
+.validation-failed-cr{border:1px dashed red}

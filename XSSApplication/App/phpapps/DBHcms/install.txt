@@ -1,0 +1,309 @@
+#############################################################################################
+#                                                                                           #
+#  DBHCMS - Web Content Management System                                                   #
+#                                                                                           #
+#############################################################################################
+#                                                                                           #
+#  COPYRIGHT NOTICE                                                                         #
+#  =============================                                                            #
+#                                                                                           #
+#  Copyright (C) 2005-2007 Kai-Sven Bunk (kaisven@drbenhur.com)                             #
+#  All rights reserved                                                                      #
+#                                                                                           #
+#  This file is part of DBHcms.                                                             #
+#                                                                                           #
+#  DBHcms is free software; you can redistribute it and/or modify it under the terms of     #
+#  the GNU General Public License as published by the Free Software Foundation; either      #
+#  version 2 of the License, or (at your option) any later version.                         #
+#                                                                                           #
+#  The GNU General Public License can be found at http://www.gnu.org/copyleft/gpl.html      #
+#  A copy is found in the textfile GPL.TXT                                                  #
+#                                                                                           #
+#  DBHcms is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;      #
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR         #
+#  PURPOSE. See the GNU General Public License for more details.                            #
+#                                                                                           #
+#  This copyright notice MUST APPEAR in ALL copies of the script!                           #
+#                                                                                           #
+#############################################################################################
+# $Id: install.txt 74 2007-10-16 09:25:47Z kaisven $                                        #
+#############################################################################################
+
+  =========================================================================================
+  = Installation of the DBHcms                                                            =
+  =========================================================================================
+
+  1. Unzip the files to any directory in your web server
+
+  2. If you have a Linux web server:
+ 
+        - Make sure that the .htaccess and the config.php file can be overwritten (chmod 666)
+        - Set the permissions for "dbhcms/temp/" so files can be generated 
+          in this directory (chmod 777)
+        - To be able to write the configuration file of phpMyAdmin, the permissions for
+          "dbhcms/apps/phpmyadmin" must be set so that the configuration file can be generated. 
+          After installation you may reset the permissions.
+
+        - CHANGE THE RIHGTS FOR .HTACCESS AND CONFIG.PHP AFTER INSTALLATION !!! SECURITY !!!
+
+  3. With your web browser just call the directory where you unzipped the DBHcms, fill the
+     form with your settings, choose the extensions you wish to install and click the
+     "INSTALL NOW ->" button.
+
+  4. Have a lot of fun with your new DBHcms !
+
+  NOTE: To reach the back end (BE) or the administration panel, use the following URL:
+
+           ->   http://www.yourdomain.com/index.php?dbhcms_pid=-1
+
+        If you use mod_rewrite, generate first the .htaccess file using the 
+        "Generate .htaccess" button in the "Actions" box in the administration 
+        area, then you may reach the BE by using the following URL:
+
+           ->   http://www.yourdomain.com/admin.html
+
+
+
+
+  =========================================================================================
+  = Update from 1.1.3 to 1.1.4                                                            =
+  =========================================================================================
+
+  1. Download the update package (not the install version)
+     at http://www.drbenhur.com/downloads-1-5-en.html
+
+  2. Unpack the files in the folder of your DBHcms installation. The files "index.php", 
+     "dbhcms.dat", "gpl.txt", "install.txt" and "licence.txt" have to be overwritten. The
+     complete folder "dbhcms/" will be replaced with the new DBHcms core.
+     
+  3. Execute the following queries on your database using phpMyAdmin or any other database
+     tool of your choice. IMPORTANT: replace "<yourprefix>" by your table prefix. Default 
+     value is "dbhcms_".
+
+     ==========================
+
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_avaliable_extensions' WHERE `cnfg_id` LIKE 'availableExtensions';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_pagecache' WHERE `cnfg_id` LIKE 'cacheEnabled';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_cachetime' WHERE `cnfg_id` LIKE 'cacheTime';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_cssdir' WHERE `cnfg_id` LIKE 'cssDirectory';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_dateformatdb' WHERE `cnfg_id` LIKE 'dateFormatDatabase';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_dateformatfe' WHERE `cnfg_id` LIKE 'dateFormatOutput';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_datetimeformatdb' WHERE `cnfg_id` LIKE 'dateTimeFormatDatabase';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_datetimeformatfe' WHERE `cnfg_id` LIKE 'dateTimeFormatOutput';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_debugmodus' WHERE `cnfg_id` LIKE 'debugModus';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_dictlang' WHERE `cnfg_id` LIKE 'dictionaryLanguages';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_imgdir' WHERE `cnfg_id` LIKE 'imageDirectory';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_javadir' WHERE `cnfg_id` LIKE 'javaDirectory';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_phpdir' WHERE `cnfg_id` LIKE 'moduleDirectory';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_rootdir' WHERE `cnfg_id` LIKE 'rootDirectory';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_sessactivetime' WHERE `cnfg_id` LIKE 'sessionActiveTime';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_sesslifetime' WHERE `cnfg_id` LIKE 'sessionLifeTime';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_staticurls' WHERE `cnfg_id` LIKE 'simulateStaticUrls';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_superusers' WHERE `cnfg_id` LIKE 'superUsers';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_tpldir' WHERE `cnfg_id` LIKE 'templateDirectory';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_timeformatdb' WHERE `cnfg_id` LIKE 'timeFormatDatabase';
+     UPDATE <yourprefix>cms_config SET `cnfg_decription` = 'dbhcms_desc_timeformatfe' WHERE `cnfg_id` LIKE 'timeFormatOutput';
+
+     INSERT INTO <yourprefix>cms_pages (`page_id`, `page_parent_id`, `page_domn_id`, `page_posnr`, `page_hierarchy`, `page_hide`, `page_cache`, `page_schedule`, `page_start`, `page_stop`, `page_inmenu`, `page_stylesheets`, `page_javascripts`, `page_templates`, `page_php_modules`, `page_extensions`, `page_shortcut`, `page_link`, `page_target`, `page_userlevel`, `page_last_edited`, `page_description`) VALUES 
+       (-120, -3, 0, 40, 'HT_SINGLE', 0, 0, 0, NOW(), NOW(), 1, 'dbhcms.admin.css', 'refresh.js', 'body.main.tpl;content.extmanager.tpl', 'mod.global.php;mod.extmanager.php;mod.result.php', '', 0, '', '', '9', NOW(), 'DBHcms Admin -  Extensions Manager');
+
+     INSERT INTO <yourprefix>cms_pagevals (`pava_page_id`, `pava_name`, `pava_value`, `pava_lang`) VALUES 
+       (-120, 'name', 'BE Extensions Manager', 'en'),
+       (-120, 'name', 'BE Extensions Manager', 'es'),
+       (-120, 'name', 'BE Extensions Manager', 'de'),
+       (-120, 'templates', '', 'en'),
+       (-120, 'stylesheets', '', 'en'),
+       (-120, 'javascripts', '', 'en'),
+       (-120, 'modules', '', 'en'),
+       (-120, 'urlPrefix', '', 'en'),
+       (-120, 'content', '', 'en'),
+       (-120, 'templates', '', 'es'),
+       (-120, 'stylesheets', '', 'es'),
+       (-120, 'javascripts', '', 'es'),
+       (-120, 'modules', '', 'es'),
+       (-120, 'urlPrefix', '', 'es'),
+       (-120, 'content', '', 'es'),
+       (-120, 'templates', '', 'de'),
+       (-120, 'stylesheets', '', 'de'),
+       (-120, 'javascripts', '', 'de'),
+       (-120, 'modules', '', 'de'),
+       (-120, 'urlPrefix', '', 'de'),
+       (-120, 'content', '', 'de');
+
+     ==========================
+     
+  4. Go to the back-end of the DBHcms and go to the "Dictionary" module in the "Web" 
+     section and import the new dictionary by clicking on the "Import" button in the 
+     "Export/Import" box.
+
+  5. There are new blocks for the guestbook and the contact extensions that show error
+     messages so the user knows when an error ocurs. For example, when the captcha
+     number the user typed was wrong.
+  
+     To enable this new feature, you will have to add this blocks to your templates. 
+     If you have NOT changed the template of your guestbook "guestbook.tpl", just add 
+     (copy and paste) the following code between line 36 and line 37 (just at the begining). 
+     If you have NOT changed the template of your contact "contact.tpl", just add (copy 
+     and paste) the following code between line 73 and line 74. If you HAVE modified the 
+     templates just modify the code below to fit your template. Make sure not to change 
+     the names of the blocks and markers.
+     
+     Guestbook template changes
+     (between lines 36 and 37)
+     ========================
+
+	<!-- BEGIN guestbookError -->
+	<br />
+	<div align="center">
+		<font size="3" color="#FF0000">
+			<strong>{guestbookError.guestbookMessage}</strong>
+		</font>
+	</div>
+	<br />
+	<!-- END guestbookError -->
+
+     ========================
+
+     Contact template changes
+     (between lines 112 and 113)
+     ========================
+
+				<!-- BEGIN contactError -->
+				<font size="3" color="#FF0000">
+					<strong>{contactError.contactMessage}</strong>
+				</font>
+				<!-- END contactError -->
+
+     ========================
+
+  6. That's all folks! Test your website with your new DBHcms core! Have fun and thank you
+     very much for your interest in DBHcms!
+
+
+
+
+  =========================================================================================
+  = Update from 1.1.2-Beta to 1.1.3                                                       =
+  =========================================================================================
+
+  1. Download the update package (not the install version)
+     at http://www.drbenhur.com/downloads-1-5-en.html
+
+  2. Unpack the files in the folder of your DBHcms installation. The files "index.php", 
+     "dbhcms.dat", "gpl.txt", "install.txt" and "licence.txt" have to be overwritten and 
+     a new folder "dbhcms/" will be created with all the files of the DBHcms core.
+     For example, if you installed your copy in "./my_cms/", you will now have a folder 
+     named "./my_cms/dbhcms/".
+     
+  3. Execute the following queries on your database using phpMyAdmin or any other database
+     tool of your choice. IMPORTANT: replace "<yourprefix>" by your table prefix. Default 
+     value is "dbhcms_".
+
+     ==========================
+
+     UPDATE 
+       <yourprefix>cms_pages 
+     SET
+       page_php_modules = 'mod.global.php;mod.start.php' 
+     WHERE
+       page_id = '-3'  LIMIT 1;
+
+     DELETE FROM 
+       <yourprefix>cms_pagevals 
+     WHERE 
+       pava_page_id = '7' AND 
+       pava_name = 'test' LIMIT 1; 
+    
+     ==========================
+     
+  4. Open the file "config.php" and change the parameter "$dbhcms_core_dir" from
+     "$dbhcms_core_dir = dbhcms-1.1.2-beta/" to "$dbhcms_core_dir = dbhcms/". This
+     will enable the new core.
+
+  5. Go to the back-end of the DBHcms and go to the "Dictionary" module in the "Web" 
+     section and import the new dictionary by clicking on the "Import" button in the 
+     "Export/Import" box. 15 values should be inserted.
+
+  6. If you use the guestbook or the contact extension, you will have to add the 
+     fields for the captcha functionality. If you have NOT changed the template of 
+     your guestbook "guestbook.tpl", just add the following code between line 114 
+     and line 115. If you have NOT changed the template of your contact "contact.tpl", 
+     just add the following code between line 73 and line 74. If you HAVE modified 
+     the templates just modify the code below to fit your template. Make sure not to 
+     change the names of the inputs and markers and that they are within the form.
+     
+     Guestbook template changes
+     (between lines 114 and 115)
+     ========================
+
+						<tr><td colspan="4"><br /></td></tr>
+						<tr>
+							<td align="right"><strong>{dict_typecaptcha}:</strong></td>
+							<td align="left" colspan="3">
+								<table>
+									<tr>
+										<td>
+											<input type="text" name="guestbookCaptcha">
+										</td>
+										<td>
+											{str_guestbookCaptcha}
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+     ========================
+
+     Contact template changes
+     (between lines 73 and 74)
+     ========================
+
+						<tr><td colspan="4"><br /></td></tr>
+						<tr>
+							<td align="right"><strong>{dict_typecaptcha}:</strong></td>
+							<td align="left" colspan="3">
+								<table>
+									<tr>
+										<td>
+											<input type="text" name="contactCaptcha">
+										</td>
+										<td>
+											{str_contactCaptcha}
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+     ========================
+
+  7. You must set off the page caching of the pages that use the contact or the guestbook 
+     extension, else visitors can not see the right captcha.
+
+  8. If you use the phpMyAdmin application in the DBHcms, you will have to create the
+     file "config.inc.php" in "dbhcms/apps/phpmyadmin". Here is a sample, just modify 
+     it to fit your servers settings:
+     
+     dbhcms/apps/phpmyadmin/config.inc.php
+     ========================
+     
+			<?php
+			
+				$cfg['blowfish_secret'] = '0vk2wd5csm8hnpy1';
+				$cfg['Servers'][1]['auth_type'] = 'cookie';
+				$cfg['Servers'][1]['host'] = '<yourhost>';
+				$cfg['Servers'][1]['connect_type'] = 'tcp';
+				$cfg['Servers'][1]['compress'] = false;
+				$cfg['Servers'][1]['extension'] = 'mysql';
+				$cfg['Servers'][1]['only_db'] = '<yourdatabasename>';
+
+			?>
+     
+     ========================
+
+  9. That's all folks! Test your website with your new DBHcms core! Have fun and thank you
+     very much for your interest in DBHcms!
+
+
+### EOF ### (C) 2005-2007 Kai-Sven Bunk #####################################################

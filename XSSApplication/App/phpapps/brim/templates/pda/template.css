@@ -1,0 +1,23 @@
+body
+{
+	padding:0px;
+	margin:0px;
+	font-family:arial;
+	font-size:1px;
+	color:#000000;
+}
+h1
+{
+	font-size:18px;
+}
+table
+{
+	width:240px;
+	border:0px;
+	cellpadding:0px;
+	cellspacing:0px;
+}
+td.applicationMenu, td.copyright
+{
+	background-color:#cccccc;
+}

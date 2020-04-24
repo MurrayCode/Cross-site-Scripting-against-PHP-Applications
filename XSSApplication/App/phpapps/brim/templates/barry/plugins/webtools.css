@@ -1,0 +1,32 @@
+div#wheel 
+{
+	position:absolute; 
+	visibility:visible; 
+	top:130px; left:220px;
+	width: 553px; height: 257px; 
+	background: #ffff00;
+}
+div#demoa, div#demob, div#democ {
+   position:absolute; visibility:visible;
+   top:410px; width: 90px; height: 30px;
+   text-align:center; padding-top: 15px; padding-bottom: 200px;
+   font-size: 14px; font-family: serif;}
+div#demoa {left:220px; margin-right: 0px;}
+div#demob {left:310px; margin-left: 0px;  margin-right: 0px;}
+div#democ {left:400px; margin-left: 0px;}
+
+div#pickset {
+   position:absolute; visibility:visible; top:130px; left:50px;
+   padding-right: 35px; border-right: 1px dotted grey;
+   font-size: 14px; font-family: Courier, monospace;}
+
+div#picka, div#pickb, div#pickc, div#pickd, div#picke, div#pickf, div#pickg {
+   width: 100px; height: 35px; padding: 10px;}
+
+div#notes {position:absolute; visibility:visible; top:365px;
+    left:520px; padding-top: 30px; font-size: 12px; width: 270px;}
+
+div#instructs {
+     position:absolute; visibility:visible; top:80px;
+     left:50px;  padding-bottom: 30px; width: 570px;}
+

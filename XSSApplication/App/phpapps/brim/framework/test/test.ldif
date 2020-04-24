@@ -1,0 +1,58 @@
+dn: dc=my-domain,dc=com
+dc: my-domain
+objectClass: domain
+
+dn: ou=people, dc=my-domain,dc=com
+ou: people
+objectClass: top
+objectClass: organizationalUnit
+description: System People
+
+dn: uid=admin,ou=people, dc=my-domain,dc=com
+shadowMin: 0
+sn: admin
+userPassword:: YWRtaW4=
+shadowMax: 99999
+objectClass: top
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+uid: admin
+shadowLastChange: 12345
+cn: Brim admin
+shadowInactive: -1
+
+dn: uid=user01,ou=people, dc=my-domain,dc=com
+shadowMin: 0
+sn: user01
+userPassword:: YWRtaW4=
+shadowMax: 99999
+objectClass: top
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+uid: user01
+shadowLastChange: 12345
+cn: Brim user
+shadowInactive: -1
+
+dn: ou=groups, dc=my-domain,dc=com
+ou: groups
+objectClass: top
+objectClass: organizationalUnit
+description: System Groups
+
+dn: cn=brim-admin,ou=groups, dc=my-domain,dc=com
+gidNumber: 521
+objectClass: top
+objectClass: posixGroup
+objectClass: groupOfNames
+member: uid=admin,ou=people,dc=my-domain,dc=com
+cn: brim-admin
+
+dn: cn=brim-user,ou=groups, dc=my-domain,dc=com
+gidNumber: 522
+objectClass: top
+objectClass: posixGroup
+objectClass: groupOfNames
+cn: brim-user
+member: uid=user01,ou=people,dc=my-domain,dc=com
+member: uid=admin,ou=people,dc=my-domain,dc=com

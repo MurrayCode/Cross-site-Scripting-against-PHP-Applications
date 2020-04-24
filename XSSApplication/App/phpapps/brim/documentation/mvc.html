@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Brim - MVC</title>
+</head>
+
+<body>
+<h2>Model View Controller (MVC or Model II)</h2>
+<p>
+The main goal of using the MVC pattern is to display the display logic (the view/gui) from the business-logic/data (the processing part). These two parts are 'kept together' via the controller. 
+</p>
+<p>
+As mentioned here: '<a href="http://c2.com/cgi/wiki?ModelViewController">[c2.com]</a>' 
+</p>
+<ul>
+<li>A model, therefore is an object representing data or even activity, e.g. a database table or even some plant-floor production-machine process. </li>
+<li>A view is some form of visualization of the state of the model. </li>
+<li>A controller offers facilities to change the state of the model. </li>
+</ul>
+
+<p>
+In Brim, there is <em>NO DIRECT</em> link between the model and the view, ALL communication must pass via the controller. 
+</p>
+<p>
+The Model in based around items with a <em>potential</em> hierachical relationship (see <a href="pics/design.png">high level class diagram</a>). The Item is an object that represents data in the database. The Services class that goes along with the Item provides the logic to add/update/delete items etc. Furthermore there is typically a Factory class that knows how to create an item from either a database resultset or an HTTP request 
+</p>
+<p>
+The model is object-oriented 
+</p>
+<p>
+The view contains the display logic of certain items and is procedural... it mainly contains the template files or helping classes that knows how to render trees etc. 
+</p>
+<p>
+The controller is the glue between the model and the view. It gives the view all the information it needs to display, checks whether certain actions may be performed etc.
+</p>
+<p>
+<img src="pics/mvc.gif" />
+</p>

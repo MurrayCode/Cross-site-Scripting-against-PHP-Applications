@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+    <channel>
+        <title>SCHLIX CMS</title>
+        <link>https://www.schlix.com</link>
+        <description>SCHLIX CMS News</description>
+        <generator>Schlix</generator>
+        <lastBuildDate>Sun, 19 Jan 2020 02:16:24 -0700</lastBuildDate>
+        <language>en-us</language>    
+                          
+                <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/babygekko" /><feedburner:info uri="babygekko" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><creativeCommons:license>http://creativecommons.org/licenses/by-nd/3.0/</creativeCommons:license><feedburner:emailServiceId>babygekko</feedburner:emailServiceId><feedburner:feedburnerHostname>https://feedburner.google.com</feedburner:feedburnerHostname><item>
+                    <pubDate>Sun, 19 Jan 2020 02:16:24 -0700</pubDate>
+                    <title>Time to upgrade - SCHLIX CMS v2.2.2 has been released (now compatible with PHP 7.3 and 7.4)</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/R-02QQJc2EQ/time-to-upgrade-schlix-cms-v2-2-2-has-been-released-now-compatible-with-php-7-3-and-7-4.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/time-to-upgrade-schlix-cms-v2-2-2-has-been-released-now-compatible-with-php-7-3-and-7-4.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.2.2 has been released and it is now compatible with PHP 7.3 and 7.4. With this change, SCHLIX CMS is now compatible with PHP 5.6, 7.0, 7.1, 7.2 and 7.3. Other notable changes include the newly included newspaper theme. The previously included company profile theme still exists. You can check the demo (frontend only) at &lt;a href="https://demo3.schlix.com" target="_blank" rel="noopener"&gt;https://demo3.schlix.com&lt;/a&gt;. Note to packagers: since it now comes with 3 sample data (newspaper, company profile, blank company profile), the parameter for automated installation has been changed. Please refer to the following article: &lt;a href="https://www.schlix.com/documentation/v2/configuration/automated-installation.html" target="_blank" rel="noopener"&gt;https://www.schlix.com/documentation/v2/configuration/automated-installation.html&lt;/a&gt;. If you have any questions, just head to the &lt;a href="https://www.schlix.com/forum"&gt;forum&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.schlix.com/web/schlix/media/images/articles/schlix_cms_newspaper_sample_ss_2.jpg" alt="Newspaper CMS" /&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=R-02QQJc2EQ:_Cnr68cvLsk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=R-02QQJc2EQ:_Cnr68cvLsk:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=R-02QQJc2EQ:_Cnr68cvLsk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=R-02QQJc2EQ:_Cnr68cvLsk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=R-02QQJc2EQ:_Cnr68cvLsk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=R-02QQJc2EQ:_Cnr68cvLsk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=R-02QQJc2EQ:_Cnr68cvLsk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=R-02QQJc2EQ:_Cnr68cvLsk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=R-02QQJc2EQ:_Cnr68cvLsk:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/R-02QQJc2EQ" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/time-to-upgrade-schlix-cms-v2-2-2-has-been-released-now-compatible-with-php-7-3-and-7-4.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Sat, 21 Dec 2019 01:10:31 -0700</pubDate>
+                    <title>6th revision for SCHLIX CMS v2.2.1 has been released</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/DSdDHKfb9Yc/6th-revision-for-schlix-cms-v2-2-1-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/6th-revision-for-schlix-cms-v2-2-1-has-been-released.html</guid>
+                    <description>&lt;p&gt;Today we've released the 6th revision for SCHLIX CMS v2.2.1. This should be the final release for 2019. Happy New Year 2020 and we'll catch up with you next year with new e-commerce extensions and other goodies.&lt;/p&gt;
+&lt;p&gt;List of all revisions for SCHLIX CMS v2.2.1-x:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Errata #6: Updated typo in the automated installer (not regular installer) for the email address input.&lt;/li&gt;
+&lt;li&gt;Errata #5: Updated Google Analytics block, fixed installer and site manager PHP version detection and backslash escape function, minor correction for gallery package name (comment only), HTML encoding issue for SCHLIX_SITE_NAME in the default theme.&lt;/li&gt;
+&lt;li&gt;Errata #4: Blog category may not appear on the backend during new item creation (Nov 12, 2019)&lt;/li&gt;
+&lt;li&gt;Errata #4: UI layout was incorrect for the password reset form, removed the inner row/column&lt;/li&gt;
+&lt;li&gt;Errata #4: File type check for media manager upload&lt;/li&gt;
+&lt;li&gt;Errata #4: Fixed zh-CN (simplified Chinese) translations&lt;/li&gt;
+&lt;li&gt;Errata #3: fixed layout where the treeview on the left has many items exceeding the browser's viewport. The left column has a scrollbar now and the tag has been changed to the default div. This actually caused an extra scrollbar to be displayed on Firefox and it is a known issue. Fixed blog primary category not being updated after the document has been saved.&lt;/li&gt;
+&lt;li&gt;Errata #2 - fixed Fontawesome 5 iconpicker that caused an icon to be generated when saving a menu item.&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DSdDHKfb9Yc:d8hf-qdPAAA:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DSdDHKfb9Yc:d8hf-qdPAAA:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=DSdDHKfb9Yc:d8hf-qdPAAA:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DSdDHKfb9Yc:d8hf-qdPAAA:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=DSdDHKfb9Yc:d8hf-qdPAAA:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DSdDHKfb9Yc:d8hf-qdPAAA:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DSdDHKfb9Yc:d8hf-qdPAAA:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=DSdDHKfb9Yc:d8hf-qdPAAA:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DSdDHKfb9Yc:d8hf-qdPAAA:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/DSdDHKfb9Yc" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/6th-revision-for-schlix-cms-v2-2-1-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Fri, 25 Oct 2019 16:53:04 -0600</pubDate>
+                    <title>CVE-2019-11021 for older SCHLIX CMS v2.1.8-7 (November 2018)</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/KU4b86e6Isk/cve-2019-11021-for-older-schlix-cms-v2-1-8-7-november-2018.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/security/cve-2019-11021-for-older-schlix-cms-v2-1-8-7-november-2018.html</guid>
+                    <description>&lt;p&gt;In regards to &lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2019-11021" target="_blank" rel="noopener"&gt;CVE-2019-11021&lt;/a&gt; for older SCHLIX CMS v2.1.8-7 (November 2018 - last year), which claimed that "admin/app/mediamanager in Schlix CMS 2.1.8-7 allows &lt;strong&gt;Authenticated&lt;/strong&gt; Unrestricted File Upload, leading to remote code execution.", the analysis needs to also mention that the user who can access admin area will require an elevated superuser permission (the user must belong to &lt;strong&gt;[Administrators]&lt;/strong&gt;before he/she can upload the PHP file. We also allow uploading of zipped PHP scripts to install extensions, by the way, and it's still the case even in 2.2.x.&lt;/p&gt;
+&lt;p&gt;While inadvertently allowing a PHP file to be uploaded via Media Manager was an oversight, it still requires an admin permission. We think it's pretty rare for an administrator to exploit a bug on his/her own site to own his/her own site.&lt;/p&gt;
+&lt;p&gt;It's best for security researchers to &lt;a href="https://www.schlix.com/contacts/"&gt;contact us&lt;/a&gt; first to validate a vulnerability before publishing it. Regardless, we still thank for the effort.&lt;/p&gt;
+&lt;p&gt;For SCHLIX CMS users, simply click Settings - System Update to keep your system secure all the time. Also, subscribe to this &lt;a href="https://www.schlix.com/news/rss" target="_blank" rel="noopener"&gt;RSS news feed&lt;/a&gt; for the latest news including security related advisories.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=KU4b86e6Isk:Vj1_rCFRbS8:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=KU4b86e6Isk:Vj1_rCFRbS8:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=KU4b86e6Isk:Vj1_rCFRbS8:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=KU4b86e6Isk:Vj1_rCFRbS8:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=KU4b86e6Isk:Vj1_rCFRbS8:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=KU4b86e6Isk:Vj1_rCFRbS8:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=KU4b86e6Isk:Vj1_rCFRbS8:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=KU4b86e6Isk:Vj1_rCFRbS8:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=KU4b86e6Isk:Vj1_rCFRbS8:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/KU4b86e6Isk" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/security/cve-2019-11021-for-older-schlix-cms-v2-1-8-7-november-2018.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Wed, 09 Oct 2019 14:00:58 -0600</pubDate>
+                    <title>SCHLIX CMS v2.2.1 with Extension Gallery has been released</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/c67U4PL-FaY/schlix-cms-v2-2-1-with-extension-gallery-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-v2-2-1-with-extension-gallery-has-been-released.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.2.1 has been released with an integrated Extension Gallery (App Store) where you can download extension directly from the CMS without having to manually download it from our &lt;a href="https://www.schlix.com/extensions/"&gt;Extension Directory&lt;/a&gt;. We also now welcome publishers who'd like to publish their work to showcase their work and be linked from our website. The first phase, which lasts until end of December 2020, will be open for open source extensions, with commercial offering planned to be open in January 2021.&lt;/p&gt;
+&lt;p&gt;Other notable changes include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Installation/removal of extension now requires administrator password&lt;/li&gt;
+&lt;li&gt;Automated installer bug fix - missed 1 parameter during config file generation&lt;/li&gt;
+&lt;li&gt;French translation bug fix&lt;/li&gt;
+&lt;li&gt;Font Awesome Free has been updated to v5.11.2&lt;/li&gt;
+&lt;li&gt;Change email and change password dialog under Users administration have been improved with better user interface&lt;/li&gt;
+&lt;li&gt;Inclusion of manual_upgrade.php for manual upgrade in a more restricted hosting environment or if the automated upgrade fails for any reason&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download it &lt;a href="https://www.schlix.com/html/schlix-cms-downloads.html"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=c67U4PL-FaY:9csG7YzWJU8:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=c67U4PL-FaY:9csG7YzWJU8:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=c67U4PL-FaY:9csG7YzWJU8:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=c67U4PL-FaY:9csG7YzWJU8:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=c67U4PL-FaY:9csG7YzWJU8:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=c67U4PL-FaY:9csG7YzWJU8:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=c67U4PL-FaY:9csG7YzWJU8:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=c67U4PL-FaY:9csG7YzWJU8:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=c67U4PL-FaY:9csG7YzWJU8:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/c67U4PL-FaY" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-v2-2-1-with-extension-gallery-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Wed, 25 Sep 2019 01:18:34 -0600</pubDate>
+                    <title>CentOS 8 - compatible with SCHLIX CMS v2.2.x</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/SAe98R70S78/centos-8-compatible-with-schlix-cms-v-2-2-x.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/general/centos-8-compatible-with-schlix-cms-v-2-2-x.html</guid>
+                    <description>&lt;p&gt;CentOS 8 has just been released yesterday. We've tested it and the new SCHLIX CMS v2.2.x series works out of the box (including with the new MySQL 8.0) with only minimal changes to the default configuration. Check out the &lt;strong&gt;&lt;a href="https://www.schlix.com/documentation/v2/configuration/centos-8-lamp-linux-apache-2-4-mysql-8-0-php-7-2-server-setup.html"&gt;CentOS 8 LAMP server installation guide&lt;/a&gt;&lt;/strong&gt; for SCHLIX CMS.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=SAe98R70S78:fGtP2tRqjBE:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=SAe98R70S78:fGtP2tRqjBE:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=SAe98R70S78:fGtP2tRqjBE:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=SAe98R70S78:fGtP2tRqjBE:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=SAe98R70S78:fGtP2tRqjBE:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=SAe98R70S78:fGtP2tRqjBE:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=SAe98R70S78:fGtP2tRqjBE:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=SAe98R70S78:fGtP2tRqjBE:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=SAe98R70S78:fGtP2tRqjBE:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/SAe98R70S78" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/general/centos-8-compatible-with-schlix-cms-v-2-2-x.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Wed, 18 Sep 2019 18:31:48 -0600</pubDate>
+                    <title>Extension Gallery - a marketplace for web design agencies/freelance PHP developers</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/yj5FniocVmQ/extension-gallery-a-marketplace-for-web-design-agencies-freelance-php-developers.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/general/extension-gallery-a-marketplace-for-web-design-agencies-freelance-php-developers.html</guid>
+                    <description>&lt;p&gt;In mid-October, we will release a new SCHLIX CMS version 2.2.1-x with a new marketplace integration application called Extension Gallery. With the new Extension Gallery, website owner can easily install/uninstall extension without having to download a ZIP file manually from our current &lt;a href="https://www.schlix.com/extensions/"&gt;Extension Gallery&lt;/a&gt;. If you're a &lt;strong&gt;PHP web agency&lt;/strong&gt; or a &lt;strong&gt;PHP freelance developer&lt;/strong&gt;, you can submit a SCHLIX CMS plugin (application/block/macro) and get more exposure. It's free and this is a great opportunity to showcase your solutions. Both commercial and open source extensions are accepted.&lt;/p&gt;
+&lt;p&gt;The extension submission process is already open and we're hoping to get more developers to use SCHLIX CMS.&lt;/p&gt;
+&lt;p&gt;Sample screenshots:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_ext_gallery_item_view.jpg" alt="SCHLIX Extension Gallery - Preview" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_ext_gallery_content.jpg" alt="SCHLIX Extension Gallery - Preview" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/ext_ocial_media.jpg" alt="Social Media Extensions" /&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=yj5FniocVmQ:Np2C4z4fjKk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=yj5FniocVmQ:Np2C4z4fjKk:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=yj5FniocVmQ:Np2C4z4fjKk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=yj5FniocVmQ:Np2C4z4fjKk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=yj5FniocVmQ:Np2C4z4fjKk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=yj5FniocVmQ:Np2C4z4fjKk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=yj5FniocVmQ:Np2C4z4fjKk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=yj5FniocVmQ:Np2C4z4fjKk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=yj5FniocVmQ:Np2C4z4fjKk:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/yj5FniocVmQ" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/general/extension-gallery-a-marketplace-for-web-design-agencies-freelance-php-developers.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Sat, 17 Aug 2019 18:24:02 -0600</pubDate>
+                    <title>New 2.2.x series - SCHLIX CMS v2.2.0-1 has been released</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/ViCzFij83Sw/new-2-2-x-series-schlix-cms-v2-2-0-1-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/new-2-2-x-series-schlix-cms-v2-2-0-1-has-been-released.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.2.0-1 has been released, marking the new v2.2.x series. It is considered a significant change from the previous v2.1.x series as many internals have been updated. The 2.2.x is a transitional release, ensuring backward compatibilities with earlier version of plugins developed for SCHLIX CMS.&lt;/p&gt;
+&lt;h3&gt;Highlight of new features&lt;/h3&gt;
+&lt;h4&gt;Custom header image&lt;/h4&gt;
+&lt;p&gt;Previously, designers had to rely on using either a macro or a custom code to insert an expanded banner/header image above the content. This was cumbersome as a slight change to the HTML code means that the content items need to be updated individually. In the new v2.2.x series, they can do it easily by simply choosing to upload a custom media header and any change to the HTML tag can simply be performed in the template itself. Please have a look at the code comments inside the newly included companyprofile theme.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_custom_header_frontend.png" alt="Custom header banner image" /&gt;&lt;/p&gt;
+&lt;p&gt;The following is a screenshot of the editor page where you can easily change the header image. You can configure the width, height and quality from Settings - Custom Header.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_custom_header_backend.png" alt="Sample header image" /&gt;&lt;/p&gt;
+&lt;p&gt;To enable this feature in your own application, simply specify the following code in the constructor:&lt;/p&gt;
+&lt;pre class="language-php"&gt;&lt;code&gt;$this-&amp;gt;has_versioning = true;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Spell Checker&lt;/h4&gt;
+&lt;p&gt;We have added a spell checker functionality.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_spell_checker.png" alt="Spell Checker" /&gt;&lt;/p&gt;
+&lt;p&gt;It's still in BETA mode, so you will have to manually enable it from Settings - Editor Manager.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_spell_checker_config_1.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_spell_checker_config_2.png" alt="TinyMCE 4 Spell Checker" /&gt;&lt;/p&gt;
+&lt;h4&gt;Custom Field&lt;/h4&gt;
+&lt;p&gt;You can now specify a custom field to be used in many applications. This is useful when you need to add a field to a contact form, etc. We're currently still testing this feature and will enable this feature on other applications as well. Please note that all custom fields will have the xcf_ prefix in the actual database. In your view template, you can simply output it manually. For example:&lt;/p&gt;
+&lt;pre class="language-php"&gt;&lt;code&gt;&amp;lt;?php $custom_fields = $this-&amp;gt;getItemCustomFields(); ?&amp;gt;
+&amp;lt;?php foreach ($custom_fields as $cf): ?&amp;gt;
+&amp;lt;?php $field_name = 'xcf_'.$cf['field_name']; $field_label = $cf['field_label'] ?&amp;gt;
+&amp;lt;div class="contacts_info_label custom_field"&amp;gt;
+   &amp;lt;i class="fa fa-file"&amp;gt;&amp;lt;/i&amp;gt;
+   &amp;lt;?= ___h($item[$field_name]); ?&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To enable this feature in your own application, simply specify the following code in your view.admin.template.php file:&lt;/p&gt;
+&lt;pre class="language-php"&gt;&lt;code&gt;&amp;lt;x-ui:schlix-explorer-menu-command data-schlix-command="custom-table-config" data-custom-table="gk_contact_items" fonticon="fas fa-terminal" label="&amp;lt;?= ___('Custom table fields: Contact') ?&amp;gt;" /&amp;gt;
+
+&amp;lt;x-ui:schlix-explorer-menu-command data-schlix-command="custom-table-config" data-custom-table="gk_contact_messages"  fonticon="fas fa-terminal" label="&amp;lt;?= ___('Custom table fields: Messages') ?&amp;gt;" /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_contacts_custom_field_1.png" alt="Custom Field 1" /&gt;&lt;/p&gt;
+&lt;p&gt;Screenshot of the edit function:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_contacts_custom_field_2.png" alt="Custom Field 2" /&gt;&lt;/p&gt;
+&lt;p&gt;Screenshot of backend editor with a custom field:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_contacts_custom_field_3.png" alt="Custom Field 3" /&gt;&lt;/p&gt;
+&lt;h4&gt;Hooks&lt;/h4&gt;
+&lt;p&gt;You can now extend an application functionality from another class (e.g. on the custom field function). Simply create a function with hook_ prefix and it will be executed.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_hooks_1.png" alt="Hook example" /&gt;&lt;/p&gt;
+&lt;p&gt;To create an application that calls a hook function, simply call \SCHLIX\cmsHooks::execute( ... ). We will write a documentation on this later.&lt;/p&gt;
+&lt;h4&gt;X-UI tags&lt;/h4&gt;
+&lt;p&gt;We have now switched to a framework-independent X-UI tag to future-proof our CMS. We used to heavily depend on Bootstrap 3, but as we realized&lt;/p&gt;
+&lt;pre class="language-markup"&gt;&lt;code&gt; &amp;lt;x-ui:schlix-multi-source-media-uploader data-field="url_media_file" name="image_file" id="image_file" data-dir-key="image_medium" accept="image/png, image/jpeg, image/gif" data-disable-option-existing-file="true" data-disable-option-none="true" data-allow-url-variable-dimension="true" data-preview-width="&amp;lt;?= $preview_width ?&amp;gt;" data-preview-height="&amp;lt;?= $preview_height ?&amp;gt;" /&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Simple examples:&lt;/p&gt;
+&lt;pre class="language-markup"&gt;&lt;code&gt;&amp;lt;x-ui:textbox id="meta_description" name="meta_description"  data-field="meta_description" label="&amp;lt;?= ___('Meta Description') ?&amp;gt;" /&amp;gt;
+
+&amp;lt;x-ui:schlix-tab-container&amp;gt;
+&amp;lt;x-ui:schlix-tab id="tab_content" fonticon="far fa-file-alt" label="&amp;lt;?= ___('Content') ?&amp;gt;"&amp;gt;
+ Tab content
+&amp;lt;/x-ui:schlix-tab&amp;gt;
+&amp;lt;/x-ui:schlix-tab-container&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;GDPR (Personal Data Request)&lt;/h4&gt;
+&lt;p&gt;We have provided basic functionality for user data request. This application is disabled by default upon installation &amp;amp; upgrade.&lt;/p&gt;
+&lt;h4&gt;Configuration&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Additional 6 new languages (Georgian, Kazakh, Mongolian, Arabic, Hebrew, Persian) have been added.&lt;/li&gt;
+&lt;li&gt;You can now change the theme colour of the backend. This is useful especially if you need to open different SCHLIX CMS sites.&lt;/li&gt;
+&lt;li&gt;You can specify whether the frontend uses Bootstrap 3 or 4. We will also expand the functionality to include other CSS frameworks such as Bulma and Zurb Foundation.&lt;/li&gt;
+&lt;li&gt;If you need your site to be online but invisible to the search engine during the development, you can specify its visiblity as hidden and turn it back on when needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix22x/schlix_22x_global_config.png" alt="SCHLIX v2.2.x - global configuration" /&gt;&lt;/p&gt;
+&lt;h3&gt;Backward incompatible changes&lt;/h3&gt;
+&lt;p&gt;If you have installed an application and you have the following lines in the *.admin.class.php &lt;strong&gt;onModifyDataBeforeSaveItem&lt;/strong&gt; or &lt;strong&gt;onModifyDataBeforeSaveCategory&lt;/strong&gt;, please either comment it out or simply delete them. You have until the end of December 2021 before this backward compatibility is removed.&lt;/p&gt;
+&lt;pre class="language-php"&gt;&lt;code&gt;/* NO LONGER NEEDED AS OF 2.2.0 - please remove these lines completely or comment them out */
+if ($datavalues['permission_read_everyone'])        
+      $datavalues['permission_read'] = 'everyone';
+      $datavalues['permission_read'] = serialize($datavalues['permission_read']);
+ $datavalues['permission_write'] = serialize($datavalues['permission_write']);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a class="btn btn-primary" href="https://www.schlix.com/html/schlix-cms-downloads.html"&gt;Download and read the full change log&lt;/a&gt; now.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=ViCzFij83Sw:xSDkFsY8SYc:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=ViCzFij83Sw:xSDkFsY8SYc:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=ViCzFij83Sw:xSDkFsY8SYc:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=ViCzFij83Sw:xSDkFsY8SYc:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=ViCzFij83Sw:xSDkFsY8SYc:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=ViCzFij83Sw:xSDkFsY8SYc:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=ViCzFij83Sw:xSDkFsY8SYc:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=ViCzFij83Sw:xSDkFsY8SYc:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=ViCzFij83Sw:xSDkFsY8SYc:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/ViCzFij83Sw" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/new-2-2-x-series-schlix-cms-v2-2-0-1-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Wed, 01 May 2019 22:10:08 -0600</pubDate>
+                    <title>SCHLIX CMS v2.1.9-0 with a revamped admin interface</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/GxMmopCrEqw/schlix-cms-v2-1-9-0-with-a-revamped-admin-interface.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-v2-1-9-0-with-a-revamped-admin-interface.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS &lt;a href="https://www.schlix.com/html/schlix-cms-downloads.html"&gt;v2.1.9-0&lt;/a&gt; has been released. A couple of notable changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Revamped admin interface for better editing experience. Quite a few of our users have made a comment last year that the dark interface has made it harder to read and navigate on the backend. We've restored the original theme and provided a new styling as well. We will make the dark theme as a configurable option later.&lt;/li&gt;
+&lt;li&gt;Free map hosting for the Contacts application. If you are web design agency or even just a regular user who can't to pay hundreds of dollars of billing for Google Maps, we've replaced Google Maps with &lt;a href="https://www.openstreetmap.org" target="_blank" rel="noopener"&gt;OpenStreetMap&lt;/a&gt;, hosted on our own tile server (map.schlix.website), with CDN delivery to ensure fast browsing experience across different geographic regions. You don't need to enter Google Maps API key anymore in the Contacts application. Since this took quite some effort to implement, we've pushed back other features that we promised earlier. If you have any extensions that require mapping solution, you can use our server for free as long as your website is implemented with SCHLIX CMS and that the load requirement is reasonable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix_cms_2190_blog_screenshot.jpg" alt="SCHLIX CMS v2.1.9-0" /&gt;&lt;/p&gt;
+&lt;p&gt;If you have any questions, please post your question in the &lt;a href="https://www.schlix.com/forum"&gt;forum&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=GxMmopCrEqw:3u9Nb94_IIk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=GxMmopCrEqw:3u9Nb94_IIk:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=GxMmopCrEqw:3u9Nb94_IIk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=GxMmopCrEqw:3u9Nb94_IIk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=GxMmopCrEqw:3u9Nb94_IIk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=GxMmopCrEqw:3u9Nb94_IIk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=GxMmopCrEqw:3u9Nb94_IIk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=GxMmopCrEqw:3u9Nb94_IIk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=GxMmopCrEqw:3u9Nb94_IIk:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/GxMmopCrEqw" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-v2-1-9-0-with-a-revamped-admin-interface.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Tue, 20 Nov 2018 18:08:34 -0700</pubDate>
+                    <title>SCHLIX CMS v2.1.8-1 has been released</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/F0GkVrtqoQs/schlix-cms-v2-1-8-1-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-v2-1-8-1-has-been-released.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.1.8-1 has been released. We have added a few new security features in this release. When you login to the backend, the system will perform the following checks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Possible malicious users (only for sites with registration enabled) including their IP address.&lt;/li&gt;
+&lt;li&gt;Possible malicious files (e.g. PHP script uploaded to image folder)&lt;/li&gt;
+&lt;li&gt;List of all world writable files and directories&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The system will then attempt to fix them automatically and the report can be downloaded from /web/[your-website-name]/data/private/quarantine. This folder is inaccessible from the user's browser and the content must be manually downloaded via SFTP or FTP.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note&lt;/em&gt; &lt;/strong&gt;- there's v2.1.8-2 release that fixed the false positives and System Updater user interface issue as the automated security check ran immediately after the upgrade and thus causing a JSON error. If you've upgraded to v2.1.8-1 and got an error message right after the upgrade, you can ignore that error.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=F0GkVrtqoQs:IoyzyHhP_Mo:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=F0GkVrtqoQs:IoyzyHhP_Mo:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=F0GkVrtqoQs:IoyzyHhP_Mo:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=F0GkVrtqoQs:IoyzyHhP_Mo:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=F0GkVrtqoQs:IoyzyHhP_Mo:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=F0GkVrtqoQs:IoyzyHhP_Mo:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=F0GkVrtqoQs:IoyzyHhP_Mo:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=F0GkVrtqoQs:IoyzyHhP_Mo:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=F0GkVrtqoQs:IoyzyHhP_Mo:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/F0GkVrtqoQs" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-v2-1-8-1-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Sun, 16 Sep 2018 00:21:12 -0600</pubDate>
+                    <title>SCHLIX CMS v2.1.8-0 has been released</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/OWPLZ8uKo2A/schlix-cms-v2-1-8-0-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-v2-1-8-0-has-been-released.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.1.8-0 has been released. This is a maintenance only release with the following changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated: JQuery 3.2.x to 3.3.1&lt;/li&gt;
+&lt;li&gt;Updated: Font Awesome 4.7 to 5.2.0 (free) with adblock compatiblity&lt;/li&gt;
+&lt;li&gt;Updated: TinyMCE 4.8.2&lt;/li&gt;
+&lt;li&gt;Updated: PHPMailer 6.0.5&lt;/li&gt;
+&lt;li&gt;Updated: Bootstrap 3 update (now compatible with JQuery 3.x). We're still working on Bootstrap 4 update&lt;/li&gt;
+&lt;li&gt;Fixed: Applications built derived from cmsApplication_Basic missing title during install&lt;/li&gt;
+&lt;li&gt;Fixed: Block instance configuration was being saved incorrectly if the title was not all in lowercase or contain non-ASCII characters&lt;/li&gt;
+&lt;li&gt;Fixed: Forgot password link on HTTPS website didn't display for the full URL&lt;/li&gt;
+&lt;li&gt;Fixed: Menu editor (backend) duplicate tree child item when clicking View a specific item/category&lt;/li&gt;
+&lt;li&gt;Fixed: Compatibilities with PHP 7.2&lt;/li&gt;
+&lt;li&gt;Enhancement: The method \SCHLIX\cmsPageOutput::HTMLHeader() can now be split into \SCHLIX\cmsPageOutput::HTMLHeaderNonScript() and \SCHLIX\cmsPageOutput::HTMLFooterScripts(). See the samplemagazine theme for more info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We realized that we're a bit behind in terms of the promised e-commerce implementation. Please note that the following is still in the works: Google Maps replacement, UTF8MB4 conversion (currently still using UTF8), GDPR and new Google Analytics tag.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=OWPLZ8uKo2A:byafzNN6JEk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=OWPLZ8uKo2A:byafzNN6JEk:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=OWPLZ8uKo2A:byafzNN6JEk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=OWPLZ8uKo2A:byafzNN6JEk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=OWPLZ8uKo2A:byafzNN6JEk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=OWPLZ8uKo2A:byafzNN6JEk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=OWPLZ8uKo2A:byafzNN6JEk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=OWPLZ8uKo2A:byafzNN6JEk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=OWPLZ8uKo2A:byafzNN6JEk:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/OWPLZ8uKo2A" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-v2-1-8-0-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Fri, 08 Dec 2017 17:33:18 -0700</pubDate>
+                    <title>SCHLIX CMS 2.1.7 build #2 has been released</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/sC_LIn_yJg8/schlix-cms-2-1-7-build-2-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-2-1-7-build-2-has-been-released.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.1.7 build #2 has been released today to fix some minor bugs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed: CSS on installer page&lt;/li&gt;
+&lt;li&gt;Fixed: Dropdown box CSS not visible on Chrome&lt;/li&gt;
+&lt;li&gt;Fixed: Slideshow ~ ensure data directory exists before upload&lt;/li&gt;
+&lt;li&gt;Fixed: Slideshow ~ drag and drop (1st item)&lt;/li&gt;
+&lt;li&gt;Fixed: Blog ~ drag and drop (1st item)&lt;/li&gt;
+&lt;li&gt;Fixed: Menu block ~ added block name in front of id (e.g. block_topnavigation_id-1) to handle a case where some themes use more than one block in one page&lt;/li&gt;
+&lt;li&gt;Enhancement: Frontend edit control now shows Options instead of just icons for better visibility&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=sC_LIn_yJg8:ibMm0Mgs2eo:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=sC_LIn_yJg8:ibMm0Mgs2eo:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=sC_LIn_yJg8:ibMm0Mgs2eo:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=sC_LIn_yJg8:ibMm0Mgs2eo:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=sC_LIn_yJg8:ibMm0Mgs2eo:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=sC_LIn_yJg8:ibMm0Mgs2eo:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=sC_LIn_yJg8:ibMm0Mgs2eo:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=sC_LIn_yJg8:ibMm0Mgs2eo:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=sC_LIn_yJg8:ibMm0Mgs2eo:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/sC_LIn_yJg8" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-2-1-7-build-2-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Tue, 07 Nov 2017 12:44:13 -0700</pubDate>
+                    <title>SCHLIX CMS 2.1.7 released with new look and feel</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/RZDwW3s5pTA/schlix-cms-2-1-7-released-with-new-look-and-feel.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-2-1-7-released-with-new-look-and-feel.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.1.7 (build #1) has been released today. The base theme has been changed to dark by default, inspired by KDE's Dark Breeze and Ubuntu's Unity theme. The light theme will still be available as a separate download at the end of December 2017 (or maybe January 2018) and you can customize it with your company logo. This will be useful for web design agencies and freelancers out there. In addition to this, there is already a custom admin theme that you can download from the &lt;a href="https://www.schlix.com/extensions/themes/"&gt;Themes&lt;/a&gt; directory.&lt;/p&gt;
+&lt;p&gt;Other important changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed some of the Macedonian and Indonesian translations.&lt;/li&gt;
+&lt;li&gt;Fixed URL for content fragments for Landing Pages. The URL will be set to &lt;strong&gt;/&lt;/strong&gt; instead of &lt;strong&gt;/lp&lt;/strong&gt; if the frontend application is set to Landing Pages. If your frontend application is set to Web Pages (html), this will not affect you. For the change to take effect, you must manually edit the menu item from &lt;strong&gt;Menus&lt;/strong&gt; and save it.&lt;/li&gt;
+&lt;li&gt;Enhancement: Contact form is now using fully AJAX so it can be inserted in the middle of the content.&lt;/li&gt;
+&lt;li&gt;New InsertContactForm macro to embed contact form in the middle of any content text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="btn btn-success" href="https://www.schlix.com/html/schlix-cms-downloads.html"&gt;Download now&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix_217_new_darktheme.jpg" alt="SCHLIX CMS v2.1.7" /&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=RZDwW3s5pTA:dzvbWD13j90:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=RZDwW3s5pTA:dzvbWD13j90:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=RZDwW3s5pTA:dzvbWD13j90:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=RZDwW3s5pTA:dzvbWD13j90:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=RZDwW3s5pTA:dzvbWD13j90:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=RZDwW3s5pTA:dzvbWD13j90:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=RZDwW3s5pTA:dzvbWD13j90:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=RZDwW3s5pTA:dzvbWD13j90:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=RZDwW3s5pTA:dzvbWD13j90:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/RZDwW3s5pTA" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-2-1-7-released-with-new-look-and-feel.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Sun, 17 Sep 2017 14:52:41 -0600</pubDate>
+                    <title>SCHLIX CMS 2.1.6 has been released in 35 languages</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/Gq8DvIGBT7k/what-s-new-in-schlix-cms-2-1-6.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/what-s-new-in-schlix-cms-2-1-6.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS v2.1.6 build #1 has been released. Other than bug fixes, the highlight of this release is its first ever localization of SCHLIX CMS. We have decided to shift the priority for our e-commerce system to the end of second quarter of 2018 so the core of SCHLIX CMS could be translated into 35 languages: Belarusian (Беларуская мова), Bulgarian (Български), Chinese Simplified (简体中文) and Traditional (繁體中文), Croatian (Hrvatski), Czech (Če&amp;scaron;tina), Danish (Dansk), Dutch (Nederlands), Estonian (Eesti), Filipino (Tagalog), Finnish (Suomi), French (Fran&amp;ccedil;ais), German (Deutsch), Greek (&amp;Epsilon;&amp;lambda;&amp;lambda;&amp;eta;&amp;nu;&amp;iota;&amp;kappa;ά), Hindi (हिन्दी), Hungarian (Magyar), Italian (Italiano), Japanese (日本語), Korean (한국어), Macedonian (Mакедонски), Norwegian (Norsk), Polish (Język polski), Portuguese (Portugu&amp;ecirc;s), Romanian (Rom&amp;acirc;nă), Russian (Русский), Slovak (Slovenčina), Slovenian (Sloven&amp;scaron;čina), Spanish (Espa&amp;ntilde;ol), Swedish (Svenska), Thai (ไทย), Turkish (T&amp;uuml;rk&amp;ccedil;e), Ukrainian (Українська), and Vietnamese (Tiếng Việt),&lt;/p&gt;
+&lt;p&gt;Please note that there may still be some mistranslations, however we are planning on correcting these until the end of December 2017. System translations for Right-to-Left languages (Arabic, Hebrew, Persian, etc) will be released at the end of Q1-2018 once we have consulted with subject matter expert since we don't have an in-house expert for this.&lt;/p&gt;
+&lt;p&gt;You can change the language by clicking Global System Configuration or simply click Change under System Information.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix_v216_buton_change_language.png" alt="Change Language in SCHLIX CMS" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix_v216_language_dropdown.png" alt="Localization in SCHLIX CMS v2.1.6 (September 2017)" /&gt;&lt;/p&gt;
+&lt;p&gt;Special thanks for Jarrod Farncomb from Datacom TSS (Australia) and Gjoko Krstic from Zero Science Lab (Mакедонски) for helping us test v2.1.5-4 before v2.1.6 release and pointed out possible bugs.&lt;/p&gt;
+&lt;p&gt;The following items were fixed and/or added:&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed: blog URL could be empty when saved&lt;/li&gt;
+&lt;li&gt;Fixed: typos in the language string&lt;/li&gt;
+&lt;li&gt;Fixed: tags resulted in 404 errors&lt;/li&gt;
+&lt;li&gt;Fixed: new macro/block installation did not refresh the content immediately and would not show up until the next reload&lt;/li&gt;
+&lt;li&gt;Fixed: duplicate tags in applications table during upgrade&lt;/li&gt;
+&lt;li&gt;Fixed: adding www during installation caused www.www to be written in the multisite-config file&lt;/li&gt;
+&lt;li&gt;Removed: default site meta keywords and meta description from the sub-site config file (moved to inside individual applications)&lt;/li&gt;
+&lt;li&gt;New: ability to change language and other site information from the main admin page&lt;/li&gt;
+&lt;li&gt;Enhancement: add some icons to item edit form for Blog and Web Pages for better visual cues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a title="SCHLIX CMS Downloads" href="https://www.schlix.com/html/schlix-cms-downloads.html"&gt;Download SCHLIX CMS v2.1.6 now&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are upgrading from a previous version, simply click Settings, then click System Update. Please note that due to session name change in this version, you will be automatically logged out after the upgrade.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=Gq8DvIGBT7k:hQojZobfA7o:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=Gq8DvIGBT7k:hQojZobfA7o:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=Gq8DvIGBT7k:hQojZobfA7o:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=Gq8DvIGBT7k:hQojZobfA7o:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=Gq8DvIGBT7k:hQojZobfA7o:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=Gq8DvIGBT7k:hQojZobfA7o:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=Gq8DvIGBT7k:hQojZobfA7o:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=Gq8DvIGBT7k:hQojZobfA7o:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=Gq8DvIGBT7k:hQojZobfA7o:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/Gq8DvIGBT7k" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/what-s-new-in-schlix-cms-2-1-6.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Thu, 03 Aug 2017 01:26:52 -0600</pubDate>
+                    <title>Errata - SCHLIX CMS v2.1.5 build #4 fix typos</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/hh-Ye-pyUAA/errata-schlix-cms-v2-1-5-build-4-fix-typos.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/errata-schlix-cms-v2-1-5-build-4-fix-typos.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS 2.1.5-4 (build #4) has been released to fix the bug in system updater for non-CURL based system as well as typos on the table names in the installation.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=hh-Ye-pyUAA:CpH13scUGxo:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=hh-Ye-pyUAA:CpH13scUGxo:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=hh-Ye-pyUAA:CpH13scUGxo:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=hh-Ye-pyUAA:CpH13scUGxo:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=hh-Ye-pyUAA:CpH13scUGxo:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=hh-Ye-pyUAA:CpH13scUGxo:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=hh-Ye-pyUAA:CpH13scUGxo:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=hh-Ye-pyUAA:CpH13scUGxo:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=hh-Ye-pyUAA:CpH13scUGxo:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/hh-Ye-pyUAA" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/errata-schlix-cms-v2-1-5-build-4-fix-typos.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Wed, 02 Aug 2017 18:09:53 -0600</pubDate>
+                    <title>SCHLIX CMS 2.1.5 released with new features: JSON feed and Open Search</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/mZl9rhELl-g/schlix-cms-2-1-5-released-with-new-features-json-feed-and-open-search.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-2-1-5-released-with-new-features-json-feed-and-open-search.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS 2.1.5 has been released today with new features: &lt;a href="https://jsonfeed.org" target="_blank" rel="noopener"&gt;JSON Feed&lt;/a&gt; (in 'blog' application) and &lt;a href="http://www.opensearch.org" target="_blank" rel="noopener"&gt;Open Search&lt;/a&gt; (in 'search' application). JSON Feed was recently created by Brent Simmons and Manton Reece and we want to encourage the adoption of JSON Feed, since it is lighter than RSS. OpenSearch XML was also added to the search application. We have also added the JSON feed link to the two sample themes included in the release.&lt;/p&gt;
+&lt;p&gt;Other than the two new features, most other changes in this release have been focused on bug fixed on Windows/Apache/PHP (IIS/PHP have always been okay). Apparently there have been some issues for development under Windows using WAMP Server and EasyPHP. This is due to the default thread stack size in the default Apache settings if you use mpm_winnt_module. We have issued a &lt;a href="https://www.schlix.com/documentation/v2/configuration/troubleshooting-wamp-easyphp.html"&gt;workaround&lt;/a&gt; specifically for development servers in Windows using WAMP Server and Easy PHP. IIS/PHP/MySQL stack, Linux and OS X stacks are not affected.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mZl9rhELl-g:VDiH8yUwZeg:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mZl9rhELl-g:VDiH8yUwZeg:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=mZl9rhELl-g:VDiH8yUwZeg:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mZl9rhELl-g:VDiH8yUwZeg:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=mZl9rhELl-g:VDiH8yUwZeg:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mZl9rhELl-g:VDiH8yUwZeg:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mZl9rhELl-g:VDiH8yUwZeg:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=mZl9rhELl-g:VDiH8yUwZeg:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mZl9rhELl-g:VDiH8yUwZeg:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/mZl9rhELl-g" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-2-1-5-released-with-new-features-json-feed-and-open-search.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Sat, 08 Jul 2017 22:34:58 -0600</pubDate>
+                    <title>Errata - SCHLIX CMS v2.1.4 build #2 fix for menus</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/HGtHXGY6bto/errata-schlix-cms-v2-1-4-build-2-fix-for-menus.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/errata-schlix-cms-v2-1-4-build-2-fix-for-menus.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS 2.1.4-2 (build #2) has been released to fix the bug when creating a menu item from an item inside a subcategory.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=HGtHXGY6bto:1dsuzrPeNns:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=HGtHXGY6bto:1dsuzrPeNns:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=HGtHXGY6bto:1dsuzrPeNns:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=HGtHXGY6bto:1dsuzrPeNns:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=HGtHXGY6bto:1dsuzrPeNns:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=HGtHXGY6bto:1dsuzrPeNns:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=HGtHXGY6bto:1dsuzrPeNns:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=HGtHXGY6bto:1dsuzrPeNns:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=HGtHXGY6bto:1dsuzrPeNns:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/HGtHXGY6bto" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/errata-schlix-cms-v2-1-4-build-2-fix-for-menus.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Thu, 06 Jul 2017 16:40:05 -0600</pubDate>
+                    <title>Roadmap update for July - December 2017</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/xZXU2KXRmAQ/roadmap-update-for-july-december-2017.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/general/roadmap-update-for-july-december-2017.html</guid>
+                    <description>&lt;p&gt;Back in January, we announced &lt;a href="https://www.schlix.com/news/general/plan-for-the-first-half-of-2017.html"&gt;our plan for the first half of 2017&lt;/a&gt;. 5 out of 6 have been completed. We have to postpone the development of integrated market application until January 2018. The following is our updated road map:&lt;/p&gt;
+&lt;p&gt;July - December 2017&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New extension: e-commerce (full shopping cart). We should have this completed before the end of December 2017.&lt;/li&gt;
+&lt;li&gt;New extension: forum (das Forum). Currently, we are already using this &lt;a href="https://www.schlix.com/forum/"&gt;forum&lt;/a&gt; extension and it will be released publicly before the end of December 2017.&lt;/li&gt;
+&lt;li&gt;Update to the official &lt;a href="https://www.schlix.com/extensions/marketing/jasenlehti-newsletters.html"&gt;J&amp;auml;senlehti Newsletters&lt;/a&gt; extension to include additional features such as bounce checker, analytics, and click tracking.&lt;/li&gt;
+&lt;li&gt;A concrete example of backend admin theme where you can customize the logo (this is intended for web development agencies as well as freelance web developers).&lt;/li&gt;
+&lt;li&gt;More extensions that can help you with your SEO (search engine friendly). e.g. Open Graph.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;January - June 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Translation for the following languages: French, Spanish, Portuguese, Russian, Simplified Chinese, Japanese, Korean, and Indonesian.&lt;/li&gt;
+&lt;li&gt;Integrated market app where you can install/uninstall extension automatically.&lt;/li&gt;
+&lt;li&gt;More integration with cloud based services&lt;/li&gt;
+&lt;li&gt;More themes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;July - December 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SCHLIX UI v2 implementation (already in the works). SCHLIX UI is the Javascript framework for our user interface&lt;/li&gt;
+&lt;li&gt;More to be announced.&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=xZXU2KXRmAQ:BeF0Au76Nlg:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=xZXU2KXRmAQ:BeF0Au76Nlg:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=xZXU2KXRmAQ:BeF0Au76Nlg:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=xZXU2KXRmAQ:BeF0Au76Nlg:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=xZXU2KXRmAQ:BeF0Au76Nlg:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=xZXU2KXRmAQ:BeF0Au76Nlg:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=xZXU2KXRmAQ:BeF0Au76Nlg:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=xZXU2KXRmAQ:BeF0Au76Nlg:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=xZXU2KXRmAQ:BeF0Au76Nlg:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/xZXU2KXRmAQ" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/general/roadmap-update-for-july-december-2017.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Thu, 06 Jul 2017 16:05:19 -0600</pubDate>
+                    <title>Official extension update: Plugin Creator and Newsletters</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/anr-wZCoXfk/official-extension-update-plugin-creator-and-newsletters.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/general/official-extension-update-plugin-creator-and-newsletters.html</guid>
+                    <description>&lt;p&gt;As per our &lt;a href="https://www.schlix.com/news/general/upcoming-official-newsletters-extension-for-schlix-cms.html"&gt;previous post&lt;/a&gt;, we have released &lt;a href="https://www.schlix.com/extensions/marketing/jasenlehti-newsletters.html"&gt;J&amp;auml;senlehti Newsletters&lt;/a&gt;. Despite its BETA status (not final release), the extension is fully functional and has already been used with one of our clients. We will make an update anytime between November or December 2017 to add the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Export express consent records&lt;/li&gt;
+&lt;li&gt;Bounce checker&lt;/li&gt;
+&lt;li&gt;Analytics&lt;/li&gt;
+&lt;li&gt;Click tracking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/data/extensions/screenshots/large/jasenlehti-newsletters_1.png" alt="SCHLIX CMS Newsletters extension" /&gt;&lt;/p&gt;
+&lt;p&gt;An update has also been made to &lt;a href="https://www.schlix.com/extensions/development/plugin-creator.html"&gt;Plugin Creator&lt;/a&gt;. You can now create sub-applications. A sub-application is an application inside the main SCHLIX CMS Application. As you can see in the screenshot above, the "Subscribers" sub-application within Newsletters. Please note that you must first save the application in Plugin Creator first before you can create a sub-application.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=anr-wZCoXfk:EovFOuTHNWk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=anr-wZCoXfk:EovFOuTHNWk:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=anr-wZCoXfk:EovFOuTHNWk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=anr-wZCoXfk:EovFOuTHNWk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=anr-wZCoXfk:EovFOuTHNWk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=anr-wZCoXfk:EovFOuTHNWk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=anr-wZCoXfk:EovFOuTHNWk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=anr-wZCoXfk:EovFOuTHNWk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=anr-wZCoXfk:EovFOuTHNWk:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/anr-wZCoXfk" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/general/official-extension-update-plugin-creator-and-newsletters.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Tue, 04 Jul 2017 16:15:46 -0600</pubDate>
+                    <title>SCHLIX CMS 2.1.4 has been released (updated installation options)</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/mBknSozPXkg/schlix-cms-2-1-4-has-been-released.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/schlix-cms-2-1-4-has-been-released.html</guid>
+                    <description>&lt;p&gt;SCHLIX CMS 2.1.4 has been released today. The following is the list of changes:&lt;/p&gt;
+&lt;p&gt;If you change the &lt;strong&gt;Main application for the frontpage&lt;/strong&gt; settings (from the &lt;strong&gt;main administration page&lt;/strong&gt; &amp;raquo; &lt;strong&gt;Global System Configuration&lt;/strong&gt;), the application will now appear above Web Pages (the default frontend application). Prior to v2.1.4, you have to click Applications and select it from there regardless of its status as the main application for the frontpage.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/tutorials/v2/configuration/schlix_main_app_change_1.png" alt="Change frontpage application" /&gt;&lt;/p&gt;
+&lt;p&gt;As you can see below, now &lt;strong&gt;Landing Pages&lt;/strong&gt; is shown above Web Pages.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/tutorials/v2/configuration/schlix_main_app_change_2.png" alt="Change frontpage application" /&gt;&lt;/p&gt;
+&lt;p&gt;There is also a new option visible in the installation to allow you to &lt;strong&gt;enable SSL by default&lt;/strong&gt;, especially since some hosting control panel have the option to offer Let's Encrypt SSL certificate for free. Previously, this setting has to be edited by hand after the installation.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The other option is to make the domain name accessible with and without &lt;strong&gt;www&lt;/strong&gt;. (Please note that the host name below is a local host and not connected to the internet, so the option does not make a difference). In production environment, you are recommended to check this option by default. Previously, you have to add the &lt;strong&gt;www.&lt;/strong&gt; manually to to multisite-config.inc.php (unless the multi-site is disabled and a wildcard is specified in that file) and it will return a white screen with the following error message: &lt;strong&gt;&lt;em&gt;There is no website configured at this address&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.schlix.com/web/schlix/media/images/articles/schlix_install_step_3_new_2017_july.png" alt="New install option" /&gt;&lt;/p&gt;
+&lt;p&gt;Other than that, there is a bugfix for TinyMCE where upon closing the source editor (CodeMirror), it will add an empty paragraph tag (&lt;strong&gt;&amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&lt;/strong&gt;) at the top. We have now set as the default option to set &lt;strong&gt;force_p_newlines&lt;/strong&gt; value to TRUE and &lt;strong&gt;forced_root_block&lt;/strong&gt; to FALSE and these options can no longer be changed.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mBknSozPXkg:625M5aH4w38:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mBknSozPXkg:625M5aH4w38:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=mBknSozPXkg:625M5aH4w38:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mBknSozPXkg:625M5aH4w38:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=mBknSozPXkg:625M5aH4w38:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mBknSozPXkg:625M5aH4w38:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mBknSozPXkg:625M5aH4w38:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=mBknSozPXkg:625M5aH4w38:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=mBknSozPXkg:625M5aH4w38:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/mBknSozPXkg" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/schlix-cms-2-1-4-has-been-released.html</feedburner:origLink></item>
+                                      
+                <item>
+                    <pubDate>Thu, 29 Jun 2017 10:43:30 -0600</pubDate>
+                    <title>Errata - User Registration fix - SCHLIX CMS v2.1.3 build #4</title>
+                    <link>http://feedproxy.google.com/~r/babygekko/~3/DqjTgCFDq5A/errata-user-registration-fix-schlix-cms-v2-1-3-build-4.html</link>
+                    <guid isPermaLink="false">https://www.schlix.com/news/release/errata-user-registration-fix-schlix-cms-v2-1-3-build-4.html</guid>
+                    <description>&lt;p&gt;We have released SCHLIX CMS v2.1.3-4 (build #4) to fix a bug in the user registration process where the email was not queued properly.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DqjTgCFDq5A:16_r6HlhGdQ:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DqjTgCFDq5A:16_r6HlhGdQ:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=DqjTgCFDq5A:16_r6HlhGdQ:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DqjTgCFDq5A:16_r6HlhGdQ:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=DqjTgCFDq5A:16_r6HlhGdQ:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DqjTgCFDq5A:16_r6HlhGdQ:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DqjTgCFDq5A:16_r6HlhGdQ:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?i=DqjTgCFDq5A:16_r6HlhGdQ:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/babygekko?a=DqjTgCFDq5A:16_r6HlhGdQ:TzevzKxY174"&gt;&lt;img src="http://feeds.feedburner.com/~ff/babygekko?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/babygekko/~4/DqjTgCFDq5A" height="1" width="1" alt=""/&gt;</description>
+                <feedburner:origLink>https://www.schlix.com/news/release/errata-user-registration-fix-schlix-cms-v2-1-3-build-4.html</feedburner:origLink></item>
+                        </channel>
+</rss>

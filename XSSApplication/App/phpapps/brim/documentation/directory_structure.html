@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Brim - Directory structure</title>
+</head>
+<body>
+<h1>Guidelines on the directory structure</h1>
+<p>
+Each plugin <em>must</em> be placed as subdirectory in the plugin directory. 
+The name of the plugin must carefully be chosen, it is also used for 
+dynamic page forwarding etc. 
+</p>
+<p>
+Each plugin directory <em>must</em> have a '<code>i18n</code>' subdirectory which on its 
+turn <em>must</em> contain a '<code>dictionary_en.php</code>' file. 
+More on handling of i18n later. 
+</p>
+<p>
+Each plugin must have a '<code>configuration</code>' subdirectory which contains the configuration
+hookup file which determines how the plugin is used in the framework
+</p>
+<p>
+Brim is based on a MVC design pattern. The controller handles all communication between the view (i.e. the webpages) and the model (a generic layer that knows about the objects being handled and how to communicate with the database) 
+Typically all view related files are located in the plugins '<code>view</code>' subdirectory, all model related files are located in the '<code>model</code>' subdirectory. 
+</p>
+<p>
+Some more conventions: 
+</p>
+<p>
+a directory <code>sql</code> contains database related code (typically the file with sql code that can be executed if the installation script doesn't work as well as the file that contains the database queries which are used by the model) 
+</p>
+<p>
+Test files (not the unit-test scripts!!!) go into the '<code>myplugin/test</code>' subdirectory, documentation in the '<code>doc</code>' directory and utility files in the '<code>util</code>' directory. 
+Unit tests go into a test subdirectory of the files that you want to test.
+</p>
+<p>
+This might lead to the following structure/files 
+</p>
+<ul>
+<li>brim/plugins/myplugin/MyPluginController.php </li>
+<li>brim/plugins/myplugin/documentation/some_documentation.html</li> 
+<li>brim/plugins/myplugin/configuration/hookup.php</li> 
+<li>brim/plugins/myplugin/i18n/dictionary_en.php</li> 
+<li>brim/plugins/myplugin/model/MyPluginServices.php </li>
+<li>brim/plugins/myplugin/model/MyPluginFactory.php </li>
+<li>brim/plugins/myplugin/model/MyPluginItem.php </li>
+<li>brim/plugins/myplugin/model/MyPluginPreferences.php</li> 
+<li>brim/plugins/myplugin/sql/mypluginQueries.php </li>
+<li>brim/plugins/myplugin/sql/create.xxx.table.sql </li>
+<li>brim/plugins/myplugin/view/myplugin.tpl.php </li>
+<li>brim/plugins/myplugin/view/help.tpl.php</li>
+</ul>
+</body>
+</html>

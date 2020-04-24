@@ -1,0 +1,20 @@
+Directory name changes:
+- 'base' is renamed to 'framework'
+- 'lang' is renamed to 'i18n'
+- 'conf' is renamed to 'configuration'
+- 'doc' is renamed to 'documentation'
+Database changes
+- 'itemId' is renamed to item_id'
+- 'parentId' is renamed to parent_id'
+- 'isParent' is renamed to 'is_parent'
+- Added field 'is_deleted', right after field 'category'
+- Changed type of field 'name' from 'VARCHAR(70)' to 'TEXT'
+Unvisible changes
+- Removed the Request handler from most plugins
+- Removed the Rights manager from most plugins
+- Rework of the internationalisation (tx to Øyvind Hagen)
+Application changes
+- Added a collections manager (tx to Moritz Julen)
+- Added a password generator in the password plugin
+- Added a spellchecker to most plugins (tx to Øyvind Hagen)
+- Added a PDA specific template/layout

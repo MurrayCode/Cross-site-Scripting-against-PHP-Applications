@@ -1,0 +1,1531 @@
+Opera Hotlist version 2.0
+Options: encoding = utf8, version=3
+
+#FOLDER
+	ID=11
+	NAME=Trash
+	ACTIVE=YES
+	TRASH FOLDER=YES
+
+#URL
+	ID=326
+	NAME=PADI Members Site
+	URL=http://www.padimembers.com/cgi-bin/login.exe
+	VISITED=1082390069
+
+#URL
+	ID=328
+	NAME=[nauta.be]
+	URL=http://www.nauta.be/
+	VISITED=1082466460
+
+#URL
+	ID=330
+	NAME=BIAC-SWITCH Intranet Home Page
+	URL=http://intranet/
+	VISITED=1082387797
+
+-
+
+#FOLDER
+	ID=12
+	NAME=-- Opera Software --
+
+#URL
+	ID=13
+	NAME=Buy Opera
+	URL=http://www.opera.com/buy/
+
+#URL
+	ID=14
+	NAME=Distribute Opera
+	URL=http://distribute.opera.com/distribution/
+
+#URL
+	ID=15
+	NAME=Download Opera
+	URL=http://www.opera.com/download/
+
+#URL
+	ID=16
+	NAME=Mailing Lists
+	URL=http://www.opera.com/mailinglists/
+
+#URL
+	ID=17
+	NAME=My Opera
+	URL=http://my.opera.com/
+
+#URL
+	ID=18
+	NAME=News Groups
+	URL=news://news.opera.no/
+
+#URL
+	ID=19
+	NAME=Opera Features
+	URL=http://www.opera.com/features/
+
+#URL
+	ID=20
+	NAME=Opera in your language
+	URL=http://www.opera.com/download/languagefiles/
+
+#URL
+	ID=21
+	NAME=OperaMail
+	URL=http://www.operamail.com/
+
+#URL
+	ID=22
+	NAME=Promote Opera
+	URL=http://www.opera.com/promote/
+
+#URL
+	ID=23
+	NAME=Support Desk
+	URL=http://www.opera.com/support/
+
+#URL
+	ID=24
+	NAME=Technical Service
+	URL=http://www.opera.com/support/service/
+
+#URL
+	ID=25
+	NAME=Opera - Lycos portal
+	URL=http://my.opera.lycos.com/
+
+#URL
+	ID=26
+	NAME=Open the Web
+	URL=http://www.opera.com/whyopera/openweb/info/index.dml
+
+-
+
+#FOLDER
+	ID=27
+	NAME=Business
+
+#URL
+	ID=28
+	NAME=BizJournals
+	URL=http://www.bizjournals.com/
+
+#URL
+	ID=29
+	NAME=BizOffice
+	URL=http://www.bizoffice.com/
+
+#URL
+	ID=30
+	NAME=Business Week
+	URL=http://www.businessweek.com/
+
+#URL
+	ID=31
+	NAME=CIO
+	URL=http://www.cio.com/
+
+#URL
+	ID=32
+	NAME=Dow Jones
+	URL=http://www.dowjones.com/
+
+#URL
+	ID=33
+	NAME=Dun & Bradstreet
+	URL=http://www.dnb.com/
+
+#URL
+	ID=34
+	NAME=Economist
+	URL=http://www.economist.com/
+
+#URL
+	ID=35
+	NAME=Financial Times
+	URL=http://www.ft.com/
+
+#URL
+	ID=36
+	NAME=Fool.com
+	URL=http://www.fool.com/
+
+#URL
+	ID=37
+	NAME=Forbes
+	URL=http://www.forbes.com/
+
+#URL
+	ID=38
+	NAME=Fortune
+	URL=http://www.fortune.com/
+
+#URL
+	ID=39
+	NAME=Inc.
+	URL=http://www.inc.com/
+
+#URL
+	ID=40
+	NAME=IndustryWeek
+	URL=http://www.industryweek.com/
+
+#URL
+	ID=41
+	NAME=Investor Solutions
+	URL=http://www.investorsolutions.com/
+
+#URL
+	ID=42
+	NAME=IOMA
+	URL=http://www.ioma.com/
+
+#URL
+	ID=43
+	NAME=Nasdaq
+	URL=http://www.nasdaq.com/
+
+#URL
+	ID=44
+	NAME=Newsweek
+	URL=http://www.newsweek.com/
+
+#URL
+	ID=45
+	NAME=Techsavvy
+	URL=http://www.techsavvy.com/
+
+#URL
+	ID=46
+	NAME=Wall Street Journal
+	URL=http://www.wsj.com/
+
+-
+
+#FOLDER
+	ID=47
+	NAME=Computer Software
+
+#URL
+	ID=48
+	NAME=Adobe
+	URL=http://www.adobe.com/
+
+#URL
+	ID=49
+	NAME=Aladdin Systems
+	URL=http://www.aladdinsys.com/
+
+#URL
+	ID=50
+	NAME=Download.Net
+	URL=http://www.download.net/
+
+#URL
+	ID=51
+	NAME=Jumbo
+	URL=http://www.jumbo.com/
+
+#URL
+	ID=52
+	NAME=Macromedia
+	URL=http://www.macromedia.com/
+
+#URL
+	ID=53
+	NAME=McAfee
+	URL=http://www.mcafee.com/
+
+#URL
+	ID=54
+	NAME=mIRC Homepage
+	URL=http://www.mirc.co.uk/
+
+#URL
+	ID=55
+	NAME=Pass the Shareware
+	URL=http://www.passtheshareware.com/
+
+#URL
+	ID=56
+	NAME=PGP Home Page
+	URL=http://www.pgpi.com/
+
+#URL
+	ID=57
+	NAME=Programmers Heaven
+	URL=http://www.programmersheaven.com/
+
+#URL
+	ID=58
+	NAME=Rocket Download
+	URL=http://www.rocketdownload.com/
+
+#URL
+	ID=59
+	NAME=RSA
+	URL=http://www.rsa.com/
+
+#URL
+	ID=60
+	NAME=Shareware.com
+	URL=http://www.shareware.com/
+
+#URL
+	ID=61
+	NAME=SUNET
+	URL=http://ftp.sunet.se/
+
+#URL
+	ID=62
+	NAME=Symantec
+	URL=http://www.symantec.com/
+
+#URL
+	ID=63
+	NAME=The Bat!
+	URL=http://www.ritlabs.com/the_bat/index.html
+
+#URL
+	ID=64
+	NAME=Tucows
+	URL=http://www.tucows.com/
+
+#URL
+	ID=65
+	NAME=Download.com
+	URL=http://www.download.com/
+
+#URL
+	ID=66
+	NAME=Simtel
+	URL=http://www.simtel.com/
+
+-
+
+#FOLDER
+	ID=67
+	NAME=Directories
+
+#URL
+	ID=68
+	NAME=AltaVista
+	URL=http://www.altavista.com/
+
+#URL
+	ID=69
+	NAME=AnyWho
+	URL=http://www.anywho.com/
+
+#URL
+	ID=70
+	NAME=Ask Jeeves
+	URL=http://www.askjeeves.com/
+
+#URL
+	ID=71
+	NAME=Business.com
+	URL=http://www.business.com/
+
+#URL
+	ID=72
+	NAME=ChangingLinks.com
+	URL=http://www.changinglinks.com/
+
+#URL
+	ID=73
+	NAME=Dogpile
+	URL=http://www.dogpile.com/
+
+#URL
+	ID=74
+	NAME=Excite
+	URL=http://www.excite.com/
+
+#URL
+	ID=75
+	NAME=Go
+	URL=www.go.com
+
+#URL
+	ID=76
+	NAME=Help answers
+	URL=http://www.helpanswers.com/
+
+#URL
+	ID=77
+	NAME=HotBot
+	URL=http://www.hotbot.com/
+
+#URL
+	ID=78
+	NAME=InfoSpace
+	URL=http://www.infospace.com/
+
+#URL
+	ID=79
+	NAME=Internet 800 Directory
+	URL=http://internet800directory.com/
+
+#URL
+	ID=80
+	NAME=Internet address finder
+	URL=http://www.iaf.net/
+
+#URL
+	ID=81
+	NAME=Ithaki
+	URL=http://www.ithaki.net/
+
+#URL
+	ID=82
+	NAME=Look.com
+	URL=http://www.look.com
+
+#URL
+	ID=83
+	NAME=LookSmart
+	URL=http://www.looksmart.com/
+
+#URL
+	ID=84
+	NAME=Lycos
+	URL=http://www.lycos.com/
+
+#URL
+	ID=85
+	NAME=MetaCrawler
+	URL=http://www.metacrawler.com/
+
+#URL
+	ID=86
+	NAME=Overture 
+	URL=http://www.overture.com/
+
+#URL
+	ID=87
+	NAME=WebCrawler
+	URL=http://www.webcrawler.com/
+
+#URL
+	ID=88
+	NAME=WhoWhere
+	URL=http://www.whowhere.lycos.com/
+
+#URL
+	ID=89
+	NAME=Yahoo
+	URL=http://www.yahoo.com/
+
+#URL
+	ID=90
+	NAME=411web.com 
+	URL=http://hits.411web.com/cgi-bin/hit?page=902-1056648338274111
+
+-
+
+#FOLDER
+	ID=91
+	NAME=Entertainment
+
+#URL
+	ID=92
+	NAME=Analog SF
+	URL=http://www.analogsf.com/
+
+#URL
+	ID=93
+	NAME=CNN Sports Illustrated
+	URL=http://sportsillustrated.cnn.com/
+
+#URL
+	ID=94
+	NAME=Dilbert
+	URL=http://www.dilbert.com/
+
+#URL
+	ID=95
+	NAME=EarthCam
+	URL=http://www.earthcam.com/
+
+#URL
+	ID=96
+	NAME=ESPN
+	URL=http://espn.go.com/
+
+#URL
+	ID=97
+	NAME=Extreme Sports
+	URL=http://www.extremesports.com/
+
+#URL
+	ID=98
+	NAME=FOX Sports
+	URL=http://www.foxsports.com/
+
+#URL
+	ID=99
+	NAME=NBA.com
+	URL=http://www.nba.com/
+
+#URL
+	ID=100
+	NAME=sffworld.com
+	URL=http://www.sffworld.com/
+
+#URL
+	ID=101
+	NAME=Sports.com
+	URL=http://www.sports.com/
+
+#URL
+	ID=102
+	NAME=Star Wars
+	URL=http://www.starwars.com/
+
+#URL
+	ID=103
+	NAME=STARTREK.COM
+	URL=http://www.startrek.com/
+
+#URL
+	ID=104
+	NAME=Wizards
+	URL=http://www.wizards.com/
+
+#URL
+	ID=105
+	NAME=World Fantasy
+	URL=http://www.worldfantasy.org/
+
+#URL
+	ID=106
+	NAME=Lord of the Rings Fanatics Site
+	URL=http://www.lordotrings.com/
+
+#URL
+	ID=107
+	NAME=SoYouWanna.com home
+	URL=http://www.soyouwanna.com/
+
+#URL
+	ID=108
+	NAME=Matchmaker.com
+	URL=http://service.bfast.com/bfast/click?bfmid=26952032&siteid=39488693&bfpage=all_communities
+
+-
+
+#FOLDER
+	ID=109
+	NAME=Fun & Games
+
+#URL
+	ID=110
+	NAME=cardlady
+	URL=http://www.cardlady.com/
+
+#URL
+	ID=111
+	NAME=Comedy Central
+	URL=http://www.comcentral.com/
+
+#URL
+	ID=112
+	NAME=Comics
+	URL=http://www.comics.com/
+
+#URL
+	ID=113
+	NAME=Cybercheeze
+	URL=http://www.cybercheeze.com/
+
+#URL
+	ID=114
+	NAME=Gamespot
+	URL=http://www.gamespot.com/
+
+#URL
+	ID=115
+	NAME=HumorShack.com
+	URL=http://humorshack.com/
+
+#URL
+	ID=116
+	NAME=Oh my goodness
+	URL=http://www.ohmygoodness.com/
+
+#URL
+	ID=117
+	NAME=Playsite
+	URL=http://www.playsite.com/
+
+#URL
+	ID=118
+	NAME=Quotations Page
+	URL=http://www.quotationspage.com/
+
+#URL
+	ID=119
+	NAME=Straight Dope
+	URL=http://www.straightdope.com/
+
+#URL
+	ID=120
+	NAME=The onion
+	URL=http://www.theonion.com/
+
+-
+
+#FOLDER
+	ID=121
+	NAME=Health
+
+#URL
+	ID=122
+	NAME=Bayer Diagnostics
+	URL=http://www.bayerdiag.com/
+
+#URL
+	ID=123
+	NAME=British Medical Journal
+	URL=http://www.bmj.com/
+
+#URL
+	ID=124
+	NAME=Diet talk
+	URL=http://www.diettalk.com/
+
+#URL
+	ID=125
+	NAME=Fitness.com
+	URL=http://www.fitness.com/
+
+#URL
+	ID=126
+	NAME=HeartPoint
+	URL=http://www.heartpoint.com/
+
+#URL
+	ID=127
+	NAME=InteliHealth
+	URL=http://www.intelihealth.com/
+
+#URL
+	ID=128
+	NAME=Lancet
+	URL=http://www.thelancet.com/
+
+#URL
+	ID=129
+	NAME=Mayohealth
+	URL=http://www.mayohealth.org/
+
+#URL
+	ID=130
+	NAME=Medicine Online Inc.
+	URL=http://www.mol.net/
+
+#URL
+	ID=131
+	NAME=Medscape
+	URL=http://www.medscape.com/
+
+#URL
+	ID=132
+	NAME=rxlist
+	URL=http://www.rxlist.com/
+
+#URL
+	ID=133
+	NAME=World Health Organization
+	URL=http://www.who.int/
+
+#URL
+	ID=134
+	NAME=WebMD 
+	URL=http://www.webmd.com/
+
+-
+
+#FOLDER
+	ID=135
+	NAME=Leisure
+
+#URL
+	ID=136
+	NAME=AdventurousTraveler.com
+	URL=http://adventuroustraveler.com/index.html
+
+#URL
+	ID=137
+	NAME=Concierge.com
+	URL=http://www.cntraveler.com/
+
+#URL
+	ID=138
+	NAME=Delta Air Lines
+	URL=http://www.delta.com/home/index.jsp
+
+#URL
+	ID=139
+	NAME=Gardening.com
+	URL=http://www.gardening.com/
+
+#URL
+	ID=140
+	NAME=Global Online Travel
+	URL=http://www.got.com/
+
+#URL
+	ID=141
+	NAME=Golf Search
+	URL=http://www.golfsearch.com/
+
+#URL
+	ID=142
+	NAME=Gutenberg
+	URL=http://www.gutenberg.net/
+
+#URL
+	ID=143
+	NAME=Harper's Magazine
+	URL=http://www.harpers.org/
+
+#URL
+	ID=144
+	NAME=Hotwire: Discount Travel Deals
+	URL=http://www.hotwire.com/index.jsp
+
+#URL
+	ID=145
+	NAME=Interbed.com (hotels online)
+	URL=http://www.interbed.com/
+
+#URL
+	ID=146
+	NAME=nerve.com
+	URL=http://www.nerve.com/
+
+#URL
+	ID=147
+	NAME=Routes International
+	URL=http://www.routesinternational.com/
+
+#URL
+	ID=148
+	NAME=Safetyzone - Home Safe Home
+	URL=http://www.safetyzone.com/
+
+#URL
+	ID=149
+	NAME=Salon.com 
+	URL=http://www.salon.com/
+
+#URL
+	ID=150
+	NAME=The Web Of Culture
+	URL=http://www.webofculture.com/
+
+#URL
+	ID=151
+	NAME=Travel Channel
+	URL=http://travel.discovery.com/
+
+#URL
+	ID=152
+	NAME=Travel Source
+	URL=http://www.travelsource.com/
+
+#URL
+	ID=153
+	NAME=Virtual Flowers
+	URL=http://www.virtualflowers.com/
+
+#URL
+	ID=154
+	NAME=Virtual Presents
+	URL=http://www.virtualpresents.com/
+
+#URL
+	ID=155
+	NAME=Virtual Tourist
+	URL=http://www.vtourist.com/
+
+#URL
+	ID=156
+	NAME=Wine Events Calendar
+	URL=http://wineevents-calendar.com/index.lasso
+
+-
+
+#FOLDER
+	ID=157
+	NAME=Movies & TV
+
+#URL
+	ID=158
+	NAME=Blockbuster Entertainment
+	URL=http://www.blockbuster.com/
+
+#URL
+	ID=159
+	NAME=Box Office Magazine
+	URL=http://boxoff.com/
+
+#URL
+	ID=160
+	NAME=Bravo Channel
+	URL=http://www.bravotv.com/
+
+#URL
+	ID=161
+	NAME=Discovery Channel Online
+	URL=http://www.discovery.com/
+
+#URL
+	ID=162
+	NAME=GIST
+	URL=http://www.gist.com/
+
+#URL
+	ID=163
+	NAME=History Channel
+	URL=http://www.historychannel.com/
+
+#URL
+	ID=164
+	NAME=Hollywood.com 
+	URL=http://www.hollywood.com/
+
+#URL
+	ID=165
+	NAME=Reel.com 
+	URL=www.reel.com
+
+#URL
+	ID=166
+	NAME=SCIFI.COM
+	URL=http://www.scifi.com/
+
+#URL
+	ID=167
+	NAME=The Internet Movie Database
+	URL=http://us.imdb.com/
+
+#URL
+	ID=168
+	NAME=TV Guide
+	URL=http://www.tvguide.com/
+
+-
+
+#FOLDER
+	ID=169
+	NAME=Music
+
+#URL
+	ID=170
+	NAME=CDnow
+	URL=http://www.cdnow.com/
+
+#URL
+	ID=171
+	NAME=E! Online
+	URL=http://www.eonline.com/
+
+#URL
+	ID=172
+	NAME=EMusic
+	URL=http://www.emusic.com
+
+#URL
+	ID=173
+	NAME=Internet Music Pages
+	URL=http://www.musicpages.com/
+
+#URL
+	ID=174
+	NAME=IUMA
+	URL=http://www.iuma.com/
+
+#URL
+	ID=175
+	NAME=Jazz Online
+	URL=http://www.jazzonline.com/
+
+#URL
+	ID=176
+	NAME=MP3.com
+	URL=http://www.mp3.com/
+
+#URL
+	ID=177
+	NAME=Napster
+	URL=http://www.napster.com/
+
+#URL
+	ID=178
+	NAME=Real
+	URL=http://www.real.com/
+
+#URL
+	ID=179
+	NAME=Spinner
+	URL=http://www.spinner.com/
+
+#URL
+	ID=180
+	NAME=The Ultimate Band List
+	URL=http://www.ubl.com/
+
+-
+
+#FOLDER
+	ID=181
+	NAME=News
+
+#URL
+	ID=182
+	NAME=Agence France Press
+	URL=http://www.afp.com/
+
+#URL
+	ID=183
+	NAME=Boston Globe
+	URL=http://www.boston.com/
+
+#URL
+	ID=184
+	NAME=Byte.com
+	URL=http://www.byte.com/
+
+#URL
+	ID=185
+	NAME=Chicago Tribune
+	URL=http://www.chicagotribune.com/
+
+#URL
+	ID=186
+	NAME=CNET
+	URL=http://www.cnet.com/
+
+#URL
+	ID=187
+	NAME=CNN
+	URL=http://www.cnn.com/
+
+#URL
+	ID=188
+	NAME=Editor & Publisher
+	URL=http://www.editorandpublisher.com/
+
+#URL
+	ID=189
+	NAME=InternetNews.com
+	URL=http://www.internetnews.com/
+
+#URL
+	ID=190
+	NAME=Nando Times
+	URL=http://www.nando.com/
+
+#URL
+	ID=191
+	NAME=New York Times
+	URL=http://www.nytimes.com/
+
+#URL
+	ID=192
+	NAME=News 365
+	URL=http://www.News365.com/
+
+#URL
+	ID=193
+	NAME=newsday.com
+	URL=http://www.newsday.com/
+
+#URL
+	ID=194
+	NAME=NewsHub
+	URL=http://www.newshub.com/
+
+#URL
+	ID=195
+	NAME=OSnews
+	URL=http://www.osnews.com/
+
+#URL
+	ID=196
+	NAME=Reuters
+	URL=http://www.reuters.com/
+
+#URL
+	ID=197
+	NAME=San Francisco Gate
+	URL=http://www.sfgate.com/
+
+#URL
+	ID=198
+	NAME=TechWeb
+	URL=http://www.techweb.com/
+
+#URL
+	ID=199
+	NAME=The Times
+	URL=http://www.the-times.co.uk/
+
+#URL
+	ID=200
+	NAME=Washington Post
+	URL=http://www.washingtonpost.com/
+
+#URL
+	ID=201
+	NAME=Wired
+	URL=http://www.wired.com/
+
+-
+
+#FOLDER
+	ID=202
+	NAME=Personal Bar
+	EXPANDED=YES
+
+#FOLDER
+	ID=203
+	NAME= Opera
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=0
+
+#URL
+	ID=204
+	NAME=Advertise in Opera
+	URL=http://www.opera.com/advertise/
+
+#URL
+	ID=205
+	NAME=Buy Opera
+	URL=http://www.opera.com/buy/
+
+#URL
+	ID=206
+	NAME=Distribute Opera
+	URL=http://distribute.opera.com/distribution/
+
+#URL
+	ID=207
+	NAME=My Opera
+	URL=http://my.opera.com/
+
+#URL
+	ID=208
+	NAME= Opera Home
+	URL=http://www.opera.com/
+
+#URL
+	ID=209
+	NAME=Opera Support
+	URL=http://www.opera.com/support/
+
+#URL
+	ID=210
+	NAME=OperaMail
+	URL=http://www.operamail.com/
+
+#URL
+	ID=211
+	NAME=Promote Opera
+	URL=http://www.opera.com/promote/
+
+#URL
+	ID=212
+	NAME=Opera Quick Start tips
+	URL=http://www.opera.com/startup/
+
+#URL
+	ID=213
+	NAME=Opera skins
+	URL=http://my.opera.com/customize/
+
+#URL
+	ID=214
+	NAME=Opera Tutorials
+	URL=http://www.opera.com/support/tutorials/
+
+-
+
+#URL
+	ID=215
+	NAME=OperaMail
+	URL=http://www.operamail.com/
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=2
+
+#URL
+	ID=216
+	NAME=Opera Community
+	URL=http://my.opera.com/
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=1
+
+-
+
+#FOLDER
+	ID=217
+	NAME=Research
+
+#URL
+	ID=218
+	NAME=Bastyr
+	URL=http://www.bastyr.edu/
+
+#URL
+	ID=219
+	NAME=Bibliomania
+	URL=http://www.bibliomania.com/
+
+#URL
+	ID=220
+	NAME=Britannica.com
+	URL=http://www.britannica.com/
+
+#URL
+	ID=221
+	NAME=Domain Direct
+	URL=http://opera.domaindirect.com/tracker.cgi?do=index&pageid=1058
+
+#URL
+	ID=222
+	NAME=Harvard
+	URL=http://www.harvard.edu/
+
+#URL
+	ID=223
+	NAME=I love languages
+	URL=http://www.ilovelanguages.com/
+
+#URL
+	ID=224
+	NAME=Itools
+	URL=http://www.itools.com/
+
+#URL
+	ID=225
+	NAME=Thirdage
+	URL=http://www.thirdage.com/
+
+#URL
+	ID=226
+	NAME=Vicinity
+	URL=http://home.vicinity.com/
+
+-
+
+#FOLDER
+	ID=227
+	NAME=Science
+
+#URL
+	ID=228
+	NAME=AccuWeather
+	URL=http://www.accuweather.com/
+
+#URL
+	ID=229
+	NAME=BioMedNet
+	URL=http://www.biomednet.com/
+
+#URL
+	ID=230
+	NAME=Calacademy
+	URL=http://www.calacademy.org/
+
+#URL
+	ID=231
+	NAME=CERN
+	URL=http://cern.ch/
+
+#URL
+	ID=232
+	NAME=Community of Science
+	URL=http://www.cos.com/
+
+#URL
+	ID=233
+	NAME=Dinosauria
+	URL=http://www.dinosauria.com/
+
+#URL
+	ID=234
+	NAME=Exploratorium
+	URL=http://www.exploratorium.edu/
+
+#URL
+	ID=235
+	NAME=Franklin Institute online
+	URL=http://www.fi.edu/
+
+#URL
+	ID=236
+	NAME=HighWire Press
+	URL=http://www.highwire.org/
+
+#URL
+	ID=237
+	NAME=Institute of Astronomy
+	URL=http://www.ast.cam.ac.uk/
+
+#URL
+	ID=238
+	NAME=Junk Science
+	URL=http://www.junkscience.com/
+
+#URL
+	ID=239
+	NAME=National Geographic
+	URL=http://www.nationalgeographic.com/
+
+#URL
+	ID=240
+	NAME=New Scientist
+	URL=http://www.newscientist.com/
+	DESCRIPTION= 
+
+#URL
+	ID=241
+	NAME=Science magazine
+	URL=http://www.sciencemag.org/
+
+#URL
+	ID=242
+	NAME=Scientific American
+	URL=http://www.sciam.com/
+
+#URL
+	ID=243
+	NAME=Talk.Origins
+	URL=http://www.talkorigins.org/
+
+#URL
+	ID=244
+	NAME=Weather Underground
+	URL=http://www.wunderground.com/
+
+#URL
+	ID=245
+	NAME=Weather.com
+	URL=http://www.weather.com/
+
+#URL
+	ID=246
+	NAME=Discovery.com
+	URL=http://www.discovery.com/
+
+-
+
+#FOLDER
+	ID=247
+	NAME=Shopping
+
+#URL
+	ID=248
+	NAME=Amazon.com
+	URL=http://www.amazon.com/exec/obidos/redirect-home/opera-20
+
+#URL
+	ID=249
+	NAME=Ashford.com
+	URL=http://www.ashford.com/home/index.jsp
+
+#URL
+	ID=250
+	NAME=Barnes & Noble
+	URL=http://www.barnesandnoble.com/
+
+#URL
+	ID=251
+	NAME=Buy it online
+	URL=http://www.BuyItOnline.com/
+
+#URL
+	ID=252
+	NAME=CNET Shopper
+	URL=http://shopper.cnet.com/
+
+#URL
+	ID=253
+	NAME=ebags.com
+	URL=http://www.ebags.com/
+
+#URL
+	ID=254
+	NAME=Ebates
+	URL=http://www.ebates.com/
+
+#URL
+	ID=255
+	NAME=eBay
+	URL=http://service.bfast.com/bfast/click?bfmid=37920209&siteid=0&bfpage=text
+
+#URL
+	ID=256
+	NAME=ecover
+	URL=http://www.ecover.com/
+
+#URL
+	ID=257
+	NAME=Gifts.com
+	URL=http://www.gifts.com
+
+#URL
+	ID=258
+	NAME=Nordicsweaters.com
+	URL=http://nordicsweaters.com/
+
+#URL
+	ID=259
+	NAME=PETsMART.com
+	URL=http://www.petsmart.com/
+
+#URL
+	ID=260
+	NAME=Price Grabber
+	URL=http://www.pricegrabber.com/
+
+#URL
+	ID=261
+	NAME=ProFlowers.com
+	URL=http://www.proflowers.com/
+
+#URL
+	ID=262
+	NAME=Dealtime.com
+	URL=http://www.dealtime.com/BannerIn/1,2844,,00.html?linkin_id=3005960&path=/main&link=http://www.dealtime.com/
+
+#URL
+	ID=263
+	NAME=Super Savings
+	URL=http://super-savings.biz
+
+-
+
+#FOLDER
+	ID=264
+	NAME=Web Resources
+
+#URL
+	ID=265
+	NAME=About.com
+	URL=http://www.about.com/
+
+#URL
+	ID=266
+	NAME=Anonymizer
+	URL=http://www.anonymizer.com/
+
+#URL
+	ID=267
+	NAME=Earthweb
+	URL=http://www.earthweb.com/
+
+#URL
+	ID=268
+	NAME=Freelinks
+	URL=http://www.freelinks.com/
+
+#URL
+	ID=269
+	NAME=HTML Goodies
+	URL=http://www.htmlgoodies.com/
+
+#URL
+	ID=270
+	NAME=Inference.com
+	URL=http://www.inference.com/
+
+#URL
+	ID=271
+	NAME=Internet.com
+	URL=http://www.internet.com/
+
+#URL
+	ID=272
+	NAME=Laze
+	URL=http://www.laze.net/
+
+#URL
+	ID=273
+	NAME=LGS Group
+	URL=http://www.lgs.com/
+
+#URL
+	ID=274
+	NAME=Math resources
+	URL=www.akiti.ca
+
+#URL
+	ID=275
+	NAME=Netsurfer digest
+	URL=http://www.netsurf.com/
+
+#URL
+	ID=276
+	NAME=Postmaster Direct
+	URL=http://www.postmasterdirect.com/
+
+#URL
+	ID=277
+	NAME=ScoreWorks Digital Media
+	URL=http://www.scoreworks.com/
+
+#URL
+	ID=278
+	NAME=Web Design Developers Association
+	URL=www.wdda.org
+
+#URL
+	ID=279
+	NAME=Web developers Journal
+	URL=http://www.webdevelopersjournal.com/
+
+#URL
+	ID=280
+	NAME=Web Developers Virtual Library
+	URL=http://www.wdvl.com/
+
+#URL
+	ID=281
+	NAME=Work at Home
+	URL=http://www.extra-income-at-home.com/
+
+#URL
+	ID=282
+	NAME=Cool Site of the Day
+	URL=http://cool.infi.net/
+
+#URL
+	ID=283
+	NAME=Online Advertising
+	URL=http://www.opera.com/advertise/
+
+-
+
+#FOLDER
+	ID=284
+	NAME=Online Services
+
+#URL
+	ID=285
+	NAME= pair Networks
+	URL=http://promote.pair.com/direct.pl?opera_bookmark
+
+#URL
+	ID=286
+	NAME= pairNIC
+	URL=http://promote.pairnic.com/direct.pl?opera_bookmark
+
+#URL
+	ID=287
+	NAME=Intel Online Services
+	URL=http://www.intelonlineservices.com/
+
+#URL
+	ID=288
+	NAME=Tiscali
+	URL=http://www.tiscali.com/
+
+#URL
+	ID=289
+	NAME=OperaMail
+	URL=http://www.operamail.com/scripts/common/index.main?signin=1&lang=us
+
+#URL
+	ID=290
+	NAME=Online Education
+	URL= http://ipunda.com/clk/quekabingcigu
+
+#URL
+	ID=291
+	NAME=MyCity YellowPages
+	URL=http://hits.411web.com/cgi-bin/hit?page=902-1056648338274110
+
+#URL
+	ID=292
+	NAME=Online Advertising
+	URL=http://www.opera.com/advertise/
+
+#URL
+	ID=293
+	NAME=Planex Communications
+	URL=http://www.planex.net
+
+-
+
+#FOLDER
+	ID=294
+	NAME=Computer Hardware
+
+#URL
+	ID=295
+	NAME=Computer History
+	URL=www.computerhistory.org
+
+#URL
+	ID=296
+	NAME=Computer Shopper
+	URL=www.computershopper.com
+
+#URL
+	ID=297
+	NAME=Computer World
+	URL=www.computerworld.com
+
+#URL
+	ID=298
+	NAME=eff.org
+	URL=http://www.eff.org/
+
+#URL
+	ID=299
+	NAME=PC Guide
+	URL=www.pcguide.com
+
+#URL
+	ID=300
+	NAME=PC World
+	URL=www.pcworld.com
+
+#URL
+	ID=301
+	NAME=PCmechanic
+	URL=http://www.pcmech.com/
+
+#URL
+	ID=302
+	NAME=PCwebopedia
+	URL=www.pcwebopedia.com
+
+#URL
+	ID=303
+	NAME=thinkgeek.com
+	URL=http://thinkgeek.com/
+
+#URL
+	ID=304
+	NAME=Toms Hardware
+	URL=www.tomshardware.com
+
+#URL
+	ID=305
+	NAME=Sun
+	URL=http://www.sun.com/
+
+#URL
+	ID=306
+	NAME=IBM
+	URL=http://www.ibm.com/
+
+-
+

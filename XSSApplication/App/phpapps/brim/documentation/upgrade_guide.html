@@ -1,0 +1,62 @@
+<html>
+<meta name="author"
+	content="Barry Nauta (barry@nauta.be)" />
+<meta name="description"
+	content="Brim - BarRy Information Manager" />
+<meta name="keywords"
+	content="Brim, Booby, PHP" />
+
+<head>
+	<title>Brim - Upgrade Guide</title>
+
+	<link rel="stylesheet" href="css/brim.css"
+		type="text/css" />
+</head>
+
+<body>
+        <center>
+                <h1>Brim - Upgrade guide</h1>
+                <img src="pics/sleeping_booby.jpg" />
+	</center>
+		<p>
+			I am very interested in your experiences with Brim.
+		</p>
+		<ul>
+			<li>Is the installation/upgrade easy and straightforward or 
+			are there things missing?</li>
+			<li>Does the application meet your expectations?</li>
+			<li>Are there things missing?</li>
+			<li>...etc...</li>
+		</ul>
+		<p>
+			You can send comments directly to me but preferable 
+			you can add 
+			them to the forum where other can respond to your
+			questions/remarks as well.
+		</p>
+		<p>
+			Upgrading the script basically follows the same steps as 
+			installing it. Since you already did the installation
+			once, I will keep it short. In case of problems, read the
+			<a href="installation_guide.html">installation guide</a>
+		</p>
+		<ul>
+			<li>Unzip the file that contains the package</li>
+			<li>You will now have several files, amongst these are the 'unpack.php', 'Tar.php' and
+				a gzipped tar-file (extension .tar.gz). These three files need to be
+				copied/ftp-ed to your webserver.</li>
+			<li>Execute the unpack script via your webbrowser (older files will be overwritten, 
+				no need to remove them first)</li>
+			<li>Execute the installation script (install.php. If all goes well, the unpack script shows a link 
+				to the installation script). The installation script also takes care of updates, it
+				uses the existing database configuration file to retrieve information about the
+				existing tables and possibly perform an upgrade where necessary).</li>
+			<li>Remove the installation files</li>
+		</ul>
+		<p>
+			If the unpack script fails, you need to unpack the gzipped tar-file locally 
+			and upload each file individually. Proceed with the installation script afterwards
+		</p>
+
+</body>
+</html>

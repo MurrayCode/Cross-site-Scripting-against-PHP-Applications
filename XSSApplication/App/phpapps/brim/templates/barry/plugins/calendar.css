@@ -1,0 +1,192 @@
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ */
+table.calendar_month_overview
+{
+		width:100%;
+		padding:0px;
+		margin:0px;	
+		border:1px dotted #000000
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * Display the abbreviated dayname
+ */
+th.calendar_month_overview_dayname
+{
+		padding:4px;
+		margin:4px;	
+		text-align:center
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * The row containing the table headers (the abbreviated daynames)
+ */
+tr.calendar_month_overview_header
+{
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * A table row containing one week
+ */
+tr.calendar_month_overview_week
+{
+}
+
+/*
+ * The month overview table, a small version of a month displaying
+ * only numbers, no events
+ * The daynumbers
+ */
+td.calendar_month_overview_daynumber
+{
+		width:40px;
+		padding:4px;
+		margin:4px;	
+		text-align:center
+}
+
+table.calendar_view_month
+{
+		width:100%;
+		border:1px dotted #000000
+}
+
+td.calendar_view_month_weeknumber
+{
+		width:15px;
+		background-image:url('../../../templates/barry/plugins/pics/calendar/show_month_weeknumber.jpg');
+		/*background-color:#c9c9c9;*/
+		text-align:center
+}
+
+td.calendar_view_month_daynumber
+{
+		/*background-color:#eeeeee;*/
+		background-image:url('../../../templates/barry/plugins/pics/calendar/show_month_daynumber.jpg');
+		vertical-align:top;
+		height:80px;
+		width:120px
+}
+
+td.calendar_view_month_daynumber_today
+{
+		/*background-color:#eeeeee;*/
+		background-image:url('../../../templates/barry/plugins/pics/calendar/show_month_daynumber_today.jpg');
+		vertical-align:top;
+		height:80px;
+		width:120px
+}
+
+th.calendar_view_month_weekdayname
+{
+		width:100px;
+		text-align:center;
+		background-image:url('../../../templates/barry/plugins/pics/calendar/show_month_dayheader.jpg');
+		/*background-color:#c9c9c9*/
+}
+
+
+tr.calendar_view_day_hour_odd 
+{
+		background-color:#dddddd
+}
+
+td.calendar_view_day_hour
+{
+		padding:4px;
+		margin:0px;
+		width:40px;
+		text-align:right
+}
+
+td.calendar_view_week_day_event
+{
+		vertical-align:top;
+		width:15%;
+		background-image:url('../../../templates/barry/plugins/pics/calendar/event_bg.gif');
+		/*background-color:#a37822*/
+}
+
+td.calendar_view_week_global_event
+{
+		vertical-align:top;
+		width:15%;
+}
+
+td.calendar_view_day_event
+{
+		vertical-align:top;
+		width:100%;
+		background-image:url('../../../templates/barry/plugins/pics/calendar/event_bg.gif');
+		/*background-color:#a37822*/
+}
+div.calendar_view_week_day_event_start
+{
+		font-size:12;
+		color:#123456
+}
+div.calendar_view_day_event_start
+{
+		font-size:12;
+		color:#123456
+}
+div.calendar_view_week_day_event_name
+{
+		font-size:14;
+		color:#000000
+}
+div.calendar_view_day_event_name
+{
+		font-size:14;
+		color:#000000
+}
+table.calendar_show_week
+{
+		border:1px dotted;
+}
+
+tr.calendar_show_week_header
+{
+}
+
+th.calendar_show_week_header
+{
+	text-align:center;
+	background-image:url('../../../templates/barry/plugins/pics/calendar/show_week_day_header.jpg');
+}
+
+th.calendar_show_week_header_today
+{
+	text-align:center;
+	background-image:url('../../../templates/barry/plugins/pics/calendar/show_week_day_header_today.jpg');
+}
+
+td.calendar_show_week_hour
+{
+	text-align:right;
+	width:35px
+}
+
+table.calendar_view_day_event
+{
+		margin:5px;
+		padding:0px;
+		vertical-align:top;
+		width:100%;
+		/*background-image:url('../../../templates/barry/plugins/pics/calendar/event_bg.gif');*/
+		/*background-color:#a37822*/
+}
+
+td.yearlyViewDayHasEvents
+{
+        font-weight:bold;
+        font-size:140%;
+}

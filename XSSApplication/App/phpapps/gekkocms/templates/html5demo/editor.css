@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, h6{font-family:Georgia,"Times New Roman",Times,serif;  font-weight:normal; position:relative}
+h1{font-size:33px; line-height:1.6em; color:#333333; text-transform:capitalize; text-align:left; border-bottom:1px dotted black;margin-bottom:5px}
+h2{font-size:28px; line-height:1.7em; color:#9C0; text-align:left; width:350px; padding-top:8px; }
+h3{font-size:18px; line-height:1.6em; color:#F63; text-transform:none; text-align:left; background-color:transparent; padding-top:12px; margin-bottom:9px; border-bottom:1px dotted black}
+h4{font-size:14px; line-height:1.7em; color:#333333; text-align:left; width:350px; padding-top:8px; margin-bottom:12px}
+p{margin-bottom:6px}
+a, p a{text-decoration:none;color:darkorchid}
+a img, img {border:none}
+a:hover{text-decoration:underline;color:mediumorchid}

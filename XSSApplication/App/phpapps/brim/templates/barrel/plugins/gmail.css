@@ -1,0 +1,26 @@
+#notselected
+{
+	border: 3px solid #ffcc99;
+	padding: 3px;
+}
+#selected
+{
+	border: 3px solid #7aa6dc;
+	padding: 3px;
+}
+.messageBody
+{
+	border: 1px solid #7aa6dc;
+	width:100%;
+	padding: 1px;
+}
+
+textarea.mailbody
+{
+	width: 20cm;
+}
+
+input.mail
+{
+	width:20cm;
+}

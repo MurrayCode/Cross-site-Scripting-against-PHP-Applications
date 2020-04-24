@@ -1,0 +1,75 @@
+/*
+ * Based on: http://www.456bereastreet.com/archive/200505/transparent_custom_corners_and_borders/
+ */
+html,body {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:#fff url(pics/login/bg.gif);
+}
+body {
+	padding:10px;
+	font:76%/135% "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+.top {
+	background:url(pics/login/box.gif) no-repeat 100% 0;
+	margin:0 0 0 18px;
+	height:17px;
+}
+.top div {
+	height:17px;
+	width:18px;
+	position:relative;
+	left:-18px;
+	background:url(pics/login/box.gif) no-repeat 0 0;
+}
+.bottom {
+	background:url(pics/login/box.gif) no-repeat 100% 100%;
+	margin:0 0 0 18px;
+	height:17px;
+}
+.bottom div {
+	height:17px;
+	width:18px;
+	position:relative;
+	left:-18px;
+	background:url(pics/login/box.gif) no-repeat 0 100%;
+}
+.left {
+	padding:0 0 0 12px;
+	background:url(pics/login/borders.gif) repeat-y 0 0;
+}
+.right {
+	padding:0 12px 0 0;
+	background:url(pics/login/borders.gif) repeat-y 100% 0;
+}
+.content {
+	background:#fff no-repeat 100% 0;
+	border:1px solid #fff;
+	border-width:1px 0;
+	padding:0 10px;
+}
+.content2
+{
+	padding:0 50px;
+}
+.content h1
+{
+	font:200%/5% "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+.copyright
+{
+	color:#aaa;
+}
+.copyright a
+{
+	color:#888;
+}
+.login
+{
+	padding:10px 10px;
+}
+input:focus
+{
+	background-color:#ffffee;
+}

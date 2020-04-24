@@ -1,0 +1,11 @@
+To install:
+- Extract contents (in order for the stats program to work please put in a main directory or sub-domain....it will not work in something like mysite.com/testing/blog)
+- Edit config.php with your mysql info and set the other variables such as table prefix
+- Upload files into public_html and chmod 777 the "upload" folder (do NOT upload the files into the upload folder,
+the upload folder is for the file module only)
+- Run install.php in your browser and follow the steps, then you are done!
+
+
+WHAT IS DATECHANGE.PHP?
+- I figured I would include it, it is a simple tool to manually update the date of a blog entry.
+This is good if you are transfering blogs manually but want to keep the date intact.

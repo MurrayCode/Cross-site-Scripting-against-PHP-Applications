@@ -1,0 +1,34 @@
+Always make a backup of your database!!!
+
+*** Upgrade from a previous Brim version to the latest
+
+- Execute the install.php script (by opening it via your browser),
+this script will also take care of updates and delete it afterwards.
+
+*** Upgrading from Booby to Brim
+
+- Make a backup of your data (there is a database dump utility in the
+Booby administration section, you can also use tools like phpMyAdmin
+or the good old CLI ;-)
+
+- Upgrade to the latest version (1.0.1) of Booby afterwards.
+
+- Edit the framework/configuration/databaseConfiguration.php file.
+For an initial installation, this file is not there, rename the 
+databaseConfiguration.example.php file. 
+You can also copy the 'old' Booby databaseConfiguration file in 
+this directory.
+Note that if your previous database was called 'booby', you can keep 
+this name, the application works with any database name.
+
+- Execute the 'tools/booby2brim.php' script via your browser
+
+- Delete the 'tools/booby2brim.php' file
+
+- Now run the install.php file in the application
+root (to add the new collections plugin)
+
+- Delete the install.php file in the application root
+
+In case the application is installed under a different directory than Booby, 
+notify your users that the quickmark functionality needs to be reinitiated.

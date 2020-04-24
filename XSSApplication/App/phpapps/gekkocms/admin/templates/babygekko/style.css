@@ -1,0 +1,258 @@
+/*
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// Baby Gekko content management system - Copyright (C) Baby Gekko.
+// This is a SHARED SOURCE, NOT OPEN SOURCE (GPL).
+// You may use this software commercially, but you are not allowed to create a fork or create a derivative of this software
+// Please read the license for details
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+*/
+@charset "UTF-8"; 
+body{font:12px "Segoe UI","Helvetica Neue","Myriad Pro",Arial,Helvetica,sans-serif; background:white; margin:0; padding:0; text-align:center; color:#333333}
+h1, h2, h3, h4, h5, h6{font:bold 16px "Segoe UI","Trebuchet MS",Arial,Helvetica,sans-serif; margin-top:0}
+h1{font-size:18px; color:sienna}
+h2{font-size:16px; color:forestgreen}
+h3{font-size:15px; color:saddlebrown}
+h4{font-size:14px; color:orangered}
+h5{font-size:12px; color:darkgoldenrod}
+h4{font-size:10px; color:olive}
+ul{list-style-image:url(images/smallleaf.png)}
+a, a:link, a:visited{color:sienna; text-decoration:none}
+a:hover{color:darkgreen}
+a img{border:none}
+#container{background:white; margin:0 auto; text-align:left}
+#header{margin-top:10px; padding:0; overflow:hidden; height:70px; min-width:1280px}
+#admin_main{padding:5px}
+#footer{padding:10px; background:url(images/footerbg.png) top center no-repeat; text-align:center; font-size:10px}
+#footer p{margin:0; padding:10px 0}
+#headerlogo, #headercontent{float:left; padding:0; margin:0}
+#headerlogo a{outline:none}
+#headercontent{min-width:600px; overflow:hidden}
+#headermenuright{background:url(images/gekkosprite1.png) no-repeat top left; float:left; background-position:0 -326px; width:110px; height:55px}
+#headermenu{background:url(images/gekkosprite1.png) repeat-x top left; background-position:0 -209px; float:left}
+.clearboth{clear:both}
+.gekko_notice_text{border:1px solid red; background:#FCC; padding:5px}
+.general-error, .error-sql{background:pink; border:1px solid orange}
+/***** MENU ****/
+#gekkonav{font:bold 13px "Trebuchet MS",Arial,Helvetica,sans-serif;  width:100%; height:55px;min-width:830px}
+#gekkonav, #gekkonav ul{float:left;  list-style:none;  line-height:50px;  padding:0;  margin:0;  width:100%}
+#gekkonav a{display:block;  color:#6E9F1F;  text-decoration:none;  padding:0px 10px}
+#gekkonav li{float:left;  padding:0}
+#gekkonav ul{position:fixed /* changed April 6,2010 - was absolute */;  left:-999em;  height:auto;  width:151px;  font-weight:normal;  margin:0;  line-height:1;  border:0;  border-top:1px solid #666666;}
+#gekkonav ul li ul{line-height:30px}
+#gekkonav li li{width:151px;  font:bold 12px "Trebuchet MS",Arial,Helvetica,sans-serif}
+#gekkonav li li a{  padding:4px 10px 4px 10px; width:130px; font-size:12px; color:#dddddd}
+#gekkonav li ul ul{  margin:-24px 0 0 150px}
+#gekkonav li li:hover{  background:#6E9F1F; z-index:200; position:relative}
+#gekkonav li ul li:hover a, #gekkonav li ul li li:hover a, #gekkonav li ul li li li:hover a, #gekkonav li ul li li li:hover a{color:#dddddd; z-index:200}
+#gekkonav li:hover a, #gekkonav li.sfhover a{  color:#dddddd; color:black}
+#gekkonav li:hover li a, #gekkonav li li:hover li a, #gekkonav li li li:hover li a, #gekkonav li li li li:hover li a{color:#dddddd}
+#gekkonav li:hover ul ul, #gekkonav li:hover ul ul ul, #gekkonav li:hover ul ul ul ul, #gekkonav li.sfhover ul ul, #gekkonav li.sfhover ul ul ul, #gekkonav li.sfhover ul ul ul ul{  left:-999em}
+#gekkonav li:hover ul, #gekkonav li li:hover ul, #gekkonav li li li:hover ul, #gekkonav li li li li:hover ul, #gekkonav li.sfhover ul, #gekkonav li li.sfhover ul, #gekkonav li li li.sfhover ul, #gekkonav li li li li.sfhover ul{left:auto;     background:#444444; z-index:10}
+#gekkonav li:hover, #gekkonav li.sfhover{  background:url(images/gekkosprite1.png) repeat-x; background-position:0 -811px}
+
+.gekko_admin_gfx_menu{list-style-image:none; list-style:none}
+.gekko_admin_gfx_menu li{margin-bottom:3px}
+/****** END MENU *****/
+/**** LOGIN FORM ****/
+.rememberlabel{font:12px Georgia,"Times New Roman",Times,serif}
+div#bbgkloginform label{width:10px}
+div#bbgkloginform{margin:150px auto; background:url(images/gekkosprite1.png) top left no-repeat; background-position:0 -532px; width:574px; height:278px}
+div#bbgkloginform input[type=text], div#bbgkloginform input[type=password]{font:32px Georgia,"Times New Roman",Times,serif; padding-left:20px;}
+div#bbgkloginform table{padding-top:15px}
+.bigtextbox{-webkit-border-radius: 35px; -moz-border-radius: 35px; border-radius: 35px; width:330px; height:39px;-webkit-box-shadow:0px 0 50px #ccc;
+-moz-box-shadow:0px 0 50px #ccc; box-shadow:2px 2px 5px #BBBBB;	-webkit-appearance: none;outline:none}
+.bigtextbox:focus{outline:none}
+#loginbutton{font:bold 22px Georgia,"Times New Roman",Times,serif}
+.input_searchbox{border-radius:5px; border:1px solid silver; padding:3px; font:11px "Segoe UI",Tahoma,Geneva,sans-serif}
+.bbgk_searchbox input{border:none; margin:7px 0 0 41px; width:145px; height:13px; font:100% Arial,Helvetica,sans-serif}
+.bbgk_searchbox input:focus{display:none}
+.bbgk_searchbox{height:30px; width:200px; float:left; margin:20px 0 10px 10px}
+* html .bbgk_searchbox{margin:20px 0 10px 3px}
+#chkremember{font:32px Georgia,"Times New Roman",Times,serif}
+/**** Layout ***/
+#bbgkcontent-table{min-width:400px}
+#bbgkmain{padding:0 0 0 0; width:100%; text-align:left}
+#gekko_admin_sidebar{padding:5px; background:url(images/sidebar.png) top right no-repeat; min-height:300px}
+#gekko_admin_main{padding:5px; display:none}
+#gekko_dualpane_editor_sidebar{padding:5px; float:left; width:25%; background:url(images/sidebar.png) top right no-repeat; min-height:400px; min-width:220px}
+#gekko_dualpane_editor_main{padding:5px; margin-left:27%; min-width:640px}
+#gekko_singlepane_editor_sidebar{margin:5px}
+legend{font-weight:bold}
+.gekko_meta_inputs{width:90%}
+.gekko_editor .boldlabel{font:bold 12px "Trebuchet MS",Arial,Helvetica,sans-serif}
+.gekko_config, .gekko_editor_input, .gekko_editor_title_input{border:none; border-bottom:1px dotted grey; background:url(images/gekkosprite1.png) repeat-x bottom left; background-position:0 -382px}
+textarea.gekko_config, textarea.gekko_editor_input{background:none; border:1px dotted #AAAAAA}
+.gekko_editor_title_input{font:bold 16px "Trebuchet MS",Arial,Helvetica,sans-serif}
+.gekko_standard_editor_button{font:bold 13px "Segoe UI","Trebuchet MS",Arial,Helvetica,sans-serif; width:100px; text-align:center}
+.gekko_larger_editor_button{font:bold 13px "Segoe UI","Trebuchet MS",Arial,Helvetica,sans-serif; width:130px; text-align:center}
+.gekko_nobreak_button{font:bold 13px "Segoe UI","Trebuchet MS",Arial,Helvetica,sans-serif; white-space:nowrap}
+#gekko_dualpane_editor_sidebar fieldset, #gekko_editor_sidebar fieldset{width:80%; border:1px dotted silver}
+/* PANEL BUTTONS */
+.gekko_admin_panel ul{list-style:none; margin:0; padding:0}
+.gekko_admin_panel ul li a{float:left}
+div.gekko_admin_panel a{font:12px "Segoe UI","Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif; line-height:16px; display:inline-block; outline:none; cursor:pointer; text-align:center; text-decoration:none; padding:4px; -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2); -moz-box-shadow:0 1px 2px rgba(0,0,0,.2); box-shadow:0 1px 2px rgba(0,0,0,.2); background:-webkit-gradient(linear,left top,left bottom,from(#EEEEEE),to(#FFFFFF)); background:-moz-linear-gradient(top, #FFFFFF, #EEEEEE); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE',endColorstr='#FFFFFF'); color:#888888}
+div.gekko_admin_panel a:hover{text-decoration:none; color:darkgreen; text-shadow:0 1px 1px rgba(0,0,0,.3); background:-webkit-gradient(linear,left top,left bottom,from(#BBBBBB),to(#FFFFFF)); background:-moz-linear-gradient(top, #BBBBBB, #FFFFFF); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#BBBBBB')}
+
+div.gekko_admin_panel p{font:12px "Segoe UI","Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif}
+div.gekko_admin_panel img{margin:2px 2px 0 5px; vertical-align:text-top}
+#gekko_panel_tree{float:left; width:700px}
+#gekko_panel_edit{float:right; width:600px}
+#gekko_panel_clipboard{float:right; width:300px; border:thin solid grey}
+
+.gekko_article{padding:0; border:1px solid white}
+.gekko_article:hover{border:1px solid red}
+.gekko_checkboxtree_folder, .gekko_tree_folder, .gekko_tree_folder_red{padding:1px 5px 3px 20px; background:url(../../../images/default/buttons16.png) no-repeat top left; background-position:0 -1092px; cursor:pointer; height:16px; white-space:nowrap}
+.gekko_tree_folder_red{background:url(../../../images/default/buttons16.png) no-repeat top left; background-position:0 -1155px}
+.gekko_tree_folder_green{background:url(../../../images/default/buttons16.png) no-repeat top left; background-position:0 -1113px; height:16px}
+
+.gekko_items_categoryeditor_checkbox{margin-left:20px}
+.gekko_tree_folder:hover{background:url(../../../images/default/buttons16.png) no-repeat; background-position:0 -1134px; font-weight:normal}
+.gekko_datatable_icon_item{background:url(../../../images/default/buttons16.png) no-repeat; background-position:0 -1176px}
+
+.gekko_datatable_icon_category{background:url(../../../images/default/buttons16.png) no-repeat top left; background-position:0 -1092px}
+.gekko_datatable_icon_item, .gekko_datatable_icon_category{padding:0px 4px 0 16px; margin:0; font:12px "Courier New",Courier,monospace; line-height:16px; vertical-align:middle}
+.gekko_dragndrop{background:url(../../../images/default/buttons48.png) no-repeat; background-position:0 -530px; ; width:48px; height:40px; padding-top:12px; font:bold 14px "Lucida Sans Unicode","Lucida Grande",sans-serif}
+.gekko_status_active{background:url(../../images/status_active.png) no-repeat top left}
+.gekko_status_inactive{background:url(../../images/status_inactive.png) no-repeat top left}
+.gekko_status_inactive, .gekko_status_active{width:24px; height:24px}
+.gekko_admin_row_odd a:hover{text-decoration:none; font-weight:bold}
+.gekko_admin_sidebar{overflow:hidden}
+#gekko_admin_panel{; padding-top:50px}
+#gekko_admin_path_info{visibility:hidden}
+.validation-failed{/* for textboxes,textareas,passwords */border:1px dashed red; background-image:url(images/gekkosprite1.png); background-position:0 -403px}
+.validation-failed-cr{/* for checkboxes and radios */border:1px dashed red}
+.validation-failed-sel{/* for selects */}
+.validation-passed{/* for textboxes,textareas,passwords */}
+.validation-passed-cr{/* for checkboxes and radios */}
+.validation-passed-sel{/* for selects */}
+.gekko_settings h2{margin:0}
+ol.gekko_user_manual{font:bold 14px "Trebuchet MS",Arial,Helvetica,sans-serif}
+.dragenter{border:1px dotted red; background:#9F3; padding:4px}
+
+.img_gekko_sprite{background:url(images/gekkosprite1.png)}
+.img_buttons48{background:url(../../../images/default/buttons48.png)}
+.img_buttons32{background:url(../../../images/default/buttons32med.png)}
+.img_buttons16{background:url(../../../images/default/buttons16.png)}
+
+#img_gekko_bigleaf{ background-position: 0 0; width: 140px; height: 122px; } 
+#img_gekko_footerbg{ background-position: 0 -176px; width: 500px; height: 32px; } 
+#img_gekko_headerlogo{ background-position: 0 -265px; width: 264px; height: 60px; } 
+#img_gekko_headerright{ background-position: 0 -326px; width: 110px; height: 55px; } 
+#img_gekko_loginbg{ background-position: 0 -532px; width: 574px; height: 278px; } 
+
+/*48*/
+.imgsprite48_bigbutton_add{ background-position: 0 0; width: 48px; height: 48px; } 
+.imgsprite48_bigbutton_apply{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.imgsprite48_bigbutton_cancel{ background-position: 0 -106px; width: 48px; height: 48px; } 
+.imgsprite48_bigbutton_ok{ background-position: 0 -159px; width: 48px; height: 48px; } 
+.imgsprite48_bigbutton_refresh{ background-position: 0 -212px; width: 48px; height: 48px; } 
+.imgsprite48_bigbutton_revert{ background-position: 0 -265px; width: 48px; height: 48px; } 
+.imgsprite48_bigbutton_saveedit{ background-position: 0 -318px; width: 48px; height: 48px; } 
+.imgsprite48_blue_speech_bubble_48{ background-position: 0 -371px; width: 48px; height: 48px; } 
+.imgsprite48_home{ background-position: 0 -424px; width: 48px; height: 48px; } 
+.imgsprite48_icon_blockedit{ background-position: 0 -477px; width: 48px; height: 48px; } 
+.imgsprite48_icon_dragndrop{ background-position: 0 -530px; width: 48px; height: 48px; } 
+.imgsprite48_icon_edit_menu{ background-position: 0 -583px; width: 48px; height: 48px; } 
+.imgsprite48_icon_plugins{ background-position: 0 -636px; width: 48px; height: 48px; } 
+.imgsprite48_icon_webpage_content{ background-position: 0 -689px; width: 48px; height: 48px; } 
+.imgsprite48_icon_wrench{ background-position: 0 -742px; width: 48px; height: 48px; } 
+.imgsprite48_icon_write_html{ background-position: 0 -795px; width: 48px; height: 48px; } 
+
+/*32*/
+.imgsprite32_medbutton_apply{ background-position: 0 0; width: 32px; height: 32px; } 
+.imgsprite32_medbutton_cancel{ background-position: 0 -37px; width: 32px; height: 32px; } 
+.imgsprite32_medbutton_ok{ background-position: 0 -74px; width: 32px; height: 32px; } 
+.imgsprite32_medbutton_revert{ background-position: 0 -111px; width: 32px; height: 32px; } 
+
+/*16*/
+.imgsprite16_about{ background-position: 0 0; width: 16px; height: 16px; } 
+.imgsprite16_address-book-new{ background-position: 0 -21px; width: 16px; height: 16px; } 
+.imgsprite16_appointment-new{ background-position: 0 -42px; width: 16px; height: 16px; } 
+.imgsprite16_bookmark-new{ background-position: 0 -63px; width: 16px; height: 16px; } 
+.imgsprite16_calendar{ background-position: 0 -84px; width: 16px; height: 16px; } 
+.imgsprite16_cancel{ background-position: 0 -105px; width: 16px; height: 16px; } 
+.imgsprite16_comment{ background-position: 0 -126px; width: 16px; height: 16px; } 
+.imgsprite16_comment_add{ background-position: 0 -147px; width: 16px; height: 16px; } 
+.imgsprite16_comment_delete{ background-position: 0 -168px; width: 16px; height: 16px; } 
+.imgsprite16_comment_edit{ background-position: 0 -189px; width: 16px; height: 16px; } 
+.imgsprite16_config{ background-position: 0 -210px; width: 16px; height: 16px; } 
+.imgsprite16_contact-new{ background-position: 0 -231px; width: 16px; height: 16px; } 
+.imgsprite16_copy{ background-position: 0 -252px; width: 16px; height: 16px; } 
+.imgsprite16_new_document{ background-position: 0 -273px; width: 16px; height: 16px; } 
+.imgsprite16_document-open{ background-position: 0 -294px; width: 16px; height: 16px; } 
+.imgsprite16_document-print-preview{ background-position: 0 -315px; width: 16px; height: 16px; } 
+.imgsprite16_document-print{ background-position: 0 -336px; width: 16px; height: 16px; } 
+.imgsprite16_document-properties{ background-position: 0 -357px; width: 16px; height: 16px; } 
+.imgsprite16_document-save-as{ background-position: 0 -378px; width: 16px; height: 16px; } 
+.imgsprite16_document-save{ background-position: 0 -399px; width: 16px; height: 16px; } 
+.imgsprite16_download{ background-position: 0 -420px; width: 16px; height: 16px; } 
+.imgsprite16_edit-clear{ background-position: 0 -441px; width: 16px; height: 16px; } 
+.imgsprite16_button_copy{ background-position: 0 -462px; width: 16px; height: 16px; } 
+.imgsprite16_button_cut{ background-position: 0 -483px; width: 16px; height: 16px; } 
+.imgsprite16_button_delete{ background-position: 0 -504px; width: 16px; height: 16px; } 
+.imgsprite16_button_find-replace{ background-position: 0 -525px; width: 16px; height: 16px; } 
+.imgsprite16_button_find{ background-position: 0 -546px; width: 16px; height: 16px; } 
+.imgsprite16_button_paste{ background-position: 0 -567px; width: 16px; height: 16px; } 
+.imgsprite16_button_redo{ background-position: 0 -588px; width: 16px; height: 16px; } 
+.imgsprite16_button_select-all{ background-position: 0 -609px; width: 16px; height: 16px; } 
+.imgsprite16_button_undo{ background-position: 0 -630px; width: 16px; height: 16px; } 
+.imgsprite16_error{ background-position: 0 -651px; width: 16px; height: 16px; } 
+.imgsprite16_file{ background-position: 0 -672px; width: 16px; height: 16px; } 
+.imgsprite16_file_add{ background-position: 0 -693px; width: 16px; height: 16px; } 
+.imgsprite16_file_delete{ background-position: 0 -714px; width: 16px; height: 16px; } 
+.imgsprite16_file_edit{ background-position: 0 -735px; width: 16px; height: 16px; } 
+.imgsprite16_file_move{ background-position: 0 -756px; width: 16px; height: 16px; } 
+.imgsprite16_find{ background-position: 0 -777px; width: 16px; height: 16px; } 
+.imgsprite16_firefox{ background-position: 0 -798px; width: 16px; height: 16px; } 
+.imgsprite16_new_folder{ background-position: 0 -819px; width: 16px; height: 16px; } 
+.imgsprite16_edit_folder{ background-position: 0 -840px; width: 16px; height: 16px; } 
+.imgsprite16_go-bottom{ background-position: 0 -861px; width: 16px; height: 16px; } 
+.imgsprite16_go-down{ background-position: 0 -882px; width: 16px; height: 16px; } 
+.imgsprite16_go-first{ background-position: 0 -903px; width: 16px; height: 16px; } 
+.imgsprite16_go-jump{ background-position: 0 -924px; width: 16px; height: 16px; } 
+.imgsprite16_go-last{ background-position: 0 -945px; width: 16px; height: 16px; } 
+.imgsprite16_go-next{ background-position: 0 -966px; width: 16px; height: 16px; } 
+.imgsprite16_go-previous{ background-position: 0 -987px; width: 16px; height: 16px; } 
+.imgsprite16_go-top{ background-position: 0 -1008px; width: 16px; height: 16px; } 
+.imgsprite16_go-up{ background-position: 0 -1029px; width: 16px; height: 16px; } 
+.imgsprite16_home{ background-position: 0 -1050px; width: 16px; height: 16px; } 
+.imgsprite16_html{ background-position: 0 -1071px; width: 16px; height: 16px; } 
+.imgsprite16_icon_category{ background-position: 0 -1092px; width: 16px; height: 16px; } 
+.imgsprite16_icon_category_green{ background-position: 0 -1113px; width: 16px; height: 16px; } 
+.imgsprite16_icon_category_hover{ background-position: 0 -1134px; width: 16px; height: 16px; } 
+.imgsprite16_icon_category_red{ background-position: 0 -1155px; width: 16px; height: 16px; } 
+.imgsprite16_icon_item{ background-position: 0 -1176px; width: 16px; height: 16px; } 
+.imgsprite16_info{ background-position: 0 -1197px; width: 16px; height: 16px; } 
+.imgsprite16_key{ background-position: 0 -1218px; width: 16px; height: 16px; } 
+.imgsprite16_list-add{ background-position: 0 -1239px; width: 16px; height: 16px; } 
+.imgsprite16_list-remove{ background-position: 0 -1260px; width: 16px; height: 16px; } 
+.imgsprite16_magnify{ background-position: 0 -1281px; width: 16px; height: 16px; } 
+.imgsprite16_mail{ background-position: 0 -1302px; width: 16px; height: 16px; } 
+.imgsprite16_minicalendar{ background-position: 0 -1323px; width: 16px; height: 16px; } 
+.imgsprite16_no{ background-position: 0 -1344px; width: 16px; height: 16px; } 
+.imgsprite16_ok{ background-position: 0 -1365px; width: 16px; height: 16px; } 
+.imgsprite16_photo{ background-position: 0 -1386px; width: 16px; height: 16px; } 
+.imgsprite16_preview{ background-position: 0 -1407px; width: 16px; height: 16px; } 
+.imgsprite16_status_active{ background-position: 0 -1428px; width: 16px; height: 16px; } 
+.imgsprite16_status_forbidden{ background-position: 0 -1449px; width: 16px; height: 16px; } 
+.imgsprite16_status_inactive{ background-position: 0 -1470px; width: 16px; height: 16px; } 
+.imgsprite16_status_locked{ background-position: 0 -1491px; width: 16px; height: 16px; } 
+.imgsprite16_system-lock-screen{ background-position: 0 -1512px; width: 16px; height: 16px; } 
+.imgsprite16_system-log-out{ background-position: 0 -1533px; width: 16px; height: 16px; } 
+.imgsprite16_uninstall{ background-position: 0 -1554px; width: 16px; height: 16px; } 
+.imgsprite16_user{ background-position: 0 -1575px; width: 16px; height: 16px; } 
+.imgsprite16_user_add{ background-position: 0 -1596px; width: 16px; height: 16px; } 
+.imgsprite16_user_delete{ background-position: 0 -1617px; width: 16px; height: 16px; } 
+.imgsprite16_user_edit{ background-position: 0 -1638px; width: 16px; height: 16px; } 
+.imgsprite16_vcard{ background-position: 0 -1659px; width: 16px; height: 16px; } 
+.imgsprite16_window-new{ background-position: 0 -1680px; width: 16px; height: 16px; } 
+
+
+.gekko_editfolder_link{white-space:nowrap}
+div >.gekko_editfolder_tooltip, li >.gekko_editfolder_tooltip, a >.gekko_editfolder_tooltip, span >.gekko_editfolder_tooltip{opacity:0; /*visibility:hidden; */margin-top:0px; margin-left:0px; -webkit-transition-property:opacity,margin-top,visibility,margin-left; -webkit-transition-duration:0.5s,0.3s,0.5s,0.3s;  -webkit-transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in-out; -moz-transition-property:opacity,margin-top,visibility,margin-left; -moz-transition-duration:0.5s,0.3s,0.5s,0.3s;  -moz-transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in-out; -o-transition-property:opacity,margin-top,visibility,margin-left; -o-transition-duration:0.5s,0.3s,0.5s,0.3s;  -o-transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in-out; transition-property:opacity,margin-top,visibility,margin-left; transition-duration:0.5s,0.3s,0.5s,0.3s;  transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in}
+
+div:hover >.gekko_editfolder_tooltip, li:hover >.gekko_editfolder_tooltip, a:hover >.gekko_editfolder_tooltip, span:hover >.gekko_editfolder_tooltip, 
+a .gekko_editfolder_tooltip:hover, span .gekko_editfolder_tooltip:hover, li .gekko_editfolder_tooltip:hover, div .gekko_editfolder_tooltip:hover{opacity:1; visibility:visible; overflow:visible; display:inline; margin-top:-5px; margin-left:5px; -webkit-transition-property:opacity,margin-top,visibility,margin-left; -webkit-transition-duration:0.5s,0.3s,0.5s,0.3s;  -webkit-transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in-out; -moz-transition-property:opacity,margin-top,visibility,margin-left; -moz-transition-duration:0.5s,0.3s,0.5s,0.3s;  -moz-transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in-out; -o-transition-property:opacity,margin-top,margin-left; -o-transition-duration:0.5s,0.3s,0.3s;  -o-transition-timing-function:ease-in-out,ease-in-out,ease-in-out; transition-property:opacity,margin-top,visibility,margin-left; transition-duration:0.5s,0.3s,0.5s;  transition-timing-function:ease-in-out,ease-in-out,ease-in-out,ease-in-out}
+
+.gekko_editfolder_tooltip{background:silver; background:-moz-linear-gradient(top,silver 0%,white 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,silver),color-stop(100%,white)); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#C0C0C0',endColorstr='#FFFFFF',GradientType=0 ); border:1px solid silver; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; border-radius:3px; padding:1px 10px; margin-left:-40px; position:absolute; font-family:Arial; font-size:12px; text-decoration:none; font-style:normal; color:#777; text-shadow:1px 1px 0 rgba(255,255,255,0.75); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.1),inset 0 1px 0 #fff; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.1),inset 0 1px 0 #fff; -o-box-shadow:0 1px 3px rgba(0,0,0,0.1),inset 0 1px 0 silver; box-shadow:0 1px 3px rgba(0,0,0,0.1),inset 0 1px 0 silver; z-index:10}
+ 

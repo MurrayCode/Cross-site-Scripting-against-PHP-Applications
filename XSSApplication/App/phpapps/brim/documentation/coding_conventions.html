@@ -1,0 +1,201 @@
+<html>
+<head>
+	<title>Brim - Coding style</title>
+</head>
+<body>
+<h1>Coding style</h1>
+	<p>
+		I am a firm believer of having one coding standard. This makes code much more readable, 
+		easier to adapt etc. I have taken an <a href="http://www.phpbuilder.com/columns/tim20010101.php3">article</a> 
+		by Tim Perdue at <a href="http://www.phpbuilder.com/">PHPBuilder</a> and modified it according to my 
+		point of view.
+	</p>
+	<p>
+		A pretty huge part of maintainability of code is how it is formatted and commented. All code throughout a
+		given project should be formatted the same way.
+	</p>
+	<p>
+		Furthermore: code should be readable!!!! I do not like PHP code being mixed up with HTML code,
+		view and model should be clearly seperated. I would directly like to add another statement:
+		I do not like reading code. Good comments should be provided to ease the process of understanding
+		it.
+	</p>
+<h2>Indenting</h2>	
+	<p>
+		All your code should be properly indented. 
+		This is the most fundamental thing you can do to improve readability. Even if you don't comment your 
+		code, indenting will be a big help to anyone who has to read your code after you.
+	</p>
+	<pre>
+	while ($x < $z) 
+	{
+		if ($a == 1) 
+		{
+			echo 'A was equal to 1';
+		} 
+		else 
+		{
+			if ($b == 2) 
+			{
+				//do something
+			} 
+			else 
+			{
+				//do something else
+			}
+		}
+	}
+	</pre>
+	<p>
+		Indentation should be done using tabs, not spaces.
+	</p>
+<h3>Line length</h3>
+	<p>
+		Avoid lines longer than 80 characters, since they're not handled well by many terminals, printers and tools.
+	</p>
+<h2>Braces</h2>
+	<p>
+		All braces should be aligned, this applies to classes, functions and control structures.
+		This is an example:
+	</p>
+	<pre>
+	class MyClass
+	{
+		var $variable;
+		function myFunction ($aVariable, $anotherVar)
+		{
+			if ($aVariable == $anotherVar)
+			{
+				// do someting
+			}
+			else
+			{
+				// do something else
+			}	
+		}
+	}
+	</pre>
+	<p>
+		Note that class names start with a capital, members/parameters, functions start decapitalized!
+	</p>
+<h2>Naming conventions</h2>
+	<p>
+		The code should be as close to human language as possible. This is why I do not like underscores 
+		to indicate the scope. This so-called hungarian notation has (credits to Robert C Martin) the following 
+		ugly characteristics:
+	</p>
+	<p>
+		Hungarian notation encodes type information into variable names. This is very useful in languages 
+		that don't keep track of types information for you. In PHP this is the case, but changing types is
+		not a recommended technique. In my opinion, the notation simply adds to obscurity.
+	</p>
+	<p>
+		Hungarian notation is, when all is said and done, a commenting technique. 
+		And the one great law of comments is that they lie. Comments are not syntax checked, there 
+		is nothing forcing them to be accurate. And so, as the code undergoes change during schedule 
+		crunches, the comments become less and less accurate.
+	</p>
+	<p>
+		The same happens with hungarian notation. When the type of a variable changes, it is not likely 
+		that you are going to hunt through all the code and change all occurrences of its name. Especially 
+		during the schedule crunch. Thus, the variables name will become a lie.
+	</p>
+	<pre>
+	var $goodName;
+	var $bad_name;		        // I don't like underscores at all!!!!
+	var $_probablyPrivate; 	        // most of the times (not always!) 
+                                        //            this indicates a private variable
+	var $_and_what_about_this; 	// I wouldn't know....
+	var $anotherOne_;		// Have seen this before, no clue about the underscore.
+	</pre>
+	
+<h2>Control structures</h2>
+	<p>
+		This is pretty much common sense, but I still see an awful lot of code that is not braced 
+		for readability. If you use conditional expressions (IF statements) without braces, not only is it
+		less readable, but bugs can also be introduced when someone modifies your code.
+	</p>
+<h3>Bad example</h3>
+	<pre>
+	if ($a == 1) echo 'A was equal to 1';
+	</pre>
+	<p>
+		That's pretty much illegible. It may work for you, but the person following after you won't 
+		appreciate it at all.
+	</p>
+<h3>Less bad example</h3>
+	<pre>
+	if ($a == 1) 
+		echo 'A was equal to 1';
+	</pre>
+	<p>
+		Now that's at least readable, but it's still not maintainable. What if I want an additional action 
+		to occur when $a==1? I need to add braces, and if I forget to, I'll have a bug in my code.
+	</p>
+	
+<h3>Correct</h3>
+	<pre>
+	if (($a == 1) && ($b==2)) 
+	{
+		echo 'A was equal to 1';
+		//easily add more code
+	} 
+	elseif (($a == 1) && ($b==3)) 
+	{
+		//do something
+	}
+	</pre>
+	<p>
+		Notice the space after the if and elseif - this helps distinguish conditionals from function call.
+	</p>
+	<p>
+		An important principle when coding functions is that they should always return instead of print directly. 
+		Remember, if you print directly inside your function call, whomever calls your function cannot capture 
+		its output using a variable
+	</p>
+<h2>Comments</h2>
+	<p>
+		Being a Java developper, I have gotten used to this way of commenting and I really like it. In combination
+		with <a href="http://phpdocu.sourceforge.net">phpdoc</a> you can eastablish almost the same for PHP code.
+	</p>
+	<p>
+		JavaDoc is rather clever because you format your code comments in such a manner that they can be parsed 
+		by a doc-generating tool, essentially creating "self commenting" code. 
+		You can then view the resulting docs using a web browser.		
+	</p>
+	<pre>
+	/**
+	 * Short description of function
+	 *
+	 * Optional more detailed description.
+	 *
+	 * @param $paramName - type - brief purpose
+	 * @param ...
+	 * ...
+	 * @return type and description
+	 */
+	</pre>
+	<p>
+		Within code, comments should be added in the following way: 
+	</p>
+	<pre>
+	/**
+         * Function description
+	 */
+	function myFunction ()
+	{
+		// This is a local comment
+	} 
+	</pre>
+	<p>
+		This allows one to easily put one function in comments, since nested comment blocks 
+		are not allowed.
+	</p>
+<h2>PHP Tags</h2>
+	<p>
+		You should always use the full <?php ?> tags to enclose your code, not the abbreviated <? ?> tags, 
+		which could conflict with XML or other languages. ASP-style tags, while supported, are messy and discouraged.
+		They are also disabled on some PHP based installations.
+	</p>
+</body>
+</html>
