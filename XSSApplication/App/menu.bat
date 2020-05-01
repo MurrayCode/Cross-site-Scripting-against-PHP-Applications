@@ -29,16 +29,16 @@ ECHO Default Admin Credentials - Username - Admin - Password - password
 ECHO This is for educational purposes only.
 ECHO ...............................................................................
 ECHO.
-ECHO a - DBHcms - Working - Vulnerability Proven - Easy Difficulty 
-ECHO b - osTicket v1.12 - Working - Vulnerablity Proven - Easy Difficulty 
-ECHO c - CodoForum v3.4 - Working - Vulnerability Proven - Hard Difficulty 
-ECHO d - SimpleMachinesForum - Replace
-ECHO e - BilboPlanet - Working - Vulnerability Proven - Easy Difficuly
-ECHO f - insanely_simple_blog0.5 - Working - Vulnerability Proven - Easy Difficulty 
-ECHO g - brim 2.0.0 - Working - Vulnerability Proven - Medium Difficulty 
-ECHO h - BlogPHPv2 - Working - Vulnerability Proven - Easy Difficulty
-ECHO i - gekkocms - Working - 2 vulberabilities Proven - Medium Difficulty
-ECHO j - UL_Forum_1.1 -  Working - Vulnerability Proven - Medium Difficulty
+ECHO a - DBHcms - Stored and Reflected XSS Available
+ECHO b - osTicket - Stored XSS Available
+ECHO c - CodoForum - Reflected XSS Available
+ECHO d - Simple Machines Forum - Reflected XSS Available
+ECHO e - Bilbo Planet - Stored XSS AVailable
+ECHO f - insanely simple blog - Reflected XSS Available
+ECHO g - brim - Stored XSS Available
+ECHO h - BlogPHPv2 - Reflected XSS Available
+ECHO i - gekkocms - Reflected and Stored XSS Available
+ECHO j - UL_Forum - Stored XSS Available
 ECHO x - EXIT
 ECHO.
 rem links choice to folder of php app and installs it M = folder d = database 
